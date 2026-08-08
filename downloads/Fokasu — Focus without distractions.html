@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///home/dell/GitHub/fokasu/fokasu-website/index.html#how-it-works -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#030506">
+    <title>Fokasu — Focus without distractions</title>
+    <link rel="stylesheet" href="./Fokasu — Focus without distractions_files/index.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="file:///home/dell/GitHub/fokasu/fokasu-website/index.html#top" aria-label="Fokasu home">
+          <img src="./Fokasu — Focus without distractions_files/fokasu_logo.svg" alt="" aria-hidden="true">
+          <span>Fokasu</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-download" href="file:///home/dell/GitHub/fokasu/fokasu-website/index.html#downloads">Download</a>
+          <a href="file:///home/dell/GitHub/fokasu/fokasu-website/index.html#extension">Extension</a>
+          <a href="file:///home/dell/GitHub/fokasu/fokasu-website/index.html#pricing">Pricing</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Fokasu task planning and distraction blocking">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="hero-kicker">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 2.8 14.7 8l5.8.8-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8-4.2-4.1 5.8-.8z"></path>
+              </svg>
+              Work, but steadier
+            </p>
+
+            <h1>
+              Plan your task<br>
+              then lock distractions out
+            </h1>
+
+            <div class="hero-benefits" aria-label="Fokasu benefits">
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M8 12.5 11 15.5 16.5 8.5"></path>
+                  <path d="M12 3.5c4.7 0 8.5 3.8 8.5 8.5s-3.8 8.5-8.5 8.5S3.5 16.7 3.5 12 7.3 3.5 12 3.5z"></path>
+                </svg>
+                Quick task planning
+              </span>
+
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M7.5 10V8.2a4.5 4.5 0 1 1 9 0V10m-8.4 0h7.8a1.1 1.1 0 0 1 1.1 1.1v6.4a1.1 1.1 0 0 1-1.1 1.1H8.1A1.1 1.1 0 0 1 7 17.5v-6.4A1.1 1.1 0 0 1 8.1 10z"></path>
+                </svg>
+                Lock todos until done
+              </span>
+
+              <span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 4v5m0 0-3-3m3 3 3-3"></path>
+                  <path d="M7.5 12.5a4.5 4.5 0 1 0 9 0"></path>
+                  <path d="M12 12.5v7"></path>
+                </svg>
+                Distractions fade away
+              </span>
+            </div>
+          </div>
+
+          <div class="visual-stage">
+            <div class="stage-glow" aria-hidden="true"></div>
+
+            <div class="dashboard-shell">
+              <img class="dashboard" src="./Fokasu — Focus without distractions_files/app-screenshot.png" alt="Fokasu focus dashboard showing a 36 minute focus session and today&#39;s tasks" draggable="false">
+              <span class="dashboard-border" aria-hidden="true"></span>
+            </div>
+
+            <img class="distractions" src="./Fokasu — Focus without distractions_files/distractions.png" alt="Notifications from distracting apps including Hacker News, TikTok, Facebook, YouTube, Instagram, Reddit, X, and Discord" draggable="false">
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="locked-section" aria-label="Fokasu dashboard with distractions blocked">
+        <div class="visual-stage locked-stage">
+          <img class="locked-distractions" src="./Fokasu — Focus without distractions_files/distractions.png" alt="Dimmed notifications from distracting apps" draggable="false" style="opacity: 1; z-index: 4;">
+
+          <div class="dashboard-shell locked-dashboard-shell">
+            <img class="dashboard" src="./Fokasu — Focus without distractions_files/app-screenshot.png" alt="Fokasu focus dashboard with the distraction lock enabled" draggable="false">
+            <span class="dashboard-border" aria-hidden="true"></span>
+          </div>
+
+          <img class="lock-highlight" src="./Fokasu — Focus without distractions_files/lock_highlight.png" alt="Lock enabled indicator showing that distractions are blocked" draggable="false">
+        </div>
+      </section>
+    </main>
+    <script>
+      (() => {
+        const section = document.querySelector('.locked-section');
+        const distractions = document.querySelector('.locked-distractions');
+        if (!section || !distractions) return;
+
+        let frame;
+        const update = () => {
+          frame = undefined;
+          const rect = section.getBoundingClientRect();
+          const distance = Math.max(window.innerHeight * 0.78, 1);
+          const progress = Math.min(Math.max((window.innerHeight - rect.top) / distance, 0), 1);
+          distractions.style.opacity = String(1 - progress * 0.62);
+          distractions.style.zIndex = progress >= 0.68 ? '2' : '4';
+        };
+
+        const requestUpdate = () => {
+          if (frame === undefined) frame = requestAnimationFrame(update);
+        };
+
+        window.addEventListener('scroll', requestUpdate, { passive: true });
+        window.addEventListener('resize', requestUpdate);
+        update();
+      })();
+    </script>
+  
+
+</body></html>
