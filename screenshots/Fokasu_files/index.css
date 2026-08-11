@@ -232,17 +232,17 @@ main {
   color: #35d99b;
   font-size: 0.92rem;
   font-weight: 600;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .locked-copy h2 {
   margin: 0;
   color: #f3f6f8;
-  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-size: clamp(1.4rem, 2vw, 2rem);
   font-weight: 700;
-  line-height: 0.98;
-  letter-spacing: -0.025em;
+  line-height: 1.08;
+  letter-spacing: 0;
 }
 
 .stage-glow {
@@ -360,14 +360,6 @@ main {
   width: min(100% - 32px, 760px);
   margin: 0 auto;
   text-align: center;
-}
-
-.stats-section .habits-copy {
-  width: min(100% - 32px, 1100px);
-}
-
-.stats-section .habits-copy h2 {
-  white-space: nowrap;
 }
 
 .habits-kicker {
@@ -523,10 +515,6 @@ main {
     padding-block: 28px;
   }
 
-  .locked-copy h2 {
-    font-size: 2.3rem;
-  }
-
   .habits-section {
     gap: 24px;
     padding-block: 64px 76px;
@@ -538,10 +526,6 @@ main {
 
   .habits-copy h2 {
     font-size: 2.3rem;
-  }
-
-  .stats-section .habits-copy h2 {
-    white-space: normal;
   }
 
   .habits-visual {

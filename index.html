@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#030506" />
-    <title>Fokasu — Focus without distractions</title>
+    <title>Fokasu</title>
+    <link rel="icon" href="logo/fokasu_logo.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="logo/fokasu_logo.png" type="image/png" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -19,12 +21,16 @@
           <a class="nav-download" href="#downloads">Download</a>
           <a href="#extension">Extension</a>
           <a href="#pricing">Pricing</a>
+          <a href="how_it_works.html">How It Works</a>
         </nav>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero" aria-label="Fokasu task planning and distraction blocking">
+      <section
+        class="hero"
+        aria-label="Fokasu task planning and distraction blocking"
+      >
         <div class="hero-layout">
           <div class="hero-copy">
             <h1>
@@ -93,7 +99,10 @@
       >
         <div class="locked-copy">
           <p class="locked-kicker">Block stays put</p>
-          <h2>Even after a restart, distractions stay locked out.</h2>
+          <h2>
+            Even after a restart,<br />
+            distractions stay locked out.
+          </h2>
         </div>
 
         <div class="visual-stage locked-stage">
@@ -122,29 +131,215 @@
           />
         </div>
       </section>
+
+      <section class="habits-section" aria-label="Fokasu habit tracking">
+        <div class="habits-copy">
+          <p class="habits-kicker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 19c6.5 0 11.5-4.5 14-14-6.5 0-11.5 4.5-14 14Z" />
+              <path d="M5 19c2.1-2.9 4.5-5.1 7.4-6.8" />
+            </svg>
+            Build a rhythm
+          </p>
+          <h2>Make progress a habit.</h2>
+          <p class="habits-description">
+            Set your routine once. The scheduled to-do appears automatically,
+            keeping consistency effortless.
+          </p>
+        </div>
+
+        <div class="habits-visual">
+          <div class="habits-glow" aria-hidden="true"></div>
+          <div class="habits-image-shell">
+            <img
+              src="screenshots/habits.png"
+              alt="Fokasu habits dashboard showing incomplete, completed, and failed routines"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="habits-section groups-section"
+        aria-label="Fokasu group goals"
+      >
+        <div class="habits-copy">
+          <p class="habits-kicker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M8.5 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+              <path d="M15.5 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+              <path d="M3.5 19a5 5 0 0 1 10 0m1.5-4a4.5 4.5 0 0 1 5.5 4" />
+            </svg>
+            Make progress together
+          </p>
+          <h2>Turn shared goals into finished work.</h2>
+          <p class="habits-description">
+            Create a group, set a shared goal, and work toward it together.
+          </p>
+        </div>
+
+        <div class="habits-visual">
+          <div class="habits-glow" aria-hidden="true"></div>
+          <div class="habits-image-shell">
+            <img
+              src="screenshots/Groups.png"
+              alt="Fokasu group dashboard showing a shared goal, progress trail, and member tasks"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="habits-section friends-section"
+        aria-label="Fokasu friends and accountability"
+      >
+        <div class="habits-copy">
+          <p class="habits-kicker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M8.5 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+              <path d="M15.5 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+              <path d="M3.5 19a5 5 0 0 1 10 0m1.5-4a4.5 4.5 0 0 1 5.5 4" />
+            </svg>
+            Stay accountable
+          </p>
+          <h2>Keep your circle moving.</h2>
+          <p class="habits-description">
+            See your focus circle at a glance, share the momentum, and stay
+            motivated.
+          </p>
+        </div>
+
+        <div class="habits-visual">
+          <div class="habits-glow" aria-hidden="true"></div>
+          <div class="habits-image-shell">
+            <img
+              src="screenshots/friends.png"
+              alt="Fokasu friends dashboard showing friends, focus streaks, and ongoing progress"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="habits-section stats-section"
+        aria-label="Fokasu progress statistics"
+      >
+        <div class="habits-copy">
+          <p class="habits-kicker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 19V5" />
+              <path d="M5 19h14" />
+              <path d="M8 16v-4m4 4V8m4 8V5" />
+            </svg>
+            See your progress
+          </p>
+          <h2>See what you’ve accomplished.</h2>
+          <p class="habits-description">
+            Keep track of what you’ve accomplished through graphs and heatmaps.
+          </p>
+        </div>
+
+        <div class="habits-visual">
+          <div class="habits-glow" aria-hidden="true"></div>
+          <div class="habits-image-shell">
+            <img
+              src="screenshots/stats.png"
+              alt="Fokasu stats dashboard showing focused minutes, completed todos, and a weekly bar graph"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <script>
       (() => {
-        const section = document.querySelector('.locked-section');
-        const distractions = document.querySelector('.locked-distractions');
-        if (!section || !distractions) return;
+        const section = document.querySelector(".locked-section");
+        const distractions = document.querySelector(".locked-distractions");
+        const featureSections = [
+          ...document.querySelectorAll(".habits-section"),
+        ];
+        if ((!section || !distractions) && featureSections.length === 0) return;
+
+        const prefersReducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
 
         let frame;
         const update = () => {
           frame = undefined;
-          const rect = section.getBoundingClientRect();
-          const distance = Math.max(window.innerHeight * 0.78, 1);
-          const progress = Math.min(Math.max((window.innerHeight - rect.top) / distance, 0), 1);
-          distractions.style.opacity = String(1 - progress * 0.62);
-          distractions.style.zIndex = progress >= 0.68 ? '2' : '4';
+          if (section && distractions) {
+            const rect = section.getBoundingClientRect();
+            const distance = Math.max(window.innerHeight * 0.78, 1);
+            const progress = Math.min(
+              Math.max((window.innerHeight - rect.top) / distance, 0),
+              1,
+            );
+            distractions.style.opacity = String(1 - progress * 0.62);
+            distractions.style.zIndex = progress >= 0.68 ? "2" : "4";
+          }
+
+          featureSections.forEach((featureSection) => {
+            if (prefersReducedMotion) {
+              featureSection.style.setProperty("--feature-image-opacity", "1");
+              featureSection.style.setProperty("--feature-image-blur", "0px");
+              featureSection.style.setProperty("--feature-image-shift", "0px");
+              featureSection.style.setProperty("--feature-image-scale", "1");
+              featureSection.style.setProperty(
+                "--feature-image-saturation",
+                "1",
+              );
+              featureSection.style.setProperty("--feature-glow-opacity", "1");
+              featureSection.style.setProperty("--feature-glow-scale", "1");
+              return;
+            }
+
+            const rect = featureSection.getBoundingClientRect();
+            const start = window.innerHeight * 0.9;
+            const finish = window.innerHeight * 0.28;
+            const progress = Math.min(
+              Math.max((start - rect.top) / (start - finish), 0),
+              1,
+            );
+            featureSection.style.setProperty(
+              "--feature-image-opacity",
+              String(0.64 + progress * 0.36),
+            );
+            featureSection.style.setProperty(
+              "--feature-image-blur",
+              `${(1 - progress) * 1.2}px`,
+            );
+            featureSection.style.setProperty(
+              "--feature-image-shift",
+              `${(1 - progress) * 26}px`,
+            );
+            featureSection.style.setProperty(
+              "--feature-image-scale",
+              String(0.985 + progress * 0.015),
+            );
+            featureSection.style.setProperty(
+              "--feature-image-saturation",
+              String(0.86 + progress * 0.14),
+            );
+            featureSection.style.setProperty(
+              "--feature-glow-opacity",
+              String(0.28 + progress * 0.72),
+            );
+            featureSection.style.setProperty(
+              "--feature-glow-scale",
+              String(0.86 + progress * 0.14),
+            );
+          });
         };
 
         const requestUpdate = () => {
           if (frame === undefined) frame = requestAnimationFrame(update);
         };
 
-        window.addEventListener('scroll', requestUpdate, { passive: true });
-        window.addEventListener('resize', requestUpdate);
+        window.addEventListener("scroll", requestUpdate, { passive: true });
+        window.addEventListener("resize", requestUpdate);
         update();
       })();
     </script>

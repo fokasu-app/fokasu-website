@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030506" />
+    <title>How it works — Fokasu</title>
+    <link rel="icon" href="logo/fokasu_logo.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="logo/fokasu_logo.png" type="image/png" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="how_it_works.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="index.html" aria-label="Fokasu home">
+          <img src="logo/fokasu_logo.svg" alt="" aria-hidden="true" />
+          <span>Fokasu</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-download" href="#downloads">Download</a>
+          <a href="#extension">Extension</a>
+          <a href="#pricing">Pricing</a>
+          <a href="how_it_works.html">How It Works</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="how-it-works-page">
+      <aside class="how-it-works-sidebar" aria-label="How it works navigation">
+        <nav class="how-it-works-nav" aria-label="How it works sections">
+          <a href="#blocks">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7.5 10V8.2a4.5 4.5 0 1 1 9 0V10m-8.4 0h7.8a1.1 1.1 0 0 1 1.1 1.1v6.4a1.1 1.1 0 0 1-1.1 1.1H8.1A1.1 1.1 0 0 1 7 17.5v-6.4A1.1 1.1 0 0 1 8.1 10z" />
+            </svg>
+            <span>Blocks</span>
+          </a>
+          <a href="#groups">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M8.5 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+              <path d="M15.5 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+              <path d="M3.5 19a5 5 0 0 1 10 0m1.5-4a4.5 4.5 0 0 1 5.5 4" />
+            </svg>
+            <span>Groups</span>
+          </a>
+          <a href="#habits">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 19c6.5 0 11.5-4.5 14-14-6.5 0-11.5 4.5-14 14Z" />
+              <path d="M5 19c2.1-2.9 4.5-5.1 7.4-6.8" />
+            </svg>
+            <span>Habits</span>
+          </a>
+          <a href="#strict-mode">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="m13.5 3-7 10h5l-.5 8 7-11h-5l.5-7Z" />
+            </svg>
+            <span>Strict Mode</span>
+          </a>
+        </nav>
+      </aside>
+
+      <section class="how-it-works-content" aria-live="polite">
+        <h1 id="how-it-works-title">How it works: Blocks</h1>
+      </section>
+    </main>
+
+    <script>
+      (() => {
+        const title = document.querySelector('#how-it-works-title');
+        if (!title) return;
+
+        const headings = {
+          blocks: 'How it works: Blocks',
+          groups: 'How it works: Groups',
+          habits: 'How it works: Habits',
+          'strict-mode': 'How it works: Strict Mode',
+        };
+
+        const updateHeading = () => {
+          const section = window.location.hash.slice(1);
+          title.textContent = headings[section] || headings.blocks;
+        };
+
+        window.addEventListener('hashchange', updateHeading);
+        updateHeading();
+      })();
+    </script>
+  </body>
+</html>

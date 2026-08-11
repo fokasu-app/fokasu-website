@@ -1,0 +1,105 @@
+.how-it-works-page {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  width: 100%;
+  min-height: calc(100svh - 68px);
+}
+
+.how-it-works-sidebar {
+  position: sticky;
+  top: 68px;
+  align-self: start;
+  min-height: calc(100svh - 68px);
+  padding: clamp(24px, 4vh, 40px) clamp(18px, 2vw, 32px);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(11, 17, 18, 0.48), rgba(3, 5, 6, 0.12) 72%),
+    rgba(5, 8, 9, 0.34);
+}
+
+.how-it-works-nav {
+  display: grid;
+  gap: 6px;
+}
+
+.how-it-works-nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #b1bac4;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.how-it-works-nav svg {
+  flex: 0 0 auto;
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: #35d99b;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.how-it-works-nav a:hover,
+.how-it-works-nav a:focus-visible,
+.how-it-works-nav a:target {
+  color: #f1f3f5;
+  border-color: rgba(53, 217, 155, 0.18);
+  background: rgba(53, 217, 155, 0.08);
+}
+
+.how-it-works-content {
+  min-height: calc(100svh - 68px);
+  padding: clamp(24px, 4vh, 40px) clamp(28px, 5vw, 80px);
+}
+
+.how-it-works-content h1 {
+  margin: 0;
+  color: #f3f6f8;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+}
+
+@media (max-width: 620px) {
+  .how-it-works-page {
+    display: block;
+    width: 100%;
+  }
+
+  .how-it-works-sidebar {
+    position: static;
+    min-height: auto;
+    padding: 20px 12px 20px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .how-it-works-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px 8px;
+  }
+
+  .how-it-works-nav a {
+    padding: 11px 8px;
+    font-size: 0.95rem;
+  }
+
+  .how-it-works-content {
+    min-height: calc(100svh - 60px);
+    padding: 24px 20px 48px;
+  }
+
+  .how-it-works-content h1 {
+    font-size: 2.3rem;
+  }
+}
