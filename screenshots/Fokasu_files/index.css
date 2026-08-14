@@ -81,29 +81,9 @@ body {
   transition: color 180ms ease;
 }
 
-.site-nav a::after {
-  position: absolute;
-  right: 0;
-  bottom: 14px;
-  left: 0;
-  height: 2px;
-  border-radius: 999px;
-  background: #35d99b;
-  content: "";
-  opacity: 0;
-  transform: scaleX(0.35);
-  transition: opacity 180ms ease, transform 180ms ease;
-}
-
 .site-nav a:hover,
 .site-nav a:focus-visible {
   color: #f1f3f5;
-}
-
-.site-nav a:hover::after,
-.site-nav a:focus-visible::after {
-  opacity: 1;
-  transform: scaleX(1);
 }
 
 .site-nav .nav-download {
@@ -327,14 +307,6 @@ main {
 
 .locked-dashboard-shell {
   z-index: 3;
-}
-
-.locked-dashboard-shell .dashboard-border {
-  border-color: rgba(112, 255, 194, 0.7);
-  box-shadow:
-    0 0 0 1px rgba(84, 255, 178, 0.18),
-    0 0 24px rgba(56, 239, 157, 0.32),
-    0 0 68px rgba(32, 192, 123, 0.24);
 }
 
 .lock-highlight {
@@ -574,8 +546,7 @@ main {
   }
 
   .locked-dashboard-shell .dashboard-border {
-    animation-delay: -1.3s;
-    animation-duration: 4.6s;
+    animation: none;
   }
 
   .distractions {

@@ -21,7 +21,14 @@
           <a class="nav-download" href="#downloads">Download</a>
           <a href="#extension">Extension</a>
           <a href="#pricing">Pricing</a>
-          <a href="how_it_works.html">How It Works</a>
+          <a
+            class="nav-how-blocks"
+            href="how_it_works.html"
+            aria-label="How Block Works"
+          >
+            <span class="nav-label-full">How Block Works</span>
+            <span class="nav-label-short" aria-hidden="true">Block</span>
+          </a>
         </nav>
       </div>
     </header>
@@ -254,6 +261,35 @@
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Fokasu home">
+            <img src="logo/fokasu_logo.svg" alt="" aria-hidden="true" />
+            <span>Fokasu</span>
+          </a>
+          <p>Focus on what matters. Let Fokasu handle the distractions.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#top">Home</a>
+          <a href="#how-it-works">How Block Works</a>
+          <a href="how_it_works.html">Guides</a>
+        </nav>
+
+        <div class="footer-note">
+          <p>Built for focused work.</p>
+          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Fokasu</p>
+          <p>Focus without distractions.</p>
+        </div>
+      </div>
+    </footer>
+
     <script>
       (() => {
         const section = document.querySelector(".locked-section");
