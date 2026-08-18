@@ -1,0 +1,144 @@
+.privacy-page {
+  width: min(100% - 40px, 1100px);
+  margin: 0 auto;
+  padding: clamp(72px, 10vw, 132px) 0 104px;
+}
+
+.privacy-hero {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.privacy-kicker {
+  margin: 0 0 18px;
+  color: #6ef0b9;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.privacy-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  color: #f1f3f5;
+  font-size: clamp(2.6rem, 6vw, 5.4rem);
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+}
+
+.privacy-hero p:last-child {
+  max-width: 650px;
+  margin: 24px 0 0;
+  color: #9299a5;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.privacy-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 330px);
+  align-items: start;
+  gap: 22px;
+}
+
+.privacy-card,
+.privacy-note {
+  border: 1px solid rgba(110, 240, 185, 0.16);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(19, 28, 28, 0.94), rgba(7, 11, 12, 0.94));
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22);
+}
+
+.privacy-card {
+  padding: clamp(26px, 5vw, 52px);
+}
+
+.privacy-card h2 {
+  margin: 0 0 20px;
+  color: #f1f3f5;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  letter-spacing: -0.035em;
+}
+
+.privacy-card h2:not(:first-child) {
+  margin-top: 48px;
+}
+
+.privacy-card h3 {
+  margin: 30px 0 9px;
+  color: #dffbef;
+  font-size: 1.08rem;
+  letter-spacing: -0.015em;
+}
+
+.privacy-card p,
+.privacy-card li,
+.privacy-note p {
+  color: #aeb6bf;
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+.privacy-card p {
+  margin: 0 0 16px;
+}
+
+.privacy-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 12px 0 20px;
+  padding-left: 22px;
+}
+
+.privacy-card strong,
+.privacy-note strong {
+  color: #e9fff4;
+}
+
+.privacy-card a,
+.privacy-note a {
+  color: #6ef0b9;
+  text-underline-offset: 3px;
+}
+
+.privacy-note {
+  position: sticky;
+  top: 96px;
+  padding: 26px;
+}
+
+.privacy-note-label {
+  margin: 0 0 12px;
+  color: #6ef0b9;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.privacy-note h2 {
+  margin: 0 0 12px;
+  color: #f1f3f5;
+  font-size: 1.35rem;
+  letter-spacing: -0.035em;
+}
+
+.privacy-note p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .privacy-page {
+    width: min(100% - 28px, 1100px);
+    padding: 62px 0 72px;
+  }
+
+  .privacy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-note {
+    position: static;
+  }
+}
