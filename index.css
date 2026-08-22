@@ -101,6 +101,23 @@ body {
   color: #f1f3f5;
 }
 
+.site-nav .nav-how-blocks {
+  padding: 8px 13px;
+  border: 1px solid rgba(53, 217, 155, 0.22);
+  border-radius: 999px;
+  color: #b9d8cd;
+  background: rgba(53, 217, 155, 0.07);
+  box-shadow: 0 0 16px rgba(53, 217, 155, 0.05);
+}
+
+.site-nav .nav-how-blocks:hover,
+.site-nav .nav-how-blocks:focus-visible,
+.site-nav .nav-how-blocks[aria-current="page"] {
+  border-color: rgba(105, 255, 194, 0.42);
+  color: #e5fff5;
+  background: rgba(53, 217, 155, 0.12);
+}
+
 .nav-label-short {
   display: none;
 }
@@ -924,6 +941,10 @@ main {
 
   .site-nav .nav-download {
     padding: 8px 12px;
+  }
+
+  .site-nav .nav-how-blocks {
+    padding: 7px 10px;
   }
 
   .hero {

@@ -203,13 +203,16 @@
   display: grid;
   justify-items: center;
   gap: 14px;
-  width: 100%;
+  justify-self: center;
+  width: fit-content;
+  max-width: 100%;
 }
 
 #install-extension .step-note--extension-required,
 #install-extension .step-note--browser-support {
   justify-self: center;
-  width: fit-content;
+  box-sizing: border-box;
+  width: 100%;
   max-width: min(100%, 900px);
   margin-top: 4px;
 }
