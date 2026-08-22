@@ -21,7 +21,12 @@
 
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-download" href="index.html#downloads">Download</a>
-          <a href="index.html#extension">Extension</a>
+          <a
+            href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
+          >Extension</a>
           <a href="privacy.html">Privacy</a>
           <a
             class="nav-how-blocks"
@@ -42,123 +47,246 @@
           <h1>How Block Works</h1>
         </header>
 
-        <section class="block-step" id="setup">
+        <header class="flow-heading flow-heading--enable">
+          <h2>Enable Blocking</h2>
+        </header>
+
+        <section class="block-step" id="install-extension">
           <div class="step-copy">
-            <p class="step-kicker">Setup</p>
-            <h2>Install the extension first.</h2>
-            <p>Then activate it in incognito or private mode.</p>
+            <p class="step-kicker">Step 1 · Extension</p>
+            <h2>
+              Install the extension from
+              <a
+                class="extension-popup-link"
+                href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
+              >here</a>.
+            </h2>
+            <p>
+              Incognito access lets Fokasu enforce your block there too. Your
+              website data stays inside your browser and is used only for
+              blocking.
+            </p>
           </div>
 
           <figure class="step-media step-media--wide">
             <img
-              src="screenshots/how-it-works-for-blocks/chrome-web-store.png"
+              src="screenshots/new-how-it-works-for-blocks/chrome-extension-webstore.png"
               alt="Chrome Web Store page for the Fokasu extension"
               draggable="false"
             />
+            <span class="screenshot-highlight screenshot-highlight--install-button" aria-hidden="true"></span>
+          </figure>
+
+          <div class="step-note-stack">
+            <aside class="step-note step-note--extension-required">
+              <strong>Extension required</strong>
+              If Focus Lock is active and the extension is not installed or
+              enabled, Fokasu closes the browser to keep the block enforced.
+            </aside>
+
+            <aside class="step-note step-note--browser-support">
+              <strong>Browser support</strong>
+              Chrome, Brave, other Chromium browsers, and Firefox are
+              supported. Other browsers are closed while a block is active.
+            </aside>
+          </div>
+        </section>
+
+        <section class="block-step" id="set-focus-goal">
+          <div class="step-copy">
+            <p class="step-kicker">Step 2 · Focus goal</p>
+            <h2>Open the header lock.</h2>
+            <p>
+              Click the lock icon in the header (beside the online status
+              information) to begin setting up your focus goal.
+            </p>
+          </div>
+
+          <figure class="step-media has-lock-highlight">
+            <img
+              src="screenshots/new-how-it-works-for-blocks/dashboard.png"
+              alt="Fokasu dashboard with the focus lock in the header highlighted"
+              draggable="false"
+            />
+            <span class="screenshot-highlight screenshot-highlight--header-lock" aria-hidden="true"></span>
           </figure>
         </section>
 
-        <section class="block-step" id="block-list">
+        <div class="block-step block-step--focus-settings">
           <div class="step-copy">
-            <p class="step-kicker">Block list</p>
-            <h2>Add the sites you want blocked.</h2>
+            <p class="step-kicker">Step 2 · Focus settings</p>
+            <h2>Set your focus time.</h2>
             <p>
-              For example, <code>reddit.com</code> means Reddit is blocked.
+              Choose how long you want to focus. If this is your first run,
+              try a one-minute commitment to learn the flow.
             </p>
           </div>
 
           <figure class="step-media">
             <img
-              src="screenshots/how-it-works-for-blocks/block-list.png"
-              alt="Block list showing reddit.com as blocked"
+              src="screenshots/new-how-it-works-for-blocks/setting-locks.png"
+              alt="Focus Lock dialog for setting the focus goal and break reward percentage"
               draggable="false"
             />
+            <span class="screenshot-highlight screenshot-highlight--focus-time" aria-hidden="true"></span>
+          </figure>
+
+          <aside class="step-note step-note--break-reward">
+            <strong>Optional break reward</strong>
+            Choose a percentage of each completed todo to receive as break
+            time.
+          </aside>
+        </div>
+
+        <section class="block-step" id="confirm-lock">
+          <div class="step-copy">
+            <p class="step-kicker">Step 3 · Lock active</p>
+            <h2>The sidebar shows that your lock is running.</h2>
+            <p>
+              The progress bar begins at zero and grows as completed todo time
+              counts toward your focus goal.
+            </p>
+          </div>
+
+          <figure class="step-media has-progress-highlight">
+            <img
+              src="screenshots/new-how-it-works-for-blocks/lock-enabled.png"
+              alt="Active focus lock with its progress bar highlighted in the sidebar"
+              draggable="false"
+            />
+            <span class="screenshot-highlight screenshot-highlight--progress" aria-hidden="true"></span>
           </figure>
         </section>
 
-        <section class="block-step" id="exceptions">
+        <section class="block-step" id="build-block-list">
           <div class="step-copy">
-            <p class="step-kicker">Exceptions</p>
-            <h2>Keep narrow paths open.</h2>
+            <p class="step-kicker">Step 4 · Block list</p>
+            <h2>Add the websites you want out of reach.</h2>
             <p>
-              For example, <code>reddit.com/r/*</code> can stay unlocked.
+              Open <strong>Block</strong> from the sidebar, enter a website or
+              keyword, then select the plus button. For example,
+              <code>reddit.com</code> blocks Reddit.
             </p>
           </div>
 
           <figure class="step-media">
             <img
-              src="screenshots/how-it-works-for-blocks/exception-list.png"
-              alt="Exception list allowing a narrow Reddit path"
+              src="screenshots/new-how-it-works-for-blocks/block-list.png"
+              alt="Fokasu block list with reddit.com added"
               draggable="false"
             />
+            <span class="screenshot-highlight screenshot-highlight--block-input" aria-hidden="true"></span>
           </figure>
-        </section>
 
-        <section class="block-step" id="lock">
-          <div class="step-copy">
-            <p class="step-kicker">Lock</p>
-            <h2>Choose today&apos;s todos, then enable the lock.</h2>
+          <aside class="step-note step-note--exceptions">
+            <strong>Exceptions and wildcards</strong>
             <p>
-              Use the dashboard lock or sidebar &gt; Block &gt; Manage Block.
-              Only today&apos;s todos are selectable.
+              Use the exception list when part of a blocked website should
+              remain available.
             </p>
-          </div>
-
-          <figure class="step-media">
-            <img
-              src="screenshots/how-it-works-for-blocks/select-todos-for-lock.png"
-              alt="Select todos for the lock"
-              draggable="false"
-            />
-          </figure>
+            <p>
+              For example, block <code>reddit.com</code>, then add
+              <code>reddit.com/r/*</code> as an exception.
+            </p>
+            <p>
+              The <code>*</code> wildcard matches anything that comes after
+              <code>/r/</code>.
+            </p>
+          </aside>
         </section>
 
-        <section class="block-step" id="blocked">
+        <section class="block-step" id="test-block">
           <div class="step-copy">
-            <p class="step-kicker">Blocked</p>
-            <h2>Blocked sites stay blocked.</h2>
+            <p class="step-kicker">Step 5 · Try it</p>
+            <h2>Open the site. Fokasu stops it.</h2>
             <p>
-              If the extension is disabled or removed, the browser shuts down
-              after the grace period.
+              The block page confirms that your focus session is active. Even
+              if you quit Fokasu or restart your computer, the block remains
+              enforced.
             </p>
           </div>
 
           <figure class="step-media step-media--wide">
             <img
-              src="screenshots/how-it-works-for-blocks/block-html.png"
-              alt="Blocked site page shown when a blocked site is opened"
+              src="screenshots/new-how-it-works-for-blocks/website-blocked.png"
+              alt="Fokasu page confirming that reddit.com is blocked during an active focus session"
               draggable="false"
             />
           </figure>
+
+          <aside class="step-note step-note--while-locked">
+            <strong>While locked</strong>
+            You can add to the block list and remove from the exception list,
+            but not weaken either list.
+          </aside>
         </section>
 
-        <section class="block-step" id="shutdown">
-          <div class="shutdown-content">
-            <figure class="step-media step-media--compact step-media--notification">
-              <img
-                src="screenshots/how-it-works-for-blocks/notification.png"
-                alt="Notification showing the browser will close after the extension is disabled or removed"
-                draggable="false"
-              />
-            </figure>
+        <header class="flow-heading flow-heading--disable">
+          <h2>Disable Blocking</h2>
+        </header>
 
-            <div class="step-copy">
-              <p class="step-kicker">Shutdown</p>
-              <h2>If the extension is disabled, the browser closes.</h2>
-              <p>After the grace period, the app shuts the browser down.</p>
-            </div>
+        <section class="block-step" id="complete-todos">
+          <div class="step-copy">
+            <p class="step-kicker">Step 6 · Create a todo</p>
+            <h2>Give the todo an estimated focus time.</h2>
+            <p>
+              Create a todo from the sidebar&apos;s Create button or shortcut Ctrl
+              + Shift + T.
+            </p>
+          </div>
+
+          <figure class="step-media">
+            <img
+              src="screenshots/new-how-it-works-for-blocks/create-todo.png"
+              alt="Create Todo dialog with a one-minute estimated time"
+              draggable="false"
+            />
+            <span class="screenshot-highlight screenshot-highlight--estimated-time" aria-hidden="true"></span>
+          </figure>
+        </section>
+
+        <div class="block-step block-step--todo-running" id="todo-running">
+          <div class="step-copy">
+            <p class="step-kicker">Step 6 · Earn progress</p>
+            <h2>Complete the todo to advance your focus goal.</h2>
+            <p>
+              Start the todo and finish its focused time. Once completed, the
+              completed time contributes to the committed focus time.
+            </p>
+          </div>
+
+          <figure class="step-media">
+            <img
+              src="screenshots/new-how-it-works-for-blocks/todo-created.png"
+              alt="One-minute todo running on the Fokasu dashboard"
+              draggable="false"
+            />
+          </figure>
+        </div>
+
+        <section class="block-step block-step--finish" id="unlock">
+          <div class="step-copy">
+            <p class="step-kicker">Step 7 · Goal met</p>
+            <h2>Complete your committed focus goal to unlock the block list.</h2>
+            <p>
+              Finish one one-minute todo—or two 30-second todos. Completed time
+              adds together.
+            </p>
+          </div>
+
+          <div class="completion-card" aria-label="Focus goal completion flow">
+            <span>Todo complete</span>
+            <span aria-hidden="true">→</span>
+            <span>Focus goal met</span>
+            <span aria-hidden="true">→</span>
+            <span>Block list unlocked</span>
           </div>
         </section>
-
       </section>
 
-      <aside class="blocking-note" aria-label="Blocking rules note">
-        <p class="blocking-note-label">NOTE</p>
-        <p class="blocking-note-copy">
-          Once blocking is on, your block list only grows and your exception
-          list only shrinks.
-        </p>
-      </aside>
     </main>
 
     <footer class="site-footer">
@@ -178,14 +306,8 @@
           <a href="privacy.html">Privacy</a>
         </nav>
 
-        <div class="footer-note">
-          <p>Built for focused work.</p>
-          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
-        </div>
-
         <div class="footer-bottom">
           <p>© 2026 Fokasu</p>
-          <p>Focus without distractions.</p>
         </div>
       </div>
     </footer>

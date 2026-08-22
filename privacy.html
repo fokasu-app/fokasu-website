@@ -25,7 +25,12 @@
 
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-download" href="index.html#downloads">Download</a>
-          <a href="index.html#extension">Extension</a>
+          <a
+            href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
+          >Extension</a>
           <a href="privacy.html" aria-current="page">Privacy</a>
           <a
             class="nav-how-blocks"
@@ -162,14 +167,8 @@
           <a href="privacy.html" aria-current="page">Privacy</a>
         </nav>
 
-        <div class="footer-note">
-          <p>Built for focused work.</p>
-          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
-        </div>
-
         <div class="footer-bottom">
           <p>© 2026 Fokasu</p>
-          <p>Focus without distractions.</p>
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@
     <link rel="alternate icon" href="logo/fokasu_logo.png" type="image/png" />
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body id="top">
     <header class="site-header">
       <div class="site-header-inner">
         <a class="brand" href="#top" aria-label="Fokasu home">
@@ -20,7 +20,12 @@
 
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-download" href="#downloads">Download</a>
-          <a href="#extension">Extension</a>
+          <a
+            href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
+          >Extension</a>
           <a href="privacy.html">Privacy</a>
           <a
             class="nav-how-blocks"
@@ -34,7 +39,7 @@
       </div>
     </header>
 
-    <main id="top">
+    <main>
       <section
         class="hero"
         aria-label="Fokasu task planning and distraction blocking"
@@ -83,8 +88,8 @@
             <div class="dashboard-shell">
               <img
                 class="dashboard"
-                src="screenshots/app-screenshot.png"
-                alt="Fokasu focus dashboard showing a 36 minute focus session and today's tasks"
+                src="screenshots/new-app-screenshot.png"
+                alt="Fokasu focus dashboard showing a 60 minute focus session and today's tasks"
                 draggable="false"
               />
               <span class="dashboard-border" aria-hidden="true"></span>
@@ -124,19 +129,22 @@
           <div class="dashboard-shell locked-dashboard-shell">
             <img
               class="dashboard"
-              src="screenshots/app-screenshot.png"
+              src="screenshots/new-app-screenshot.png"
               alt="Fokasu focus dashboard with the distraction lock enabled"
               draggable="false"
             />
             <span class="dashboard-border" aria-hidden="true"></span>
+            <div
+              class="lock-callout"
+              role="img"
+              aria-label="Enable Lock"
+            >
+              <span class="lock-callout-marker" aria-hidden="true"></span>
+              <span class="lock-callout-card" aria-hidden="true">
+                <strong>Enable Lock</strong>
+              </span>
+            </div>
           </div>
-
-          <img
-            class="lock-highlight"
-            src="screenshots/dashboard-locked/lock_highlight.png"
-            alt="Lock enabled indicator showing that distractions are blocked"
-            draggable="false"
-          />
         </div>
       </section>
 
@@ -280,14 +288,8 @@
           <a href="privacy.html">Privacy</a>
         </nav>
 
-        <div class="footer-note">
-          <p>Built for focused work.</p>
-          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
-        </div>
-
         <div class="footer-bottom">
           <p>© 2026 Fokasu</p>
-          <p>Focus without distractions.</p>
         </div>
       </div>
     </footer>
