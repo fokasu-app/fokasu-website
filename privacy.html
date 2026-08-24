@@ -17,7 +17,7 @@
   <body>
     <header class="site-header">
       <div class="site-header-inner">
-        <a class="brand" href="index.html#top" aria-label="Fokasu home">
+        <a class="brand" href="index.html" aria-label="Fokasu home">
           <img src="logo/fokasu_logo.svg" alt="" aria-hidden="true" />
           <span>Fokasu</span>
           <span class="brand-beta">BETA</span>
@@ -26,12 +26,13 @@
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-download" href="index.html#downloads">Download</a>
           <a
+            class="nav-secondary"
             href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
             target="_blank"
             rel="noopener noreferrer"
             onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
           >Extension</a>
-          <a href="privacy.html" aria-current="page">Privacy</a>
+          <a class="nav-secondary" href="privacy.html" aria-current="page">Privacy</a>
           <a
             class="nav-how-blocks"
             href="how_it_works.html"
@@ -40,6 +41,19 @@
             <span class="nav-label-full">How Block Works</span>
             <span class="nav-label-short" aria-hidden="true">Block</span>
           </a>
+          <details class="nav-more">
+            <summary aria-label="Show more navigation options">
+              <span aria-hidden="true">⌄</span>
+            </summary>
+            <div class="nav-more-menu">
+              <a
+                href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Extension</a>
+              <a href="privacy.html" aria-current="page">Privacy</a>
+            </div>
+          </details>
         </nav>
       </div>
     </header>
@@ -72,52 +86,25 @@
             database.
           </p>
 
-          <h3>Local health heartbeat</h3>
-          <p>
-            When browser protection is enabled, the extension sends a small
-            heartbeat to the Fokasu desktop app running on the same device. The
-            heartbeat contains the browser family, whether an incognito or
-            private window is active, whether the extension is allowed in that
-            mode, the extension ID, and a timestamp.
-          </p>
-          <p>
-            This heartbeat is used only to confirm extension health and private
-            browsing coverage. It is sent to the local app over loopback at
-            <code>127.0.0.1:27843</code>, not to a public network service.
-          </p>
-
-          <h3>Blocking configuration</h3>
-          <p>
-            The desktop app sends your configured block and exception patterns,
-            along with the current focus-session state, to the extension over
-            the same local connection. The extension uses that configuration to
-            create browser blocking rules. These patterns are your settings,
-            not a record of the pages you visit.
-          </p>
-
           <h2>How data is used and shared</h2>
           <p>
             Fokasu uses the information described above only to provide,
             maintain, and secure its focus-session website-blocking feature.
             We do not sell it, use it for personalized advertising, or share it
             with advertising platforms, data brokers, or unrelated third
-            parties. The browser extension shares its heartbeat only with the
-            user's Fokasu desktop app on the same device.
+            parties. Browser-protection data remains on the user's device.
           </p>
           <p>
-            The extension's first-run consent choice is stored in local browser
-            extension storage. Dynamic blocking rules may persist in the
-            browser so protection can recover after a service-worker restart;
-            those rules contain configured patterns, not visited-page history.
+            Choices and settings needed to provide browser protection may be
+            stored locally. They do not contain visited-page history.
           </p>
 
           <h2>Incognito and private browsing</h2>
           <p>
             If you enable the extension's incognito or private-window access,
             Fokasu can enforce the same blocking rules in those windows. The
-            extension does not save or transmit private tab URLs. It reports
-            only the private-window coverage state in its local health
-            heartbeat.
+            extension does not save or transmit private tab URLs. The same
+            privacy protections described above apply in those windows.
           </p>
 
           <h2>Your choices</h2>
@@ -125,9 +112,9 @@
             On first run, you can decline the local browser connection instead
             of granting consent. You can later remove the extension, disable
             its incognito access, or stop using the Fokasu desktop application.
-            Removing the extension removes its local extension storage and
-            browser rules; configured block lists stored by the desktop app can
-            be removed through the app's own settings or local data removal.
+            Removing the extension removes its locally stored extension data.
+            Settings stored by the desktop app can be removed through the app's
+            own settings or local data removal.
           </p>
 
           <h2>Changes and questions</h2>
@@ -143,9 +130,8 @@
           <h2>Local blocking. No browsing history sent.</h2>
           <p>
             Fokasu reads URLs only to enforce the block rules you chose. The
-            extension's only automatic data connection is to the desktop app on
-            your own device, and the only browser data sent there is the health
-            heartbeat described above.
+            processing stays on your device, and Fokasu does not receive your
+            browsing history through remote services.
           </p>
         </aside>
       </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#030506" />
-    <title>How blocks work — Fokasu</title>
+    <title>Fokasu</title>
     <link rel="icon" href="logo/fokasu_logo.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="logo/fokasu_logo.png" type="image/png" />
     <link rel="stylesheet" href="index.css" />
@@ -13,7 +13,7 @@
   <body>
     <header class="site-header">
       <div class="site-header-inner">
-        <a class="brand" href="index.html#top" aria-label="Fokasu home">
+        <a class="brand" href="index.html" aria-label="Fokasu home">
           <img src="logo/fokasu_logo.svg" alt="" aria-hidden="true" />
           <span>Fokasu</span>
           <span class="brand-beta">BETA</span>
@@ -22,12 +22,13 @@
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-download" href="index.html#downloads">Download</a>
           <a
+            class="nav-secondary"
             href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
             target="_blank"
             rel="noopener noreferrer"
             onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
           >Extension</a>
-          <a href="privacy.html">Privacy</a>
+          <a class="nav-secondary" href="privacy.html">Privacy</a>
           <a
             class="nav-how-blocks"
             href="how_it_works.html"
@@ -37,6 +38,19 @@
             <span class="nav-label-full">How Block Works</span>
             <span class="nav-label-short" aria-hidden="true">Block</span>
           </a>
+          <details class="nav-more">
+            <summary aria-label="Show more navigation options">
+              <span aria-hidden="true">⌄</span>
+            </summary>
+            <div class="nav-more-menu">
+              <a
+                href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Extension</a>
+              <a href="privacy.html">Privacy</a>
+            </div>
+          </details>
         </nav>
       </div>
     </header>
@@ -47,11 +61,42 @@
           <h1>How Block Works</h1>
         </header>
 
+        <aside class="block-overview" aria-labelledby="block-overview-title">
+          <h2 id="block-overview-title">The focus lock cycle</h2>
+          <ol class="block-overview-flow">
+            <li>
+              <span class="overview-step-number">1</span>
+              <span class="overview-step-copy">
+                <strong>Set a focus goal</strong>
+                <span>Setting a timed focus goal enables blocking.</span>
+              </span>
+            </li>
+            <li>
+              <span class="overview-step-number">2</span>
+              <span class="overview-step-copy">
+                <strong>Complete todos</strong>
+                <span>Completing todos contributes to your goal.</span>
+              </span>
+            </li>
+            <li>
+              <span class="overview-step-number">3</span>
+              <span class="overview-step-copy">
+                <strong>Unlock automatically</strong>
+                <span>Blocking ends when your focus goal is achieved.</span>
+              </span>
+            </li>
+          </ol>
+        </aside>
+
+        <header class="flow-heading flow-heading--enable">
+          <h2>Enable Blocking</h2>
+        </header>
+
         <section class="block-step" id="install-extension">
           <div class="step-copy">
             <p class="step-kicker">Step 1 · Extension</p>
             <h2>
-              Install the extension from
+              Install Fokasu extension from
               <a
                 class="extension-popup-link"
                 href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
@@ -82,7 +127,8 @@
             <aside class="step-note step-note--extension-required">
               <strong>Extension required</strong>
               If Focus Lock is active and the extension is not installed or
-              enabled, Fokasu closes the browser to keep the block enforced.
+              enabled, Fokasu detects it and closes the browser after a grace
+              period (60 seconds by default).
             </aside>
 
             <aside class="step-note step-note--browser-support">
@@ -96,7 +142,7 @@
         <section class="block-step" id="set-focus-goal">
           <div class="step-copy">
             <p class="step-kicker">Step 2 · Focus goal</p>
-            <h2>Open the header lock.</h2>
+            <h2>Open the Fokasu desktop application and click the lock icon.</h2>
             <p>
               Click the lock icon in the header (beside the online status
               information) to begin setting up your focus goal.
@@ -256,6 +302,12 @@
             />
             <span class="screenshot-highlight screenshot-highlight--estimated-time" aria-hidden="true"></span>
           </figure>
+
+          <aside class="step-note step-note--goal-eligibility">
+            <strong>Which todos count</strong>
+            Only todos started after the focus goal is created contribute
+            toward that goal.
+          </aside>
         </section>
 
         <div class="block-step block-step--todo-running" id="todo-running">
@@ -296,6 +348,61 @@
             <span aria-hidden="true">→</span>
             <span>Block list unlocked</span>
           </div>
+        </section>
+
+        <header class="flow-heading flow-heading--optional">
+          <h2>Optional</h2>
+        </header>
+
+        <section class="block-step block-step--settings" id="optional-settings">
+          <div class="step-copy">
+            <p class="step-kicker">Settings · Preferences</p>
+            <h2>Fine-tune protection and application behavior.</h2>
+            <p>
+              Open Settings to adjust these optional safeguards and desktop
+              preferences.
+            </p>
+
+            <ul class="settings-options">
+              <li>
+                <strong>Extension activation grace period</strong>
+                <span>
+                  Choose how long Fokasu waits before closing the browser when
+                  the extension is not detected.
+                </span>
+              </li>
+              <li>
+                <strong>Prevent uninstall during a Focus Block</strong>
+                <span>Require the current Focus Block to finish first.</span>
+              </li>
+              <li>
+                <strong>Emergency exit</strong>
+                <span>Set the delay before an emergency exit clears the focus lock.</span>
+              </li>
+              <li>
+                <strong>Desktop notifications</strong>
+                <span>Choose whether Fokasu shows desktop notifications.</span>
+              </li>
+              <li>
+                <strong>Notification sounds</strong>
+                <span>Turn sounds during notifications on or off.</span>
+              </li>
+              <li>
+                <strong>Start at sign-in</strong>
+                <span>Choose whether Fokasu starts when you sign in.</span>
+              </li>
+            </ul>
+          </div>
+
+          <figure class="step-media">
+            <img
+              src="screenshots/new-how-it-works-for-blocks/settings.png"
+              alt="Fokasu Settings showing focus protection, emergency exit, notification, sound, and startup options"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+          </figure>
         </section>
       </section>
 

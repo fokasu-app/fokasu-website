@@ -12,7 +12,7 @@
   <body id="top">
     <header class="site-header">
       <div class="site-header-inner">
-        <a class="brand" href="#top" aria-label="Fokasu home">
+        <a class="brand" href="index.html" aria-label="Fokasu home">
           <img src="logo/fokasu_logo.svg" alt="" aria-hidden="true" />
           <span>Fokasu</span>
           <span class="brand-beta">BETA</span>
@@ -21,12 +21,13 @@
         <nav class="site-nav" aria-label="Main navigation">
           <a class="nav-download" href="#downloads">Download</a>
           <a
+            class="nav-secondary"
             href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
             target="_blank"
             rel="noopener noreferrer"
             onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
           >Extension</a>
-          <a href="privacy.html">Privacy</a>
+          <a class="nav-secondary" href="privacy.html">Privacy</a>
           <a
             class="nav-how-blocks"
             href="how_it_works.html"
@@ -35,6 +36,19 @@
             <span class="nav-label-full">How Block Works</span>
             <span class="nav-label-short" aria-hidden="true">Block</span>
           </a>
+          <details class="nav-more">
+            <summary aria-label="Show more navigation options">
+              <span aria-hidden="true">⌄</span>
+            </summary>
+            <div class="nav-more-menu">
+              <a
+                href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Extension</a>
+              <a href="privacy.html">Privacy</a>
+            </div>
+          </details>
         </nav>
       </div>
     </header>
@@ -80,6 +94,43 @@
                 Distractions fade away
               </span>
             </div>
+
+            <div class="hero-actions" id="downloads">
+              <details class="download-picker">
+                <summary>
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 3v12m0 0 4-4m-4 4-4-4" />
+                    <path d="M5 20h14" />
+                  </svg>
+                  <span>Download</span>
+                  <span class="download-picker-chevron" aria-hidden="true">⌄</span>
+                </summary>
+
+                <div class="download-picker-menu" aria-label="Desktop downloads">
+                  <p>Choose your operating system</p>
+                  <button type="button" disabled>
+                    <span class="platform-mark" aria-hidden="true">⊞</span>
+                    <span>Windows</span>
+                    <small>Coming soon</small>
+                  </button>
+                  <button type="button" disabled>
+                    <span class="platform-mark" aria-hidden="true">f</span>
+                    <span>Fedora</span>
+                    <small>Coming soon</small>
+                  </button>
+                  <button type="button" disabled>
+                    <span class="platform-mark" aria-hidden="true">◉</span>
+                    <span>Ubuntu</span>
+                    <small>Coming soon</small>
+                  </button>
+                </div>
+              </details>
+
+              <a class="hero-action-secondary" href="how_it_works.html">
+                How It Works
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
           </div>
 
           <div class="visual-stage">
@@ -116,7 +167,7 @@
         <div class="locked-copy">
           <p class="locked-kicker">Block stays put</p>
           <h2>
-            Even after a restart,<br />
+            Even after a OS restart,<br />
             distractions stay locked out.
           </h2>
         </div>
