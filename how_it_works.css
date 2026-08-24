@@ -356,6 +356,14 @@
   grid-template-columns: minmax(340px, 430px) minmax(0, 1fr);
 }
 
+#application-block .step-copy {
+  order: 1;
+}
+
+#application-block .step-media {
+  order: 2;
+}
+
 #confirm-lock .step-copy,
 #build-block-list .step-copy,
 #application-block .step-copy {
@@ -401,7 +409,7 @@
 }
 
 #test-block {
-  grid-template-columns: minmax(340px, 430px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 430px);
 }
 
 #test-block .step-copy {
@@ -558,7 +566,7 @@
 
 #optional-settings {
   grid-template-columns: minmax(0, 1fr) minmax(340px, 430px);
-  width: min(100%, 1120px);
+  width: 100%;
   margin-inline: auto;
 }
 
@@ -740,6 +748,19 @@
     0 0 30px 10px rgba(240, 196, 25, 0.2);
 }
 
+.screenshot-highlight--applications-tab {
+  top: 27.5%;
+  left: 52.7%;
+  width: 11.9%;
+  height: 6.6%;
+  box-sizing: border-box;
+  border: clamp(2px, 0.2vw, 3px) solid #f0c419;
+  border-radius: 10px;
+  box-shadow:
+    0 0 0 4px rgba(240, 196, 25, 0.12),
+    0 0 20px rgba(240, 196, 25, 0.38);
+}
+
 .screenshot-highlight--estimated-time {
   top: 42.3%;
   left: 51.1%;
@@ -825,6 +846,14 @@
 }
 
 @media (min-width: 1101px) {
+  #test-block .step-copy {
+    order: 2;
+  }
+
+  #test-block .step-media {
+    order: 1;
+  }
+
   .block-step + .block-step,
   .block-step + .flow-heading {
     margin-top: clamp(59px, 7.35vh, 95px);
