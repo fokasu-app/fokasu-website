@@ -352,18 +352,25 @@
   grid-template-columns: minmax(0, 1fr) minmax(340px, 430px);
 }
 
+#application-block {
+  grid-template-columns: minmax(340px, 430px) minmax(0, 1fr);
+}
+
 #confirm-lock .step-copy,
-#build-block-list .step-copy {
+#build-block-list .step-copy,
+#application-block .step-copy {
   gap: 18px;
 }
 
 #confirm-lock .step-copy h2,
-#build-block-list .step-copy h2 {
+#build-block-list .step-copy h2,
+#application-block .step-copy h2 {
   line-height: 1.08;
 }
 
 #confirm-lock .step-copy p,
-#build-block-list .step-copy p {
+#build-block-list .step-copy p,
+#application-block .step-copy p {
   max-width: 36ch;
   line-height: 1.7;
 }
@@ -918,6 +925,7 @@
   .block-step--focus-settings > .step-copy,
   #confirm-lock > .step-copy,
   #build-block-list > .step-copy,
+  #application-block > .step-copy,
   #test-block > .step-copy,
   #complete-todos > .step-copy,
   #todo-running > .step-copy,
@@ -939,6 +947,7 @@
   .block-step--focus-settings,
   #confirm-lock,
   #build-block-list,
+  #application-block,
   #test-block,
   #complete-todos,
   #todo-running,
@@ -992,6 +1001,7 @@
   .block-step--focus-settings .step-copy p,
   #confirm-lock .step-copy p,
   #build-block-list .step-copy p,
+  #application-block .step-copy p,
   #test-block .step-copy p,
   #complete-todos .step-copy p,
   .block-step--todo-running .step-copy p,
