@@ -378,13 +378,28 @@ main {
 }
 
 .download-picker-chevron {
-  font-size: 1rem;
-  transform: translateY(-2px);
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: 12px;
+  height: 8px;
+  align-items: center;
+  justify-content: center;
   transition: transform 180ms ease;
 }
 
+.download-picker summary .download-picker-chevron svg {
+  display: block;
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
 .download-picker[open] .download-picker-chevron {
-  transform: translateY(2px) rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .hero-action-secondary {
