@@ -516,6 +516,9 @@ main {
 
 .locked-section {
   display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  row-gap: clamp(18px, 3vh, 34px);
   min-height: 100svh;
   place-items: center;
   overflow: hidden;
@@ -528,7 +531,7 @@ main {
   justify-items: center;
   gap: 10px;
   width: min(100% - 32px, 1320px);
-  margin: 0 auto clamp(18px, 3vh, 34px);
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -692,6 +695,8 @@ main {
 
 .habits-section {
   display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
   justify-items: center;
   gap: clamp(26px, 4vh, 48px);
   min-height: 100svh;
@@ -1453,5 +1458,90 @@ main {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    padding: 58px 0 106px;
+  }
+
+  .locked-section {
+    margin-top: 0;
+    padding-block: 106px;
+  }
+
+  .habits-section {
+    padding-block: 106px;
+  }
+
+  .hero-layout {
+    width: 100%;
+  }
+
+  .hero-copy {
+    width: min(calc(100% - 32px), 760px);
+  }
+
+  .hero .visual-stage,
+  .locked-section .visual-stage,
+  .habits-visual {
+    width: min(calc(100% - 32px), 820px);
+  }
+
+  .visual-stage {
+    aspect-ratio: 2384 / 1626;
+  }
+
+  .hero .visual-stage > .distractions {
+    display: none !important;
+  }
+
+  .visual-stage > .dashboard-shell {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .locked-dashboard-shell .lock-callout {
+    width: 25%;
+    height: 25%;
+  }
+
+  .locked-dashboard-shell .lock-callout-marker::after {
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: 220%;
+    transform: translateX(-50%);
+  }
+
+  .locked-dashboard-shell .lock-callout-card {
+    top: 75%;
+    left: 0;
+    transform: translateX(-70%);
+  }
+
+  .locked-dashboard-shell .lock-callout-card strong {
+    font-size: 0.68rem;
+  }
+
+  .habits-visual > .habits-image-shell {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .dashboard,
+  .dashboard-border {
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-copy,
+  .hero .visual-stage,
+  .locked-section .visual-stage,
+  .habits-visual {
+    width: min(calc(100% - 24px), 820px);
   }
 }

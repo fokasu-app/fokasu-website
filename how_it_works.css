@@ -1001,7 +1001,7 @@
   #optional-settings > .step-media {
     grid-column: auto;
     order: 2;
-    width: 85%;
+    width: 100%;
     max-width: 820px;
   }
 
@@ -1044,9 +1044,13 @@
   .step-media,
   #install-extension .step-media,
   .step-gallery .step-media {
-    width: 85%;
+    width: 100%;
     max-width: 820px;
     border-radius: 12px;
+  }
+
+  #install-extension .screenshot-highlight {
+    display: none;
   }
 
   .step-copy h2 {
@@ -1152,5 +1156,20 @@
   .completion-card span:nth-child(odd) {
     white-space: normal;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .how-it-works-content {
+    --block-row-gap: 212px;
+  }
+
+  .block-overview {
+    margin-bottom: 0;
+  }
+
+  .block-step + .block-step,
+  .block-step + .flow-heading {
+    margin-top: 0;
   }
 }
