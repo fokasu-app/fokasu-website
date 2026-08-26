@@ -383,23 +383,29 @@
   line-height: 1.7;
 }
 
-#build-block-list .step-note--exceptions {
+#build-block-list .step-note-stack--block-list {
   grid-column: 1 / -1;
   justify-self: center;
   order: 3;
-  gap: 12px;
-  width: fit-content;
-  max-width: min(100%, 820px);
+  width: min(100%, 640px);
   margin-top: 4px;
+}
+
+#build-block-list .step-note-stack--block-list .step-note {
+  box-sizing: border-box;
+  gap: 12px;
+  width: 100%;
+  max-width: none;
+  margin-top: 0;
   padding: 22px 26px;
 }
 
-#build-block-list .step-note--exceptions p {
+#build-block-list .step-note-stack--block-list p {
   max-width: 68ch;
   line-height: 1.75;
 }
 
-#build-block-list .step-note--exceptions code {
+#build-block-list .step-note-stack--block-list code {
   padding: 0.1em 0.34em;
   border: 1px solid rgba(53, 217, 155, 0.18);
   border-radius: 999px;
@@ -1106,7 +1112,7 @@
     padding: 20px 20px 20px 24px;
   }
 
-  #build-block-list .step-note--exceptions {
+  #build-block-list .step-note-stack--block-list .step-note {
     padding: 18px;
   }
 

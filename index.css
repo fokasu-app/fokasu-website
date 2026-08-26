@@ -195,16 +195,11 @@ body {
   background: rgba(53, 217, 155, 0.11);
 }
 
-.nav-more summary span {
+.nav-more summary svg {
   display: block;
-  font-size: 1.15rem;
-  line-height: 1;
-  transform: translateY(-2px);
-  transition: transform 180ms ease;
-}
-
-.nav-more[open] summary span {
-  transform: translateY(2px) rotate(180deg);
+  width: 16px;
+  height: 4px;
+  fill: currentColor;
 }
 
 .nav-more-menu {
@@ -1206,6 +1201,31 @@ main {
 
   .nav-more {
     display: block;
+  }
+
+  .nav-download-picker {
+    position: static;
+  }
+
+  .nav-download-picker .download-picker-menu {
+    right: 14px;
+    left: 14px;
+    width: auto;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions > .download-picker {
+    position: static;
+  }
+
+  .hero-actions > .download-picker .download-picker-menu {
+    right: 0;
+    left: 0;
+    width: auto;
+    transform: none;
   }
 }
 

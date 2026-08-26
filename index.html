@@ -12,7 +12,8 @@
     <title>Fokasu — Website and App Blocker &amp; Focus Planner</title>
     <link rel="icon" href="logo/fokasu_logo.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="logo/fokasu_logo.png" type="image/png" />
-    <link rel="stylesheet" href="index.css?v=mobile-images-20260825-10" />
+    <link rel="stylesheet" href="index.css?v=mobile-more-20260826-1" />
+    <script src="/navigation.js?v=shared-download-20260826-1" defer></script>
   </head>
   <body id="top">
     <header class="site-header">
@@ -75,7 +76,11 @@
           </a>
           <details class="nav-more">
             <summary aria-label="Show more navigation options">
-              <span aria-hidden="true">⌄</span>
+              <svg viewBox="0 0 16 4" aria-hidden="true" focusable="false">
+                <circle cx="2" cy="2" r="2" />
+                <circle cx="8" cy="2" r="2" />
+                <circle cx="14" cy="2" r="2" />
+              </svg>
             </summary>
             <div class="nav-more-menu">
               <a
@@ -406,30 +411,6 @@
     </footer>
 
     <script>
-      (() => {
-        const downloadPickers = [
-          ...document.querySelectorAll(".download-picker"),
-        ];
-
-        document.addEventListener("click", (event) => {
-          downloadPickers.forEach((picker) => {
-            if (picker.open && !picker.contains(event.target)) {
-              picker.open = false;
-            }
-          });
-        });
-
-        document.addEventListener("keydown", (event) => {
-          if (event.key !== "Escape") return;
-
-          const openPicker = downloadPickers.find((picker) => picker.open);
-          if (!openPicker) return;
-
-          openPicker.open = false;
-          openPicker.querySelector("summary")?.focus();
-        });
-      })();
-
       (() => {
         const section = document.querySelector(".locked-section");
         const distractions = document.querySelector(".locked-distractions");

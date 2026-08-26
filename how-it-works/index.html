@@ -12,11 +12,12 @@
     <title>Website and App Blocker Guide — Fokasu</title>
     <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="/logo/fokasu_logo.png" type="image/png" />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/index.css?v=mobile-more-20260826-1" />
     <link
       rel="stylesheet"
-      href="/how_it_works.css?v=mobile-spacing-20260825-2"
+      href="/how_it_works.css?v=block-list-notes-20260826-2"
     />
+    <script src="/navigation.js?v=shared-download-20260826-1" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -28,7 +29,34 @@
         </a>
 
         <nav class="site-nav" aria-label="Main navigation">
-          <a class="nav-download" href="/#downloads">Download</a>
+          <details class="download-picker nav-download-picker">
+            <summary class="nav-download">
+              <span>Download</span>
+              <span class="download-picker-chevron" aria-hidden="true">
+                <svg viewBox="0 0 12 8" focusable="false">
+                  <path d="m1 1.5 5 5 5-5" />
+                </svg>
+              </span>
+            </summary>
+            <div class="download-picker-menu" aria-label="Desktop downloads">
+              <p>Choose your operating system</p>
+              <a href="https://download.fokasu.app/releases/1.0.0/windows-x64/fokasu-1.0.0.msi">
+                <span class="platform-mark" aria-hidden="true">⊞</span>
+                <span>Windows</span>
+                <small>MSI · v1.0.0</small>
+              </a>
+              <a href="https://download.fokasu.app/releases/1.0.0/linux-x64/fokasu-1.0.0-1.x86_64.rpm">
+                <span class="platform-mark" aria-hidden="true">f</span>
+                <span>Fedora</span>
+                <small>RPM · v1.0.0</small>
+              </a>
+              <button type="button" disabled>
+                <span class="platform-mark" aria-hidden="true">◉</span>
+                <span>Ubuntu</span>
+                <small>Coming soon</small>
+              </button>
+            </div>
+          </details>
           <a
             class="nav-secondary"
             href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
@@ -48,7 +76,11 @@
           </a>
           <details class="nav-more">
             <summary aria-label="Show more navigation options">
-              <span aria-hidden="true">⌄</span>
+              <svg viewBox="0 0 16 4" aria-hidden="true" focusable="false">
+                <circle cx="2" cy="2" r="2" />
+                <circle cx="8" cy="2" r="2" />
+                <circle cx="14" cy="2" r="2" />
+              </svg>
             </summary>
             <div class="nav-more-menu">
               <a
@@ -76,7 +108,7 @@
               <span class="overview-step-number">1</span>
               <span class="overview-step-copy">
                 <strong>Set a focus goal</strong>
-                <span>Setting a timed focus goal enables blocking.</span>
+                <span>Setting a focus goal (like 2 hours) enables blocking.</span>
               </span>
             </li>
             <li>
@@ -241,21 +273,35 @@
             <span class="screenshot-highlight screenshot-highlight--block-input" aria-hidden="true"></span>
           </figure>
 
-          <aside class="step-note step-note--exceptions">
-            <strong>Exceptions and wildcards</strong>
-            <p>
-              Use the exception list when part of a blocked website should
-              remain available.
-            </p>
-            <p>
-              For example, block <code>reddit.com</code>, then add
-              <code>reddit.com/r/*</code> as an exception.
-            </p>
-            <p>
-              The <code>*</code> wildcard matches anything that comes after
-              <code>/r/</code>.
-            </p>
-          </aside>
+          <div class="step-note-stack step-note-stack--block-list">
+            <aside class="step-note step-note--exceptions">
+              <strong>Exceptions and wildcards</strong>
+              <p>
+                Use the exception list when part of a blocked website should
+                remain available.
+              </p>
+              <p>
+                For example, block <code>reddit.com</code>, then add
+                <code>reddit.com/r/*</code> as an exception.
+              </p>
+              <p>
+                The <code>*</code> wildcard matches anything that comes after
+                <code>/r/</code>.
+              </p>
+            </aside>
+
+            <aside class="step-note step-note--block-everything">
+              <strong>Block the entire internet</strong>
+              <p>
+                Adding only <code>*</code> to your block list blocks all the
+                websites in your browser.
+              </p>
+              <p>
+                Set up your exception list first so the websites you need
+                remain available.
+              </p>
+            </aside>
+          </div>
         </section>
 
         <div class="block-step" id="application-block">
