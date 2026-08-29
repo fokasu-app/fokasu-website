@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030506" />
+    <meta
+      name="description"
+      content="See what is new in Fokasu 1.0.1: automatic breaks for todos, scheduled focus blocks, leaderboards, and community posts."
+    />
+    <link rel="canonical" href="https://fokasu.app/whats-new-1.0.1/" />
+    <title>What’s New in Fokasu 1.0.1</title>
+    <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/logo/fokasu_logo.png" type="image/png" />
+    <link rel="stylesheet" href="/index.css?v=mobile-more-20260826-1" />
+    <link rel="stylesheet" href="/whats-new-1.0.1.css?v=release-20260829-1" />
+    <script src="/navigation.js?v=shared-download-20260826-1" defer></script>
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="/" aria-label="Fokasu home">
+          <img src="/logo/fokasu_logo.svg" alt="" aria-hidden="true" />
+          <span>Fokasu</span>
+          <span class="brand-beta">BETA</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <details class="download-picker nav-download-picker">
+            <summary class="nav-download">
+              <span>Download</span>
+              <span class="download-picker-chevron" aria-hidden="true">
+                <svg viewBox="0 0 12 8" focusable="false">
+                  <path d="m1 1.5 5 5 5-5" />
+                </svg>
+              </span>
+            </summary>
+
+            <div class="download-picker-menu" aria-label="Desktop downloads">
+              <p>Choose your operating system</p>
+              <a href="https://download.fokasu.app/releases/1.0.0/windows-x64/fokasu-1.0.0.msi">
+                <span class="platform-mark" aria-hidden="true">⊞</span>
+                <span>Windows</span>
+                <small>MSI · v1.0.0</small>
+              </a>
+              <a href="https://download.fokasu.app/releases/1.0.0/linux-x64/fokasu-1.0.0-1.x86_64.rpm">
+                <span class="platform-mark" aria-hidden="true">f</span>
+                <span>Fedora</span>
+                <small>RPM · v1.0.0</small>
+              </a>
+              <button type="button" disabled>
+                <span class="platform-mark" aria-hidden="true">◉</span>
+                <span>Ubuntu</span>
+                <small>Coming soon</small>
+              </button>
+            </div>
+          </details>
+          <a
+            class="nav-secondary"
+            href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
+          >Extension</a>
+          <a class="nav-secondary" href="/privacy.html">Privacy</a>
+          <a
+            class="nav-how-blocks"
+            href="/how-it-works/"
+            aria-label="How Block Works"
+          >
+            <span class="nav-label-full">How Block Works</span>
+            <span class="nav-label-short" aria-hidden="true">Block</span>
+          </a>
+          <details class="nav-more">
+            <summary aria-label="Show more navigation options">
+              <svg viewBox="0 0 16 4" aria-hidden="true" focusable="false">
+                <circle cx="2" cy="2" r="2" />
+                <circle cx="8" cy="2" r="2" />
+                <circle cx="14" cy="2" r="2" />
+              </svg>
+            </summary>
+            <div class="nav-more-menu">
+              <a
+                href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Extension</a>
+              <a href="/privacy.html">Privacy</a>
+            </div>
+          </details>
+        </nav>
+      </div>
+    </header>
+
+    <main class="release-page">
+      <section class="release-hero" aria-labelledby="release-title">
+        <p class="release-label">Fokasu 1.0.1 · Product update</p>
+        <h1 class="visually-hidden" id="release-title">What’s new in Fokasu 1.0.1</h1>
+        <ol class="release-feature-list">
+          <li>Scheduled blocks</li>
+          <li>Todo with automatic breaks</li>
+          <li>Leaderboards</li>
+          <li>Communities</li>
+        </ol>
+        <div class="release-actions">
+          <a
+            class="release-download"
+            href="https://download.fokasu.app/releases/1.0.0/windows-x64/fokasu-1.0.0.msi"
+          >
+            Download latest version
+            <span aria-hidden="true">↓</span>
+          </a>
+          <a class="release-jump" href="#todo-breaks">
+            Explore what’s new
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="release-feature" id="todo-breaks" aria-labelledby="todo-breaks-title">
+        <div class="feature-copy">
+          <p class="feature-number">01 · Todos with breaks</p>
+          <h2 id="todo-breaks-title">Focus deeply. Break automatically.</h2>
+          <p>
+            For example, create a 4-hour todo with Automatic Breaks enabled
+            (default is a 10-minute break after every hour). After each 1-hour,
+            Fokasu automatically starts a 10-minute break.
+          </p>
+        </div>
+        <figure class="release-shot">
+          <img
+            src="/screenshots/update-1.0.1/todos-with-break.png"
+            alt="Fokasu Create Todo screen with Automatic Breaks set to one hour of work and a ten minute break"
+            fetchpriority="high"
+            decoding="async"
+            draggable="false"
+          />
+        </figure>
+
+        <div class="feature-notes" aria-label="Notes about automatic breaks">
+          <aside class="feature-note">
+            <strong>Skip a break</strong>
+            Keep working when you do not need the scheduled break.
+          </aside>
+          <aside class="feature-note">
+            <strong>Shift a break</strong>
+            Move the break and take it after your next session instead.
+          </aside>
+          <aside class="feature-note">
+            <strong>Temporary access</strong>
+            During a break, blocked websites and applications are temporarily
+            unlocked.
+          </aside>
+        </div>
+      </section>
+
+      <section class="release-feature" id="scheduled-block" aria-labelledby="scheduled-block-title">
+        <div class="feature-copy">
+          <p class="feature-number">02 · Scheduled block</p>
+          <h2 id="scheduled-block-title">Start your block when you’re ready.</h2>
+          <p>
+            You can now begin your block after a selected number of minutes.
+            If you tend to procrastinate, set when you want your block to begin
+            and let Fokasu handle the rest.
+          </p>
+        </div>
+        <figure class="release-shot">
+          <img
+            src="/screenshots/update-1.0.1/scheduled-block.png"
+            alt="Fokasu block setup screen with the optional scheduled block controls expanded"
+            loading="lazy"
+            decoding="async"
+            draggable="false"
+          />
+        </figure>
+      </section>
+
+      <section class="release-feature" id="leaderboard" aria-labelledby="leaderboard-title">
+        <div class="feature-copy">
+          <p class="feature-number">03 · Leaderboard</p>
+          <h2 id="leaderboard-title">See how your focus stacks up.</h2>
+          <p>
+            View the top 10 leaders for the day and the week.
+          </p>
+        </div>
+        <figure class="release-shot">
+          <img
+            src="/screenshots/update-1.0.1/leaderboard.png"
+            alt="Fokasu daily leaderboard ranking users by focused time and completed todos"
+            loading="lazy"
+            decoding="async"
+            draggable="false"
+          />
+        </figure>
+      </section>
+
+      <section class="release-feature" id="community" aria-labelledby="community-title">
+        <div class="feature-copy">
+          <p class="feature-number">04 · Community</p>
+          <h2 id="community-title">Share the journey with people who get it.</h2>
+          <p>
+            Create posts, exchange experiences, suggest features, report bugs,
+            and join the conversation through comments—all without leaving
+            Fokasu.
+          </p>
+        </div>
+        <figure class="release-shot">
+          <img
+            src="/screenshots/update-1.0.1/community.png"
+            alt="Fokasu Community screen showing a community post and comment count"
+            loading="lazy"
+            decoding="async"
+            draggable="false"
+          />
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Fokasu home">
+            <img src="/logo/fokasu_logo.svg" alt="" aria-hidden="true" />
+            <span>Fokasu</span>
+          </a>
+          <p>Focus on what matters. Let Fokasu handle the distractions.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/">Home</a>
+          <a href="/how-it-works/">How Block Works</a>
+          <a href="/how-it-works/">Guides</a>
+          <a href="/privacy.html">Privacy</a>
+        </nav>
+
+        <div class="footer-bottom">
+          <p>© 2026 Fokasu</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
