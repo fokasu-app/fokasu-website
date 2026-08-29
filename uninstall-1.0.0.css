@@ -1,0 +1,197 @@
+.uninstall-page {
+  width: min(calc(100% - 40px), 1040px);
+  margin: 0 auto;
+  padding: clamp(72px, 11vw, 124px) 0 clamp(88px, 12vw, 140px);
+}
+
+.uninstall-hero {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  max-width: 720px;
+  margin: 0 auto clamp(64px, 9vw, 100px);
+  text-align: center;
+}
+
+.uninstall-kicker {
+  margin: 0;
+  color: #35d99b;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.uninstall-hero h1,
+.uninstall-finish h2 {
+  margin: 0;
+  color: #f3f6f8;
+  font-size: clamp(2.5rem, 6vw, 4.7rem);
+  letter-spacing: -0.045em;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.uninstall-hero > p:last-child {
+  max-width: 570px;
+  margin: 4px 0 0;
+  color: #aeb8c3;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.65;
+}
+
+.uninstall-steps {
+  display: grid;
+  gap: clamp(72px, 10vw, 116px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.uninstall-step {
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+  padding-top: clamp(54px, 7vw, 78px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-copy {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  width: min(100%, 820px);
+}
+
+.step-number {
+  display: grid;
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid rgba(53, 217, 155, 0.34);
+  border-radius: 50%;
+  color: #87f2c8;
+  background: rgba(53, 217, 155, 0.09);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.step-copy h2 {
+  margin: 1px 0 8px;
+  color: #f3f6f8;
+  font-size: clamp(1.5rem, 3vw, 2.15rem);
+  letter-spacing: -0.025em;
+  line-height: 1.12;
+}
+
+.step-copy p {
+  margin: 0;
+  color: #aeb8c3;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.step-copy strong {
+  color: #e8fff6;
+}
+
+.step-shot {
+  width: min(100%, 900px);
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(91, 255, 181, 0.28);
+  border-radius: 18px;
+  background: #070a0c;
+  box-shadow:
+    0 0 30px rgba(48, 220, 143, 0.1),
+    0 28px 72px rgba(0, 0, 0, 0.42);
+}
+
+.step-shot-small {
+  width: min(100%, 560px);
+}
+
+.step-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.uninstall-finish {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  margin-top: clamp(82px, 12vw, 140px);
+  padding: clamp(54px, 8vw, 80px) 20px;
+  border: 1px solid rgba(53, 217, 155, 0.2);
+  border-radius: 20px;
+  background: rgba(20, 83, 65, 0.1);
+  text-align: center;
+}
+
+.uninstall-finish h2 {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+}
+
+.uninstall-finish a {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  padding: 11px 18px;
+  border: 1px solid rgba(91, 255, 181, 0.5);
+  border-radius: 12px;
+  color: #03110c;
+  background: #35d99b;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.uninstall-finish a:hover,
+.uninstall-finish a:focus-visible {
+  background: #6ef0b9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 620px) {
+  .uninstall-page {
+    width: min(calc(100% - 28px), 1040px);
+    padding: 64px 0 80px;
+  }
+
+  .uninstall-hero {
+    margin-bottom: 58px;
+  }
+
+  .uninstall-steps {
+    gap: 64px;
+  }
+
+  .uninstall-step {
+    gap: 24px;
+    padding-top: 42px;
+  }
+
+  .step-copy {
+    gap: 13px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+  }
+
+  .step-shot {
+    border-radius: 12px;
+  }
+
+  .uninstall-finish {
+    margin-top: 76px;
+    border-radius: 14px;
+  }
+}

@@ -13,7 +13,7 @@
     <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="/logo/fokasu_logo.png" type="image/png" />
     <link rel="stylesheet" href="/index.css?v=mobile-more-20260826-1" />
-    <link rel="stylesheet" href="/whats-new-1.0.1.css?v=release-20260829-1" />
+    <link rel="stylesheet" href="/whats-new-1.0.1.css?v=release-20260830-5" />
     <script src="/navigation.js?v=shared-download-20260826-1" defer></script>
   </head>
   <body id="top">
@@ -38,15 +38,15 @@
 
             <div class="download-picker-menu" aria-label="Desktop downloads">
               <p>Choose your operating system</p>
-              <a href="https://download.fokasu.app/releases/1.0.0/windows-x64/fokasu-1.0.0.msi">
+              <a href="https://download.fokasu.app/releases/1.0.1/windows-x64/fokasu-1.0.1.msi">
                 <span class="platform-mark" aria-hidden="true">⊞</span>
                 <span>Windows</span>
-                <small>MSI · v1.0.0</small>
+                <small>MSI · v1.0.1</small>
               </a>
-              <a href="https://download.fokasu.app/releases/1.0.0/linux-x64/fokasu-1.0.0-1.x86_64.rpm">
+              <a href="https://download.fokasu.app/releases/1.0.1/linux-x64/fokasu-1.0.1-1.x86_64.rpm">
                 <span class="platform-mark" aria-hidden="true">f</span>
                 <span>Fedora</span>
-                <small>RPM · v1.0.0</small>
+                <small>RPM · v1.0.1</small>
               </a>
               <button type="button" disabled>
                 <span class="platform-mark" aria-hidden="true">◉</span>
@@ -103,18 +103,48 @@
           <li>Communities</li>
         </ol>
         <div class="release-actions">
-          <a
-            class="release-download"
-            href="https://download.fokasu.app/releases/1.0.0/windows-x64/fokasu-1.0.0.msi"
-          >
-            Download latest version
-            <span aria-hidden="true">↓</span>
-          </a>
+          <details class="download-picker">
+            <summary class="release-download">
+              <span>Download latest version</span>
+              <span class="download-picker-chevron" aria-hidden="true">
+                <svg viewBox="0 0 12 8" focusable="false">
+                  <path d="m1 1.5 5 5 5-5" />
+                </svg>
+              </span>
+            </summary>
+
+            <div class="download-picker-menu" aria-label="Latest desktop downloads">
+              <p>Choose your operating system</p>
+              <a href="https://download.fokasu.app/releases/1.0.1/windows-x64/fokasu-1.0.1.msi">
+                <span class="platform-mark" aria-hidden="true">⊞</span>
+                <span>Windows</span>
+                <small>MSI · v1.0.1</small>
+              </a>
+              <a href="https://download.fokasu.app/releases/1.0.1/linux-x64/fokasu-1.0.1-1.x86_64.rpm">
+                <span class="platform-mark" aria-hidden="true">f</span>
+                <span>Fedora</span>
+                <small>RPM · v1.0.1</small>
+              </a>
+            </div>
+          </details>
           <a class="release-jump" href="#todo-breaks">
             Explore what’s new
             <span aria-hidden="true">↓</span>
           </a>
         </div>
+        <aside class="release-install-note" aria-label="Installation warning">
+          <span class="release-install-note-icon" aria-hidden="true">!</span>
+          <div class="release-install-note-copy">
+            <strong>Uninstall version 1.0.0 first</strong>
+            <p>
+              If Fokasu 1.0.0 is already installed, remove it before installing
+              this update.
+            </p>
+            <a href="/uninstall-1.0.0/">
+              View uninstall instructions <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </aside>
       </section>
 
       <section class="release-feature" id="todo-breaks" aria-labelledby="todo-breaks-title">

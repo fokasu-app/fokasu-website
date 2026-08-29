@@ -57,12 +57,95 @@
 }
 
 .release-actions {
+  position: relative;
+  z-index: 20;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 12px;
   margin-top: 8px;
+}
+
+.release-actions > .download-picker {
+  z-index: 1;
+}
+
+.release-actions .download-picker-menu {
+  background: #060c0c;
+}
+
+.release-install-note {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: min(calc(100% - 32px), 680px);
+  margin: 8px auto 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(210, 91, 103, 0.28);
+  border-radius: 10px;
+  color: #c5b9bb;
+  background: #100b0c;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.release-install-note-icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  margin-top: 1px;
+  place-items: center;
+  border: 1px solid rgba(210, 91, 103, 0.55);
+  border-radius: 50%;
+  color: #df8f97;
+  background: transparent;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.release-install-note-copy {
+  display: grid;
+  flex: 1 1 auto;
+  justify-items: start;
+  gap: 3px;
+  min-width: 0;
+}
+
+.release-install-note-copy > strong {
+  color: #e7dfe0;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.release-install-note-copy p {
+  margin: 0;
+  color: #aaa0a2;
+}
+
+.release-install-note-copy a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 2px;
+  color: #d59aa0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(213, 154, 160, 0.5);
+  text-underline-offset: 3px;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+
+.release-install-note-copy a:hover,
+.release-install-note-copy a:focus-visible {
+  color: #efc5c9;
+  text-decoration-color: currentColor;
 }
 
 .release-jump,
@@ -241,6 +324,17 @@
     padding-left: 1.2em;
     font-size: clamp(1.9rem, 8.5vw, 2.75rem);
     line-height: 1.08;
+  }
+
+  .release-install-note {
+    gap: 11px;
+    width: min(calc(100% - 12px), 720px);
+    padding: 14px;
+  }
+
+  .release-install-note-icon {
+    width: 24px;
+    height: 24px;
   }
 
   .release-feature {
