@@ -335,13 +335,29 @@
   line-height: 1.7;
 }
 
-.block-step--focus-settings .step-note--break-reward {
+.block-step--focus-settings .step-note--break-reward,
+.block-step--focus-settings .step-note--scheduled-block {
   grid-column: 1 / -1;
   justify-self: center;
   order: 3;
   width: fit-content;
   max-width: min(100%, 900px);
   margin-top: 4px;
+}
+
+.block-step--focus-settings .step-note-stack--focus-settings {
+  grid-column: 1 / -1;
+  justify-self: center;
+  order: 3;
+  width: min(100%, 640px);
+  margin-top: 4px;
+}
+
+.block-step--focus-settings .step-note-stack--focus-settings .step-note {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin-top: 0;
 }
 
 #confirm-lock {
@@ -469,7 +485,7 @@
   line-height: 1.7;
 }
 
-#complete-todos .step-note--goal-eligibility {
+#complete-todos .step-note--automatic-breaks {
   grid-column: 1 / -1;
   justify-self: center;
   order: 3;
@@ -729,10 +745,10 @@
 }
 
 .screenshot-highlight--focus-time {
-  top: 47.8%;
-  left: 23.8%;
-  width: 25.7%;
-  height: 6.7%;
+  top: 42.4%;
+  left: 26.5%;
+  width: 23.7%;
+  height: 6.3%;
   border-radius: 10px;
   box-shadow:
     0 0 0 3px #121416,
@@ -768,10 +784,10 @@
 }
 
 .screenshot-highlight--estimated-time {
-  top: 42.3%;
+  top: 46.4%;
   left: 51.1%;
   width: 25.7%;
-  height: 5.8%;
+  height: 6.1%;
   border-radius: 10px;
   box-shadow:
     0 0 0 3px #121416,
@@ -1084,9 +1100,10 @@
   #install-extension .step-note--extension-required,
   #install-extension .step-note--browser-support,
   .block-step--focus-settings .step-note--break-reward,
+  .block-step--focus-settings .step-note--scheduled-block,
   #build-block-list .step-note--exceptions,
   #test-block .step-note--while-locked,
-  #complete-todos .step-note--goal-eligibility {
+  #complete-todos .step-note--automatic-breaks {
     box-sizing: border-box;
     width: 100%;
     max-width: 820px;

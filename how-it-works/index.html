@@ -6,16 +6,16 @@
     <meta name="theme-color" content="#030506" />
     <meta
       name="description"
-      content="Learn how Fokasu blocks distracting websites and applications until you complete the tasks and focus time committed to your goal."
+      content="Learn how to create a bypass-resistant Fokasu Focus Block for distracting websites and applications."
     />
     <link rel="canonical" href="https://fokasu.app/how-it-works/" />
-    <title>Website and App Blocker Guide — Fokasu</title>
+    <title>Focus Block Guide — Fokasu</title>
     <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="/logo/fokasu_logo.png" type="image/png" />
-    <link rel="stylesheet" href="/index.css?v=mobile-more-20260826-1" />
+    <link rel="stylesheet" href="/index.css?v=mobile-border-20260830-1" />
     <link
       rel="stylesheet"
-      href="/how_it_works.css?v=block-list-notes-20260826-2"
+      href="/how_it_works.css?v=automatic-breaks-note-20260830-1"
     />
     <script src="/navigation.js?v=shared-download-20260826-1" defer></script>
   </head>
@@ -69,9 +69,9 @@
             class="nav-how-blocks"
             href="/how-it-works/"
             aria-current="page"
-            aria-label="How Block Works"
+            aria-label="Focus Block Guide"
           >
-            <span class="nav-label-full">How Block Works</span>
+            <span class="nav-label-full">Focus Block Guide</span>
             <span class="nav-label-short" aria-hidden="true">Block</span>
           </a>
           <details class="nav-more">
@@ -96,13 +96,13 @@
     </header>
 
     <main id="top" class="how-it-works-page">
-      <section class="how-it-works-content" aria-label="Blocks overview">
+      <section class="how-it-works-content" aria-label="Focus Block overview">
         <header class="page-header">
-          <h1>How Blocking Works</h1>
+          <h1>Focus Block Guide</h1>
         </header>
 
         <aside class="block-overview" aria-labelledby="block-overview-title">
-          <h2 id="block-overview-title">The focus lock cycle</h2>
+          <h2 id="block-overview-title">The Focus Block cycle</h2>
           <ol class="block-overview-flow">
             <li>
               <span class="overview-step-number">1</span>
@@ -129,7 +129,7 @@
         </aside>
 
         <header class="flow-heading flow-heading--enable">
-          <h2>Enable Blocking</h2>
+          <h2>Start a Focus Block</h2>
         </header>
 
         <section class="block-step" id="install-extension">
@@ -166,7 +166,7 @@
           <div class="step-note-stack">
             <aside class="step-note step-note--extension-required">
               <strong>Extension required</strong>
-              If Focus Lock is active and the extension is not installed or
+              If a Focus Block is active and the extension is not installed or
               enabled, Fokasu detects it and closes the browser after a grace
               period (60 seconds by default).
             </aside>
@@ -192,7 +192,7 @@
           <figure class="step-media has-lock-highlight">
             <img
               src="/screenshots/new-how-it-works-for-blocks/dashboard.png"
-              alt="Fokasu dashboard with the focus lock in the header highlighted"
+              alt="Fokasu dashboard with the Focus Block lock icon highlighted"
               loading="lazy"
               decoding="async"
               draggable="false"
@@ -213,8 +213,8 @@
 
           <figure class="step-media">
             <img
-              src="/screenshots/new-how-it-works-for-blocks/setting-locks.png"
-              alt="Focus Lock dialog for setting the focus goal and break reward percentage"
+              src="/screenshots/new-how-it-works-for-blocks/setting-locks.png?v=scheduled-block-20260830-1"
+              alt="Focus Block dialog showing focus time, break reward, and scheduled start settings"
               loading="lazy"
               decoding="async"
               draggable="false"
@@ -222,17 +222,26 @@
             <span class="screenshot-highlight screenshot-highlight--focus-time" aria-hidden="true"></span>
           </figure>
 
-          <aside class="step-note step-note--break-reward">
-            <strong>Optional break reward</strong>
-            Choose a percentage of each completed todo to receive as break
-            time.
-          </aside>
+          <div class="step-note-stack step-note-stack--focus-settings">
+            <aside class="step-note step-note--break-reward">
+              <strong>Optional break reward</strong>
+              Choose a percentage of each completed todo to receive as break
+              time.
+            </aside>
+
+            <aside class="step-note step-note--scheduled-block">
+              <strong>Schedule it for later</strong>
+              If you tend to procrastinate, schedule the Focus Block to start
+              later—15 minutes from now, for example—instead of starting it
+              immediately.
+            </aside>
+          </div>
         </div>
 
         <section class="block-step" id="confirm-lock">
           <div class="step-copy">
-            <p class="step-kicker">Step 3 · Lock active</p>
-            <h2>The sidebar shows that your lock is running.</h2>
+            <p class="step-kicker">Step 3 · Block active</p>
+            <h2>The sidebar shows that your Focus Block is running.</h2>
             <p>
               The progress bar begins at zero and grows as completed todo time
               counts toward your focus goal.
@@ -242,7 +251,7 @@
           <figure class="step-media has-progress-highlight">
             <img
               src="/screenshots/new-how-it-works-for-blocks/lock-enabled.png"
-              alt="Active focus lock with its progress bar highlighted in the sidebar"
+              alt="Active Focus Block with its progress bar highlighted in the sidebar"
               loading="lazy"
               decoding="async"
               draggable="false"
@@ -356,7 +365,7 @@
         </section>
 
         <header class="flow-heading flow-heading--disable">
-          <h2>Disable Blocking</h2>
+          <h2>Finish a Focus Block</h2>
         </header>
 
         <section class="block-step" id="complete-todos">
@@ -371,8 +380,8 @@
 
           <figure class="step-media">
             <img
-              src="/screenshots/new-how-it-works-for-blocks/create-todo.png"
-              alt="Create Todo dialog with a one-minute estimated time"
+              src="/screenshots/new-how-it-works-for-blocks/create-todo.png?v=create-todo-20260830-1"
+              alt="Fokasu Create Todo dialog showing deadline, estimated time, group, tags, Strict Mode, and automatic breaks"
               loading="lazy"
               decoding="async"
               draggable="false"
@@ -380,10 +389,11 @@
             <span class="screenshot-highlight screenshot-highlight--estimated-time" aria-hidden="true"></span>
           </figure>
 
-          <aside class="step-note step-note--goal-eligibility">
-            <strong>Which todos count</strong>
-            Only todos started after the focus goal is created contribute
-            toward that goal.
+          <aside class="step-note step-note--automatic-breaks">
+            <strong>Automatic breaks</strong>
+            When automatic breaks are enabled for a todo, blocked websites and
+            applications become available during each break, then are blocked
+            again when the break ends.
           </aside>
         </section>
 
@@ -456,7 +466,7 @@
                 <strong>Emergency exit</strong>
                 <span>
                   Set how long Fokasu waits before an emergency exit clears an
-                  active focus lock.
+                  active Focus Block.
                 </span>
               </li>
               <li>
@@ -500,7 +510,7 @@
 
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="/#top">Home</a>
-          <a href="#top">How Block Works</a>
+          <a href="#top">Focus Block Guide</a>
           <a href="/how-it-works/">Guides</a>
           <a href="/privacy.html">Privacy</a>
         </nav>
