@@ -249,7 +249,7 @@ main {
   justify-items: center;
   gap: clamp(18px, 3vh, 30px);
   width: min(100% - 32px, 1320px);
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .hero-copy {
@@ -411,6 +411,119 @@ main {
   transform: translateY(-1px);
 }
 
+.want-marquee {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  width: 100vw;
+  justify-self: center;
+  overflow: hidden;
+  margin-bottom: clamp(10px, 2vh, 22px);
+  scroll-margin-top: 92px;
+}
+
+.want-marquee::before,
+.want-marquee::after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  width: clamp(48px, 7vw, 132px);
+  content: "";
+  pointer-events: none;
+}
+
+.want-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #030506, transparent);
+}
+
+.want-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #030506, transparent);
+}
+
+.want-track {
+  display: flex;
+  width: max-content;
+  gap: 14px;
+  will-change: transform;
+  animation: want-scroll-right 38s linear infinite;
+}
+
+.want-marquee:hover .want-track {
+  animation-play-state: paused;
+}
+
+.want-group {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 14px;
+}
+
+.want-group span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid rgba(105, 255, 194, 0.2);
+  border-radius: 999px;
+  color: #c3cec9;
+  background: rgba(53, 217, 155, 0.055);
+  font-size: 0.9rem;
+  font-weight: 550;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.want-group span::before {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #35d99b;
+  box-shadow: 0 0 10px rgba(53, 217, 155, 0.55);
+  content: "";
+}
+
+@keyframes want-scroll-right {
+  from {
+    transform: translateX(calc(-50% - 7px));
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .want-marquee {
+    overflow: visible;
+  }
+
+  .want-marquee::before,
+  .want-marquee::after {
+    display: none;
+  }
+
+  .want-track {
+    width: auto;
+    animation: none;
+    transform: none;
+  }
+
+  .want-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 16px;
+  }
+
+  .want-group[aria-hidden="true"] {
+    display: none;
+  }
+}
+
 .download-picker-menu {
   position: absolute;
   z-index: 10;
@@ -505,7 +618,7 @@ main {
   position: relative;
   isolation: isolate;
   width: min(100%, 1320px, calc((100svh - 240px) * 998 / 529));
-  aspect-ratio: 998 / 529;
+  aspect-ratio: 17 / 10;
   overflow: hidden;
 }
 
@@ -548,6 +661,27 @@ main {
   letter-spacing: -0.025em;
 }
 
+.locked-description {
+  margin: 2px 0 0;
+  color: #aeb8c3;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  line-height: 1.5;
+}
+
+.locked-description a {
+  margin-left: 4px;
+  color: #6ef0b9;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.locked-description a:hover,
+.locked-description a:focus-visible {
+  color: #b5ffdf;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .stage-glow {
   position: absolute;
   z-index: -1;
@@ -578,8 +712,8 @@ main {
 
 .dashboard-shell {
   z-index: 1;
-  top: 9.8%;
-  left: 16.3%;
+  top: 5%;
+  left: 15.95%;
   width: 68.1%;
 }
 
@@ -632,8 +766,8 @@ main {
 .lock-callout {
   position: absolute;
   z-index: 4;
-  top: 5.8%;
-  left: 91.1%;
+  top: 5%;
+  left: 90.9%;
   width: 25%;
   color: #f4f7f5;
   pointer-events: none;
@@ -1401,7 +1535,7 @@ main {
   }
 
   .hero-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .hero-copy {
@@ -1509,8 +1643,12 @@ main {
     width: min(calc(100% - 32px), 820px);
   }
 
+  .want-marquee {
+    margin-bottom: 28px;
+  }
+
   .visual-stage {
-    aspect-ratio: 2384 / 1626;
+    aspect-ratio: 2388 / 1852;
   }
 
   .hero .visual-stage > .distractions {
@@ -1518,9 +1656,9 @@ main {
   }
 
   .visual-stage > .dashboard-shell {
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
   }
 
   .locked-dashboard-shell .lock-callout {

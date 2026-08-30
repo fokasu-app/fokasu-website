@@ -6,13 +6,13 @@
     <meta name="theme-color" content="#030506" />
     <meta
       name="description"
-      content="Plan tasks, block distracting websites and applications until your focus goal is complete, build habits, and stay accountable with Fokasu."
+      content="Plan study tasks, focus with automatic breaks, block distractions, track progress, and study with friends using Fokasu."
     />
     <link rel="canonical" href="https://fokasu.app/" />
-    <title>Fokasu — Website and App Blocker &amp; Focus Planner</title>
+    <title>Fokasu — Study Planner, Focus Timer &amp; App Blocker</title>
     <link rel="icon" href="logo/fokasu_logo.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="logo/fokasu_logo.png" type="image/png" />
-    <link rel="stylesheet" href="index.css?v=mobile-more-20260826-1" />
+    <link rel="stylesheet" href="index.css?v=mobile-border-20260830-1" />
     <script src="/navigation.js?v=shared-download-20260826-1" defer></script>
   </head>
   <body id="top">
@@ -69,9 +69,9 @@
           <a
             class="nav-how-blocks"
             href="/how-it-works/"
-            aria-label="How Block Works"
+            aria-label="Focus Block Guide"
           >
-            <span class="nav-label-full">How Block Works</span>
+            <span class="nav-label-full">Focus Block Guide</span>
             <span class="nav-label-short" aria-hidden="true">Block</span>
           </a>
           <details class="nav-more">
@@ -98,13 +98,13 @@
     <main>
       <section
         class="hero"
-        aria-label="Fokasu task planning and distraction blocking"
+        aria-label="Fokasu study planning and focused work"
       >
         <div class="hero-layout">
           <div class="hero-copy">
             <h1>
-              Plan your task<br />
-              then lock distractions out
+              Plan. Automate. Study together.<br />
+              Block distractions.
             </h1>
 
             <div class="hero-benefits" aria-label="Fokasu benefits">
@@ -115,7 +115,7 @@
                     d="M12 3.5c4.7 0 8.5 3.8 8.5 8.5s-3.8 8.5-8.5 8.5S3.5 16.7 3.5 12 7.3 3.5 12 3.5z"
                   />
                 </svg>
-                Desktop focus planner
+                Study planner and focus timer
               </span>
 
               <span>
@@ -124,7 +124,7 @@
                     d="M7.5 10V8.2a4.5 4.5 0 1 1 9 0V10m-8.4 0h7.8a1.1 1.1 0 0 1 1.1 1.1v6.4a1.1 1.1 0 0 1-1.1 1.1H8.1A1.1 1.1 0 0 1 7 17.5v-6.4A1.1 1.1 0 0 1 8.1 10z"
                   />
                 </svg>
-                Lock todos until done
+                Automatic breaks and routines
               </span>
 
               <span>
@@ -133,7 +133,7 @@
                   <path d="M7.5 12.5a4.5 4.5 0 1 0 9 0" />
                   <path d="M12 12.5v7" />
                 </svg>
-                Website and App blocker
+                Website and app blocker
               </span>
             </div>
 
@@ -176,15 +176,36 @@
                 </div>
               </details>
 
-              <a class="hero-action-secondary" href="/whats-new-1.0.1/">
-                What’s New
-                <span aria-hidden="true">→</span>
-              </a>
-
               <a class="hero-action-secondary" href="/how-it-works/">
-                How It Works
+                Focus Block Guide
                 <span aria-hidden="true">→</span>
               </a>
+            </div>
+          </div>
+
+          <div
+            id="how-it-works"
+            class="want-marquee"
+            aria-label="What students can do with Fokasu"
+          >
+            <div class="want-track">
+              <div class="want-group">
+                <span>Want to plan your studies more easily?</span>
+                <span>Want to block distracting apps and websites?</span>
+                <span>Want to track your study hours?</span>
+                <span>Want to study with friends?</span>
+                <span>Want to compete on the leaderboard?</span>
+                <span>Want to join a community of students?</span>
+              </div>
+
+              <div class="want-group" aria-hidden="true">
+                <span>Want to plan your studies more easily?</span>
+                <span>Want to block distracting apps and websites?</span>
+                <span>Want to track your study hours?</span>
+                <span>Want to study with friends?</span>
+                <span>Want to compete on the leaderboard?</span>
+                <span>Want to join a community of students?</span>
+              </div>
             </div>
           </div>
 
@@ -194,8 +215,8 @@
             <div class="dashboard-shell">
               <img
                 class="dashboard"
-                src="screenshots/new-app-screenshot.png"
-                alt="Fokasu focus dashboard showing a 60 minute focus session and today's tasks"
+                src="screenshots/app-screenshot.png"
+                alt="Fokasu study dashboard showing a 60 minute focus session and today's study tasks"
                 fetchpriority="high"
                 decoding="async"
                 draggable="false"
@@ -203,35 +224,31 @@
               <span class="dashboard-border" aria-hidden="true"></span>
             </div>
 
-            <img
-              class="distractions"
-              src="screenshots/dashboard-with-distraction/distractions.png"
-              alt="Notifications from distracting apps including Hacker News, TikTok, Facebook, YouTube, Instagram, Reddit, X, and Discord"
-              decoding="async"
-              draggable="false"
-            />
           </div>
         </div>
       </section>
 
       <section
-        id="how-it-works"
         class="locked-section"
-        aria-label="Fokasu dashboard with distractions blocked"
+        aria-label="Fokasu Focus Lock protecting study time"
       >
         <div class="locked-copy">
-          <p class="locked-kicker">Block stays put</p>
+          <p class="locked-kicker">Getting distracted?</p>
           <h2>
-            Even after an OS restart,<br />
-            distractions stay locked out.
+            Create or schedule a<br />
+            bypass-resistant Focus Block.
           </h2>
+          <p class="locked-description">
+            Nuke distracting websites and applications.
+            <a href="/how-it-works/">See guide <span aria-hidden="true">→</span></a>
+          </p>
         </div>
 
         <div class="visual-stage locked-stage">
           <img
             class="locked-distractions"
             src="screenshots/dashboard-with-distraction/distractions.png"
-            alt="Dimmed notifications from distracting apps"
+            alt="Dimmed notifications from apps and websites blocked during study time"
             loading="lazy"
             decoding="async"
             draggable="false"
@@ -240,8 +257,8 @@
           <div class="dashboard-shell locked-dashboard-shell">
             <img
               class="dashboard"
-              src="screenshots/new-app-screenshot.png"
-              alt="Fokasu focus dashboard with the distraction lock enabled"
+              src="screenshots/app-screenshot.png"
+              alt="Fokasu study dashboard with Focus Lock enabled"
               loading="lazy"
               decoding="async"
               draggable="false"
@@ -250,11 +267,11 @@
             <div
               class="lock-callout"
               role="img"
-              aria-label="Enable Lock"
+              aria-label="Enable Focus Lock"
             >
               <span class="lock-callout-marker" aria-hidden="true"></span>
               <span class="lock-callout-card" aria-hidden="true">
-                <strong>Enable Lock</strong>
+                <strong>Enable Focus Lock</strong>
               </span>
             </div>
           </div>
@@ -268,12 +285,11 @@
               <path d="M5 19c6.5 0 11.5-4.5 14-14-6.5 0-11.5 4.5-14 14Z" />
               <path d="M5 19c2.1-2.9 4.5-5.1 7.4-6.8" />
             </svg>
-            Build a rhythm
+            Build consistency
           </p>
-          <h2>Make progress a habit.</h2>
+          <h2>Make studying a habit.</h2>
           <p class="habits-description">
-            Set your routine once. The scheduled to-do appears automatically,
-            keeping consistency effortless.
+            Schedule recurring study tasks and keep your routine moving.
           </p>
         </div>
 
@@ -282,74 +298,7 @@
           <div class="habits-image-shell">
             <img
               src="screenshots/habits.png"
-              alt="Fokasu habits dashboard showing incomplete, completed, and failed routines"
-              loading="lazy"
-              decoding="async"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="habits-section groups-section"
-        aria-label="Fokasu group goals"
-      >
-        <div class="habits-copy">
-          <p class="habits-kicker">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M8.5 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-              <path d="M15.5 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
-              <path d="M3.5 19a5 5 0 0 1 10 0m1.5-4a4.5 4.5 0 0 1 5.5 4" />
-            </svg>
-            Make progress together
-          </p>
-          <h2>Turn shared goals into finished work.</h2>
-          <p class="habits-description">
-            Create a group, set a shared goal, and work toward it together.
-          </p>
-        </div>
-
-        <div class="habits-visual">
-          <div class="habits-glow" aria-hidden="true"></div>
-          <div class="habits-image-shell">
-            <img
-              src="screenshots/Groups.png"
-              alt="Fokasu group dashboard showing a shared goal, progress trail, and member tasks"
-              loading="lazy"
-              decoding="async"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="habits-section friends-section"
-        aria-label="Fokasu friends and accountability"
-      >
-        <div class="habits-copy">
-          <p class="habits-kicker">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M8.5 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-              <path d="M15.5 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
-              <path d="M3.5 19a5 5 0 0 1 10 0m1.5-4a4.5 4.5 0 0 1 5.5 4" />
-            </svg>
-            Stay accountable
-          </p>
-          <h2>Keep your circle moving.</h2>
-          <p class="habits-description">
-            See your focus circle at a glance, share the momentum, and stay
-            motivated.
-          </p>
-        </div>
-
-        <div class="habits-visual">
-          <div class="habits-glow" aria-hidden="true"></div>
-          <div class="habits-image-shell">
-            <img
-              src="screenshots/friends.png"
-              alt="Fokasu friends dashboard showing friends, focus streaks, and ongoing progress"
+              alt="Fokasu study habits dashboard showing incomplete, completed, and failed routines"
               loading="lazy"
               decoding="async"
               draggable="false"
@@ -371,9 +320,9 @@
             </svg>
             See your progress
           </p>
-          <h2>See what you’ve accomplished.</h2>
+          <h2>Watch your study hours add up.</h2>
           <p class="habits-description">
-            Keep track of what you’ve accomplished through graphs and heatmaps.
+            Track focused time and completed tasks by week or month.
           </p>
         </div>
 
@@ -382,7 +331,73 @@
           <div class="habits-image-shell">
             <img
               src="screenshots/stats.png"
-              alt="Fokasu stats dashboard showing focused minutes, completed todos, and a weekly bar graph"
+              alt="Fokasu study statistics showing focused minutes, completed tasks, and a weekly graph"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="habits-section groups-section"
+        aria-label="Fokasu group goals"
+      >
+        <div class="habits-copy">
+          <p class="habits-kicker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M8.5 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+              <path d="M15.5 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+              <path d="M3.5 19a5 5 0 0 1 10 0m1.5-4a4.5 4.5 0 0 1 5.5 4" />
+            </svg>
+            Study together
+          </p>
+          <h2>Work toward a shared goal.</h2>
+          <p class="habits-description">
+            Create a study group, set a target, and finish tasks together.
+          </p>
+        </div>
+
+        <div class="habits-visual">
+          <div class="habits-glow" aria-hidden="true"></div>
+          <div class="habits-image-shell">
+            <img
+              src="screenshots/Groups.png"
+              alt="Fokasu Exam Prep group showing shared study hours, a current goal, and member tasks"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="habits-section friends-section"
+        aria-label="Fokasu friends and accountability"
+      >
+        <div class="habits-copy">
+          <p class="habits-kicker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M8.5 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+              <path d="M15.5 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+              <path d="M3.5 19a5 5 0 0 1 10 0m1.5-4a4.5 4.5 0 0 1 5.5 4" />
+            </svg>
+            Stay accountable
+          </p>
+          <h2>See who’s studying with you.</h2>
+          <p class="habits-description">
+            Follow your friends’ focus time, streaks, and current progress.
+          </p>
+        </div>
+
+        <div class="habits-visual">
+          <div class="habits-glow" aria-hidden="true"></div>
+          <div class="habits-image-shell">
+            <img
+              src="screenshots/friends.png"
+              alt="Fokasu friends dashboard showing study streaks, focused time, and ongoing progress"
               loading="lazy"
               decoding="async"
               draggable="false"
@@ -396,10 +411,10 @@
         aria-label="Fokasu focus leaderboard"
       >
         <div class="habits-copy">
-          <p class="habits-kicker">Compare progress</p>
-          <h2>See the top 10.</h2>
+          <p class="habits-kicker">Friendly competition</p>
+          <h2>Turn focus into momentum.</h2>
           <p class="habits-description">
-            View the top 10 leaders for the day and the week.
+            Compare focused time and completed tasks each day or week.
           </p>
         </div>
 
@@ -408,7 +423,7 @@
           <div class="habits-image-shell">
             <img
               src="screenshots/leaderboard.png"
-              alt="Fokasu daily leaderboard ranking users by focused time and completed todos"
+              alt="Fokasu daily study leaderboard ranking users by focused time and completed tasks"
               loading="lazy"
               decoding="async"
               draggable="false"
@@ -422,10 +437,10 @@
         aria-label="Fokasu community"
       >
         <div class="habits-copy">
-          <p class="habits-kicker">Join the community</p>
-          <h2>Connect with the Community</h2>
+          <p class="habits-kicker">Share the journey</p>
+          <h2>Learn and improve together.</h2>
           <p class="habits-description">
-            Create posts and comment on what others share.
+            Share study wins, ideas, and encouragement.
           </p>
         </div>
 
@@ -434,7 +449,7 @@
           <div class="habits-image-shell">
             <img
               src="screenshots/community.png"
-              alt="Fokasu Community screen showing a community post and comment count"
+              alt="Fokasu study community showing a member post and comment count"
               loading="lazy"
               decoding="async"
               draggable="false"
@@ -451,13 +466,13 @@
             <img src="logo/fokasu_logo.svg" alt="" aria-hidden="true" />
             <span>Fokasu</span>
           </a>
-          <p>Focus on what matters. Let Fokasu handle the distractions.</p>
+          <p>Plan your study. Protect your focus. Keep progressing.</p>
         </div>
 
         <nav class="footer-links" aria-label="Footer navigation">
           <a href="#top">Home</a>
-          <a href="#how-it-works">How Block Works</a>
-          <a href="/how-it-works/">Guides</a>
+          <a href="#how-it-works">Features</a>
+          <a href="/how-it-works/">Focus Block Guide</a>
           <a href="privacy.html">Privacy</a>
         </nav>
 
