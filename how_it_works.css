@@ -302,8 +302,7 @@
   max-width: 100%;
 }
 
-#install-extension .step-note--extension-required,
-#install-extension .step-note--browser-support {
+#install-extension .step-note {
   justify-self: center;
   box-sizing: border-box;
   width: 100%;
@@ -1097,8 +1096,7 @@
 
   .step-note-stack,
   .step-note,
-  #install-extension .step-note--extension-required,
-  #install-extension .step-note--browser-support,
+  #install-extension .step-note,
   .block-step--focus-settings .step-note--break-reward,
   .block-step--focus-settings .step-note--scheduled-block,
   #build-block-list .step-note--exceptions,
