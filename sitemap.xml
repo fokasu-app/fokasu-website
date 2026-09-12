@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://fokasu.app/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://fokasu.app/how-it-works/</loc>
@@ -35,5 +35,13 @@
   <url>
     <loc>https://fokasu.app/uninstall-1.0.0/</loc>
     <lastmod>2026-08-30</lastmod>
+  </url>
+  <url>
+    <loc>https://fokasu.app/fyq/</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://fokasu.app/ypt-alternative/</loc>
+    <lastmod>2026-09-12</lastmod>
   </url>
 </urlset>
