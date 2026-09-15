@@ -241,6 +241,14 @@
 }
 
 @media (max-width: 720px) {
+  .alternative-feature > .alternative-copy {
+    text-align: center;
+  }
+
+  .alternative-feature > .alternative-copy > p {
+    margin-inline: auto;
+  }
+
   .alternative-main {
     width: calc(100% - 32px);
   }

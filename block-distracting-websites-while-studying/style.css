@@ -1,0 +1,60 @@
+.blocking-flow-heading {
+  margin: 64px auto 0;
+  text-align: center;
+}
+
+.blocking-flow-heading h2 {
+  margin: 0;
+  color: #a8f3d6;
+  font-size: clamp(1.85rem, 3vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(53, 217, 155, 0.72);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.28em;
+}
+
+.blocking-goal {
+  text-align: center;
+}
+
+.blocking-goal > .alternative-copy,
+.blocking-goal > .alternative-copy > p {
+  margin-inline: auto;
+}
+
+.blocking-breaks {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.blocking-guide-box {
+  max-width: 560px;
+  margin: 36px auto 0;
+  padding: 28px 24px;
+  border: 1px solid #75dfb9;
+  border-radius: 13px;
+  background: #10271f;
+  box-shadow: 0 0 32px rgba(53, 217, 155, 0.1);
+}
+
+.blocking-guide-box p {
+  margin: 0;
+  color: #eef3f4;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.blocking-guide-box .alternative-text-link {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+@media (max-width: 720px) {
+  .blocking-breaks {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,128 @@
+.study-fit {
+  text-align: center;
+}
+
+.study-guide.study-fit > .alternative-copy {
+  width: 100%;
+  max-width: none;
+  text-align: center;
+}
+
+.study-guide.study-fit > .alternative-copy > p {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.study-actions {
+  margin-inline: auto;
+}
+
+.study-guide {
+  padding-block: clamp(54px, 7vw, 88px);
+  border-top: 1px solid #ffffff12;
+}
+
+.alternative-hero + .study-guide {
+  margin-top: clamp(64px, 8vw, 100px);
+}
+
+.study-guide > .alternative-copy {
+  max-width: 700px;
+}
+
+.study-guide > .alternative-copy > p:not(.alternative-eyebrow) {
+  max-width: 650px;
+}
+
+.study-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.study-card {
+  padding: clamp(22px, 3vw, 32px);
+  border: 1px solid rgba(162, 193, 180, 0.18);
+  border-radius: 13px;
+  background: #0b1013;
+}
+
+.study-number {
+  color: #75dfb9;
+  font-size: 0.8rem;
+}
+
+.study-card h3,
+.study-steps h3 {
+  margin: 18px 0 10px;
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.study-card p,
+.study-steps p,
+.study-faq details p,
+.study-related {
+  margin: 0;
+  color: #a3adb7;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.study-steps {
+  margin: 30px 0 0;
+  padding-left: 24px;
+  max-width: 760px;
+}
+
+.study-steps li {
+  padding-left: 12px;
+  margin-top: 24px;
+}
+
+.study-steps li::marker {
+  color: #75dfb9;
+  font-weight: 600;
+}
+
+.study-guide a {
+  color: #75dfb9;
+  text-underline-offset: 4px;
+}
+
+.study-faq .alternative-copy {
+  margin-bottom: 30px;
+}
+
+.study-faq details {
+  border-bottom: 1px solid #ffffff12;
+}
+
+.study-faq summary {
+  padding: 24px 4px;
+  cursor: pointer;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.study-faq summary::marker {
+  color: #75dfb9;
+}
+
+.study-faq details p {
+  max-width: 760px;
+  padding: 0 4px 24px;
+}
+
+.study-related {
+  margin-top: 28px;
+}
+
+@media (max-width: 720px) {
+  .study-card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
