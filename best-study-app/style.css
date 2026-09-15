@@ -34,6 +34,17 @@
   max-width: 650px;
 }
 
+.study-routine > .alternative-copy,
+.study-faq > .alternative-copy {
+  max-width: none;
+  text-align: center;
+}
+
+.study-routine > .alternative-copy > p,
+.study-faq > .alternative-copy > p {
+  margin-inline: auto;
+}
+
 .study-card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -72,14 +83,23 @@
 }
 
 .study-steps {
-  margin: 30px 0 0;
-  padding-left: 24px;
+  margin: 30px auto 0;
+  padding-left: 0;
   max-width: 760px;
+  text-align: center;
+  list-style-position: inside;
 }
 
 .study-steps li {
-  padding-left: 12px;
   margin-top: 24px;
+}
+
+.study-steps h3 {
+  display: inline;
+}
+
+.study-steps p {
+  margin-top: 10px;
 }
 
 .study-steps li::marker {
@@ -98,6 +118,7 @@
 
 .study-faq details {
   border-bottom: 1px solid #ffffff12;
+  text-align: center;
 }
 
 .study-faq summary {
@@ -114,11 +135,13 @@
 
 .study-faq details p {
   max-width: 760px;
+  margin-inline: auto;
   padding: 0 4px 24px;
 }
 
 .study-related {
   margin-top: 28px;
+  text-align: center;
 }
 
 @media (max-width: 720px) {
