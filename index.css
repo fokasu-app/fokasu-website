@@ -122,6 +122,113 @@ body {
   display: none;
 }
 
+.nav-community {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.nav-community > summary {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 0;
+  color: #9299a5;
+  font-size: 0.9rem;
+  font-weight: 500;
+  list-style: none;
+  cursor: pointer;
+  transition: color 180ms ease;
+}
+
+.nav-community > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-community > summary:hover,
+.nav-community > summary:focus-visible,
+.nav-community[open] > summary {
+  color: #f1f3f5;
+}
+
+.nav-community > summary:focus-visible,
+.site-nav .community-menu a:focus-visible {
+  outline: 2px solid #b7bdff;
+  outline-offset: 3px;
+}
+
+.nav-community .community-menu {
+  right: auto;
+  left: 50%;
+  min-width: 190px;
+  border: 1px solid rgba(105, 255, 194, 0.22);
+  transform: translateX(-50%);
+}
+
+.site-nav .community-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.site-nav .community-menu a:hover,
+.site-nav .community-menu a:focus-visible {
+  color: #fff;
+  background: rgba(88, 101, 242, 0.16);
+}
+
+.community-menu svg {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  color: #b7bdff;
+}
+
+.community-menu .reddit-icon {
+  color: #ff4500;
+}
+
+.community-external {
+  margin-left: auto;
+  color: #9299a5;
+}
+
+@media (max-width: 620px) {
+  .nav-community > summary {
+    gap: 5px;
+    padding: 8px 0;
+    font-size: 0.74rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header .site-header-inner {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-block: 10px;
+  }
+
+  .site-header .site-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.site-nav .nav-mobile-guide {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .site-header .nav-how-blocks {
+    display: none;
+  }
+
+  .site-header .nav-mobile-guide {
+    display: block;
+  }
+}
+
 .nav-download-picker {
   position: relative;
 }
@@ -554,9 +661,9 @@ main {
 
 .nav-download-picker .download-picker-menu {
   top: calc(100% + 10px);
-  right: 0;
-  left: auto;
-  transform: none;
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .download-picker-menu p {
@@ -1357,6 +1464,7 @@ main {
     right: 14px;
     left: 14px;
     width: auto;
+    transform: none;
   }
 
   .hero-actions {

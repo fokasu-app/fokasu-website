@@ -1,6 +1,6 @@
 (() => {
   const popupMenus = [
-    ...document.querySelectorAll(".nav-more, .download-picker"),
+    ...document.querySelectorAll(".nav-more, .download-picker, .nav-community"),
   ];
 
   if (popupMenus.length === 0) return;

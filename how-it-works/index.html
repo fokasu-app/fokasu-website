@@ -12,12 +12,12 @@
     <title>Focus Block Guide — Fokasu</title>
     <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="/logo/fokasu_logo.png" type="image/png" />
-    <link rel="stylesheet" href="/index.css?v=mobile-border-20260830-1" />
+    <link rel="stylesheet" href="/index.css?v=contact-header-20260916-5" />
     <link
       rel="stylesheet"
       href="/how_it_works.css?v=consent-note-20260902-1"
     />
-    <script src="/navigation.js?v=shared-download-20260826-1" defer></script>
+    <script src="/navigation.js?v=community-menu-20260916-1" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -64,7 +64,39 @@
             rel="noopener noreferrer"
             onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
           >Extension</a>
-          <a class="nav-secondary" href="/privacy.html">Privacy</a>
+          <details class="nav-community">
+            <summary>
+              <span>Contact</span>
+            </summary>
+            <div class="nav-more-menu community-menu">
+              <a href="https://discord.gg/paSgRJ8w6" target="_blank" rel="noopener noreferrer" aria-label="Discord (opens in a new tab)">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.445.864-.608 1.249a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.249.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .079.01c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.076.076 0 0 0-.04.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.334-.955 2.419-2.157 2.419Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.334-.946 2.419-2.157 2.419Z" />
+            </svg>
+                <span>Discord</span>
+                <span class="community-external" aria-hidden="true">↗</span>
+              </a>
+              <a href="https://www.reddit.com/r/FokasuApp/" target="_blank" rel="noopener noreferrer" aria-label="Reddit (opens in a new tab)">
+                <svg class="reddit-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="12" fill="currentColor" />
+                  <g stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 10 1-5 4 1" fill="none" />
+                    <circle cx="18" cy="6" r="1.5" fill="#fff" />
+                    <circle cx="5" cy="12" r="2" fill="#fff" />
+                    <circle cx="19" cy="12" r="2" fill="#fff" />
+                    <ellipse cx="12" cy="14" rx="7" ry="4.5" fill="#fff" />
+                  </g>
+                  <g fill="#ff4500">
+                    <circle cx="9" cy="13.5" r="1" />
+                    <circle cx="15" cy="13.5" r="1" />
+                  </g>
+                  <path d="M9 16q3 2 6 0" fill="none" stroke="#ff4500" stroke-linecap="round" />
+                </svg>
+                <span>Reddit</span>
+                <span class="community-external" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </details>
           <a
             class="nav-how-blocks"
             href="/how-it-works/"
@@ -83,12 +115,12 @@
               </svg>
             </summary>
             <div class="nav-more-menu">
+              <a class="nav-mobile-guide" href="/how-it-works/" aria-current="page">Focus Block Guide</a>
               <a
                 href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
                 target="_blank"
                 rel="noopener noreferrer"
               >Extension</a>
-              <a href="/privacy.html">Privacy</a>
             </div>
           </details>
         </nav>
