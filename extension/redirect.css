@@ -1,0 +1,29 @@
+:root {
+  color-scheme: dark;
+  font-family: "Noto Sans", system-ui, sans-serif;
+  background: #111318;
+  color: #f4f4f2;
+}
+* { box-sizing: border-box; }
+body {
+  min-height: 100svh;
+  margin: 0;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+}
+main { width: min(100%, 440px); }
+.brand { color: #27bc91; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; }
+h1 { font-size: clamp(24px, 5vw, 32px); margin: 16px 0 12px; }
+p { color: #a0a3ab; line-height: 1.6; }
+nav { display: grid; gap: 10px; margin-top: 24px; }
+a {
+  padding: 14px 16px;
+  border: 1px solid #252932;
+  border-radius: 8px;
+  background: #181b21;
+  color: #f4f4f2;
+  text-decoration: none;
+}
+a:hover { border-color: #20a77f; }
+a:focus-visible { outline: 2px solid #27bc91; outline-offset: 4px; }

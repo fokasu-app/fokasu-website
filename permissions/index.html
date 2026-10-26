@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Extension permissions · Fokasu</title>
+    <meta name="description" content="Set up your Fokasu extension permissions in three quick steps." />
+    <link rel="stylesheet" href="/permissions/permissions.css" />
+    <script src="/permissions/permissions.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="/" aria-label="Fokasu home"><img src="/logo/fokasu_logo.svg" width="36" height="36" alt="" /><span>Fokasu</span></a>
+        <div class="browser-picker" role="group" aria-label="Tutorial browser">
+          <button type="button" data-browser="chromium" aria-pressed="true">Chrome</button>
+          <button type="button" data-browser="firefox" aria-pressed="false">Firefox</button>
+        </div>
+      </header>
+
+      <div class="intro">
+        <h1>Give Fokasu permission to enforce blocking</h1>
+      </div>
+
+      <ol class="steps" aria-label="Permission setup steps">
+        <li class="step">
+          <div class="step-heading"><span class="number">1</span><h2>Open Extensions</h2></div>
+          <button class="screenshot desktop-shot" type="button" aria-label="Enlarge screenshot: open the Extensions menu">
+            <img id="image-desktop" src="/permissions/images/chrome_desktop.png" alt="Chrome toolbar with the Extensions puzzle-piece icon at the top right" />
+            <svg class="extension-arrow" viewBox="-2 -2 50 54" fill="currentColor" stroke="#133b31" stroke-width="2" stroke-linejoin="round" aria-hidden="true" hidden><polygon points="0,25 26,0 26,12 46,12 46,38 26,38 26,50" /></svg>
+            <span class="image-hint" aria-hidden="true">↗</span>
+          </button>
+          <p>Click the <svg class="puzzle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-label="puzzle-piece"><path d="M9 4H4v6a3 3 0 1 1 0 6v4h6a3 3 0 1 1 6 0h4v-6a3 3 0 1 0 0-6V4h-5a3 3 0 1 0-6 0Z" /></svg> icon at the top right.</p>
+        </li>
+        <li class="step">
+          <div class="step-heading"><span class="number">2</span><h2>Select Fokasu</h2></div>
+          <button class="screenshot" type="button" aria-label="Enlarge screenshot: select Fokasu">
+            <img id="image-icon" src="/permissions/images/chrome_fokasu_icon.png" alt="Fokasu listed in Chrome’s Extensions menu" />
+            <span class="image-hint" aria-hidden="true">↗</span>
+          </button>
+          <p>Click <strong>Fokasu</strong> in the extensions list.</p>
+        </li>
+        <li class="step">
+          <div class="step-heading"><span class="number">3</span><h2>Allow permissions</h2></div>
+          <button class="screenshot setup-shot" type="button" aria-label="Enlarge screenshot: Fokasu permission setup">
+            <img id="image-opened" src="/permissions/images/chrome_fokasu_opened.png" alt="Fokasu setup with Review consent and Open extension settings buttons" />
+            <span class="image-hint" aria-hidden="true">↗</span>
+          </button>
+          <p id="permission-copy">Review consent, then enable <strong>Allow in Incognito</strong> in extension settings.</p>
+        </li>
+      </ol>
+
+      <footer>
+        <span><span class="check" aria-hidden="true">✓</span> All set? Return to the Fokasu app.</span>
+        <a href="/extension/" target="_blank" rel="noopener noreferrer">Need the extension? <span aria-hidden="true">↗</span></a>
+      </footer>
+      <noscript><p class="no-script">Enable JavaScript to switch to the Firefox guide.</p></noscript>
+    </main>
+
+    <dialog aria-label="Screenshot preview" id="image-preview">
+      <button type="button" id="close-preview" aria-label="Close screenshot preview">✕</button>
+      <img id="preview-image" alt="" />
+    </dialog>
+  </body>
+</html>
