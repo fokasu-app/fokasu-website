@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 144" width="124" height="144" role="img" aria-label="Fokasu focus guard mascot">
+<!-- Geometry and palette from desktop FocusGuardMascot.java and blocking-tutorial.css. -->
+<defs><linearGradient id="guard-gradient-0" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#49c6a2"/><stop offset="1" stop-color="#147861"/></linearGradient><linearGradient id="guard-gradient-1" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffdfb6"/><stop offset="1" stop-color="#efb790"/></linearGradient><linearGradient id="guard-gradient-2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d6eee1"/><stop offset="1" stop-color="#78b5a7"/></linearGradient><linearGradient id="guard-gradient-3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe7a0"/><stop offset="1" stop-color="#c99545"/></linearGradient><linearGradient id="guard-gradient-4" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#83e9bb"/><stop offset="1" stop-color="#259d7c"/></linearGradient><linearGradient id="guard-gradient-5" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0b7"/><stop offset="1" stop-color="#e1ae54"/></linearGradient><linearGradient id="guard-gradient-6" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2e8f77"/><stop offset="1" stop-color="#123e37"/></linearGradient></defs>
+<style>.guard-shadow { fill: #000; fill-opacity: .28; }
+.guard-cape, .guard-dark, .guard-skin, .guard-armor, .guard-shield-edge,
+.guard-helmet, .guard-gold, .guard-shield {
+  stroke: #173d37;
+  stroke-width: 1.8px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.guard-cape { fill: url(#guard-gradient-0); }
+.guard-dark { fill: #203e3b; }
+.guard-skin { fill: url(#guard-gradient-1); }
+.guard-cheek { fill: #ee9d8d; opacity: 0.65; }
+.guard-armor { fill: url(#guard-gradient-2); }
+.guard-shield-edge { fill: url(#guard-gradient-3); }
+.guard-helmet { fill: url(#guard-gradient-4); }
+.guard-gold { fill: url(#guard-gradient-5); }
+.guard-shield { fill: url(#guard-gradient-6); }
+.guard-shield-glint { fill: #97f6c8; fill-opacity: .16; }
+.guard-eye { fill: #203e3b; }
+.guard-white { fill: #fffaf0; }
+.guard-sparkle { fill: #ffe19a; }
+.guard-line, .guard-detail, .guard-seam, .guard-shine, .guard-rim, .guard-rivet {
+  fill: none;
+  stroke: #29463e;
+  stroke-width: 2.2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.guard-detail { stroke-width: 1.5px; }
+.guard-seam { stroke: #78c4a8; stroke-width: 1.3px; }
+.guard-shine { stroke: #c8ffdb; stroke-width: 3px; }
+.guard-rim { stroke: #b7f4cc; stroke-width: 2px; }
+.guard-rivet { stroke: #fff1bc; stroke-width: 2px; }
+.guard-mouth-open { fill: #733e3c; stroke: #29463e; stroke-width: 1.6px; }
+</style>
+<path class="guard-shadow" d="M17 135 C17 127 107 127 107 135 C107 143 17 143 17 135Z"/>
+<path class="guard-cape" d="M42 83 Q25 82 14 95 L8 113 L22 108 L29 113 Q27 96 48 94Z"/>
+<path class="guard-seam" d="M37 89 Q23 91 19 103"/>
+<path class="guard-dark" d="M41 113 L54 115 L53 131 Q47 138 32 134 L32 129 Q33 124 41 124Z M70 115 L83 113 L85 125 Q94 125 95 132 L94 135 L71 135Z"/>
+<path class="guard-seam" d="M35 131 L50 131 M74 131 L91 131"/>
+<path class="guard-armor" d="M40 83 Q61 76 83 84 L91 113 Q64 128 33 115Z"/>
+<path class="guard-helmet" d="M39 88 Q26 88 24 102 L32 111 L44 100Z"/>
+<path class="guard-skin" d="M27 100 Q19 99 20 107 Q22 116 32 112 L37 106Z"/>
+<path class="guard-helmet" d="M80 86 Q87 82 91 86 L100 76 L108 81 Q103 98 90 101 L83 97Z"/>
+<path class="guard-skin" d="M98 79 L95 71 Q91 67 93 64 Q96 61 100 66 L99 55 Q99 51 102 52 L105 64 L107 53 Q109 50 111 53 L111 65 L115 58 Q119 56 119 60 L115 74 Q112 83 105 84Z"/>
+<path class="guard-detail" d="M100 70 Q107 68 109 75"/>
+<path class="guard-gold" d="M97 81 L106 86 L109 81 L100 76Z"/>
+<path class="guard-skin" d="M28 47 Q24 25 61 24 Q96 24 96 50 L92 68 Q86 86 62 87 Q37 86 30 69Z"/>
+<path class="guard-cheek" d="M35 65 C27 63 28 74 37 74 C46 74 45 65 35 65Z M83 65 C74 65 74 74 83 74 C92 74 92 64 83 65Z"/>
+<path class="guard-helmet" d="M27 50 Q18 18 52 15 Q87 9 97 33 L98 50 L88 47 Q63 34 37 49Z"/>
+<path class="guard-shine" d="M32 34 Q35 22 51 22"/>
+<path class="guard-gold" d="M57 16 L55 8 Q66 9 69 3 Q84 6 81 17 Q76 28 65 30 L62 38 L55 36Z"/>
+<path class="guard-detail" d="M62 29 Q66 20 73 13"/>
+<path class="guard-helmet" d="M29 47 L38 44 L37 62 L31 66 Q27 59 29 47Z M88 44 L97 48 L95 63 L89 66Z"/>
+<path class="guard-rim" d="M39 46 Q62 37 86 46"/>
+<path class="guard-detail" d="M43 53 Q48 49 53 52 M70 52 Q76 48 81 53"/>
+<path class="guard-eye" d="M47 55 C41 55 41 67 47 67 C53 67 53 55 47 55Z M75 55 C69 55 69 67 75 67 C81 67 81 55 75 55Z"/>
+<path class="guard-white" d="M46 57 C43 57 43 61 46 61 C49 61 49 57 46 57Z M74 57 C71 57 71 61 74 61 C77 61 77 57 74 57Z"/>
+<path class="guard-detail" d="M59 65 Q62 67 65 65"/>
+<path class="guard-line" d="M54 72 Q62 79 70 71"/>
+<path class="guard-cape" d="M38 83 Q61 94 85 82 L83 91 Q61 100 39 91Z"/>
+<path class="guard-gold" d="M72 88 L78 85 L83 89 L78 94Z"/>
+<path class="guard-shield-edge" d="M37 96 L59 89 L83 96 L80 116 Q73 130 59 136 Q43 129 39 116Z"/>
+<path class="guard-shield" d="M43 100 L59 95 L77 100 L74 115 Q69 124 59 129 Q49 124 45 114Z"/>
+<path class="guard-shield-glint" d="M46 101 L59 97 L59 125 Q51 121 48 113Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" x="47" y="100" width="25" height="25">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4be3a8"/>
+      <stop offset="100%" stop-color="#2a9d6f"/>
+    </radialGradient>
+    <filter id="blur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <circle cx="50" cy="50" r="30" fill="#3ddc97" filter="url(#blur)" opacity="0.6"/>
+  <circle cx="50" cy="50" r="22" fill="url(#glow)"/>
+</svg>
+
+<path class="guard-rivet" d="M40 98 L42 98 M79 98 L79 100 M59 132 L59 132"/>
+</svg>

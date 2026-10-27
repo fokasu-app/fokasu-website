@@ -1,0 +1,962 @@
+/* Scope to this main element and outrank the shared guide’s per-step ID rules. */
+.alternative-guide #top .how-it-works-content .block-step {
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(36px, 4vw, 48px);
+}
+.alternative-guide #top .mascot-guide {
+  display: grid;
+  grid-template-columns: clamp(100px, 12vw, 170px) minmax(0, 1fr);
+  align-items: center;
+  gap: 22px;
+  width: min(100%, 900px);
+  justify-self: center;
+  order: 0;
+  grid-column: 1;
+  min-width: 0;
+}
+.alternative-guide #top .guide-mascot {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.alternative-guide #top .block-step .step-copy {
+  position: relative;
+  grid-column: auto;
+  order: initial;
+  justify-items: start;
+  gap: 14px;
+  width: 100%;
+  padding: clamp(20px, 3vw, 30px);
+  border: 1px solid #414650;
+  border-radius: 16px;
+  background: #101114;
+  text-align: left;
+}
+.alternative-guide #top .step-copy::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border-left: 1px solid #414650;
+  border-bottom: 1px solid #414650;
+  background: #101114;
+  transform: translateY(-50%) rotate(45deg);
+}
+.alternative-guide #top .block-step .step-copy h2 {
+  color: #5ee0bd;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.25;
+}
+.alternative-guide #top .block-step .step-copy p {
+  max-width: none;
+  line-height: 1.7;
+}
+.alternative-guide #top .block-step .step-copy .step-kicker {
+  color: #91a09b;
+  font-size: .76rem;
+}
+.alternative-guide #top .how-it-works-content .block-step > .step-media {
+  grid-column: 1;
+  order: 1;
+  width: min(100%, 820px);
+}
+.alternative-guide #top .how-it-works-content .completion-card {
+  grid-column: 1;
+  order: 1;
+  justify-self: center;
+}
+/* Same arrow shape, color and rhythm as the permissions page. The tip sits
+   just outside each target so the control itself remains readable. */
+.guide-arrow {
+  position: absolute;
+  z-index: 2;
+  width: clamp(22px, 5.5%, 46px);
+  height: auto;
+  color: #5ee0bd;
+  pointer-events: none;
+  filter: drop-shadow(0 3px 8px #0006);
+
+}
+.guide-arrow--install-button { left: 86.5%; top: 25.9%; }
+.guide-arrow--header-lock { left: 92.8%; top: 5.8%; }
+.guide-arrow--focus-time { left: 51.5%; top: 45.5%; }
+.guide-arrow--block-input { left: 90%; top: 39.8%; }
+.guide-arrow--applications-tab { left: 66%; top: 30.8%; }
+.guide-arrow--estimated-time { left: 78%; top: 49.4%; }
+.guide-arrow--progress { left: 24%; top: 81.6%; }
+
+@media (max-width: 600px) {
+  .alternative-guide #top .mascot-guide {
+    grid-template-columns: 64px minmax(0, 1fr);
+    align-items: start;
+    gap: 12px;
+  }
+  .alternative-guide #top .guide-mascot { margin-top: 24px; }
+  .alternative-guide #top .block-step .step-copy { padding: 16px; gap: 12px; border-radius: 12px; }
+  .alternative-guide #top .step-copy::before { top: 55px; }
+  .alternative-guide #top .block-step .step-copy h2 { font-size: 1.2rem; }
+  .alternative-guide #top .block-step .step-copy p { font-size: .9rem; }
+  .alternative-guide #top .settings-options li { padding-left: 10px; }
+  
+}
+@media (prefers-reduced-motion: reduce) {
+  .guide-arrow {  transform: translateY(-50%); }
+}
+
+/* In-image tutorials share the desktop mascot treatment. */
+.alternative-guide #top :is(#set-focus-goal, #install-extension) .screenshot-tour {
+  isolation: isolate;
+  background: #090b0e;
+  aspect-ratio: var(--tour-aspect, 2384 / 1626);
+}
+.alternative-guide #top :is(#set-focus-goal, #install-extension) .mascot-guide {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 9%;
+  width: 77%;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 18px;
+}
+.alternative-guide #top :is(#set-focus-goal, #install-extension) .guide-mascot {
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  margin: 0;
+}
+.alternative-guide #top :is(#set-focus-goal, #install-extension) .step-copy {
+  padding: 20px;
+  gap: 12px;
+  box-shadow: 0 12px 36px #0006;
+}
+.alternative-guide #top :is(#set-focus-goal, #install-extension) .step-copy h2 {
+  font-size: 1.25rem;
+}
+.alternative-guide #top :is(#set-focus-goal, #install-extension) .step-copy p {
+  font-size: .9rem;
+  line-height: 1.6;
+}
+/* Dim only the screenshot; the cutout keeps the target at full brightness. */
+.tour-dimmer {
+  position: absolute;
+  z-index: 1;
+  inset: 0 0 auto;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+.alternative-guide #top .screenshot-tour .mascot-guide { z-index: 3; }
+/* Anchor arrows to screenshot dimensions even when mobile captions extend the frame. */
+.alternative-guide #top .screenshot-tour { container-type: inline-size; }
+.alternative-guide #top #set-focus-goal .guide-arrow--header-lock { left: 90.6%; top: 7cqw; }
+.alternative-guide #top #install-extension .guide-arrow--install-button { left: 81.1%; top: 15.1cqw; }
+@media (max-width: 700px) {
+  /* Keep the screenshot and guide in one frame without shrinking the text. */
+  .alternative-guide #top :is(#set-focus-goal, #install-extension) .screenshot-tour { aspect-ratio: auto; }
+  .alternative-guide #top :is(#set-focus-goal, #install-extension) .screenshot-tour > img {
+    height: auto;
+    aspect-ratio: var(--tour-aspect, 2384 / 1626);
+  }
+  .alternative-guide #top :is(#set-focus-goal, #install-extension) .mascot-guide {
+    position: relative;
+    inset: auto;
+    width: auto;
+    margin: 0 12px 18px;
+    grid-template-columns: 64px minmax(0, 1fr);
+    align-items: start;
+    gap: 12px;
+  }
+  .alternative-guide #top :is(#set-focus-goal, #install-extension) .guide-mascot { margin-top: 24px; }
+  .alternative-guide #top :is(#set-focus-goal, #install-extension) .step-copy { padding: 16px; }
+  .alternative-guide #top :is(#set-focus-goal, #install-extension) .step-copy::before { top: 55px; }
+}
+
+.alternative-guide #top #install-extension .screenshot-tour {
+  --tour-aspect: 1848 / 1018;
+  aspect-ratio: var(--tour-aspect);
+}
+.alternative-guide #top #install-extension > .step-note-stack {
+  order: 3;
+}
+@media (min-width: 701px) {
+  .alternative-guide #top #install-extension .mascot-guide { top: 38%; }
+}
+
+@media (max-width: 700px) {
+  .alternative-guide #top #install-extension .screenshot-tour { aspect-ratio: auto; }
+}
+
+/* Keep the solid arrow, pointing up from just below the highlighted control. */
+
+@media (prefers-reduced-motion: reduce) {
+  .alternative-guide #top .screenshot-tour .guide-arrow {
+
+    transform: translateX(-50%);
+  }
+}
+
+/* A lighter, consistent veil keeps the surrounding interface readable. */
+.alternative-guide #top {
+  --tour-dim-color: rgba(0, 0, 0, 0.50);
+}
+.alternative-guide #top .step-media { isolation: isolate; }
+.tour-dimmer--full {
+  inset: 0;
+  height: 100%;
+}
+
+.alternative-guide #top .block-overview {
+  background: transparent;
+}
+
+/* Match the alternative homepage’s app-window border without the green glow. */
+.alternative-guide #top .step-media {
+  border: 1px solid #303936;
+  box-shadow: 0 35px 100px #0008;
+}
+
+.alternative-guide #top .block-overview {
+  border: 1px solid #303936;
+  box-shadow: 0 35px 100px #0008;
+}
+
+.alternative-guide #top .overview-step-number {
+  background: transparent;
+}
+
+/* Match navigation styling and responsive behavior from the alternative homepage. */
+.alternative-header .site-nav { gap: 6px; }
+.alternative-header .site-nav > a,
+.alternative-header .nav-community > summary { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 0 12px; border: 1px solid transparent; border-radius: 8px; background: transparent; box-shadow: none; color: #aab3bc; font-size: .875rem; font-weight: 500; line-height: 1; white-space: nowrap; transition: color 160ms ease, background-color 160ms ease; }
+.alternative-header .site-nav > a:hover,
+.alternative-header .site-nav > a:focus-visible,
+.alternative-header .nav-community > summary:hover,
+.alternative-header .nav-community > summary:focus-visible,
+.alternative-header .nav-community[open] > summary { border-color: transparent; background: #ffffff08; color: #f1f5f3; }
+.alternative-header .site-nav .nav-download-picker > .nav-download { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 0 15px; border: 1px solid #343a3d; border-radius: 8px; background: #191e20; box-shadow: 0 1px 0 #ffffff05 inset; color: #e8eeeb; font-size: .875rem; font-weight: 600; line-height: 1; transition: background-color 160ms ease, border-color 160ms ease; }
+.alternative-header .site-nav .nav-download-picker { position: relative; margin-left: 10px; }
+.alternative-header .site-nav .nav-download-picker > .nav-download:hover,
+.alternative-header .site-nav .nav-download-picker > .nav-download:focus-visible,
+.alternative-header .site-nav .nav-download-picker[open] > .nav-download { border-color: #52675c; background: #242b28; color: #f2f8f4; box-shadow: none; }
+.alternative-header .nav-download-icon { display: block; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.alternative-header .download-picker-chevron svg { width: 11px; height: 8px; }
+.alternative-header .nav-more summary { width: 40px; height: 40px; border: 1px solid #ffffff12; border-radius: 8px; background: transparent; }
+.alternative-header .nav-more-menu,
+.alternative-header .download-picker-menu { border-color: #ffffff1a; border-radius: 12px; background: #121719; box-shadow: 0 16px 40px #0006; }
+.alternative-header .nav-download-picker .download-picker-menu { right: 0; left: auto; transform: none; }
+.alternative-header .nav-community .community-menu { right: 0; left: auto; transform: none; }
+.alternative-header .site-nav a:focus-visible,
+.alternative-header .site-nav summary:focus-visible { outline: 2px solid #79e6be; outline-offset: 3px; }
+@media (max-width: 700px) {
+ .alternative-header .site-nav { gap: 8px; }
+ .alternative-header .site-nav > .nav-secondary,
+ .alternative-header .site-nav > .nav-how-blocks,
+ .alternative-header .nav-community { display: none; }
+ .alternative-header .site-nav .nav-download-picker { margin-left: 0; }
+ .alternative-header .site-nav .nav-download-picker > .nav-download { min-height: 36px; padding: 0 11px; font-size: .8rem; }
+ .alternative-header .nav-more summary { width: 36px; height: 36px; }
+ .alternative-header .nav-download-icon { width: 14px; height: 14px; }
+ .alternative-header .site-nav .nav-mobile-guide { display: block; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .alternative-header .site-nav > a,
+ .alternative-header .nav-community > summary,
+ .alternative-header .site-nav .nav-download-picker > .nav-download { transition: none; }
+}
+
+/* Set the cycle label into the top edge, like a legend. */
+.alternative-guide #top .block-overview {
+  position: relative;
+  padding-top: 30px;
+}
+.alternative-guide #top .block-overview h2 {
+  position: absolute;
+  top: 0;
+  left: clamp(18px, 2.2vw, 26px);
+  transform: translateY(-50%);
+  width: max-content;
+  max-width: calc(100% - 36px);
+  padding-inline: 10px;
+  background: #030506;
+  line-height: 1.4;
+}
+
+/* Chrome permission walkthrough, with the consent explanation from the mascot. */
+.alternative-guide #top #consent-permissions.consent-tour {
+  width: 100%;
+  min-width: 0;
+  margin-top: 24px;
+}
+.alternative-guide #top #consent-permissions .consent-guide {
+  position: relative;
+  inset: auto;
+  width: 100%;
+
+}
+.alternative-guide #top #consent-permissions .consent-guide .step-copy p {
+  max-width: none;
+}
+.consent-permission-image {
+  width: min(100%, 505px);
+  margin: 30px auto 0;
+}
+.consent-permission-image .consent-shot {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #303936;
+  border-radius: 13px;
+}
+.consent-permission-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.consent-permission-image p {
+  margin: 16px 0 0;
+  color: #aeb8c3;
+  font-size: .85rem;
+  line-height: 1.6;
+}
+.consent-permission-image strong { color: #e2e8ed; }
+@media (max-width: 700px) {
+  .alternative-guide #top #consent-permissions .consent-guide {
+    margin: 0;
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Keep the consent companion beside the screenshot, below its toolbar. */
+.alternative-guide #top #consent-permissions.consent-tour {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+}
+.alternative-guide #top #consent-permissions .consent-guide {
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 14px;
+}
+.consent-permission-image { width: 100%; margin: 0; min-width: 0; }
+.consent-permission-image .consent-shot { position: relative; }
+.consent-puzzle-arrow {
+  left: 95.2%;
+  top: 6.5%;
+  width: clamp(22px, 8%, 36px);
+
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #consent-permissions.consent-tour {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .consent-permission-image {
+    order: -1;
+    width: min(100%, 505px);
+    justify-self: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .consent-puzzle-arrow {  transform: translateX(-50%); }
+}
+
+/* Keep the tall permission screenshot compact beside the explanation. */
+.alternative-guide #top #consent-permissions.consent-tour {
+  max-width: 900px;
+  justify-self: center;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
+}
+.alternative-guide #top #consent-permissions .consent-permission-image {
+  width: min(100%, 280px);
+  justify-self: center;
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #consent-permissions.consent-tour {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.alternative-guide #top #consent-permissions.consent-tour {
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+}
+.alternative-guide #top #consent-permissions .consent-permission-image {
+  grid-column: 1;
+  grid-row: 1;
+  width: min(100%, 320px);
+  justify-self: start;
+}
+.alternative-guide #top #consent-permissions .consent-guide {
+  grid-column: 2;
+  grid-row: 1;
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #consent-permissions.consent-tour {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .alternative-guide #top #consent-permissions .consent-permission-image {
+    justify-self: center;
+  }
+  .alternative-guide #top #consent-permissions .consent-guide {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+.alternative-guide .alternative-header .site-nav .nav-how-blocks[aria-current="page"],
+.alternative-guide .alternative-header .site-nav .nav-mobile-guide[aria-current="page"] {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  color: #aab3bc;
+}
+
+/* Bring the companion up beside the toolbar and point left into the puzzle. */
+.alternative-guide #top #consent-permissions.consent-tour {
+  align-items: start;
+  column-gap: 56px;
+}
+.alternative-guide #top #consent-permissions .consent-guide {
+  align-items: start;
+}
+.alternative-guide #top #consent-permissions .consent-guide .guide-mascot {
+  margin-top: 0;
+}
+.alternative-guide #top #consent-permissions .consent-permission-image {
+  position: relative;
+  container-type: inline-size;
+}
+.alternative-guide #top .consent-puzzle-arrow {
+  left: calc(100% - 8px);
+  top: 5.5cqw;
+  width: 36px;
+
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #consent-permissions .consent-permission-image {
+    width: min(calc(100% - 40px), 320px);
+    justify-self: start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .alternative-guide #top .consent-puzzle-arrow {
+
+    transform: translateY(-50%);
+  }
+}
+
+/* A sibling step uses the same row gap and section margins as the other images. */
+.alternative-guide #top #consent-permissions.consent-tour {
+  margin-top: clamp(24px, 3.2vw, 36px);
+}
+@media (min-width: 1101px) {
+  .alternative-guide #top #consent-permissions.consent-tour {
+    margin-top: clamp(59px, 7.35vh, 95px);
+  }
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #consent-permissions.consent-tour { margin-top: 0; }
+}
+
+.alternative-guide #top #consent-permissions .consent-guide {
+  grid-template-columns: 110px minmax(0, 1fr);
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #consent-permissions .consent-guide {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+}
+
+/* All mascot messages use the first extension message’s typography and spacing. */
+.alternative-guide #top :is(.block-step, #install-extension, #set-focus-goal, #consent-permissions) .step-copy {
+  padding: 20px;
+  gap: 12px;
+  border: 1px solid #414650;
+  border-radius: 16px;
+  background: #101114;
+  text-align: left;
+  justify-items: start;
+  box-shadow: 0 12px 36px #0006;
+}
+.alternative-guide #top :is(.block-step, #install-extension, #set-focus-goal, #consent-permissions) .step-copy h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #5ee0bd;
+}
+.alternative-guide #top :is(.block-step, #install-extension, #set-focus-goal, #consent-permissions) .step-copy p {
+  margin: 0;
+  max-width: none;
+  font-size: .9rem;
+  line-height: 1.6;
+  color: #aeb8c3;
+}
+.alternative-guide #top :is(.block-step, #install-extension, #set-focus-goal, #consent-permissions) .step-copy .step-kicker {
+  color: #91a09b;
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  .alternative-guide #top :is(.block-step, #install-extension, #set-focus-goal, #consent-permissions) .step-copy {
+    padding: 16px;
+    border-radius: 12px;
+  }
+}
+
+.alternative-guide #top .consent-permission-image .consent-shot {
+  border: 1px solid #303936;
+  border-radius: 16px;
+  box-shadow: 0 35px 100px #0008;
+}
+@media (max-width: 1100px) {
+  .alternative-guide #top .consent-permission-image .consent-shot {
+    border-radius: 12px;
+  }
+}
+
+@media (min-width: 701px) {
+  .alternative-guide #top #set-focus-goal .mascot-guide {
+    top: 18%;
+    left: 9%;
+    width: 84%;
+  }
+}
+
+/* One animation drives every arrow and mascot/message pair together.
+   Static transforms position arrow tips; translate supplies only the bounce. */
+.alternative-guide #top#top .guide-arrow {
+  transform: translateY(-50%);
+}
+.alternative-guide #top#top .screenshot-tour .guide-arrow {
+  transform: translateX(-50%);
+}
+.alternative-guide #top#top :is(.guide-arrow, .mascot-guide) {
+  animation: tutorial-bounce 3s ease-in-out infinite;
+}
+@keyframes tutorial-bounce {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .alternative-guide #top#top :is(.guide-arrow, .mascot-guide) {
+    animation: none;
+    translate: none;
+  }
+}
+
+/* Focus settings companion sits immediately to the right of its arrow. */
+.alternative-guide #top #focus-settings .mascot-guide {
+  position: absolute;
+  z-index: 3;
+  top: 38%;
+  left: 58%;
+  width: 40%;
+  grid-template-columns: 110px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+}
+.alternative-guide #top #focus-settings .guide-mascot {
+  background: transparent;
+  height: auto;
+  object-fit: contain;
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #focus-settings .focus-settings-tour { aspect-ratio: auto; }
+  .alternative-guide #top #focus-settings .focus-settings-tour > img {
+    height: auto;
+    aspect-ratio: 2398 / 1618;
+  }
+  .alternative-guide #top #focus-settings .tour-dimmer {
+    height: auto;
+    bottom: auto;
+    aspect-ratio: 2398 / 1618;
+  }
+  .alternative-guide #top #focus-settings .mascot-guide {
+    position: relative;
+    inset: auto;
+    width: auto;
+    margin: 18px 12px;
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+  .alternative-guide #top #focus-settings .focus-settings-tour { container-type: inline-size; }
+  .alternative-guide #top #focus-settings .guide-arrow { top: 30.7cqw; }
+}
+
+@media (min-width: 701px) {
+  .alternative-guide #top #focus-settings .mascot-guide {
+    top: 5%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .alternative-guide #top #focus-settings .guide-mascot {
+    position: absolute;
+    width: 110px;
+    left: -122px;
+    top: 45%;
+  }
+}
+
+/* Point diagonally up-left while leaving the input and message unobstructed. */
+.alternative-guide #top #focus-settings .focus-settings-tour {
+  container-type: inline-size;
+}
+.alternative-guide #top#top #focus-settings .guide-arrow--focus-time {
+  left: 52.5%;
+  top: 34.4cqw;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transform-origin: center;
+}
+@media (min-width: 701px) {
+  .alternative-guide #top #focus-settings .guide-mascot {
+    top: 36cqw;
+    left: -122px;
+  }
+}
+
+/* Keep the active-block explanation next to the sidebar progress arrow. */
+.alternative-guide #top #confirm-lock .mascot-guide {
+  position: absolute;
+  z-index: 3;
+  left: 30%;
+  bottom: 5%;
+  width: 68%;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 12px;
+}
+.alternative-guide #top #confirm-lock .guide-mascot {
+  background: transparent;
+  height: auto;
+  object-fit: contain;
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #confirm-lock .step-media {
+    aspect-ratio: auto;
+    container-type: inline-size;
+  }
+  .alternative-guide #top #confirm-lock .step-media > img {
+    height: auto;
+    aspect-ratio: 2398 / 1618;
+  }
+  .alternative-guide #top #confirm-lock .tour-dimmer {
+    bottom: auto;
+    height: auto;
+    aspect-ratio: 2398 / 1618;
+  }
+  .alternative-guide #top #confirm-lock .guide-arrow { top: 55.1cqw; }
+  .alternative-guide #top #confirm-lock .mascot-guide {
+    position: relative;
+    inset: auto;
+    width: auto;
+    margin: 18px 12px;
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+}
+
+/* The block-list guide follows the diagonal arrow down from the input. */
+.alternative-guide #top #build-block-list .step-media { container-type: inline-size; }
+.alternative-guide #top#top #build-block-list .guide-arrow--block-input {
+  left: 90%;
+  top: 31.2cqw;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.alternative-guide #top #build-block-list .mascot-guide {
+  position: absolute;
+  z-index: 3;
+  left: 30%;
+  top: 55%;
+  width: 68%;
+  grid-template-columns: minmax(0, 1fr) 110px;
+  gap: 12px;
+  align-items: start;
+}
+.alternative-guide #top #build-block-list .guide-mascot {
+  order: 2;
+  background: transparent;
+  height: auto;
+  object-fit: contain;
+}
+.alternative-guide #top #build-block-list .step-copy { order: 1; }
+.alternative-guide #top #build-block-list .step-copy::before {
+  left: auto;
+  right: -9px;
+  top: 55px;
+  transform: translateY(-50%) rotate(225deg);
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #build-block-list .step-media { aspect-ratio: auto; }
+  .alternative-guide #top #build-block-list .step-media > img {
+    height: auto;
+    aspect-ratio: 2398 / 1618;
+  }
+  .alternative-guide #top #build-block-list .tour-dimmer {
+    bottom: auto;
+    height: auto;
+    aspect-ratio: 2398 / 1618;
+  }
+  .alternative-guide #top #build-block-list .mascot-guide {
+    position: relative;
+    inset: auto;
+    width: auto;
+    margin: 18px 12px;
+    grid-template-columns: minmax(0, 1fr) 64px;
+  }
+}
+
+/* Let the expanded message fit in the frame without covering its input target. */
+.alternative-guide #top #build-block-list .step-media { aspect-ratio: auto; }
+.alternative-guide #top #build-block-list .step-media > img {
+  height: auto;
+  aspect-ratio: 2398 / 1618;
+}
+.alternative-guide #top #build-block-list .tour-dimmer {
+  bottom: auto;
+  height: auto;
+  aspect-ratio: 2398 / 1618;
+}
+.alternative-guide #top #build-block-list .mascot-guide {
+  position: relative;
+  inset: auto;
+  width: 96%;
+  margin: -30cqw 2% 20px;
+  grid-template-columns: 110px minmax(0, 1fr);
+}
+.alternative-guide #top #build-block-list .guide-mascot { order: 0; }
+.alternative-guide #top #build-block-list .step-copy { order: 1; }
+.alternative-guide #top #build-block-list .step-copy::before {
+  left: -9px;
+  right: auto;
+  transform: translateY(-50%) rotate(45deg);
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #build-block-list .mascot-guide {
+    width: auto;
+    margin: 18px 12px;
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+}
+
+/* Match this screenshot’s actual proportions so the full input and + stay clear. */
+.alternative-guide #top #build-block-list .step-media > img,
+.alternative-guide #top #build-block-list .tour-dimmer {
+  aspect-ratio: 2416 / 1622;
+}
+.alternative-guide #top#top #build-block-list .guide-arrow--block-input {
+  left: 62%;
+  top: 29.7cqw;
+  transform: translateX(-50%);
+}
+
+/* Explain the lock above the screenshot, leaving the dashboard unobstructed. */
+.alternative-guide #top #set-focus-goal > .mascot-guide {
+  position: relative;
+  inset: auto;
+  width: min(100%, 820px);
+  margin: 0;
+  grid-template-columns: 110px minmax(0, 1fr);
+  align-items: center;
+}
+.alternative-guide #top .how-it-works-content #set-focus-goal {
+  gap: 60px;
+}
+.alternative-guide #top #set-focus-goal .screenshot-tour { overflow: visible; }
+.alternative-guide #top #set-focus-goal .screenshot-tour > img,
+.alternative-guide #top #set-focus-goal .tour-dimmer { border-radius: inherit; }
+.alternative-guide #top#top #set-focus-goal .guide-arrow--header-lock {
+  top: -3.5cqw;
+  left: 90.6%;
+  transform: translateX(-50%);
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #set-focus-goal > .mascot-guide {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Step 5: point up at the progress box and explain it below the screenshot. */
+.alternative-guide #top #confirm-lock .step-media {
+  aspect-ratio: 2416 / 1622;
+  container-type: inline-size;
+}
+.alternative-guide #top #confirm-lock .step-media > img,
+.alternative-guide #top #confirm-lock .tour-dimmer {
+  aspect-ratio: 2416 / 1622;
+}
+.alternative-guide #top#top #confirm-lock .guide-arrow--progress {
+  left: 12.3%;
+  top: 59.1cqw;
+  transform: translateX(-50%);
+}
+.alternative-guide #top #confirm-lock > .mascot-guide {
+  position: relative;
+  inset: auto;
+  order: 2;
+  width: min(100%, 820px);
+  margin: 0;
+  grid-template-columns: 110px minmax(0, 1fr);
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #confirm-lock > .mascot-guide {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
+.alternative-guide #top .how-it-works-content #confirm-lock {
+  gap: 0;
+}
+.alternative-guide #top #confirm-lock > .mascot-guide {
+  margin-top: -12px;
+  align-items: start;
+}
+
+/* Later steps use the same companion size as the earlier guides. */
+.alternative-guide #top :is(#test-block, #complete-todos, #todo-running, #unlock, #optional-settings) .mascot-guide {
+  grid-template-columns: 110px minmax(0, 1fr);
+}
+@media (max-width: 700px) {
+  .alternative-guide #top :is(#test-block, #complete-todos, #todo-running, #unlock, #optional-settings) .mascot-guide {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+}
+
+/* Message bubbles hug their own text instead of filling the guide column. */
+.alternative-guide #top#top .mascot-guide .step-copy {
+  width: fit-content;
+  max-width: 100%;
+  min-width: 0;
+  justify-self: start;
+}
+.alternative-guide #top#top .mascot-guide .step-copy h2,
+.alternative-guide #top#top .mascot-guide .step-copy p {
+  width: auto;
+  max-width: 100%;
+}
+
+@media (min-width: 701px) {
+  .alternative-guide #top #consent-permissions.consent-tour {
+    column-gap: 28px;
+  }
+}
+
+/* Use the first screenshot’s width as the shared boundary for every guide. */
+.alternative-guide #top {
+  --guide-content-width: 820px;
+}
+.alternative-guide #top#top .how-it-works-content > .block-step {
+  width: min(100%, var(--guide-content-width));
+  max-width: var(--guide-content-width);
+  min-width: 0;
+  margin-inline: auto;
+}
+.alternative-guide #top#top .block-step > .mascot-guide {
+  max-width: 100%;
+  min-width: 0;
+}
+.alternative-guide #top#top .mascot-guide .step-copy {
+  overflow-wrap: anywhere;
+}
+
+/* The first guide can sit above its image at tablet and mobile widths. */
+.alternative-guide #top #install-extension { position: relative; }
+@media (max-width: 1100px) {
+  .alternative-guide #top #install-extension > .mascot-guide {
+    position: relative;
+    inset: auto;
+    order: 0;
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 110px minmax(0, 1fr);
+  }
+  .alternative-guide #top#top #install-extension .guide-arrow--install-button {
+    top: 6.5cqw;
+    transform: translateX(-50%) rotate(180deg);
+  }
+  .alternative-guide #top #consent-permissions.consent-tour {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 48px;
+  }
+  .alternative-guide #top #consent-permissions .consent-guide {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    grid-template-columns: 110px minmax(0, 1fr);
+  }
+  .alternative-guide #top #consent-permissions .consent-permission-image {
+    grid-column: 1;
+    grid-row: 2;
+    order: initial;
+    width: min(100%, 320px);
+    justify-self: center;
+  }
+  .alternative-guide #top#top #consent-permissions .consent-puzzle-arrow {
+    left: 95.2%;
+    top: -20px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #install-extension > .mascot-guide,
+  .alternative-guide #top #consent-permissions .consent-guide {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
+/* The block-list message stays above its screenshot at every screen size. */
+.alternative-guide #top #build-block-list > .mascot-guide {
+  position: relative;
+  inset: auto;
+  order: 0;
+  width: 100%;
+  margin: 0;
+  grid-template-columns: 110px minmax(0, 1fr);
+  align-items: center;
+}
+.alternative-guide #top#top #build-block-list .guide-arrow--block-input {
+  left: 62%;
+  top: 18.4cqw;
+  transform: translateX(-50%);
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #build-block-list > .mascot-guide {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Keep the overlay on wide screens; lift it above the image on smaller ones. */
+.alternative-guide #top #focus-settings {
+  position: relative;
+  container-type: inline-size;
+}
+@media (max-width: 960px) {
+  .alternative-guide #top #focus-settings > .mascot-guide {
+    position: relative;
+    inset: auto;
+    order: 0;
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 110px minmax(0, 1fr);
+    align-items: center;
+  }
+  .alternative-guide #top #focus-settings .guide-mascot {
+    position: static;
+    inset: auto;
+    width: 100%;
+    margin: 0;
+  }
+  .alternative-guide #top#top #focus-settings .guide-arrow--focus-time {
+    left: 38.4%;
+    top: 25cqw;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+}
+@media (max-width: 700px) {
+  .alternative-guide #top #focus-settings > .mascot-guide {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+  }
+}

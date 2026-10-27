@@ -1,0 +1,71 @@
+fokasu-clan { display: block; container-type: inline-size; color: #f0f1f4; font: 1.08443cqw/1.4 "Fokasu Noto Sans", sans-serif; }
+fokasu-clan * { box-sizing: border-box; }
+.clan-demo-main { display: grid; grid-template-rows: 3.56313cqw minmax(0, 1fr); gap: 1.85902cqw; padding-top: 1.85902cqw; padding-bottom: 0; }
+.clan-demo-main .dash-lock { background: transparent; color: #a2a5ae; }
+.clan-demo-viewport { min-height: 0; overflow: clip; }
+.clan-demo-profile { display: grid; grid-template-columns: 11.15414cqw minmax(0, 1fr) 18.59024cqw; grid-template-rows: 3.48567cqw minmax(0, 1fr); column-gap: 1.54919cqw; row-gap: 1.00697cqw; height: 22.77304cqw; padding: 1.85902cqw 1.54919cqw 1.54919cqw; border: .07746cqw solid #343c40; border-radius: 1.00697cqw; background: #111416; }
+.clan-demo-art { grid-column: 1; grid-row: 1 / 3; display: flex; flex-direction: column; align-items: center; gap: 1.85902cqw; }
+.clan-demo-crest { position: relative; width: 8.67545cqw; height: 9.14020cqw; padding-top: .69713cqw; }
+.clan-demo-crest img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.clan-demo-level { position: absolute; top: -.69713cqw; left: 50%; transform: translateX(-50%); display: grid; place-items: center; width: 3.56313cqw; height: 3.87297cqw; padding-bottom: .30984cqw; background: #e5b91f; clip-path: polygon(50% 0, 100% 22%, 100% 70%, 50% 100%, 0 70%, 0 22%); font-size: 1.39427cqw; isolation: isolate; }
+.clan-demo-level::before { content: ""; position: absolute; inset: .23238cqw; z-index: -1; background: #111315; clip-path: polygon(50% 0, 100% 22%, 100% 70%, 50% 100%, 0 70%, 0 22%); }
+.clan-demo-quest { display: block; width: 6.19675cqw; height: 6.19675cqw; object-fit: contain; }
+.clan-demo-profile h3 { margin: 0; grid-column: 2; grid-row: 1; align-self: center; font: 700 2.63362cqw/1.3 "Fokasu Plus Jakarta Sans", sans-serif; white-space: nowrap; text-shadow: 0 1px 2px #000; }
+.clan-demo-toolbar { grid-column: 3; grid-row: 1; display: flex; align-items: center; justify-content: flex-end; gap: 1.85902cqw; color: #9da2ad; }
+.clan-demo-code { display: inline-flex; align-items: center; gap: .77459cqw; white-space: nowrap; }
+.clan-demo-toolbar svg { width: 1.54919cqw; height: 1.54919cqw; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.clan-demo-code svg { width: 1.23935cqw; height: 1.23935cqw; }
+.clan-demo-description { grid-column: 2; grid-row: 2; margin: 0; color: #b4c8dc; font-size: 1.08443cqw; line-height: 1.63; text-shadow: 0 1px 2px #000; }
+.clan-demo-details { grid-column: 3; grid-row: 2; margin: 0; padding-left: 1.39427cqw; border-left: .07746cqw solid #414744; color: #9eb0c2; }
+.clan-demo-details > div { display: flex; align-items: center; justify-content: space-between; gap: .61967cqw; min-height: 2.09140cqw; border-bottom: .07746cqw solid #ffffff0c; }
+.clan-demo-details > div:last-child { border-bottom: 0; }
+.clan-demo-details dt { font-size: .85205cqw; text-transform: uppercase; white-space: nowrap; }
+.clan-demo-details dd { margin: 0; font-size: .85205cqw; text-align: right; white-space: nowrap; }
+.clan-demo-member-actions { display: flex; align-items: center; justify-content: space-between; margin: 2.01394cqw 0 .69713cqw; color: #74808f; font-size: 1.23935cqw; }
+.clan-demo-action { padding: .69713cqw 1.16189cqw; border: .07746cqw solid #292e38; border-radius: .85205cqw; background: #191c21; color: #f0f1f4; box-shadow: 0 .07746cqw .07746cqw #343a43; }
+.clan-demo-members { display: block; width: 100%; padding-bottom: 2.16886cqw; border: 0; }
+.clan-demo-members tr { display: grid; grid-template-columns: 4.41441cqw minmax(0, 1fr) 8.36561cqw 1.78156cqw; align-items: center; gap: 1.39427cqw; padding: 0 1.39427cqw; }
+.clan-demo-members thead { display: block; }
+.clan-demo-members thead tr { height: 3.02091cqw; }
+.clan-demo-members thead th { color: #74808f; font-size: .92951cqw; font-weight: 400; text-transform: uppercase; }
+.clan-demo-members th { text-align: left; }
+.clan-demo-members tr > :nth-child(3) { text-align: right; }
+.clan-demo-members tbody { display: grid; gap: .85205cqw; }
+.clan-demo-members tbody tr { height: 5.73199cqw; border: .07746cqw solid #24272b; border-radius: .92951cqw; background: #17191d; }
+.clan-demo-members tbody th { display: flex; align-items: center; gap: .92951cqw; min-width: 0; font-size: 1.39427cqw; font-weight: 400; }
+.clan-demo-role { color: #74808f; font-size: 1.08443cqw; }
+.clan-demo-members tbody td { color: #9da2ad; font-size: 1.23935cqw; }
+.clan-demo-members .clan-demo-rank { color: #20a880; font-size: 1.39427cqw; }
+.clan-demo-menu { display: flex; align-items: center; justify-content: center; }
+.clan-demo-menu svg { width: 1.00697cqw; height: 1.70411cqw; }
+.clan-demo-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* Chat overlays the clan preview like the desktop app's side panel. */
+.clan-chat-toggle { z-index: 4; color: #f0f1f4; cursor: pointer; }
+.clan-chat-toggle:hover { background: #19232a; }
+.clan-chat-toggle:focus-visible { outline: .18cqw solid #5ee0bd; outline-offset: -.3cqw; }
+.clan-demo-layout .clan-chat-arrow { position: absolute; z-index: 3; right: 3.5cqw; top: 32.9cqw; width: 3.87297cqw; height: 4.18280cqw; color: #5ee0bd; pointer-events: none; filter: drop-shadow(0 .23cqw .62cqw #0006); animation: clan-point-to-chat 1.6s ease-in-out infinite; }
+@keyframes clan-point-to-chat { 0%, 100% { transform: translateX(-.46cqw); } 50% { transform: translateX(0); } }
+.clan-chat-open .clan-chat-arrow { display: none; }
+.clan-chat-open .clan-chat-toggle { right: 40cqw; }
+.clan-chat-panel { position: absolute; z-index: 3; inset: 0 0 0 auto; width: 40cqw; display: grid; grid-template-rows: 8cqw minmax(0, 1fr) auto; border-left: .07746cqw solid #3a414a; background: #101318; box-shadow: -1cqw 0 3cqw #0003; }
+.clan-chat-panel[hidden] { display: none; }
+.clan-chat-heading { display: flex; align-items: center; justify-content: center; gap: 1cqw; padding: 1.5cqw; border-bottom: .07746cqw solid #3a414a; }
+.clan-chat-heading img { width: 3cqw; height: 3.5cqw; object-fit: contain; }
+.clan-chat-heading h3 { margin: 0; font: 700 1.65cqw/1.4 "Fokasu Plus Jakarta Sans", sans-serif; }
+.clan-chat-messages { min-height: 0; overflow-y: auto; padding: 0 1.8cqw; scrollbar-width: thin; scrollbar-color: #343c46 transparent; }
+.clan-chat-message { padding: 2cqw 0; border-bottom: .07746cqw solid #3a414a; }
+.clan-chat-message > div { display: flex; align-items: baseline; gap: .8cqw; }
+.clan-chat-message strong { color: #eac86b; font-size: 1.4cqw; font-weight: 400; }
+.clan-chat-message span, .clan-chat-message time { color: #8c9caf; font-size: 1cqw; }
+.clan-chat-message time { margin-left: auto; white-space: nowrap; }
+.clan-chat-message p { margin: .65cqw 0 0 1.2cqw; color: #e1e7ee; font-size: 1.4cqw; line-height: 1.55; overflow-wrap: anywhere; white-space: pre-wrap; }
+.clan-chat-compose { display: grid; grid-template-columns: 1fr auto; gap: .8cqw; margin: 1.6cqw; padding: 1cqw; border: .1cqw solid #3a414a; border-radius: .85cqw; background: #191c21; }
+.clan-chat-compose textarea { grid-column: 1 / -1; width: 100%; resize: none; border: 0; outline: none; background: transparent; color: #e1e7ee; font: inherit; font-size: 1.35cqw; line-height: 1.5; }
+.clan-chat-compose textarea::placeholder { color: #8c9caf; }
+.clan-chat-compose:focus-within { border-color: #20a880; }
+.clan-chat-compose button { grid-column: 2; padding: .7cqw 1.4cqw; border: 0; border-radius: .6cqw; background: #1da782; color: #061c16; font: inherit; font-size: 1.2cqw; cursor: pointer; }
+.clan-chat-compose button:focus-visible { outline: .18cqw solid #9cebd5; outline-offset: .2cqw; }
+@media (prefers-reduced-motion: no-preference) { .clan-chat-open .clan-chat-panel { animation: clan-chat-arrive 240ms ease-out both; } }
+@keyframes clan-chat-arrive { from { transform: translateX(100%); } to { transform: translateX(0); } }
+@media (prefers-reduced-motion: reduce) { .clan-demo-layout .clan-chat-arrow { animation: none; } }

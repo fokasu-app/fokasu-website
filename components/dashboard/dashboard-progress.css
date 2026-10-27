@@ -1,0 +1,52 @@
+/* Interactive mode demonstration is confined to the first dashboard preview. */
+.dash-overview .dash-controls .dash-progress-mode-control { position: relative; cursor: pointer; }
+.dash-progress-mode-control:hover { color: #9de9ce; }
+.dash-progress-mode-control:focus-visible { outline: .15492cqw solid #70dfb8; outline-offset: .30984cqw; }
+.dash-controls .icon-progress-mode { width: .96824cqw; height: 1.64679cqw; stroke: none; }
+.dash-layout .dash-mode-arrow, .dash-progress-demo .dash-bar-arrow { position: absolute; left: calc(100% + .77459cqw); top: 50%; width: 3.87297cqw; height: 4.18280cqw; color: #5ee0bd; pointer-events: none; filter: drop-shadow(0 .23238cqw .61967cqw #0006); animation: dash-point-to-mode 1.6s ease-in-out infinite; }
+.dash-progress-demo .dash-bar-arrow { z-index: 2; left: 1.70411cqw; top: 86%; }
+.app-window.dash-progress-window > .window-bar { background: #202124; border-bottom-color: #ffffff0c; }
+@keyframes dash-point-to-mode { 0%, 100% { transform: translate(.46476cqw, -50%); } 50% { transform: translate(0, -50%); } }
+.dash-progress-demo { position: absolute; z-index: 3; inset: 0; overflow: hidden; background: #191e23; }
+.dash-progress-demo[hidden] { display: none; }
+.dash-mode-active > .dash-layout, .dash-mode-active > .dash-scroll-toggle { visibility: hidden; }
+.dash-mode-workspace { position: absolute; inset: 0; background: #292a2d; color: #e8eaed; font-family: Arial, sans-serif; }
+.dash-chrome-tabs { display: flex; align-items: center; gap: 1.5cqw; height: 3.4cqw; padding: .5cqw 1.8cqw 0; background: #202124; }
+.dash-chrome-tab { display: flex; align-items: center; gap: .8cqw; width: 20cqw; height: 100%; padding: 0 1.2cqw; border-radius: .9cqw .9cqw 0 0; background: #35363a; font-size: 1.1cqw; }
+.dash-chrome-google-icon { font-weight: 700; color: #8ab4f8; font-size: 1.4cqw; }
+.dash-chrome-tab-close { margin-left: auto; font-size: 1.5cqw; }
+.dash-chrome-new-tab { font-size: 1.8cqw; }
+.dash-chrome-toolbar { display: flex; align-items: center; gap: 1.5cqw; height: 4.3cqw; padding: 0 1.8cqw; background: #35363a; font-size: 2cqw; }
+.dash-chrome-disabled { opacity: .35; }
+.dash-chrome-address { display: flex; align-items: center; gap: 1cqw; flex: 1; height: 2.9cqw; padding: 0 1.2cqw; border-radius: 2cqw; background: #202124; color: #bdc1c6; font-size: 1.1cqw; }
+.dash-chrome-star { margin-left: auto; font-size: 1.7cqw; }
+.dash-chrome-profile { display: grid; place-items: center; width: 2.6cqw; height: 2.6cqw; border-radius: 50%; background: #775b8d; color: #fff; font-size: 1.2cqw; }
+.dash-chrome-links { display: flex; align-items: center; justify-content: flex-end; gap: 1.6cqw; padding: 1.5cqw 2cqw; font-size: 1.1cqw; }
+.dash-chrome-apps { font-size: 2.4cqw; line-height: 1; }
+.dash-chrome-home { display: flex; flex-direction: column; align-items: center; margin-top: 2cqw; }
+.dash-chrome-wordmark { color: #eee; font-size: 7.4cqw; line-height: 1.2; font-weight: 500; letter-spacing: -.4cqw; }
+.dash-chrome-search { display: flex; align-items: center; gap: 1.4cqw; width: 50cqw; height: 4.2cqw; margin-top: 2.3cqw; padding: 0 1.8cqw; border-radius: 3cqw; background: #e8eaed; color: #5f6368; font-size: 1.3cqw; }
+.dash-chrome-search svg { flex: 0 0 1.6cqw; width: 1.6cqw; height: 1.6cqw; }
+.dash-chrome-search svg:last-child { margin-left: auto; }
+.dash-chrome-shortcut { display: flex; flex-direction: column; align-items: center; gap: .8cqw; margin-top: 2cqw; font-size: 1cqw; }
+.dash-chrome-shortcut > span { display: grid; place-items: center; width: 3.6cqw; height: 3.6cqw; border-radius: 50%; background: #35363a; font-size: 2.2cqw; }
+.dash-floating-progress { position: absolute; z-index: 2; top: 0; bottom: 0; left: 0; width: max(24px, 1.85902cqw); padding: 0; border: 0; background: transparent; cursor: pointer; }
+.dash-floating-progress-track { position: absolute; inset: 0 auto 0 0; width: .92951cqw; min-width: 6px; overflow: hidden; border-right: .07746cqw solid #22b8a8; background: #0f1115; }
+.dash-floating-progress-fill { position: absolute; inset: 0; background: #2dd4bf; transform: scaleY(var(--mode-progress, .18)); transform-origin: bottom; transition: transform 1s linear; }
+.dash-floating-progress:hover .dash-floating-progress-track { filter: brightness(1.15); }
+.dash-floating-progress:focus-visible { outline: .15492cqw solid #9cebd5; outline-offset: -.15492cqw; background: #2dd4bf14; }
+.dash-mode-coach { position: absolute; left: 11.61890cqw; right: 5.42215cqw; bottom: 8.52053cqw; display: grid; grid-template-columns: 14.71727cqw minmax(0, 1fr); align-items: end; gap: 1.08443cqw; }
+.dash-mode-mascot { display: block; width: 14.71727cqw; height: auto; filter: drop-shadow(0 .54222cqw .77459cqw #0004); }
+.dash-mode-speech { position: relative; padding: 2.16886cqw; border: .15492cqw solid #414953; border-radius: 1.08443cqw; background: #101317; box-shadow: 0 1.16189cqw 3.09837cqw #0003; }
+.dash-mode-speech::before { content: ""; position: absolute; left: -1.08443cqw; bottom: 4.64756cqw; width: 1.85902cqw; height: 1.85902cqw; border-bottom: .15492cqw solid #414953; border-left: .15492cqw solid #414953; background: #101317; transform: rotate(45deg); }
+.dash-mode-speech h3 { position: relative; margin: 0 0 1.00697cqw; color: #5ee0bd; font: 700 1.70411cqw/1.4 "Fokasu Plus Jakarta Sans", sans-serif; }
+.dash-mode-speech p { position: relative; margin: 0; color: #d0dce4; font-size: 1.39427cqw; line-height: 1.6; }
+.dash-mode-speech .dash-mode-return-hint { margin-top: 1.39427cqw; color: #e4f5ee; font-weight: 600; }
+@media (prefers-reduced-motion: no-preference) {
+ .dash-mode-active .dash-mode-coach { animation: dash-coach-arrive 320ms ease-out both; }
+}
+@keyframes dash-coach-arrive { from { opacity: 0; transform: translateY(1.23935cqw); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+ .dash-layout .dash-mode-arrow, .dash-progress-demo .dash-bar-arrow { animation: none; transform: translateY(-50%); }
+ .dash-floating-progress-fill { transition: none; }
+}

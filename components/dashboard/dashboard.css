@@ -1,0 +1,113 @@
+/* Locally bundled desktop fonts; licenses are included in fonts/. */
+@font-face {
+ font-family: "Fokasu Noto Sans";
+ src: url("./fonts/NotoSans-Regular.ttf") format("truetype");
+ font-style: normal;
+ font-weight: 400;
+ font-display: swap;
+}
+@font-face {
+ font-family: "Fokasu Plus Jakarta Sans";
+ src: url("./fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+ font-style: normal;
+ font-weight: 700;
+ font-display: swap;
+}
+/* Desktop measurements follow the supplied 1291 × 917 app screenshot.
+   Container units keep the entire preview in proportion as it scales. */
+fokasu-dashboard, fokasu-demo-sidebar, fokasu-demo-header { display: block; }
+fokasu-dashboard { position: relative; display: block; container-type: inline-size; font-size: 1.08443cqw; line-height: 1.4; color: #f0f1f4; font-family: "Fokasu Noto Sans", sans-serif; }
+fokasu-dashboard * { box-sizing: border-box; }
+.dash-layout { position: relative; display: grid; grid-template-columns: 22.15337cqw 1fr; grid-template-rows: minmax(0, 1fr); height: 71.03021cqw; min-height: 0; overflow: hidden; background: #090a0b; }
+.dash-layout > fokasu-demo-sidebar { min-height: 0; }
+.dash-layout svg { width: 1.54919cqw; height: 1.54919cqw; flex-shrink: 0; }
+.dash-sidebar { height: 100%; display: flex; flex-direction: column; padding: 1.54919cqw 1.70411cqw 1.85902cqw 2.01394cqw; border-right: 0.07746cqw solid #292c33; background: #101317; }
+.dash-brand { height: 2.47870cqw; display: flex; align-items: center; gap: 1.70411cqw; margin: 0 0 3.40821cqw 1.16189cqw; white-space: nowrap; }
+.dash-brand i { width: 1.70411cqw; height: 1.70411cqw; flex-shrink: 0; background: #32c793; border-radius: 50%; box-shadow: 0 0 0.61967cqw 0.38730cqw #32c79370, 0 0 1.54919cqw #32c79350; }
+.dash-brand strong { font-family: "Fokasu Plus Jakarta Sans", sans-serif; font-size: 2.16886cqw; font-weight: 700; letter-spacing: 0; }
+.dash-brand small { font-family: "Fokasu Plus Jakarta Sans", sans-serif; margin-left: -0.77459cqw; padding-top: 0.15492cqw; flex-shrink: 0; color: #50555f; font-size: 1.08443cqw; font-weight: 700; }
+.dash-nav-item { height: 4.02789cqw; display: flex; align-items: center; gap: 1.16189cqw; padding: 0 1.31681cqw; margin-bottom: 0.77459cqw; color: #a1a6b0; font-size: 1.54919cqw; white-space: nowrap; }
+.dash-nav-item.selected { background: #24272a; color: #eef0f4; border-radius: 0.85205cqw; }
+.dash-nav-item svg { width: 1.31681cqw; height: 1.31681cqw; stroke-width: 2.4; }
+.dash-sidebar-bottom { margin-top: auto; }
+.dash-quota { height: 6.27421cqw; padding: 1.31681cqw 1.16189cqw 1.08443cqw; background: #181b21; border: 0.07746cqw solid #2b2e36; border-radius: 0.85205cqw; }
+.dash-quota > div:first-child { display: flex; align-items: center; gap: 0.69713cqw; color: #a1a5af; }
+.dash-quota svg { width: 1.85902cqw; height: 1.85902cqw; stroke-width: 2.8; }
+.dash-quota small { margin-left: auto; white-space: nowrap; font-size: 1.39427cqw; }
+.dash-track { height: 0.61967cqw; margin-top: 1.08443cqw; background: #2b303b; border-radius: 0.38730cqw; }
+.dash-account { height: 5.88691cqw; display: flex; align-items: center; justify-content: space-between; margin-top: 0.77459cqw; padding: 1.39427cqw 1.54919cqw; background: #181b21; color: #a2a5ae; border-radius: 0.85205cqw; }
+.dash-account > svg { width: 2.01394cqw; height: 2.01394cqw; }
+.dash-streak { display: flex; align-items: center; gap: 0.69713cqw; }
+.dash-streak svg { width: 2.32378cqw; height: 2.63362cqw; color: #ff790d; }
+.dash-streak b { font-size: 1.39427cqw; font-weight: 400; color: #f0f1f4; }
+.dash-main { min-width: 0; min-height: 0; padding: 1.00697cqw 4.64756cqw 3.09837cqw 4.87994cqw; }
+.dash-header { height: 3.56313cqw; display: flex; align-items: center; gap: 1.16189cqw; }
+.dash-welcome { font-family: "Fokasu Plus Jakarta Sans", sans-serif; height: 3.56313cqw; display: flex; align-items: center; flex: 1; min-width: 0; gap: 1.08443cqw; padding: 0 1.47173cqw; background: #191c21; color: #798594; border-radius: 0.92951cqw; font-size: 1.39427cqw; font-weight: 700; }
+.dash-welcome svg { width: 1.62665cqw; height: 1.62665cqw; color: #9da2ac; stroke-width: 3; }
+.dash-welcome span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dash-days { font-family: "Fokasu Plus Jakarta Sans", sans-serif; height: 3.56313cqw; display: flex; align-items: center; gap: 0.61967cqw; padding: 0 1.23935cqw; background: #10271c; color: #43e7a5; border-radius: 0.85205cqw; font-size: 1.39427cqw; font-weight: 700; white-space: nowrap; }
+.dash-lock { display: flex; align-items: center; justify-content: center; width: 3.17583cqw; height: 3.25329cqw; border-radius: 0.77459cqw; background: #0c2620; color: #23af8a; }
+/* JavaFX fits the 14 × 18 path bounds into a 16 × 18 Region. */
+.dash-lock svg.desktop-icon { display: block; width: 1.6cqw; height: 1.8cqw; }
+.dash-lock .icon-lock path { transform-box: fill-box; transform-origin: center; transform: scaleX(1.1428571429); }
+.dash-bell { display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 3.25329cqw; height: 3.25329cqw; color: #9fa4ae; }
+.dash-bell svg.desktop-icon { display: block; width: 1.70411cqw; height: 1.62665cqw; stroke-width: 1.8; }
+.dash-timer-area { position: relative; height: 33.53989cqw; }
+.dash-dial { position: absolute; left: 19.44229cqw; top: 4.87994cqw; width: 23.23780cqw; height: 23.23780cqw; }
+.dash-layout .dash-ring { display: block; width: 100%; height: 100%; transform: rotate(-90deg); }
+.dash-ring circle { fill: none; stroke-width: 14; }
+.ring-track { stroke: #252932; }
+.ring-progress { stroke: #20a880; stroke-linecap: round; }
+.dash-time-content { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.62665cqw; }
+.dash-time { font-size: 4.49264cqw; font-weight: 400; line-height: 1.2; letter-spacing: 0; font-variant-numeric: tabular-nums; }
+.dash-session { color: #a2a7b0; font-size: 1.54919cqw; }
+.dash-controls { position: absolute; left: 47.56003cqw; top: 6.11929cqw; display: flex; flex-direction: column; gap: 1.08443cqw; }
+.dash-control, .task-play { cursor: default; border: 0; display: inline-flex; align-items: center; justify-content: center; font: inherit; }
+.dash-controls .primary-control { background: #17634f; color: #041b16; }
+.dash-controls svg { width: 1.93648cqw; height: 1.93648cqw; }
+.primary-control svg { stroke-width: 5; stroke-linecap: butt; }
+.dash-controls .icon-bolt { fill: currentColor; stroke: none; }
+.dash-tasks h2 { font-family: "Fokasu Plus Jakarta Sans", sans-serif; font-size: 2.63362cqw; line-height: 3.25329cqw; letter-spacing: 0; font-weight: 700; margin: 0 0 1.70411cqw; }
+.dash-task { position: relative; height: 7.04880cqw; display: flex; align-items: center; gap: 1.39427cqw; padding: 1.16189cqw 2.16886cqw 1.16189cqw 1.39427cqw; margin-bottom: 1.16189cqw; background: #181a1e; border: 0.07746cqw solid #24272b; border-left: 0.30984cqw solid transparent; border-radius: 0.92951cqw; }
+.dash-task.active { border-left-color: #68e7c6; }
+.task-play { width: 3.40821cqw; height: 3.40821cqw; border-radius: 50%; background: #1d2026; color: #175745; flex-shrink: 0; }
+.task-play svg { width: 1.31681cqw; height: 1.31681cqw; fill: currentColor; stroke: none; }
+.task-description h3 { margin: 0 0 0.54222cqw; color: #f0f1f4; font-size: 1.54919cqw; font-weight: 400; }
+.task-description p { margin: 0; color: #9da2ad; font-size: 1.23935cqw; white-space: nowrap; }
+.task-status { color: #9dcaf4; }
+.active .task-status { color: #55dfbd; }
+.task-meta { border-left: 0.07746cqw solid #5c6370; margin-left: 0.92951cqw; padding-left: 0.92951cqw; }
+.task-meta i { font-style: normal; margin: 0 0.61967cqw; color: #68707d; }
+.task-progress { height: 0.54222cqw; width: 5.34469cqw; background: #272b35; border-radius: 0.38730cqw; margin-left: auto; margin-top: 2.47870cqw; overflow: hidden; }
+.task-progress span { display: block; height: 100%; background: #63e1be; }
+.task-menu { position: relative; margin-left: 0.85205cqw; }
+.dash-end { height: 4.64756cqw; display: flex; align-items: center; justify-content: center; border: 0.07746cqw solid #1b1e21; border-radius: 1.00697cqw; color: #687588; font: 1.23935cqw ui-monospace, monospace; background: #0e1012; }
+.dash-edge-tab { display: flex; align-items: center; justify-content: center; position: absolute; right: 0; top: 31.52595cqw; width: 2.63362cqw; height: 6.97134cqw; border: 0.07746cqw solid #2b303b; border-right: 0; border-radius: 0.77459cqw 0 0 0.77459cqw; background: #101318; font-size: 2.47870cqw; padding: 0; line-height: 1; }
+
+
+@media(prefers-reduced-motion:reduce) { .dash-layout * { scroll-behavior: auto; transition: none; } }
+
+
+
+
+/* Purely illustrative controls: no click targets, focus stops, or hover states. */
+.dash-control, .task-play { display: inline-flex; align-items: center; justify-content: center; }
+.dash-controls .dash-control { width: 4.41518cqw; height: 4.41518cqw; background: #121519; color: #686d75; border-radius: 50%; }
+.dash-controls .primary-control { background: #17634f; color: #041b16; }
+.dash-layout .desktop-icon { stroke-width: 1.6; }
+.dash-controls .icon-pause { width: 1.35554cqw; height: 1.74283cqw; }
+.dash-controls .icon-minus { width: 1.16189cqw; height: .19365cqw; }
+.dash-controls .icon-stop { width: .96824cqw; height: 1.64679cqw; }
+.dash-controls .icon-bolt { width: 1.54919cqw; height: 1.74283cqw; }
+.dash-streak .icon-flame { width: 2.03331cqw; height: 2.51743cqw; color: #f97316; }
+.task-menu { display: flex; color: #a0a4ae; }
+.task-menu svg { width: 1.78156cqw; height: 2.16886cqw; }
+
+/* Shared floating preview navigation. */
+.demo-scroll-toggle { position: absolute; z-index: 2; left: calc(50% + var(--demo-sidebar-width, 22.15337cqw) / 2); bottom: 8px; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; gap: 8px; width: max-content; min-height: 36px; margin: 0; padding: 6px 12px; border: 0; background: transparent; color: #70dfb8; font: 12px/1.4 ui-sans-serif, system-ui, sans-serif; text-shadow: 0 1px 4px #000; cursor: pointer; }
+.demo-scroll-toggle { animation: demo-scroll-bounce 1.8s ease-in-out infinite; }
+@keyframes demo-scroll-bounce { 0%, 100% { transform: translate(-50%, -2px); } 50% { transform: translate(-50%, 2px); } }
+.demo-scroll-toggle:hover { color: #b7f7de; }
+.demo-scroll-toggle:focus-visible { outline: 2px solid #70dfb8; outline-offset: 4px; border-radius: 3px; }
+@media (prefers-reduced-motion: reduce) { .demo-scroll-toggle { animation: none; } }
+@media (max-width: 600px) { .demo-scroll-toggle { font-size: 11px; } }

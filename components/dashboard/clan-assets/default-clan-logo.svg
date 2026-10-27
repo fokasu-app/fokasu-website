@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fokasu Clan crest">
+  <!-- Shared crest geometry. The wider proportions are baked into the paths;
+       consumers should scale uniformly to preserve this shape. -->
+  <path fill="#e0ae08" stroke="#ffe04a" stroke-linejoin="round" stroke-width="1.25" d="M 32 4 L 59.22951 11 V 31 C 59.22951 45 48.09016 55 32 61 C 15.90984 55 4.77049 45 4.77049 31 V 11 Z"/>
+  <path fill="#087d55" stroke="#04543b" stroke-linejoin="round" stroke-width="1.25" d="M 32 9 L 53.04098 15 V 31 C 53.04098 42 44.37705 50 32 55 C 19.62295 50 10.95902 42 10.95902 31 V 15 Z"/>
+  <path fill="#f5cd13" d="M 10.95902 19 H 18.38525 V 14 H 27.04918 V 19 H 36.95082 V 14 H 45.61475 V 19 H 53.04098 V 35 H 10.95902 Z"/>
+  <path fill="#087d55" d="M 25.81148 28 H 38.18852 V 37 H 25.81148 Z"/>
+  <path fill="#ffe85a" d="M 14.67213 20 H 49.32787 V 23 H 14.67213 Z"/>
+</svg>

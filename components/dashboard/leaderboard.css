@@ -1,0 +1,50 @@
+/* Same fixed, proportional app canvas as the dashboard and stats previews. */
+fokasu-leaderboard { display: block; container-type: inline-size; color: #f0f1f4; font: 1.08443cqw/1.4 "Fokasu Noto Sans", sans-serif; }
+fokasu-leaderboard * { box-sizing: border-box; }
+.leaderboard-main { display: grid; grid-template-rows: 3.56313cqw minmax(0, 1fr); gap: 2.16886cqw; padding-top: 1.85902cqw; padding-bottom: 0; }
+.leaderboard-viewport { min-height: 0; overflow: clip; }
+.leaderboard-content { display: flex; flex-direction: column; gap: 2.16886cqw; padding-bottom: 2.16886cqw; }
+.leaderboard-main .dash-lock { background: transparent; color: #a2a5ae; }
+.leaderboard-heading { display: flex; align-items: center; gap: 1.54919cqw; height: 3.87297cqw; flex-shrink: 0; }
+.leaderboard-heading h3 { margin: 0; font: 700 2.63362cqw/1.3 "Fokasu Plus Jakarta Sans", sans-serif; }
+.leaderboard-kind { display: flex; align-items: center; padding: .30984cqw; background: #191c21; border-radius: .92951cqw; color: #9da2ad; }
+.leaderboard-kind > span { padding: .69713cqw 1.39427cqw; }
+.leaderboard-kind .is-selected { background: #252932; color: #f0f1f4; border-radius: .69713cqw; }
+.leaderboard-period { display: flex; align-items: center; gap: .61967cqw; margin-left: auto; padding: 1.00697cqw .92951cqw; border-radius: .85205cqw; background: #191c21; }
+.dash-layout .leaderboard-period svg { width: .77459cqw; height: .54222cqw; fill: #9da2ad; }
+.leaderboard-meta { display: flex; align-items: center; justify-content: space-between; height: 2.16886cqw; flex-shrink: 0; font-size: 1.54919cqw; }
+.leaderboard-date { display: flex; align-items: center; gap: .77459cqw; font-size: 1.08443cqw; white-space: nowrap; }
+.leaderboard-date svg { width: 1.23935cqw; height: 1.23935cqw; fill: none; stroke: #7b8490; stroke-width: 1.5; }
+.leaderboard-podium { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; width: 46.78544cqw; max-width: 100%; height: 19.36483cqw; flex-shrink: 0; margin: 0 auto; padding: 0; list-style: none; }
+.leaderboard-place { --podium-front: #195943; --podium-top: #359e7e; min-width: 0; text-align: center; }
+.leaderboard-place-1 { --podium-front: #20745c; --podium-top: #49bd98; grid-column: 2; grid-row: 1; }
+.leaderboard-place-2 { grid-column: 1; grid-row: 1; }
+.leaderboard-place-3 { --podium-front: #164b3c; --podium-top: #2b896c; grid-column: 3; grid-row: 1; }
+.leaderboard-podium-info { display: flex; flex-direction: column; align-items: center; gap: .69713cqw; padding-bottom: 1.54919cqw; }
+@media (prefers-reduced-motion: no-preference) {
+ .leaderboard-podium-pending .leaderboard-podium-info { opacity: 0; }
+ .leaderboard-podium-revealing .leaderboard-podium-info { animation: leaderboard-name-drop 440ms cubic-bezier(.22, 1, .36, 1) var(--podium-delay) both; }
+ .leaderboard-place-2 { --podium-delay: 0ms; }
+ .leaderboard-place-1 { --podium-delay: 120ms; }
+ .leaderboard-place-3 { --podium-delay: 240ms; }
+}
+@keyframes leaderboard-name-drop { from { opacity: 0; transform: translateY(-1.85902cqw); } to { opacity: 1; transform: translateY(0); } }
+.leaderboard-podium-name { display: flex; align-items: center; gap: .69713cqw; color: #e7c572; font: 700 1.39427cqw/1.4 "Fokasu Plus Jakarta Sans", sans-serif; }
+.dash-layout .leaderboard-crown { width: 1.70411cqw; height: 1.70411cqw; fill: #e7c572; stroke: #e7c572; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.leaderboard-podium-time { color: #a7bad0; font-size: 1.08443cqw; white-space: nowrap; }
+.leaderboard-step { position: relative; display: grid; place-items: center; height: 10.76685cqw; margin-top: 1.00697cqw; background: var(--podium-front); color: #e6fff5; font: 700 3.56313cqw/1 "Fokasu Plus Jakarta Sans", sans-serif; }
+.leaderboard-step::before { content: ""; position: absolute; bottom: 100%; left: 0; right: 0; height: 1.00697cqw; background: var(--podium-top); clip-path: polygon(6% 0, 94% 0, 100% 100%, 0 100%); }
+.leaderboard-place-2 .leaderboard-step { height: 7.82339cqw; border-bottom-left-radius: .54222cqw; }
+.leaderboard-place-3 .leaderboard-step { height: 5.65453cqw; border-bottom-right-radius: .54222cqw; }
+.leaderboard-table { display: flex; flex-direction: column; flex-shrink: 0; width: 100%; border: 0; border-collapse: separate; color: #9da2ad; }
+.leaderboard-table thead { display: block; flex: 0 0 3.87297cqw; }
+.leaderboard-table tr { display: grid; grid-template-columns: 4.41441cqw minmax(0, 1fr) 8.36561cqw 8.36561cqw; align-items: center; gap: 1.39427cqw; padding: 0 1.39427cqw; }
+.leaderboard-table thead tr { height: 100%; }
+.leaderboard-table thead th { color: #74808f; font-size: .92951cqw; font-weight: 400; text-transform: uppercase; }
+.leaderboard-table th { text-align: left; }
+.leaderboard-table tr > :nth-last-child(-n+2) { text-align: right; }
+.leaderboard-table tbody { display: grid; grid-template-rows: repeat(4, 6.19675cqw); gap: .85205cqw; }
+.leaderboard-table tbody tr { border: .07746cqw solid #292e38; border-radius: .77459cqw; background: #17191d; }
+.leaderboard-table tbody th { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #f0f1f4; font: 700 1.39427cqw/1.4 "Fokasu Plus Jakarta Sans", sans-serif; }
+.leaderboard-table tbody td { font-size: 1.23935cqw; }
+.leaderboard-table .leaderboard-rank { color: #20a880; font-size: 1.39427cqw; }

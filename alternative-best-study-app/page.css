@@ -1,0 +1,109 @@
+/* Keep the desktop frame and its contents in the same proportions at every width. */
+.app-window { container-type: inline-size; border-radius: 8px; }
+.window-bar { box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; height: 2.9cqw; overflow: hidden; padding: 0 0 0 1.35cqw; background: #15171a; border-bottom: .07746cqw solid #282c30; }
+.window-title { display: flex; align-items: center; height: 100%; gap: .67cqw; font-family: "Segoe UI", sans-serif; font-size: 1.12cqw; line-height: normal; font-weight: 400; letter-spacing: 0; color: #d4d7dc; }
+.window-title img { display: block; width: 1.35cqw; height: 1.35cqw; object-fit: contain; flex: 0 0 auto; }
+.window-controls { align-self: stretch; display: flex; color: #bec3ca; }
+.window-controls > span { width: 3.8cqw; flex: 0 0 3.8cqw; display: flex; align-items: center; justify-content: center; }
+.window-controls svg { display: block; width: 1.12cqw; height: 1.12cqw; fill: none; stroke: currentColor; stroke-width: 1; }
+
+
+/* Navigation styling belongs to the alternative pages. */
+.alternative-header .site-nav { gap: 6px; }
+.alternative-header .site-nav > a,
+.alternative-header .nav-community > summary { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 0 12px; border: 1px solid transparent; border-radius: 8px; background: transparent; box-shadow: none; color: #aab3bc; font-size: .875rem; font-weight: 500; line-height: 1; white-space: nowrap; transition: color 160ms ease, background-color 160ms ease; }
+.alternative-header .site-nav > a:hover,
+.alternative-header .site-nav > a:focus-visible,
+.alternative-header .nav-community > summary:hover,
+.alternative-header .nav-community > summary:focus-visible,
+.alternative-header .nav-community[open] > summary { border-color: transparent; background: #ffffff08; color: #f1f5f3; }
+.alternative-header .site-nav .nav-download-picker > .nav-download { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 0 15px; border: 1px solid #343a3d; border-radius: 8px; background: #191e20; box-shadow: 0 1px 0 #ffffff05 inset; color: #e8eeeb; font-size: .875rem; font-weight: 600; line-height: 1; transition: background-color 160ms ease, border-color 160ms ease; }
+.alternative-header .site-nav .nav-download-picker { position: relative; margin-left: 10px; }
+.alternative-header .site-nav .nav-download-picker > .nav-download:hover,
+.alternative-header .site-nav .nav-download-picker > .nav-download:focus-visible,
+.alternative-header .site-nav .nav-download-picker[open] > .nav-download { border-color: #52675c; background: #242b28; color: #f2f8f4; box-shadow: none; }
+.alternative-header .nav-download-icon { display: block; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.alternative-header .download-picker-chevron svg { width: 11px; height: 8px; }
+.alternative-header .nav-more summary { width: 40px; height: 40px; border: 1px solid #ffffff12; border-radius: 8px; background: transparent; }
+.alternative-header .nav-more-menu,
+.alternative-header .download-picker-menu { border-color: #ffffff1a; border-radius: 12px; background: #121719; box-shadow: 0 16px 40px #0006; }
+.alternative-header .nav-download-picker .download-picker-menu { right: 0; left: auto; transform: none; }
+.alternative-header .nav-community .community-menu { right: 0; left: auto; transform: none; }
+.alternative-header .site-nav a:focus-visible,
+.alternative-header .site-nav summary:focus-visible { outline: 2px solid #79e6be; outline-offset: 3px; }
+@media (max-width: 700px) {
+ .alternative-header .site-nav { gap: 8px; }
+ .alternative-header .site-nav > .nav-secondary,
+ .alternative-header .site-nav > .nav-how-blocks,
+ .alternative-header .nav-community { display: none; }
+ .alternative-header .site-nav .nav-download-picker { margin-left: 0; }
+ .alternative-header .site-nav .nav-download-picker > .nav-download { min-height: 36px; padding: 0 11px; font-size: .8rem; }
+ .alternative-header .nav-more summary { width: 36px; height: 36px; }
+ .alternative-header .nav-download-icon { width: 14px; height: 14px; }
+ .alternative-header .site-nav .nav-mobile-guide { display: block; }
+}
+@media (prefers-reduced-motion: reduce) {
+ .alternative-header .site-nav > a,
+ .alternative-header .nav-community > summary,
+ .alternative-header .site-nav .nav-download-picker > .nav-download { transition: none; }
+}
+
+
+/* Three reasons: neutral surfaces, mint accents, and the shared desktop previews. */
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+body { background: #080a0b; color: #eef1f3; }
+.study-main { overflow: clip; }
+.study-main *, .study-main *::before, .study-main *::after { box-sizing: border-box; }
+.study-container { width: min(1060px, calc(100% - 48px)); margin-inline: auto; }
+.study-skip { position: fixed; z-index: 100; top: 12px; left: 16px; padding: 12px 20px; border-radius: 8px; background: #6fe3b9; color: #092016; transform: translateY(-180%); }
+.study-skip:focus { transform: translateY(0); }
+.study-hero { padding-top: 90px; padding-bottom: 76px; text-align: center; }
+.study-hero h1 { margin: 0; font-size: clamp(2.1rem, 4.8vw, 4.1rem); letter-spacing: -.045em; font-weight: 700; line-height: 1.14; }
+.study-reason { max-width: 940px; padding-top: 26px; margin-bottom: 110px; }
+.study-reason + .study-reason { padding-top: 70px; }
+.study-preview { width: 100%; min-width: 0; margin: 0; }
+.study-preview .app-window { border: 1px solid #343a40; background: #090a0b; box-shadow: 0 24px 80px #0004; }
+.study-fallback { padding: 36px; text-align: center; color: #9eaab4; font-size: .9rem; }
+.study-main a:focus-visible, .study-main button:focus-visible { outline: 2px solid #8ceac6; outline-offset: 5px; }
+@media (max-width: 800px) {
+ .study-hero { padding-top: 65px; padding-bottom: 50px; }
+}
+@media (max-width: 600px) {
+ html { scroll-padding-top: 90px; }
+ .study-container { width: calc(100% - 32px); }
+ .study-hero { padding-top: 48px; padding-bottom: 32px; }
+ .study-hero h1 { font-size: 2.1rem; }
+ .study-reason + .study-reason { padding-top: 48px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.study-blocked-preview img { display: block; width: 100%; height: auto; border: 1px solid #343a40; border-radius: 8px; }
+
+/* The focus guard introduces each point in the alternative guide's message style. */
+.study-reason-heading { display: grid; grid-template-columns: 124px minmax(0, 1fr); align-items: center; gap: 24px; margin-bottom: 36px; }
+.study-guide-mascot { display: block; width: 100%; height: auto; }
+.study-message { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 14px; position: relative; min-width: 0; padding: 24px; border: 1px solid #414650; border-radius: 16px; background: #101114; box-shadow: 0 12px 36px #0006; }
+.study-message::before { content: ""; position: absolute; left: -9px; top: 50%; width: 16px; height: 16px; border-left: 1px solid #414650; border-bottom: 1px solid #414650; background: #101114; transform: translateY(-50%) rotate(45deg); }
+.study-message-title { display: contents; }
+.study-number { flex-shrink: 0; color: #65dcb0; font-size: 1.25rem; font-weight: 600; line-height: 1.25; font-variant-numeric: tabular-nums; }
+.study-message h2 { margin: 0; color: #5ee0bd; font-size: 1.25rem; font-weight: 700; line-height: 1.25; letter-spacing: -.02em; }
+.study-message .study-description { grid-column: 2; margin: 0; max-width: none; color: #aeb8c3; font-size: .9rem; line-height: 1.7; }
+@media (max-width: 700px) {
+ .study-reason-heading { grid-template-columns: 80px minmax(0, 1fr); align-items: start; gap: 16px; margin-bottom: 28px; }
+ .study-guide-mascot { margin-top: 28px; }
+ .study-message { padding: 18px; border-radius: 12px; }
+ .study-message::before { top: 60px; }
+ .study-message { column-gap: 10px; }
+ .study-number, .study-message h2 { font-size: 1.1rem; }
+ .study-message .study-description { font-size: .85rem; }
+}
+@media (max-width: 420px) {
+ .study-reason-heading { grid-template-columns: 52px minmax(0, 1fr); gap: 12px; }
+ .study-message { padding: 16px; }
+ .study-guide-mascot { margin-top: 36px; }
+}
+
+/* On this page the clan preview owns the quests/activity navigation. */
+#study-together fokasu-clan { position: relative; }
+#study-together .study-clan-overview { height: var(--dash-view-height); }
+#progress-preview .dash-scroll-toggle { display: none; }
