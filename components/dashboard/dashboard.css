@@ -19,6 +19,13 @@ fokasu-dashboard, fokasu-demo-sidebar, fokasu-demo-header { display: block; }
 fokasu-dashboard { position: relative; display: block; container-type: inline-size; font-size: 1.08443cqw; line-height: 1.4; color: #f0f1f4; font-family: "Fokasu Noto Sans", sans-serif; }
 fokasu-dashboard * { box-sizing: border-box; }
 .dash-layout { position: relative; display: grid; grid-template-columns: 22.15337cqw 1fr; grid-template-rows: minmax(0, 1fr); height: 71.03021cqw; min-height: 0; overflow: hidden; background: #090a0b; }
+/* Reserve the canvas before JavaScript initializes any framed preview.
+   Each .app-window supplies the same inline-size container as the canvas. */
+.app-window > :is(fokasu-dashboard, fokasu-blocks, fokasu-stats, fokasu-leaderboard, fokasu-clan) {
+ display: block;
+ width: 100%;
+ height: 71.03021cqw;
+}
 .dash-layout > fokasu-demo-sidebar { min-height: 0; }
 .dash-layout svg { width: 1.54919cqw; height: 1.54919cqw; flex-shrink: 0; }
 .dash-sidebar { height: 100%; display: flex; flex-direction: column; padding: 1.54919cqw 1.70411cqw 1.85902cqw 2.01394cqw; border-right: 0.07746cqw solid #292c33; background: #101317; }
