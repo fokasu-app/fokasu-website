@@ -22,7 +22,7 @@
 .dash-study-legend { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.85902cqw; margin: 0 0 1.85902cqw; font-size: 1.08443cqw; color: #9da2ad; }
 .dash-study-legend > span { display: flex; align-items: center; gap: .61967cqw; }
 .dash-study-legend i { width: .77459cqw; height: .77459cqw; border-radius: 50%; flex-shrink: 0; }
-.dash-contribution-time { margin-left: auto; }
+.dash-contribution-time { margin-left: .30984cqw; white-space: nowrap; }
 .dash-social-cards { display: grid; gap: 1.16189cqw; }
 .dash-social-card { display: flex; align-items: center; gap: 1.23935cqw; height: 7.04880cqw; padding: 1.23935cqw 1.47173cqw; background: #181a1e; border: .07746cqw solid #24272b; border-radius: .85205cqw; }
 .dash-social-avatar { display: flex; align-items: center; justify-content: center; flex: 0 0 3.33075cqw; height: 3.33075cqw; border-radius: 50%; background: #1d2026; color: #175745; }

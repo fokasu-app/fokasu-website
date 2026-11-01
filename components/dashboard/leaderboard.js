@@ -23,7 +23,7 @@ class FokasuLeaderboard extends HTMLElement {
     <fokasu-demo-header aria-hidden="true"></fokasu-demo-header>
     <div class="leaderboard-viewport" role="region" aria-label="Leaderboard rankings"><div class="leaderboard-content">
     <div class="leaderboard-heading"><h3>Leaderboard</h3><span class="leaderboard-kind" aria-label="Users leaderboard"><span class="is-selected">Users</span><span>Clans</span></span><span class="leaderboard-period">Daily <svg viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 6 5-6z"/></svg></span></div>
-    <div class="leaderboard-meta"><span>Top 7</span><span class="leaderboard-date">${chevron('left')}<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 4.5h10V13H3zM5 2.5V6m6-3.5V6M3 7h10"/></svg><span>Saturday, Oct 24, 2026</span>${chevron('right')}</span></div>
+    <div class="leaderboard-meta"><span>Top 7</span><span class="leaderboard-date">${chevron('left')}<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 4.5h10V13H3zM5 2.5V6m6-3.5V6M3 7h10"/></svg><span>Oct 24, 2026</span>${chevron('right')}</span></div>
     <ol class="leaderboard-podium" aria-label="Top three users">
      ${rankings.slice(0, 3).map((person, index) => `<li class="leaderboard-place leaderboard-place-${index + 1}"><div class="leaderboard-podium-info"><span class="leaderboard-podium-name">${index === 0 ? crown : ''}${person.name}</span><span class="leaderboard-podium-time">${focusedTime(person.minutes)} focused</span></div><div class="leaderboard-step"><span>${index + 1}</span></div></li>`).join('')}
     </ol>
