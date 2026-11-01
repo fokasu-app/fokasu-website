@@ -1,3 +1,11 @@
+.guide-faq { width: min(800px, calc(100% - 48px)); margin: 0 auto; padding-block: clamp(72px, 11vh, 148px) clamp(76px, 12vh, 160px); }
+.guide-faq-heading { text-align: center; margin-bottom: 42px; }
+.guide-faq-heading p { margin: 0 0 16px; color: #59d6a7; font-size: .85rem; font-weight: 600; }
+.guide-faq-heading h2 { margin: 0; color: #eef1f3; font-size: clamp(1.75rem, 4vw, 2.7rem); line-height: 1.15; letter-spacing: -.035em; }
+@media (max-width: 700px) {
+  .guide-faq { width: calc(100% - 32px); padding-block: 106px; }
+  .guide-faq-heading { margin-bottom: 30px; }
+}
 /* Scope to this main element and outrank the shared guide’s per-step ID rules. */
 .alternative-guide #top .how-it-works-content .block-step {
   grid-template-columns: minmax(0, 1fr);
