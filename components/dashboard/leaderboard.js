@@ -2,9 +2,9 @@ import './dashboard.js?v=20261027-social-14';
 
 // Illustrative daily rankings, ordered by completed focus time.
 const rankings = [
- { name: 'priyanshu', minutes: 372, completed: 18 },
- { name: 'joi_boi', minutes: 348, completed: 16 },
- { name: 'sleepyhead', minutes: 272, completed: 13 },
+ { name: 'Iamparca', minutes: 981, completed: 18 },
+ { name: 'Girish', minutes: 960, completed: 16 },
+ { name: 'FIGHTMODE', minutes: 613, completed: 13 },
  { name: 'chaiBiscuit', minutes: 245, completed: 11 },
  { name: 'sarah.k', minutes: 218, completed: 10 },
  { name: 'Rishav', minutes: 196, completed: 9 },
