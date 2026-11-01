@@ -9,44 +9,7 @@
 
 
 /* Navigation styling belongs to the alternative pages. */
-.alternative-header .site-nav { gap: 6px; }
-.alternative-header .site-nav > a,
-.alternative-header .nav-community > summary { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 0 12px; border: 1px solid transparent; border-radius: 8px; background: transparent; box-shadow: none; color: #aab3bc; font-size: .875rem; font-weight: 500; line-height: 1; white-space: nowrap; transition: color 160ms ease, background-color 160ms ease; }
-.alternative-header .site-nav > a:hover,
-.alternative-header .site-nav > a:focus-visible,
-.alternative-header .nav-community > summary:hover,
-.alternative-header .nav-community > summary:focus-visible,
-.alternative-header .nav-community[open] > summary { border-color: transparent; background: #ffffff08; color: #f1f5f3; }
-.alternative-header .site-nav .nav-download-picker > .nav-download { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; padding: 0 15px; border: 1px solid #3d4548; border-radius: 8px; background: #131719; box-shadow: 0 1px 0 #ffffff05 inset; color: #e8eeeb; font-size: .875rem; font-weight: 600; line-height: 1; transition: background-color 160ms ease, border-color 160ms ease; }
-.alternative-header .site-nav .nav-download-picker { position: relative; margin-left: 10px; }
-.alternative-header .site-nav .nav-download-picker > .nav-download:hover,
-.alternative-header .site-nav .nav-download-picker > .nav-download:focus-visible,
-.alternative-header .site-nav .nav-download-picker[open] > .nav-download { border-color: #52675c; background: #242b28; color: #f2f8f4; box-shadow: none; }
-.alternative-header .nav-download-icon { display: block; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.alternative-header .download-picker-chevron svg { width: 11px; height: 8px; }
-.alternative-header .nav-more summary { width: 40px; height: 40px; border: 1px solid #ffffff12; border-radius: 8px; background: transparent; }
-.alternative-header .nav-more-menu,
-.alternative-header .download-picker-menu { border-color: #ffffff1a; border-radius: 12px; background: #121719; box-shadow: 0 16px 40px #0006; }
-.alternative-header .nav-download-picker .download-picker-menu { right: 0; left: auto; transform: none; }
-.alternative-header .nav-community .community-menu { right: 0; left: auto; transform: none; }
-.alternative-header .site-nav a:focus-visible,
-.alternative-header .site-nav summary:focus-visible { outline: 2px solid #79e6be; outline-offset: 3px; }
-@media (max-width: 700px) {
- .alternative-header .site-nav { gap: 8px; }
- .alternative-header .site-nav > .nav-secondary,
- .alternative-header .site-nav > .nav-how-blocks,
- .alternative-header .nav-community { display: none; }
- .alternative-header .site-nav .nav-download-picker { margin-left: 0; }
- .alternative-header .site-nav .nav-download-picker > .nav-download { min-height: 36px; padding: 0 11px; font-size: .8rem; }
- .alternative-header .nav-more summary { width: 36px; height: 36px; }
- .alternative-header .nav-download-icon { width: 14px; height: 14px; }
- .alternative-header .site-nav .nav-mobile-guide { display: block; }
-}
-@media (prefers-reduced-motion: reduce) {
- .alternative-header .site-nav > a,
- .alternative-header .nav-community > summary,
- .alternative-header .site-nav .nav-download-picker > .nav-download { transition: none; }
-}
+
 
 /* YPT comparison page. Shared navigation and desktop frame appear above. */
 html { scroll-behavior: smooth; scroll-padding-top: 110px; }

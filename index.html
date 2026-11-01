@@ -7,7 +7,7 @@
 <link rel="canonical" href="https://fokasu.app/" />
 <meta name="description" content="Plan study tasks, focus with automatic breaks, block distractions, track progress, and study with friends using Fokasu.">
 <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/index.css?v=header-download-20261027-1">
+<link rel="stylesheet" href="/index.css?v=20261101-mobile-no-overflow-menu-6">
 <link rel="stylesheet" href="/components/dashboard/dashboard.css?v=20261101-reserved-previews-1">
 <link rel="stylesheet" href="/components/dashboard/dashboard-progress.css?v=20261027-3">
 <link rel="stylesheet" href="/components/dashboard/dashboard-social.css?v=20261027-6">
@@ -15,21 +15,22 @@
 <link rel="stylesheet" href="/components/dashboard/leaderboard.css?v=20261027-4">
 <link rel="stylesheet" href="/components/dashboard/clan.css?v=20261027-4">
 <link rel="stylesheet" href="/components/dashboard/blocks.css?v=20261027-2">
-<link rel="stylesheet" href="/components/homepage/homepage.css?v=20261101-reserved-previews-2">
-<link rel="stylesheet" href="/components/faq/accordion.css?v=20261101-section-spacing-1">
+<link rel="stylesheet" href="/components/homepage/homepage.css?v=20261101-shared-navigation-1">
+<link rel="stylesheet" href="/components/faq/accordion.css?v=20261101-scoped-rows-3">
 <script src="/navigation.js" defer></script>
 <script src="/components/dashboard/stats.js?v=20261027-18" type="module"></script>
 <script src="/components/dashboard/leaderboard.js?v=20261027-11" type="module"></script>
 <script src="/components/dashboard/clan.js?v=20261027-12" type="module"></script>
 <script src="/components/dashboard/blocks.js?v=20261027-9" type="module"></script>
-<link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261027-3">
+<link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261101-navigation-size-4">
+<link rel="stylesheet" href="/components/navigation/header.css?v=20261101-shared-approved-1">
 </head><body id="top">
     <header class="site-header alternative-header">
       <div class="site-header-inner">
         <a class="brand" href="/" aria-label="Fokasu home">
           <img src="/logo/fokasu_logo.svg" alt="" aria-hidden="true" />
           <span>Fokasu</span>
-          <span class="brand-beta">BETA</span>
+          <span class="brand-beta"><span>BETA</span></span>
         </a>
 
         <nav class="site-nav" aria-label="Main navigation">
@@ -104,7 +105,6 @@
           </details>
           <details class="download-picker nav-download-picker">
             <summary class="nav-download">
-              <svg class="nav-download-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m-4-4 4 4 4-4M5 20h14"/></svg>
               <span>Download</span>
               <span class="download-picker-chevron" aria-hidden="true">
                 <svg viewBox="0 0 12 8" focusable="false">
@@ -114,7 +114,7 @@
             </summary>
 
             <div class="download-picker-menu" aria-label="Desktop downloads">
-              <p>Choose your operating system</p>
+              <p>Choose Your Operating System</p>
               <a
                 href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi"
               >
@@ -198,7 +198,7 @@
                 </summary>
 
                 <div class="download-picker-menu" aria-label="Desktop downloads">
-                  <p>Choose your operating system</p>
+                  <p>Choose Your Operating System</p>
                   <a
                     href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi"
                   >
@@ -438,6 +438,43 @@
     </div>
   </div>
 
+    <div class="hero-actions home-more-actions"><details class="download-picker">
+                <summary>
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 3v12m0 0 4-4m-4 4-4-4" />
+                    <path d="M5 20h14" />
+                  </svg>
+                  <span>Download Now</span>
+                  <span class="download-picker-chevron" aria-hidden="true">
+                    <svg viewBox="0 0 12 8" focusable="false">
+                      <path d="m1 1.5 5 5 5-5" />
+                    </svg>
+                  </span>
+                </summary>
+
+                <div class="download-picker-menu" aria-label="Desktop downloads">
+                  <p>Choose Your Operating System</p>
+                  <a
+                    href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi"
+                  >
+                    <span class="platform-mark" aria-hidden="true">⊞</span>
+                    <span>Windows</span>
+                    <small>MSI · v1.0.2</small>
+                  </a>
+                  <a
+                    href="https://download.fokasu.app/releases/1.0.2/linux-x64/fokasu-1.0.2-1.x86_64.rpm"
+                  >
+                    <span class="platform-mark" aria-hidden="true">f</span>
+                    <span>Fedora</span>
+                    <small>RPM · v1.0.2</small>
+                  </a>
+                  <button type="button" disabled>
+                    <span class="platform-mark" aria-hidden="true">◉</span>
+                    <span>Ubuntu</span>
+                    <small>Coming soon</small>
+                  </button>
+                </div>
+              </details></div>
 </section>
 
 <section class="home-faq faq-accordion" id="faq" aria-labelledby="home-faq-title">
@@ -463,50 +500,14 @@
     <p>Website blocking requires the Fokasu browser extension alongside the desktop app. If the extension is missing or disabled during an active Focus Block, Fokasu closes the browser after a grace period, which is 60 seconds by default.</p>
   </details>
   <p class="home-faq-more"><a href="/faq/">See all frequently asked questions <span aria-hidden="true">→</span></a></p>
-    <div class="hero-actions home-faq-actions"><details class="download-picker">
-                <summary>
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M12 3v12m0 0 4-4m-4 4-4-4" />
-                    <path d="M5 20h14" />
-                  </svg>
-                  <span>Download Now</span>
-                  <span class="download-picker-chevron" aria-hidden="true">
-                    <svg viewBox="0 0 12 8" focusable="false">
-                      <path d="m1 1.5 5 5 5-5" />
-                    </svg>
-                  </span>
-                </summary>
 
-                <div class="download-picker-menu" aria-label="Desktop downloads">
-                  <p>Choose your operating system</p>
-                  <a
-                    href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi"
-                  >
-                    <span class="platform-mark" aria-hidden="true">⊞</span>
-                    <span>Windows</span>
-                    <small>MSI · v1.0.2</small>
-                  </a>
-                  <a
-                    href="https://download.fokasu.app/releases/1.0.2/linux-x64/fokasu-1.0.2-1.x86_64.rpm"
-                  >
-                    <span class="platform-mark" aria-hidden="true">f</span>
-                    <span>Fedora</span>
-                    <small>RPM · v1.0.2</small>
-                  </a>
-                  <button type="button" disabled>
-                    <span class="platform-mark" aria-hidden="true">◉</span>
-                    <span>Ubuntu</span>
-                    <small>Coming soon</small>
-                  </button>
-                </div>
-              </details></div>
 </section>
 
 </main>
 
     <footer class="site-footer alternative-footer">
       <div class="site-footer-inner">
-        <a class="brand" href="/" aria-label="Fokasu home">
+        <a class="brand" href="/" aria-current="page" aria-label="Fokasu home">
           <img src="/logo/fokasu_logo.svg" width="30" height="30" alt="" aria-hidden="true">
           <span>Fokasu</span>
         </a>
