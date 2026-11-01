@@ -233,6 +233,7 @@
 .alternative-guide #top .block-overview {
   position: relative;
   padding-top: 30px;
+  margin-bottom: calc(clamp(48px, 6vw, 64px) - var(--block-row-gap));
 }
 .alternative-guide #top .block-overview h2 {
   position: absolute;

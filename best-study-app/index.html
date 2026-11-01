@@ -18,7 +18,8 @@
 <link rel="stylesheet" href="/components/dashboard/dashboard-progress.css?v=20261027-3">
 <link rel="stylesheet" href="/components/dashboard/dashboard-social.css?v=20261027-6">
 <link rel="stylesheet" href="/components/dashboard/clan.css?v=20261027-4">
-<link rel="stylesheet" href="/components/best-study-app/page.css?v=20261101-shared-navigation-1">
+<link rel="stylesheet" href="/components/best-study-app/page.css?v=20261101-faq-spacing-3">
+<link rel="stylesheet" href="/components/faq/accordion.css?v=20261101-scoped-rows-3">
 <script src="/navigation.js" defer></script>
 <script src="/components/dashboard/clan.js?v=20261027-12" type="module"></script>
 <script src="/components/best-study-app/page.js?v=20261101-migration-1" type="module"></script>
@@ -47,11 +48,8 @@
 
           <a
             class="nav-secondary"
-            href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
-            target="_blank"
-            rel="noopener noreferrer"
-            onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
-          >Extension</a>
+            href="/extensions/"
+           target="_blank" rel="noopener noreferrer">Extension</a>
           <details class="nav-community">
             <summary>
               <span>Contact</span>
@@ -97,10 +95,8 @@
             <div class="nav-more-menu">
               <a class="nav-mobile-guide" href="/how-it-works/">Focus Block Guide</a>
               <a
-                href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Extension</a>
+                href="/extensions/"
+               target="_blank" rel="noopener noreferrer">Extension</a>
               <a href="https://discord.gg/Z78MeYAkcW" target="_blank" rel="noopener noreferrer">Discord</a>
               <a href="https://www.reddit.com/r/FokasuApp/" target="_blank" rel="noopener noreferrer">Reddit</a>
             </div>
@@ -220,6 +216,34 @@
                 </div>
               </details>
 </div>
+</section>
+<section class="study-faq faq-accordion" id="faq" aria-labelledby="study-faq-title">
+  <h2 id="study-faq-title">Frequently asked questions.</h2>
+  <details>
+    <summary>How do I start a study session?</summary>
+    <p>Create a todo, give it an estimated focus time, and start its timer from the dashboard. You can also set a deadline and configure automatic breaks for the task.</p>
+  </details>
+  <details>
+    <summary>Can I choose when to take breaks?</summary>
+    <p>Yes. When creating a todo, use the automatic break settings to choose a study interval and break duration that suit your routine.</p>
+  </details>
+  <details>
+    <summary>What happens to blocking during an automatic break?</summary>
+    <p>During an approved automatic break, Fokasu temporarily lifts website and application blocking. If your Focus Block is still active, blocking resumes when the break ends. <a href="/how-it-works/">Read the Focus Block Guide.</a></p>
+  </details>
+  <details>
+    <summary>Can my friends and I study at the same time?</summary>
+    <p>Yes. Join a clan and use its study rooms to focus together on a shared schedule, including synchronized breaks. You can also chat with your clan and work toward clan quests.</p>
+  </details>
+  <details>
+    <summary>Can I see my timer while using another app?</summary>
+    <p>Yes. Switch to progress bar mode to keep a compact progress bar above your other apps. You can keep studying in your notes or browser while checking your session progress.</p>
+  </details>
+  <details>
+    <summary>Can I track how much time I spend on each subject?</summary>
+    <p>Add subject tags to your todos, then use Stats to review time spent on each tag, completed todo hours, and weekly or monthly trends.</p>
+  </details>
+  <p class="study-faq-more"><a href="/faq/">See all frequently asked questions <span aria-hidden="true">→</span></a></p>
 </section>
     <footer class="site-footer alternative-footer">
       <div class="site-footer-inner">

@@ -13,25 +13,27 @@
 .uninstall-step { display: grid; justify-items: center; gap: clamp(36px, 4vw, 48px); width: min(100%, 820px); min-width: 0; margin-inline: auto; }
 .uninstall-companion { display: grid; grid-template-columns: 110px minmax(0, 1fr); align-items: center; gap: 22px; width: 100%; min-width: 0; animation: uninstall-guide-bounce 3s ease-in-out infinite; }
 .uninstall-mascot { display: block; width: 100%; height: auto; }
-.uninstall-page .step-copy { display: grid; justify-items: start; gap: 12px; position: relative; width: fit-content; max-width: 100%; min-width: 0; justify-self: start; padding: 20px; border: 1px solid #414650; border-radius: 16px; background: #101114; box-shadow: 0 12px 36px #0006; text-align: left; overflow-wrap: anywhere; }
+.uninstall-page .step-copy { display: grid; grid-template-columns: auto minmax(0, 1fr); justify-items: start; gap: 12px; position: relative; width: fit-content; max-width: 100%; min-width: 0; justify-self: start; padding: 20px; border: 1px solid #414650; border-radius: 16px; background: #101114; box-shadow: 0 12px 36px #0006; text-align: left; overflow-wrap: anywhere; }
 .uninstall-page .step-copy > div { display: contents; }
 .uninstall-page .step-copy::before { content: ''; position: absolute; left: -9px; top: 50%; width: 16px; height: 16px; border-left: 1px solid #414650; border-bottom: 1px solid #414650; background: #101114; transform: translateY(-50%) rotate(45deg); }
-.uninstall-page .step-number { color: #91a09b; font-size: .9rem; font-weight: 600; line-height: 1.6; letter-spacing: .01em; font-variant-numeric: tabular-nums; }
-.uninstall-page .step-copy h2 { margin: 0; color: #5ee0bd; font-size: 1.25rem; font-weight: 700; line-height: 1.25; letter-spacing: 0; }
-.uninstall-page .step-copy p { margin: 0; max-width: 100%; color: #aeb8c3; font-size: .9rem; line-height: 1.6; overflow-wrap: anywhere; }
+.uninstall-page .step-number { grid-column: 1; grid-row: 1; align-self: center; color: #91a09b; font-size: 1.25rem; font-weight: 600; line-height: 1.25; letter-spacing: .01em; font-variant-numeric: tabular-nums; }
+.uninstall-page .step-copy h2 { grid-column: 2; grid-row: 1; margin: 0; color: #5ee0bd; font-size: 1.25rem; font-weight: 700; line-height: 1.25; letter-spacing: 0; }
+.uninstall-page .step-copy p { grid-column: 1 / -1; margin: 0; max-width: 100%; color: #aeb8c3; font-size: .9rem; line-height: 1.6; overflow-wrap: anywhere; }
 .uninstall-page .step-copy strong { color: #e2e8ed; font-weight: 650; }
-.uninstall-page .step-shot { position: relative; width: 100%; margin: 0; border: 1px solid #303936; border-radius: 8px; background: #090b0e; box-shadow: 0 24px 64px #0004; }
+.uninstall-page .step-shot { position: relative; width: 100%; margin: 0; border: 1px solid #303936; border-radius: 8px; overflow: hidden; background: #080a0b; box-shadow: 0 35px 100px #0008, 0 0 70px #43d9a309; }
 .uninstall-page .step-shot-small { width: min(100%, 560px); }
 .uninstall-page .step-shot img { display: block; width: 100%; height: auto; border-radius: 7px; user-select: none; -webkit-user-drag: none; }
-.uninstall-arrow { position: absolute; z-index: 2; width: clamp(22px, 5.5%, 46px); height: auto; color: #5ee0bd; pointer-events: none; filter: drop-shadow(0 3px 8px #0006); transform: translateY(-50%) rotate(-90deg); animation: uninstall-guide-bounce 3s ease-in-out infinite; }
-.uninstall-step:nth-child(1) .uninstall-arrow { left: 28%; top: 25%; }
+.uninstall-arrow { position: absolute; z-index: 2; width: clamp(32px, 8%, 64px); height: auto; color: #5ee0bd; pointer-events: none; filter: drop-shadow(0 3px 8px #0006); transform: translateY(-50%) rotate(-90deg); animation: uninstall-arrow-point-left 1.8s ease-in-out infinite; }
+.uninstall-step:nth-child(1) .uninstall-arrow { left: 15%; top: 34%; transform: translateX(-50%); animation-name: uninstall-arrow-point-up; }
 .uninstall-step:nth-child(2) .uninstall-arrow { left: 56%; top: 43%; }
 .uninstall-step:nth-child(3) .uninstall-arrow { left: 47%; top: 56.5%; }
-.uninstall-finish { display: grid; justify-items: center; gap: 18px; margin: var(--uninstall-step-gap) auto 0; padding: 30px; width: min(100%, 820px); border: 1px solid #414650; border-radius: 16px; background: #101114; text-align: center; }
+.uninstall-finish { display: grid; justify-items: center; gap: 18px; margin: clamp(32px, 5vw, 56px) auto 0; padding: 30px; width: min(100%, 820px); border: 0; background: transparent; text-align: center; }
 .uninstall-finish h2 { margin: 0; color: #5ee0bd; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.25; letter-spacing: -.025em; }
 .uninstall-finish a { display: inline-flex; min-height: 46px; align-items: center; padding: 11px 18px; border: 1px solid rgba(91,255,181,.5); border-radius: 12px; color: #03110c; background: #35d99b; font-size: .9rem; font-weight: 700; text-decoration: none; }
 .uninstall-finish a:hover { background: #6ef0b9; }
 .uninstall-finish a:focus-visible { outline: 2px solid #77dfb8; outline-offset: 5px; }
+@keyframes uninstall-arrow-point-left { 0%,100% { translate: 0 0; } 50% { translate: -8px 0; } }
+@keyframes uninstall-arrow-point-up { 0%,100% { translate: 0 0; } 50% { translate: 0 -8px; } }
 @keyframes uninstall-guide-bounce { 0%,100% { translate: 0 0; } 50% { translate: 0 -4px; } }
 @media (max-width: 700px) {
   .uninstall-page { --uninstall-step-gap: 212px; padding-inline: 16px; }

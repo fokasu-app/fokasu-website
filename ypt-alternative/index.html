@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/components/dashboard/dashboard.css?v=20261101-reserved-previews-1">
 <link rel="stylesheet" href="/components/dashboard/dashboard-progress.css?v=20261027-3">
 <link rel="stylesheet" href="/components/dashboard/dashboard-social.css?v=20261027-6">
-<link rel="stylesheet" href="/components/ypt-alternative/page.css?v=20261101-shared-navigation-1">
+<link rel="stylesheet" href="/components/ypt-alternative/page.css?v=20261101-closer-hero-actions-5">
 <script src="/navigation.js" defer></script>
 <script src="/components/dashboard/dashboard.js?v=20261027-social-14" type="module"></script>
 <link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261101-navigation-size-4">
@@ -45,11 +45,8 @@
 
           <a
             class="nav-secondary"
-            href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
-            target="_blank"
-            rel="noopener noreferrer"
-            onclick="const extensionWindow = window.open(this.href, 'fokasu-extension', 'popup=yes,width=1280,height=680,resizable=yes,scrollbars=yes'); if (extensionWindow) { event.preventDefault(); extensionWindow.opener = null; }"
-          >Extension</a>
+            href="/extensions/"
+           target="_blank" rel="noopener noreferrer">Extension</a>
           <details class="nav-community">
             <summary>
               <span>Contact</span>
@@ -95,10 +92,8 @@
             <div class="nav-more-menu">
               <a class="nav-mobile-guide" href="/how-it-works/">Focus Block Guide</a>
               <a
-                href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Extension</a>
+                href="/extensions/"
+               target="_blank" rel="noopener noreferrer">Extension</a>
               <a href="https://discord.gg/Z78MeYAkcW" target="_blank" rel="noopener noreferrer">Discord</a>
               <a href="https://www.reddit.com/r/FokasuApp/" target="_blank" rel="noopener noreferrer">Reddit</a>
             </div>
@@ -141,7 +136,7 @@
     </header>
 <main id="main" class="ypt-main">
  <section class="ypt-hero" aria-labelledby="ypt-title">
-  <h1 id="ypt-title">A YPT (Yeolpumta) alternative for desktop.<br><em>Meet Fokasu.</em></h1>
+  <h1 id="ypt-title"><span class="ypt-title-copy">A YPT (Yeolpumta) alternative for desktop.</span><br><em>Meet Fokasu.</em></h1>
   <p class="ypt-intro">Plan your tasks, study with friends, and keep distracting apps and websites out of your session.</p>
   <div class="ypt-actions"><details class="download-picker">
                 <summary>
@@ -197,13 +192,13 @@
  </section>
  <section class="ypt-comparison ypt-container" id="comparison" aria-labelledby="comparison-title">
   <div class="ypt-section-copy"><p class="ypt-kicker">A familiar starting point</p><h2 id="comparison-title">Same study spirit.<br>A different place to focus.</h2><p>Both help you show up and track your study time. Fokasu brings that routine to the computer where your work happens.</p></div>
-  <div class="ypt-table-wrap" tabindex="0" role="region" aria-label="Fokasu and YPT feature comparison. Scroll horizontally on smaller screens.">
-   <table class="ypt-table"><caption class="ypt-sr-only">Study features in Fokasu and YPT</caption><colgroup><col><col class="ypt-fokasu-column"><col></colgroup><thead><tr><th scope="col">What matters to you</th><th scope="col"><span class="ypt-table-brand"><img src="/logo/fokasu_logo.svg" width="22" height="22" alt=""><span>Fokasu<small>Your desktop study space</small></span></span></th><th scope="col">YPT <small>Yeolpumta</small></th></tr></thead><tbody><tr><th scope="row">Study timer</th><td><span class="ypt-check" aria-hidden="true">✓</span>Focus sessions tied to your tasks</td><td>Study time tracked by subject</td></tr><tr><th scope="row">Study together</th><td><span class="ypt-check" aria-hidden="true">✓</span>Clans, friends &amp; clan chat</td><td>Study groups &amp; member activity</td></tr><tr><th scope="row">Progress &amp; rankings</th><td><span class="ypt-check" aria-hidden="true">✓</span>Weekly/monthly stats &amp; leaderboards</td><td>Study records &amp; real-time rankings</td></tr><tr><th scope="row">Plan your day</th><td><span class="ypt-check" aria-hidden="true">✓</span>Todos, deadlines &amp; habits</td><td>Todos &amp; a daily planner</td></tr><tr><th scope="row">Block distractions</th><td><span class="ypt-check" aria-hidden="true">✓</span>Desktop apps &amp; websites</td><td>App blocking during focus sessions</td></tr></tbody></table>
+  <div class="ypt-table-wrap" role="region" aria-label="Fokasu and YPT feature comparison">
+   <table class="ypt-table" role="table"><caption class="ypt-sr-only">Study features in Fokasu and YPT</caption><colgroup><col><col class="ypt-fokasu-column"><col></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">What matters to you</th><th scope="col" role="columnheader"><span class="ypt-table-brand"><img src="/logo/fokasu_logo.svg" width="22" height="22" alt=""><span>Fokasu<small>Your desktop study space</small></span></span></th><th scope="col" role="columnheader">YPT <small>Yeolpumta</small></th></tr></thead><tbody role="rowgroup"><tr role="row"><th scope="row" role="rowheader">Study timer</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Focus sessions tied to your tasks</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Study time tracked by subject</td></tr><tr role="row"><th scope="row" role="rowheader">Study together</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Clans, friends &amp; clan chat</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Study groups &amp; member activity</td></tr><tr role="row"><th scope="row" role="rowheader">Progress &amp; rankings</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Weekly/monthly stats &amp; leaderboards</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Study records &amp; real-time rankings</td></tr><tr role="row"><th scope="row" role="rowheader">Plan your day</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Todos, deadlines &amp; habits</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Todos &amp; a daily planner</td></tr><tr role="row"><th scope="row" role="rowheader">Block distractions</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Desktop apps &amp; websites</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>App blocking during focus sessions</td></tr></tbody></table>
   </div>
  </section>
  <section class="ypt-reasons ypt-container" aria-labelledby="reasons-title">
   <div class="ypt-section-copy"><p class="ypt-kicker">Make room for focused work</p><h2 id="reasons-title">Your laptop is your study space.<br>Make it feel like one.</h2></div>
-  <div class="ypt-feature-grid">
+  <div class="ypt-feature-grid" tabindex="0" role="region" aria-label="Fokasu features: distraction blocking and studying together. Swipe or use arrow keys to explore.">
    <article class="ypt-feature-card"><div class="ypt-block-visual" aria-hidden="true"><div class="ypt-mini-label"><span class="ypt-status-dot"></span> Focus Block active <span>🔒</span></div><div class="ypt-block-item"><span>instagram.com</span><span>Blocked</span></div><div class="ypt-block-item"><span>reddit.com</span><span>Blocked</span></div><div class="ypt-block-item"><span>Distracting apps</span><span>Blocked</span></div></div><div class="ypt-feature-copy"><span class="ypt-feature-number">01 / PROTECT YOUR FOCUS</span><h3>Close the door on “just a minute.”</h3><p>Create or schedule a Focus Block. Keep distracting websites and desktop apps away while you work toward your goal.</p><a class="ypt-text-link" href="/how-it-works/">Explore Focus Blocks <span aria-hidden="true">→</span></a></div></article>
    <article class="ypt-feature-card"><div class="ypt-clan-visual" aria-hidden="true"><div class="ypt-mini-label"><img src="/components/dashboard/clan-assets/default-clan-logo.svg" width="26" height="30" alt=""> FOCUS TOGETHER <span class="ypt-live-label">Clan chat</span></div><div class="ypt-chat-bubble"><span>sleepyhead</span><p>Anyone up for another hour of focus?</p></div><div class="ypt-chat-bubble ypt-chat-reply"><span>joi_boi</span><p>I'm in. Let's get this chapter done.</p></div></div><div class="ypt-feature-copy"><span class="ypt-feature-number">02 / FIND YOUR PEOPLE</span><h3>Different desks. A shared goal.</h3><p>Join a clan, chat between sessions, and work toward quests together. A bit of encouragement makes it easier to come back tomorrow.</p><a class="ypt-text-link" href="/#clan-preview-title">Meet your study space <span aria-hidden="true">→</span></a></div></article>
   </div>
