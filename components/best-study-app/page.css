@@ -107,3 +107,12 @@ body { background: #080a0b; color: #eef1f3; }
 #study-together fokasu-clan { position: relative; }
 #study-together .study-clan-overview { height: var(--dash-view-height); }
 #progress-preview .dash-scroll-toggle { display: none; }
+
+/* Intro and final download action use the shared homepage picker. */
+.study-intro { max-width: 640px; margin: 24px auto 0; color: #aeb8c3; font-size: 1rem; line-height: 1.7; }
+.study-download-section { margin-bottom: 90px; text-align: center; }
+.study-download-section h2 { margin: 0; color: #eef1f3; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.25; letter-spacing: -.025em; }
+.study-download-section > p { max-width: 480px; margin: 14px auto 26px; color: #aeb8c3; font-size: 1rem; line-height: 1.7; }
+.study-download-actions { margin: 0 auto; }
+.study-download-actions > .download-picker { flex: 0 0 auto; width: auto; }
+.study-download-actions .download-picker-menu { top: auto; bottom: calc(100% + 12px); }

@@ -1,0 +1,21 @@
+/* Native details rows match the YPT FAQ without JavaScript. */
+.faq-accordion details { border: 0; border-bottom: 1px solid #2d3236; padding: 0; scroll-margin-top: 100px; }
+.faq-accordion summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 23px 0; color: #d4ded8; font-size: .95rem; line-height: 1.5; cursor: pointer; list-style: none; }
+.faq-accordion summary::-webkit-details-marker { display: none; }
+.faq-accordion summary::after { content: '+'; flex-shrink: 0; color: #75b991; font-size: 1.3rem; }
+.faq-accordion details[open] > summary::after { content: '−'; }
+.faq-accordion details > p { margin: 0 35px 25px 0; color: #98a79d; font-size: .88rem; line-height: 1.85; }
+.faq-accordion a { color: #7adfb4; text-underline-offset: 3px; }
+.faq-accordion summary:focus-visible { outline: 2px solid #7adfb4; outline-offset: 5px; border-radius: 3px; }
+.home-faq { width: min(800px, calc(100% - 48px)); margin: 0 auto 100px; padding-top: var(--home-section-before); }
+.home-faq > h2 { margin: 0 0 36px; text-align: center; color: #eef1f3; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; letter-spacing: -.025em; }
+.home-faq-more { margin: 24px 0 32px; text-align: center; font-size: .9rem; line-height: 1.6; }
+.home-faq-actions { margin: 0 auto; }
+.home-faq-actions > .download-picker { flex: 0 0 auto; width: auto; }
+.home-faq-actions .download-picker-menu { top: auto; bottom: calc(100% + 12px); text-align: left; }
+@media (max-width: 600px) {
+ .home-faq { width: calc(100% - 32px); margin-bottom: 60px; }
+ .faq-accordion summary { font-size: .9rem; }
+ .faq-accordion details > p { margin-right: 0; }
+ .home-faq-actions .download-picker-menu { left: auto; right: 0; transform: none; min-width: min(260px, 75vw); }
+}

@@ -8,8 +8,9 @@ from fontTools.ttLib import TTFont
 FONTS = Path(__file__).resolve().parent
 ROOT = FONTS.parents[2]
 SOURCES = sorted(FONTS.parent.glob("*.js")) + sorted(FONTS.parent.glob("*.css"))
+SOURCES += [ROOT / "index.html"]
 SOURCES += [ROOT / page / "index.html" for page in (
-    "alternative-homepage", "alternative-best-study-app", "alternative-ypt-alternative"
+    "best-study-app", "ypt-alternative"
 )]
 
 # Keep Latin letters, digits, punctuation, and combining accents for future copy,

@@ -1,27 +1,30 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#030506" />
-    <title>YPT Alternative for Desktop (Yeolpumta) — Fokasu</title>
-    <meta name="description" content="Looking for a YPT (Yeolpumpta) alternative for desktop? Track study hours, study with friends, and block distractions with Fokasu for Windows and Fedora." />
-    <link rel="canonical" href="https://fokasu.app/ypt-alternative/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="YPT Alternative for Desktop (Yeolpumta) — Fokasu" />
-    <meta property="og:description" content="Study together. Block distractions on your desktop. Available for Windows and Fedora." />
-    <meta property="og:url" content="https://fokasu.app/ypt-alternative/" />
-    <meta property="og:image" content="https://fokasu.app/screenshots/app-screenshot.png" />
-    <meta property="og:image:alt" content="Fokasu desktop study dashboard" />
-    <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml" />
-    <link rel="alternate icon" href="/logo/fokasu_logo.png" type="image/png" />
-    <link rel="stylesheet" href="/index.css?v=header-download-20261027-1" />
-    <link rel="stylesheet" href="/ypt-alternative/style.css?v=mobile-copy-center-20260915-1" />
-    <script src="/navigation.js?v=community-menu-20260916-1" defer></script>
-  </head>
-  <body id="top" class="alternative-page">
-    <a class="alternative-skip" href="#main">Skip to content</a>
-    <header class="site-header">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080a0b">
+<title>YPT Alternative for Desktop (Yeolpumta) — Fokasu</title>
+<link rel="canonical" href="https://fokasu.app/ypt-alternative/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YPT Alternative for Desktop (Yeolpumta) — Fokasu">
+<meta property="og:description" content="Study together. Block distractions on your desktop. Available for Windows and Fedora.">
+<meta property="og:url" content="https://fokasu.app/ypt-alternative/">
+<meta property="og:image" content="https://fokasu.app/screenshots/app-screenshot.png">
+<meta property="og:image:alt" content="Fokasu desktop study dashboard">
+<meta name="description" content="Looking for a YPT (Yeolpumta) alternative for desktop? Study with friends, track your hours, and block distracting apps and websites on Windows and Fedora.">
+<link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/index.css?v=header-download-20261027-1">
+<link rel="stylesheet" href="/components/dashboard/dashboard.css?v=20261101-subset-fonts-1">
+<link rel="stylesheet" href="/components/dashboard/dashboard-progress.css?v=20261027-3">
+<link rel="stylesheet" href="/components/dashboard/dashboard-social.css?v=20261027-6">
+<link rel="stylesheet" href="/components/ypt-alternative/page.css?v=20261101-section-spacing-1">
+<script src="/navigation.js" defer></script>
+<script src="/components/dashboard/dashboard.js?v=20261027-social-14" type="module"></script>
+<link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261027-3">
+</head>
+<body id="top">
+<a class="ypt-skip" href="#main">Skip to content</a>
+    <header class="site-header alternative-header">
       <div class="site-header-inner">
         <a class="brand" href="/" aria-label="Fokasu home">
           <img src="/logo/fokasu_logo.svg" alt="" aria-hidden="true" />
@@ -30,34 +33,15 @@
         </a>
 
         <nav class="site-nav" aria-label="Main navigation">
-          <details class="download-picker nav-download-picker">
-            <summary class="nav-download">
-              <span>Download</span>
-              <span class="download-picker-chevron" aria-hidden="true">
-                <svg viewBox="0 0 12 8" focusable="false">
-                  <path d="m1 1.5 5 5 5-5" />
-                </svg>
-              </span>
-            </summary>
-            <div class="download-picker-menu" aria-label="Desktop downloads">
-              <p>Choose your operating system</p>
-              <a href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi">
-                <span class="platform-mark" aria-hidden="true">⊞</span>
-                <span>Windows</span>
-                <small>MSI · v1.0.2</small>
-              </a>
-              <a href="https://download.fokasu.app/releases/1.0.2/linux-x64/fokasu-1.0.2-1.x86_64.rpm">
-                <span class="platform-mark" aria-hidden="true">f</span>
-                <span>Fedora</span>
-                <small>RPM · v1.0.2</small>
-              </a>
-              <button type="button" disabled>
-                <span class="platform-mark" aria-hidden="true">◉</span>
-                <span>Ubuntu</span>
-                <small>Coming soon</small>
-              </button>
-            </div>
-          </details>
+          <a
+            class="nav-how-blocks"
+            href="/how-it-works/"
+            aria-label="Focus Block Guide"
+          >
+            <span class="nav-label-full">Focus Block Guide</span>
+            <span class="nav-label-short" aria-hidden="true">Block</span>
+          </a>
+
           <a
             class="nav-secondary"
             href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
@@ -98,14 +82,7 @@
               </a>
             </div>
           </details>
-          <a
-            class="nav-how-blocks"
-            href="/how-it-works/"
-            aria-label="Focus Block Guide"
-          >
-            <span class="nav-label-full">Focus Block Guide</span>
-            <span class="nav-label-short" aria-hidden="true">Block</span>
-          </a>
+
           <details class="nav-more">
             <summary aria-label="Show more navigation options">
               <svg viewBox="0 0 16 4" aria-hidden="true" focusable="false">
@@ -121,98 +98,139 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >Extension</a>
+              <a href="https://discord.gg/Z78MeYAkcW" target="_blank" rel="noopener noreferrer">Discord</a>
+              <a href="https://www.reddit.com/r/FokasuApp/" target="_blank" rel="noopener noreferrer">Reddit</a>
+            </div>
+          </details>
+          <details class="download-picker nav-download-picker">
+            <summary class="nav-download">
+              <svg class="nav-download-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m-4-4 4 4 4-4M5 20h14"/></svg>
+              <span>Download</span>
+              <span class="download-picker-chevron" aria-hidden="true">
+                <svg viewBox="0 0 12 8" focusable="false">
+                  <path d="m1 1.5 5 5 5-5" />
+                </svg>
+              </span>
+            </summary>
+
+            <div class="download-picker-menu" aria-label="Desktop downloads">
+              <p>Choose your operating system</p>
+              <a
+                href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi"
+              >
+                <span class="platform-mark" aria-hidden="true">⊞</span>
+                <span>Windows</span>
+                <small>MSI · v1.0.2</small>
+              </a>
+              <a
+                href="https://download.fokasu.app/releases/1.0.2/linux-x64/fokasu-1.0.2-1.x86_64.rpm"
+              >
+                <span class="platform-mark" aria-hidden="true">f</span>
+                <span>Fedora</span>
+                <small>RPM · v1.0.2</small>
+              </a>
+              <button type="button" disabled>
+                <span class="platform-mark" aria-hidden="true">◉</span>
+                <span>Ubuntu</span>
+                <small>Coming soon</small>
+              </button>
             </div>
           </details>
         </nav>
       </div>
     </header>
-    <main id="main" class="alternative-main">
-      <section class="alternative-hero" aria-labelledby="alternative-title">
-        <p class="alternative-eyebrow">For your next study session</p>
-        <h1 id="alternative-title">A YPT alternative.<br /><span>Built for your desktop.</span></h1>
-        <p class="alternative-intro">Looking for a YPT (Yeolpumta) alternative on your PC? Track your study hours, study with friends, and block distracting apps and websites. All in Fokasu.</p>
-        <div class="alternative-actions">
-          <a class="alternative-download" href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi">Download for Windows <span aria-hidden="true">↗</span></a>
-          <a class="alternative-secondary" href="https://download.fokasu.app/releases/1.0.2/linux-x64/fokasu-1.0.2-1.x86_64.rpm">Download for Fedora <span aria-hidden="true">↗</span></a>
-        </div>
-        <p class="alternative-platforms">Windows &amp; Fedora <span aria-hidden="true">·</span> Beta v1.0.2</p>
-        <figure class="alternative-screen alternative-hero-screen">
-          <img src="/screenshots/app-screenshot.png" width="2576" height="1828" alt="Fokasu desktop dashboard with a study timer and today's tasks" fetchpriority="high" decoding="async" />
-        </figure>
-      </section>
+<main id="main" class="ypt-main">
+ <section class="ypt-hero" aria-labelledby="ypt-title">
+  <h1 id="ypt-title">A YPT (Yeolpumta) alternative for desktop.<br><em>Meet Fokasu.</em></h1>
+  <p class="ypt-intro">Plan your tasks, study with friends, and keep distracting apps and websites out of your session.</p>
+  <div class="ypt-actions"><details class="download-picker">
+                <summary>
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 3v12m0 0 4-4m-4 4-4-4" />
+                    <path d="M5 20h14" />
+                  </svg>
+                  <span>Download</span>
+                  <span class="download-picker-chevron" aria-hidden="true">
+                    <svg viewBox="0 0 12 8" focusable="false">
+                      <path d="m1 1.5 5 5 5-5" />
+                    </svg>
+                  </span>
+                </summary>
 
-      <section class="alternative-feature" aria-labelledby="together-title">
-        <div class="alternative-copy">
-          <p class="alternative-eyebrow">Study together</p>
-          <h2 id="together-title">Bring your study friends.</h2>
-          <p>Enjoy the motivation of studying with others in YPT? Join a study clan in Fokasu, chat, complete quests, and climb the leaderboard together on your desktop.</p>
-          <a class="alternative-text-link" href="/fyq/#ypt-desktop">Questions about YPT on PC? <span aria-hidden="true">→</span></a>
-        </div>
-        <figure class="alternative-screen">
-          <img src="/screenshots/clan.png" width="2556" height="1816" alt="Fokasu study clan with member rankings and study contributions" loading="lazy" decoding="async" />
-        </figure>
-      </section>
+                <div class="download-picker-menu" aria-label="Desktop downloads">
+                  <p>Choose your operating system</p>
+                  <a
+                    href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi"
+                  >
+                    <span class="platform-mark" aria-hidden="true">⊞</span>
+                    <span>Windows</span>
+                    <small>MSI · v1.0.2</small>
+                  </a>
+                  <a
+                    href="https://download.fokasu.app/releases/1.0.2/linux-x64/fokasu-1.0.2-1.x86_64.rpm"
+                  >
+                    <span class="platform-mark" aria-hidden="true">f</span>
+                    <span>Fedora</span>
+                    <small>RPM · v1.0.2</small>
+                  </a>
+                  <button type="button" disabled>
+                    <span class="platform-mark" aria-hidden="true">◉</span>
+                    <span>Ubuntu</span>
+                    <small>Coming soon</small>
+                  </button>
+                </div>
+              </details><a class="ypt-text-link" href="#comparison">See the comparison <span aria-hidden="true">↗</span></a></div>
+ </section>
+ <section class="ypt-preview" aria-label="Interactive Fokasu desktop preview">
+<div class="app-window">
+<div class="window-bar" aria-hidden="true">
+  <span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+  <div class="window-controls">
+    <span><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#bec3ca" stroke-width="1"><path d="M1 6.5h10"/></svg></span>
+    <span><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#bec3ca" stroke-width="1"><rect x="1.5" y="1.5" width="9" height="9"/></svg></span>
+    <span><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#bec3ca" stroke-width="1"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span>
+  </div>
+</div>
+<fokasu-dashboard></fokasu-dashboard>
+<noscript><p class="ypt-preview-fallback">Enable JavaScript to explore the desktop preview.</p></noscript>
+</div>
+ </section>
+ <section class="ypt-comparison ypt-container" id="comparison" aria-labelledby="comparison-title">
+  <div class="ypt-section-copy"><p class="ypt-kicker">A familiar starting point</p><h2 id="comparison-title">Same study spirit.<br>A different place to focus.</h2><p>Both help you show up and track your study time. Fokasu brings that routine to the computer where your work happens.</p></div>
+  <div class="ypt-table-wrap" tabindex="0" role="region" aria-label="Fokasu and YPT feature comparison. Scroll horizontally on smaller screens.">
+   <table class="ypt-table"><caption class="ypt-sr-only">Study features in Fokasu and YPT</caption><colgroup><col><col class="ypt-fokasu-column"><col></colgroup><thead><tr><th scope="col">What matters to you</th><th scope="col"><span class="ypt-table-brand"><img src="/logo/fokasu_logo.svg" width="22" height="22" alt=""><span>Fokasu<small>Your desktop study space</small></span></span></th><th scope="col">YPT <small>Yeolpumta</small></th></tr></thead><tbody><tr><th scope="row">Study timer</th><td><span class="ypt-check" aria-hidden="true">✓</span>Focus sessions tied to your tasks</td><td>Study time tracked by subject</td></tr><tr><th scope="row">Study together</th><td><span class="ypt-check" aria-hidden="true">✓</span>Clans, friends &amp; clan chat</td><td>Study groups &amp; member activity</td></tr><tr><th scope="row">Progress &amp; rankings</th><td><span class="ypt-check" aria-hidden="true">✓</span>Weekly/monthly stats &amp; leaderboards</td><td>Study records &amp; real-time rankings</td></tr><tr><th scope="row">Plan your day</th><td><span class="ypt-check" aria-hidden="true">✓</span>Todos, deadlines &amp; habits</td><td>Todos &amp; a daily planner</td></tr><tr><th scope="row">Block distractions</th><td><span class="ypt-check" aria-hidden="true">✓</span>Desktop apps &amp; websites</td><td>App blocking during focus sessions</td></tr></tbody></table>
+  </div>
+ </section>
+ <section class="ypt-reasons ypt-container" aria-labelledby="reasons-title">
+  <div class="ypt-section-copy"><p class="ypt-kicker">Make room for focused work</p><h2 id="reasons-title">Your laptop is your study space.<br>Make it feel like one.</h2></div>
+  <div class="ypt-feature-grid">
+   <article class="ypt-feature-card"><div class="ypt-block-visual" aria-hidden="true"><div class="ypt-mini-label"><span class="ypt-status-dot"></span> Focus Block active <span>🔒</span></div><div class="ypt-block-item"><span>instagram.com</span><span>Blocked</span></div><div class="ypt-block-item"><span>reddit.com</span><span>Blocked</span></div><div class="ypt-block-item"><span>Distracting apps</span><span>Blocked</span></div></div><div class="ypt-feature-copy"><span class="ypt-feature-number">01 / PROTECT YOUR FOCUS</span><h3>Close the door on “just a minute.”</h3><p>Create or schedule a Focus Block. Keep distracting websites and desktop apps away while you work toward your goal.</p><a class="ypt-text-link" href="/how-it-works/">Explore Focus Blocks <span aria-hidden="true">→</span></a></div></article>
+   <article class="ypt-feature-card"><div class="ypt-clan-visual" aria-hidden="true"><div class="ypt-mini-label"><img src="/components/dashboard/clan-assets/default-clan-logo.svg" width="26" height="30" alt=""> FOCUS TOGETHER <span class="ypt-live-label">Clan chat</span></div><div class="ypt-chat-bubble"><span>sleepyhead</span><p>Anyone up for another hour of focus?</p></div><div class="ypt-chat-bubble ypt-chat-reply"><span>joi_boi</span><p>I'm in. Let's get this chapter done.</p></div></div><div class="ypt-feature-copy"><span class="ypt-feature-number">02 / FIND YOUR PEOPLE</span><h3>Different desks. A shared goal.</h3><p>Join a clan, chat between sessions, and work toward quests together. A bit of encouragement makes it easier to come back tomorrow.</p><a class="ypt-text-link" href="/#clan-preview-title">Meet your study space <span aria-hidden="true">→</span></a></div></article>
+  </div>
+ </section>
+ <section class="ypt-choice ypt-container" aria-labelledby="choice-title"><p class="ypt-kicker">Find your fit</p><h2 id="choice-title">Choose the space that helps you show up.</h2><div class="ypt-choice-grid"><article><h3>Enjoying your YPT routine?</h3><p>Keep what works for you. YPT brings study tracking, groups, and rankings together, with a routine you may already know.</p></article><article><h3>Doing most of your work on a PC?</h3><p>Try Fokasu for a desktop timer, task planning, study clans, and blocking on the computer you use to study.</p></article></div></section>
+ <section class="ypt-faq ypt-container" aria-labelledby="faq-title"><div class="ypt-section-copy"><p class="ypt-kicker">A few things to know</p><h2 id="faq-title">Before you settle in.</h2></div><details><summary>Is Fokasu connected to YPT?</summary><p>Fokasu is an independent app. It isn't affiliated with YPT (Yeolpumta), and the two apps use separate accounts and study groups.</p></details><details><summary>Can I bring my YPT study history or group?</summary><p>There is no direct YPT import. You can start a new clan in Fokasu and invite your study friends to join you.</p></details><details><summary>Which computers can run Fokasu?</summary><p>Current downloads are available for Windows and Fedora. Ubuntu is coming soon. Choose your installer from the Download menu.</p></details><details><summary>How does website blocking work?</summary><p>Install the Fokasu desktop app and browser extension, choose the sites to block, then create a Focus Block. <a href="/how-it-works/">The Focus Block Guide walks you through it.</a></p></details>
+  <details id="ypt-alternative"><summary>Is there a YPT alternative for PC?</summary><p>Yes. Fokasu is a study and focus app for Windows and Fedora. It is an option for students who like YPT's study tracking and competitive features but want to study from a PC or laptop, with study clans, leaderboards, and distraction blocking.</p></details>
+  <details id="ypt-desktop"><summary>Does YPT have a desktop version?</summary><p>YPT (Yeolpumta) is primarily a mobile app. Its <a href="https://www.yeolpumta.com/en/">official website</a> currently links to the App Store and Google Play, without listing a separate desktop download. Students looking for a similar study experience on Windows or Fedora can try Fokasu.</p></details>
+  <details id="best-ypt-alternative"><summary>What is the best YPT alternative for desktop?</summary><p>The best choice depends on how you study. Fokasu is one option for students looking for a YPT-style study tracker on desktop, particularly if they want website and app blocking alongside study clans, quests, and leaderboards.</p></details>
+ </section>
 
-      <section class="alternative-blocking" aria-labelledby="blocking-title">
-        <div class="alternative-copy">
-          <p class="alternative-eyebrow">Protect your focus</p>
-          <h2 id="blocking-title">Less scrolling. More studying.</h2>
-          <p>Set a focus goal. Block distracting websites and desktop apps while you work toward it.</p>
-          <a class="alternative-text-link" href="/how-it-works/">How blocking works <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="alternative-block-grid">
-          <figure class="alternative-screen">
-            <img src="/screenshots/new-how-it-works-for-blocks/block-list.png" width="2416" height="1622" alt="Fokasu website block list and website exceptions" loading="lazy" decoding="async" />
-            <figcaption>Website blocking <span>With the Fokasu browser extension</span></figcaption>
-          </figure>
-          <figure class="alternative-screen">
-            <img src="/screenshots/new-how-it-works-for-blocks/application-block.png" width="2400" height="1628" alt="Fokasu application list for selecting desktop apps to block" loading="lazy" decoding="async" />
-            <figcaption>App blocking <span>Choose the desktop apps that distract you</span></figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="alternative-feature alternative-feature--reverse" aria-labelledby="progress-title">
-        <div class="alternative-copy">
-          <p class="alternative-eyebrow">See your progress</p>
-          <h2 id="progress-title">Your study hours add up.</h2>
-          <p>See your focused time and completed tasks across the week or month.</p>
-        </div>
-        <figure class="alternative-screen">
-          <img src="/screenshots/stats.png" width="2588" height="1826" alt="Fokasu study statistics with focused time, completed tasks, and a weekly chart" loading="lazy" decoding="async" />
-        </figure>
-      </section>
-
-      <section class="alternative-close" aria-labelledby="start-title">
-        <p class="alternative-eyebrow">Windows &amp; Fedora</p>
-        <h2 id="start-title">Make time to study.</h2>
-        <a class="alternative-download" href="#alternative-title">Get Fokasu <span aria-hidden="true">↑</span></a>
-        <p class="alternative-independent">Fokasu is an independent app, not affiliated with YPT (Yeolpumta).</p>
-      </section>
-    </main>
-    <footer class="site-footer">
+</main>
+    <footer class="site-footer alternative-footer">
       <div class="site-footer-inner">
-        <div class="footer-brand">
-          <a class="brand" href="/#top" aria-label="Fokasu home">
-            <img src="/logo/fokasu_logo.svg" alt="" aria-hidden="true" />
-            <span>Fokasu</span>
-          </a>
-          <p>Study together. Protect your focus.</p>
-        </div>
-
+        <a class="brand" href="/" aria-label="Fokasu home">
+          <img src="/logo/fokasu_logo.svg" width="30" height="30" alt="" aria-hidden="true">
+          <span>Fokasu</span>
+        </a>
         <nav class="footer-links" aria-label="Footer navigation">
-          <a href="/#top">Home</a>
-          <a href="#top">YPT alternative</a>
-          <a href="/best-study-app/">Best study app</a>
-          <a href="/how-it-works/">Guides</a>
+          <a href="/">Home</a>
+          <a href="/how-it-works/">Focus Block Guide</a>
+          <a href="/ypt-alternative/" aria-current="page">YPT Alternative</a>
+          <a href="/best-study-app/">Best Study App</a>
+          <a href="/faq/">FAQ</a>
           <a href="/privacy.html">Privacy</a>
-          <a href="/fyq/">FAQ</a>
         </nav>
-
-        <div class="footer-bottom">
-          <p>© 2026 Fokasu</p>
-        </div>
       </div>
     </footer>
-  </body>
+</body>
 </html>

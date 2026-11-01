@@ -1,4 +1,7 @@
 body { background: radial-gradient(ellipse 50% 28% at 50% 46%, #10241d66, transparent 85%), #080a0b; color: #eef0f3; }
+/* Use the feature sections' spacing for the closing feature box and FAQ too. */
+body { --home-section-before: clamp(72px, 11vh, 148px); --home-section-after: clamp(76px, 12vh, 160px); }
+.habits-section { padding-block: var(--home-section-before) var(--home-section-after); }
 .demo-hero { text-align: center; padding: 76px 20px 42px; }
 .eyebrow { display: flex; align-items: center; justify-content: center; gap: 9px; color: #9ab0a6; font-size: 10px; letter-spacing: .19em; font-weight: 600; }
 .eyebrow span,.preview-caption i { width: 6px; height: 6px; background: #50dfac; border-radius: 50%; display: inline-block; box-shadow: 0 0 12px #50dfac55; }
@@ -78,7 +81,7 @@ body { background: radial-gradient(ellipse 50% 28% at 50% 46%, #10241d66, transp
 }
 
 /* The focus guard introduces the features beyond the homepage previews. */
-.home-more-features { display: grid; grid-template-columns: 124px minmax(0, 1fr) 124px; align-items: center; gap: 24px; width: min(1040px, calc(100% - 48px)); margin: 20px auto 90px; }
+.home-more-features { display: grid; grid-template-columns: 124px minmax(0, 1fr) 124px; align-items: center; gap: 24px; width: min(1040px, calc(100% - 48px)); margin: 0 auto; padding-block: var(--home-section-before) var(--home-section-after); }
 .home-more-mascot { display: block; width: 100%; height: auto; }
 .home-more-message { position: relative; min-width: 0; padding: 28px; border: 1px solid #414650; border-radius: 16px; background: #101114; box-shadow: 0 12px 36px #0006; }
 .home-more-message::before { content: ""; position: absolute; left: -9px; top: 50%; width: 16px; height: 16px; border-left: 1px solid #414650; border-bottom: 1px solid #414650; background: #101114; transform: translateY(-50%) rotate(45deg); }
@@ -97,7 +100,8 @@ body { background: radial-gradient(ellipse 50% 28% at 50% 46%, #10241d66, transp
  .home-more-actions { grid-column: 1; }
 }
 @media (max-width: 700px) {
- .home-more-features { width: calc(100% - 32px); grid-template-columns: minmax(0, 1fr); gap: 14px; margin-bottom: 60px; }
+ body { --home-section-before: 106px; --home-section-after: 106px; }
+ .home-more-features { width: calc(100% - 32px); grid-template-columns: minmax(0, 1fr); gap: 14px; }
  .home-more-mascot { width: 80px; margin: 0 0 0 12px; }
  .home-more-message { padding: 20px; border-radius: 12px; }
  .home-more-message::before { left: 44px; top: -9px; border-top: 1px solid #414650; border-bottom: 0; transform: rotate(45deg); }

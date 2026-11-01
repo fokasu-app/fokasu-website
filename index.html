@@ -1,63 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#030506" />
-    <meta
-      name="description"
-      content="Plan study tasks, focus with automatic breaks, block distractions, track progress, and study with friends using Fokasu."
-    />
-    <link rel="canonical" href="https://fokasu.app/" />
-    <title>Fokasu — Study Planner, Focus Timer &amp; App Blocker</title>
-    <link rel="icon" href="logo/fokasu_logo.svg" type="image/svg+xml" />
-    <link rel="alternate icon" href="logo/fokasu_logo.png" type="image/png" />
-    <link rel="stylesheet" href="index.css?v=contact-header-20260916-5" />
-    <script src="/navigation.js?v=community-menu-20260916-1" defer></script>
-  </head>
-  <body id="top">
-    <header class="site-header">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080a0b">
+<title>Fokasu — Study Planner, Focus Timer &amp; App Blocker</title>
+<link rel="canonical" href="https://fokasu.app/" />
+<meta name="description" content="Plan study tasks, focus with automatic breaks, block distractions, track progress, and study with friends using Fokasu.">
+<link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/index.css?v=header-download-20261027-1">
+<link rel="stylesheet" href="/components/dashboard/dashboard.css?v=20261101-subset-fonts-1">
+<link rel="stylesheet" href="/components/dashboard/dashboard-progress.css?v=20261027-3">
+<link rel="stylesheet" href="/components/dashboard/dashboard-social.css?v=20261027-6">
+<link rel="stylesheet" href="/components/dashboard/stats.css?v=20261027-8">
+<link rel="stylesheet" href="/components/dashboard/leaderboard.css?v=20261027-4">
+<link rel="stylesheet" href="/components/dashboard/clan.css?v=20261027-4">
+<link rel="stylesheet" href="/components/dashboard/blocks.css?v=20261027-2">
+<link rel="stylesheet" href="/components/homepage/homepage.css?v=20261101-section-spacing-1">
+<link rel="stylesheet" href="/components/faq/accordion.css?v=20261101-section-spacing-1">
+<script src="/navigation.js" defer></script>
+<script src="/components/dashboard/stats.js?v=20261027-18" type="module"></script>
+<script src="/components/dashboard/leaderboard.js?v=20261027-11" type="module"></script>
+<script src="/components/dashboard/clan.js?v=20261027-12" type="module"></script>
+<script src="/components/dashboard/blocks.js?v=20261027-9" type="module"></script>
+<link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261027-3">
+</head><body id="top">
+    <header class="site-header alternative-header">
       <div class="site-header-inner">
         <a class="brand" href="/" aria-label="Fokasu home">
-          <img src="logo/fokasu_logo.svg" alt="" aria-hidden="true" />
+          <img src="/logo/fokasu_logo.svg" alt="" aria-hidden="true" />
           <span>Fokasu</span>
           <span class="brand-beta">BETA</span>
         </a>
 
         <nav class="site-nav" aria-label="Main navigation">
-          <details class="download-picker nav-download-picker">
-            <summary class="nav-download">
-              <span>Download</span>
-              <span class="download-picker-chevron" aria-hidden="true">
-                <svg viewBox="0 0 12 8" focusable="false">
-                  <path d="m1 1.5 5 5 5-5" />
-                </svg>
-              </span>
-            </summary>
+          <a
+            class="nav-how-blocks"
+            href="/how-it-works/"
+            aria-label="Focus Block Guide"
+          >
+            <span class="nav-label-full">Focus Block Guide</span>
+            <span class="nav-label-short" aria-hidden="true">Block</span>
+          </a>
 
-            <div class="download-picker-menu" aria-label="Desktop downloads">
-              <p>Choose your operating system</p>
-              <a
-                href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi"
-              >
-                <span class="platform-mark" aria-hidden="true">⊞</span>
-                <span>Windows</span>
-                <small>MSI · v1.0.2</small>
-              </a>
-              <a
-                href="https://download.fokasu.app/releases/1.0.2/linux-x64/fokasu-1.0.2-1.x86_64.rpm"
-              >
-                <span class="platform-mark" aria-hidden="true">f</span>
-                <span>Fedora</span>
-                <small>RPM · v1.0.2</small>
-              </a>
-              <button type="button" disabled>
-                <span class="platform-mark" aria-hidden="true">◉</span>
-                <span>Ubuntu</span>
-                <small>Coming soon</small>
-              </button>
-            </div>
-          </details>
           <a
             class="nav-secondary"
             href="https://chromewebstore.google.com/detail/fokasu/kcjhihkbhildakpnghknpomakellcngi?authuser=7&amp;hl=en-GB"
@@ -98,14 +82,7 @@
               </a>
             </div>
           </details>
-          <a
-            class="nav-how-blocks"
-            href="/how-it-works/"
-            aria-label="Focus Block Guide"
-          >
-            <span class="nav-label-full">Focus Block Guide</span>
-            <span class="nav-label-short" aria-hidden="true">Block</span>
-          </a>
+
           <details class="nav-more">
             <summary aria-label="Show more navigation options">
               <svg viewBox="0 0 16 4" aria-hidden="true" focusable="false">
@@ -121,13 +98,49 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >Extension</a>
+              <a href="https://discord.gg/Z78MeYAkcW" target="_blank" rel="noopener noreferrer">Discord</a>
+              <a href="https://www.reddit.com/r/FokasuApp/" target="_blank" rel="noopener noreferrer">Reddit</a>
+            </div>
+          </details>
+          <details class="download-picker nav-download-picker">
+            <summary class="nav-download">
+              <svg class="nav-download-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m-4-4 4 4 4-4M5 20h14"/></svg>
+              <span>Download</span>
+              <span class="download-picker-chevron" aria-hidden="true">
+                <svg viewBox="0 0 12 8" focusable="false">
+                  <path d="m1 1.5 5 5 5-5" />
+                </svg>
+              </span>
+            </summary>
+
+            <div class="download-picker-menu" aria-label="Desktop downloads">
+              <p>Choose your operating system</p>
+              <a
+                href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi"
+              >
+                <span class="platform-mark" aria-hidden="true">⊞</span>
+                <span>Windows</span>
+                <small>MSI · v1.0.2</small>
+              </a>
+              <a
+                href="https://download.fokasu.app/releases/1.0.2/linux-x64/fokasu-1.0.2-1.x86_64.rpm"
+              >
+                <span class="platform-mark" aria-hidden="true">f</span>
+                <span>Fedora</span>
+                <small>RPM · v1.0.2</small>
+              </a>
+              <button type="button" disabled>
+                <span class="platform-mark" aria-hidden="true">◉</span>
+                <span>Ubuntu</span>
+                <small>Coming soon</small>
+              </button>
             </div>
           </details>
         </nav>
       </div>
     </header>
 
-    <main>
+<main>
       <section
         class="hero"
         aria-label="Fokasu study planning and focused work"
@@ -241,32 +254,33 @@
             </div>
           </div>
 
-          <div class="visual-stage">
-            <div class="stage-glow" aria-hidden="true"></div>
-
-            <div class="dashboard-shell">
-              <img
-                class="dashboard"
-                src="screenshots/app-screenshot.png"
-                alt="Fokasu study dashboard showing a 60 minute focus session and today's study tasks"
-                fetchpriority="high"
-                decoding="async"
-                draggable="false"
-              />
-              <span class="dashboard-border" aria-hidden="true"></span>
-            </div>
-
-          </div>
+<section class="preview-section" aria-label="Fokasu desktop app preview">
+<div class="app-window">
+<div class="window-bar" aria-hidden="true">
+  <span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+  <div class="window-controls">
+    <span><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#bec3ca" stroke-width="1"><path d="M1 6.5h10"/></svg></span>
+    <span><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#bec3ca" stroke-width="1"><rect x="1.5" y="1.5" width="9" height="9"/></svg></span>
+    <span><svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="#bec3ca" stroke-width="1"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span>
+  </div>
+</div>
+<fokasu-dashboard></fokasu-dashboard>
+<noscript><p class="no-script">Enable JavaScript to view the desktop app preview.</p></noscript>
+</div>
+</section>
         </div>
       </section>
 
-      <section
-        class="locked-section"
-        aria-label="Fokasu Focus Lock protecting study time"
-      >
-        <div class="locked-copy">
-          <p class="locked-kicker">Getting distracted?</p>
-          <h2>
+<section class="locked-section blocks-section" aria-labelledby="blocks-preview-title">
+  <div class="locked-copy">
+          <p class="locked-kicker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="8.5" />
+              <path d="m6 6 12 12" />
+            </svg>
+            Getting distracted?
+          </p>
+          <h2 id="blocks-preview-title">
             Create or schedule a<br />
             bypass-resistant Focus Block.
           </h2>
@@ -275,108 +289,24 @@
             <a href="/how-it-works/">See guide <span aria-hidden="true">→</span></a>
           </p>
         </div>
+  <div class="preview-section feature-preview">
+  <div class="app-window">
+    <div class="window-bar" aria-hidden="true">
+      <span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+      <div class="window-controls">
+        <span><svg viewBox="0 0 12 12"><path d="M1 6.5h10"/></svg></span>
+        <span><svg viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9"/></svg></span>
+        <span><svg viewBox="0 0 12 12"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span>
+      </div>
+    </div>
+    <fokasu-blocks></fokasu-blocks>
+    <noscript><p class="no-script">Enable JavaScript to view the blocking preview.</p></noscript>
+  </div>
+  </div>
+</section>
 
-        <div class="visual-stage locked-stage">
-          <img
-            class="locked-distractions"
-            src="screenshots/dashboard-with-distraction/distractions.png"
-            alt="Dimmed notifications from apps and websites blocked during study time"
-            loading="lazy"
-            decoding="async"
-            draggable="false"
-          />
-
-          <div class="dashboard-shell locked-dashboard-shell">
-            <img
-              class="dashboard"
-              src="screenshots/app-screenshot.png"
-              alt="Fokasu study dashboard with Focus Lock enabled"
-              loading="lazy"
-              decoding="async"
-              draggable="false"
-            />
-            <span class="dashboard-border" aria-hidden="true"></span>
-            <div
-              class="lock-callout"
-              role="img"
-              aria-label="Enable Focus Lock"
-            >
-              <span class="lock-callout-marker" aria-hidden="true"></span>
-              <span class="lock-callout-card" aria-hidden="true">
-                <strong>Enable Focus Lock</strong>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="habits-section clan-section"
-        aria-label="Fokasu study clans"
-      >
-        <div class="habits-copy">
-          <p class="habits-kicker">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.5-7 9-4.2-1.5-7-4.7-7-9V6l7-2.5Z" />
-              <path d="m9 12 2 2 4-4" />
-            </svg>
-            Grow stronger together
-          </p>
-          <h2>Level up your clan together.</h2>
-          <p class="habits-description">
-            Chat with your clan, complete quests, climb the clan leaderboard,
-            level up, and unlock perks together.
-          </p>
-        </div>
-
-        <div class="habits-visual">
-          <div class="habits-glow" aria-hidden="true"></div>
-          <div class="habits-image-shell">
-            <img
-              src="screenshots/clan.png"
-              alt="Fokasu Study Together clan showing its level, member rankings, and study contributions"
-              loading="lazy"
-              decoding="async"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="habits-section" aria-label="Fokasu habit tracking">
-        <div class="habits-copy">
-          <p class="habits-kicker">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M5 19c6.5 0 11.5-4.5 14-14-6.5 0-11.5 4.5-14 14Z" />
-              <path d="M5 19c2.1-2.9 4.5-5.1 7.4-6.8" />
-            </svg>
-            Build consistency
-          </p>
-          <h2>Make studying a habit.</h2>
-          <p class="habits-description">
-            Schedule recurring study tasks and keep your routine moving.
-          </p>
-        </div>
-
-        <div class="habits-visual">
-          <div class="habits-glow" aria-hidden="true"></div>
-          <div class="habits-image-shell">
-            <img
-              src="screenshots/habits.png"
-              alt="Fokasu study habits dashboard showing incomplete, completed, and failed routines"
-              loading="lazy"
-              decoding="async"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="habits-section stats-section"
-        aria-label="Fokasu progress statistics"
-      >
-        <div class="habits-copy">
+<section class="habits-section stats-section" aria-labelledby="stats-preview-title">
+  <div class="habits-copy">
           <p class="habits-kicker">
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
               <path d="M5 19V5" />
@@ -385,194 +315,210 @@
             </svg>
             See your progress
           </p>
-          <h2>Watch your study hours add up.</h2>
+          <h2 id="stats-preview-title">Watch your study hours add up.</h2>
           <p class="habits-description">
             Track focused time and completed tasks by week or month.
           </p>
         </div>
+  <div class="preview-section feature-preview">
+  <div class="app-window">
+    <div class="window-bar" aria-hidden="true">
+      <span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+      <div class="window-controls">
+        <span><svg viewBox="0 0 12 12"><path d="M1 6.5h10"/></svg></span>
+        <span><svg viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9"/></svg></span>
+        <span><svg viewBox="0 0 12 12"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span>
+      </div>
+    </div>
+    <fokasu-stats></fokasu-stats>
+    <noscript><p class="no-script">Enable JavaScript to view the stats preview.</p></noscript>
+  </div>
+  </div>
+</section>
 
-        <div class="habits-visual">
-          <div class="habits-glow" aria-hidden="true"></div>
-          <div class="habits-image-shell">
-            <img
-              src="screenshots/stats.png"
-              alt="Fokasu study statistics showing focused minutes, completed tasks, and a weekly graph"
-              loading="lazy"
-              decoding="async"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="habits-section leaderboard-section"
-        aria-label="Fokasu focus leaderboard"
-      >
-        <div class="habits-copy">
-          <p class="habits-kicker">Friendly competition</p>
-          <h2>Turn focus into momentum.</h2>
+<section class="habits-section leaderboard-section" aria-labelledby="leaderboard-preview-title">
+  <div class="habits-copy">
+          <p class="habits-kicker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M8 3h8v5a4 4 0 0 1-8 0V3ZM8 5H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4M12 12v6m-4 3h8m-7-3h6v3H9z" />
+            </svg>
+            Friendly competition
+          </p>
+          <h2 id="leaderboard-preview-title">Turn focus into momentum.</h2>
           <p class="habits-description">
             Compare focused time and completed tasks each day or week.
           </p>
         </div>
+  <div class="preview-section feature-preview">
+  <div class="app-window">
+    <div class="window-bar" aria-hidden="true">
+      <span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+      <div class="window-controls">
+        <span><svg viewBox="0 0 12 12"><path d="M1 6.5h10"/></svg></span>
+        <span><svg viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9"/></svg></span>
+        <span><svg viewBox="0 0 12 12"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span>
+      </div>
+    </div>
+    <fokasu-leaderboard></fokasu-leaderboard>
+    <noscript><p class="no-script">Enable JavaScript to view the leaderboard preview.</p></noscript>
+  </div>
+  </div>
+</section>
 
-        <div class="habits-visual">
-          <div class="habits-glow" aria-hidden="true"></div>
-          <div class="habits-image-shell">
-            <img
-              src="screenshots/leaderboard.png"
-              alt="Fokasu daily study leaderboard ranking users by focused time and completed tasks"
-              loading="lazy"
-              decoding="async"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="habits-section community-section"
-        aria-label="Fokasu community"
-      >
-        <div class="habits-copy">
-          <p class="habits-kicker">Share the journey</p>
-          <h2>Learn and improve together.</h2>
+<section class="habits-section clan-section" aria-labelledby="clan-preview-title">
+  <div class="habits-copy">
+          <p class="habits-kicker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3.5 19 6v5.5c0 4.3-2.8 7.5-7 9-4.2-1.5-7-4.7-7-9V6l7-2.5Z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            Grow stronger together
+          </p>
+          <h2 id="clan-preview-title">Level up your clan together.</h2>
           <p class="habits-description">
-            Share study wins, ideas, and encouragement.
+            Chat with your clan, complete quests, climb the clan leaderboard,
+            level up, and unlock perks together.
           </p>
         </div>
+  <div class="preview-section feature-preview">
+  <div class="app-window">
+    <div class="window-bar" aria-hidden="true">
+      <span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+      <div class="window-controls">
+        <span><svg viewBox="0 0 12 12"><path d="M1 6.5h10"/></svg></span>
+        <span><svg viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9"/></svg></span>
+        <span><svg viewBox="0 0 12 12"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span>
+      </div>
+    </div>
+    <fokasu-clan></fokasu-clan>
+    <noscript><p class="no-script">Enable JavaScript to view the clan preview.</p></noscript>
+  </div>
+  </div>
+</section>
 
-        <div class="habits-visual">
-          <div class="habits-glow" aria-hidden="true"></div>
-          <div class="habits-image-shell">
-            <img
-              src="screenshots/community.png"
-              alt="Fokasu study community showing a member post and comment count"
-              loading="lazy"
-              decoding="async"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
+
+<section class="home-more-features" aria-labelledby="more-features-title">
+  <img class="home-more-mascot" src="/components/homepage/focus-guard.svg" width="124" height="144" alt="" aria-hidden="true" loading="lazy">
+  <div class="home-more-message">
+    <h2 id="more-features-title">There’s a lot more to explore.</h2>
+    <div class="home-more-descriptions">
+      <div>
+        <h3>Make studying a habit.</h3>
+        <p>Schedule recurring study tasks and keep your routine moving.</p>
+      </div>
+      <div>
+        <h3>Learn and improve together.</h3>
+        <p>Share study wins, ideas, and encouragement with the Fokasu community.</p>
+      </div>
+      <div>
+        <h3>Keep your D-Day in sight.</h3>
+        <p>Set an important date and count down the days remaining.</p>
+      </div>
+      <div>
+        <h3>Block distracting applications.</h3>
+        <p>Keep distracting desktop apps out of the way while you study.</p>
+      </div>
+      <div>
+        <h3>Look back on your activity.</h3>
+        <p>Review your activity history and see how your study routine is taking shape.</p>
+      </div>
+      <div>
+        <h3>Study alongside friends.</h3>
+        <p>Connect with friends and keep each other motivated to study.</p>
+      </div>
+      <div>
+        <h3>Schedule your Focus Blocks.</h3>
+        <p>Plan distraction-free study time by scheduling your blocks in advance.</p>
+      </div>
+      <div>
+        <h3>Start your day with Fokasu.</h3>
+        <p>Use Auto Start to open Fokasu when you sign in to your computer.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="home-faq faq-accordion" id="faq" aria-labelledby="home-faq-title">
+  <h2 id="home-faq-title">Frequently asked questions.</h2>
+  <details id="faq-about-fokasu">
+    <summary>What is Fokasu?</summary>
+    <p>Fokasu is a desktop study planner, focus timer, and distraction blocker. You can plan tasks, track focused time, schedule study routines, and join study clans.</p>
+  </details>
+  <details id="faq-platforms">
+    <summary>Which operating systems does Fokasu support?</summary>
+    <p>The current desktop downloads are available for Windows and Fedora. Ubuntu support is coming soon.</p>
+  </details>
+  <details id="faq-study-together">
+    <summary>Can I study with friends?</summary>
+    <p>Yes. Join a study clan to chat, complete quests, and climb the clan leaderboard together. Fokasu also has study rankings and a community for sharing progress.</p>
+  </details>
+  <details id="faq-blocking">
+    <summary>Can Fokasu block websites and desktop apps?</summary>
+    <p>Yes. Set a focus goal and choose the websites and applications you want to block. Completed todo time counts toward your goal; blocking ends when that goal is met. <a href="/how-it-works/">Read the Focus Block Guide.</a></p>
+  </details>
+  <details id="faq-extension">
+    <summary>Do I need the browser extension?</summary>
+    <p>Website blocking requires the Fokasu browser extension alongside the desktop app. If the extension is missing or disabled during an active Focus Block, Fokasu closes the browser after a grace period, which is 60 seconds by default.</p>
+  </details>
+  <p class="home-faq-more"><a href="/faq/">See all frequently asked questions <span aria-hidden="true">→</span></a></p>
+    <div class="hero-actions home-faq-actions"><details class="download-picker">
+                <summary>
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 3v12m0 0 4-4m-4 4-4-4" />
+                    <path d="M5 20h14" />
+                  </svg>
+                  <span>Download Now</span>
+                  <span class="download-picker-chevron" aria-hidden="true">
+                    <svg viewBox="0 0 12 8" focusable="false">
+                      <path d="m1 1.5 5 5 5-5" />
+                    </svg>
+                  </span>
+                </summary>
+
+                <div class="download-picker-menu" aria-label="Desktop downloads">
+                  <p>Choose your operating system</p>
+                  <a
+                    href="https://download.fokasu.app/releases/1.0.2/windows-x64/fokasu-1.0.2.msi"
+                  >
+                    <span class="platform-mark" aria-hidden="true">⊞</span>
+                    <span>Windows</span>
+                    <small>MSI · v1.0.2</small>
+                  </a>
+                  <a
+                    href="https://download.fokasu.app/releases/1.0.2/linux-x64/fokasu-1.0.2-1.x86_64.rpm"
+                  >
+                    <span class="platform-mark" aria-hidden="true">f</span>
+                    <span>Fedora</span>
+                    <small>RPM · v1.0.2</small>
+                  </a>
+                  <button type="button" disabled>
+                    <span class="platform-mark" aria-hidden="true">◉</span>
+                    <span>Ubuntu</span>
+                    <small>Coming soon</small>
+                  </button>
+                </div>
+              </details></div>
+</section>
+
+</main>
+
+    <footer class="site-footer alternative-footer">
       <div class="site-footer-inner">
-        <div class="footer-brand">
-          <a class="brand" href="#top" aria-label="Fokasu home">
-            <img src="logo/fokasu_logo.svg" alt="" aria-hidden="true" />
-            <span>Fokasu</span>
-          </a>
-          <p>Plan your study. Protect your focus. Keep progressing.</p>
-        </div>
-
+        <a class="brand" href="/" aria-label="Fokasu home">
+          <img src="/logo/fokasu_logo.svg" width="30" height="30" alt="" aria-hidden="true">
+          <span>Fokasu</span>
+        </a>
         <nav class="footer-links" aria-label="Footer navigation">
-          <a href="#top">Home</a>
-          <a href="#how-it-works">Features</a>
+          <a href="/" aria-current="page">Home</a>
           <a href="/how-it-works/">Focus Block Guide</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="/fyq/">FAQ</a>
-          <a href="/block-distracting-websites-while-studying/">Website blocking for studying</a>
-          <a href="/ypt-alternative/">YPT alternative for desktop</a>
-          <a href="/best-study-app/">Best study app</a>
+          <a href="/ypt-alternative/">YPT Alternative</a>
+          <a href="/best-study-app/">Best Study App</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
         </nav>
-
-        <div class="footer-bottom">
-          <p>© 2026 Fokasu</p>
-        </div>
       </div>
     </footer>
 
-    <script>
-      (() => {
-        const section = document.querySelector(".locked-section");
-        const distractions = document.querySelector(".locked-distractions");
-        const featureSections = [
-          ...document.querySelectorAll(".habits-section"),
-        ];
-        if ((!section || !distractions) && featureSections.length === 0) return;
-
-        const prefersReducedMotion = window.matchMedia(
-          "(prefers-reduced-motion: reduce)",
-        ).matches;
-
-        let frame;
-        const update = () => {
-          frame = undefined;
-          if (section && distractions) {
-            const rect = section.getBoundingClientRect();
-            const distance = Math.max(window.innerHeight * 0.78, 1);
-            const progress = Math.min(
-              Math.max((window.innerHeight - rect.top) / distance, 0),
-              1,
-            );
-            distractions.style.opacity = String(1 - progress * 0.62);
-            distractions.style.zIndex = progress >= 0.68 ? "2" : "4";
-          }
-
-          featureSections.forEach((featureSection) => {
-            if (prefersReducedMotion) {
-              featureSection.style.setProperty("--feature-image-opacity", "1");
-              featureSection.style.setProperty("--feature-image-blur", "0px");
-              featureSection.style.setProperty("--feature-image-shift", "0px");
-              featureSection.style.setProperty("--feature-image-scale", "1");
-              featureSection.style.setProperty(
-                "--feature-image-saturation",
-                "1",
-              );
-              featureSection.style.setProperty("--feature-glow-opacity", "1");
-              featureSection.style.setProperty("--feature-glow-scale", "1");
-              return;
-            }
-
-            const rect = featureSection.getBoundingClientRect();
-            const start = window.innerHeight * 0.9;
-            const finish = window.innerHeight * 0.28;
-            const progress = Math.min(
-              Math.max((start - rect.top) / (start - finish), 0),
-              1,
-            );
-            featureSection.style.setProperty(
-              "--feature-image-opacity",
-              String(0.64 + progress * 0.36),
-            );
-            featureSection.style.setProperty(
-              "--feature-image-blur",
-              `${(1 - progress) * 1.2}px`,
-            );
-            featureSection.style.setProperty(
-              "--feature-image-shift",
-              `${(1 - progress) * 26}px`,
-            );
-            featureSection.style.setProperty(
-              "--feature-image-scale",
-              String(0.985 + progress * 0.015),
-            );
-            featureSection.style.setProperty(
-              "--feature-image-saturation",
-              String(0.86 + progress * 0.14),
-            );
-            featureSection.style.setProperty(
-              "--feature-glow-opacity",
-              String(0.28 + progress * 0.72),
-            );
-            featureSection.style.setProperty(
-              "--feature-glow-scale",
-              String(0.86 + progress * 0.14),
-            );
-          });
-        };
-
-        const requestUpdate = () => {
-          if (frame === undefined) frame = requestAnimationFrame(update);
-        };
-
-        window.addEventListener("scroll", requestUpdate, { passive: true });
-        window.addEventListener("resize", requestUpdate);
-        update();
-      })();
-    </script>
-  </body>
-</html>
+</body></html>

@@ -56,7 +56,7 @@ Nothing is stored or sent to a server. Timer intervals and motion listeners are
 cleaned up on removal; elapsed time is calculated from a deadline so background-tab
 throttling does not slow the countdown.
 
-Preview `/alternative-homepage/` using a static server rooted at `fokasu-website`. The original homepage is unchanged.
+Preview `/` using a static server rooted at `fokasu-website`.
 
 ## Desktop icons
 
@@ -72,7 +72,7 @@ Paths are copied into the website so it has no runtime dependency on the desktop
 
 The preview self-hosts `NotoSans-Regular-latin.woff2` and `PlusJakartaSans-Bold-latin.woff2` under `fonts/`. The original desktop TTF files and their OFL licenses remain there as build inputs. Noto Sans is the base face for navigation, task text, and timer digits. Plus Jakarta Sans is used for the brand, total hours, header text, and task section heading. The end-of-list message stays monospace. Font names are scoped to this preview so the marketing page's typography is unaffected.
 
-Regenerate with `python components/dashboard/fonts/build-subsets.py` using Python with `fonttools==4.68.0` and `brotli==1.2.1` installed. The script retains Latin letters, numbers, combining accents, general punctuation, and literal characters from all shared preview JS/CSS and the three alternative pages that load them. Rebuild after introducing new characters or adding a consuming page, and update the font URLs and stylesheet version when generated files change. User-entered characters outside the subset use the existing system sans-serif fallback. Original hinting and applicable layout features (including tabular figures) are retained; the script validates coverage, vertical metrics, and digit widths after reopening each WOFF2. Keep `font-display: swap` and the license files with the fonts.
+Regenerate with `python components/dashboard/fonts/build-subsets.py` using Python with `fonttools==4.68.0` and `brotli==1.2.1` installed. The script retains Latin letters, numbers, combining accents, general punctuation, and literal characters from all shared preview JS/CSS and the homepage, YPT alternative page, and best-study-app page that load them. Rebuild after introducing new characters or adding a consuming page, and update the font URLs and stylesheet version when generated files change. User-entered characters outside the subset use the existing system sans-serif fallback. Original hinting and applicable layout features (including tabular figures) are retained; the script validates coverage, vertical metrics, and digit widths after reopening each WOFF2. Keep `font-display: swap` and the license files with the fonts.
 
 The initial subsets total 84,184 bytes, compared with 698,196 bytes for the original TTF pair (87.9% smaller). These are file-size measurements, not browser loading benchmarks.
 
@@ -83,7 +83,7 @@ Include `dashboard.css` and `stats.css`, then load `stats.js` as a module and ad
 it also registers the shared sidebar and header and the dashboard preview.
 Use a single dashboard module URL per page to avoid registering components twice.
 
-The stats preview on `/alternative-homepage/` appears below the dashboard. It
+The stats preview on `/` appears below the dashboard. It
 recreates the daily tag breakdown, sample tasks, weekly SVG chart, and summary
 with illustrative data. Fonts and icons are shared with the dashboard. The sidebar
 accepts `selected="Stats"`; its default remains Dashboard.
