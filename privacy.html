@@ -6,15 +6,19 @@
     <meta name="theme-color" content="#030506" />
     <meta
       name="description"
-      content="Fokasu privacy policy for the desktop app and browser extension."
+      content="Fokasu privacy policy for mobile, desktop, and browser extension: account data, study activity, accessibility, service providers, retention, and deletion."
     />
     <link rel="canonical" href="https://fokasu.app/privacy.html" />
     <title>Privacy Policy — Fokasu</title>
-    <link rel="icon" href="logo/fokasu_logo.svg" type="image/svg+xml" />
-    <link rel="alternate icon" href="logo/fokasu_logo.png" type="image/png" />
+    <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/logo/fokasu_logo.png" type="image/png" />
     <link rel="stylesheet" href="/index.css?v=20261101-mobile-no-overflow-menu-6" />
     <link rel="stylesheet" href="/privacy.css?v=20261101-solid-cards-1" />
     <link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261101-navigation-size-4">
+    <style>
+      .privacy-page a { overflow-wrap: anywhere; }
+      .privacy-card h2[id] { scroll-margin-top: 100px; }
+    </style>
     <script src="/navigation.js?v=community-menu-20260916-1" defer></script>
   <link rel="stylesheet" href="/components/navigation/header.css?v=20261101-shared-approved-1">
 </head>
@@ -132,17 +136,89 @@
     <main class="privacy-page" id="top">
       <header class="privacy-hero">
         <p class="privacy-kicker">Fokasu privacy policy</p>
-        <h1>Your browsing stays part of your focus session.</h1>
+        <h1>Your data. Your focus. Your choices.</h1>
         <p>
-          Effective August 18, 2026. This policy explains how Fokasu handles
-          information in its desktop application and browser extension.
+          Updated November 3, 2026. This policy explains how Fokasu handles
+          information in its mobile app, desktop app, and browser extension.
+          Fokasu is operated by an independent developer. For privacy questions,
+          contact <a href="mailto:fokasu.support@gmail.com">fokasu.support@gmail.com</a>.
         </p>
       </header>
 
       <div class="privacy-layout">
         <article class="privacy-card">
-          <h2>Browser extension data</h2>
+          <p>
+            Looking to delete your account? Visit
+            <a href="/delete-account/">Delete your Fokasu account</a> for the
+            email request steps, data covered, and completion timeline.
+          </p>
+          <h2>Information you provide</h2>
+          <h3>Account and sign-in</h3>
+          <p>
+            When you register, we collect your first and last name, username,
+            email address, password, and time zone. We use these details to
+            create and manage your account, authenticate sign-in, support
+            password recovery, and display dates and schedules in your time zone.
+            Your account also has an identifier that connects your saved data.
+          </p>
+          <h3>Tasks, habits, and focus activity</h3>
+          <p>
+            We store the tasks, descriptions, tags, deadlines, habits, schedules,
+            and settings you save. We also process task completion, focus-block
+            sessions, breaks, study-room participation, and study history to
+            provide timers, synchronize your progress, calculate statistics,
+            and support rankings and group activity.
+          </p>
+          <h3>Social features and support</h3>
+          <p>
+            When you use community, friends, clans, or study rooms, we process
+            the posts, comments, messages, group details, invitations, requests,
+            membership information, and interactions needed for those features.
+            If you contact support, we receive your email address and whatever
+            information you include in your message. Never email your password
+            or verification codes to support.
+          </p>
 
+          <h2>What other users can see</h2>
+          <p>
+            Your username, profile details, rankings, and activity may be visible
+            through Fokasu's social features. Community posts and comments are
+            visible to other community users; clan messages and group activity
+            are visible to the relevant members. Task/activity visibility also
+            depends on your profile's activity-sharing setting. Review that
+            setting before sharing information you want to keep private.
+          </p>
+          <p>
+            Do not include sensitive personal information in posts, chat, or
+            other shared content. Other users may keep copies of information
+            they have already seen; deleting your account cannot remove copies
+            held independently by those users.
+          </p>
+
+          <h2>Android accessibility and app blocking</h2>
+          <p>
+            If you enable Accessibility access, Fokasu checks window focus and
+            app identifiers to identify the app you are using and cover selected
+            apps during a focus block. It can do this while Fokasu is in the
+            background. It does not read screen text, typed text, or other
+            screen content for this feature.
+          </p>
+          <p>
+            Fokasu reads launcher-app names, icons, and package identifiers on
+            your device so you can choose apps to block. Your selected apps and
+            app-opening events stay on your device. The app connects to our
+            backend to synchronize focus-block sessions and timer state; it does
+            not upload your installed-app inventory or current-app identifiers
+            as part of this blocking feature.
+          </p>
+          <p>
+            Accessibility access is enabled through Android Settings after an
+            in-app explanation and your agreement. You can revoke it in Android
+            Settings. Notification permission lets Fokasu display timer alerts;
+            background timer operation supports ongoing focus and break sessions.
+          </p>
+
+          <h2>Browser extension data</h2>
           <h3>Tab URLs</h3>
           <p>
             While an active Fokasu focus session is enforcing website blocks,
@@ -154,23 +230,10 @@
             The extension does not send tab URLs, browsing history, page
             contents, titles, cookies, credentials, or form data to Fokasu's
             remote services. It does not build or retain a browsing-history
-            database.
+            database. Local browser-protection settings do not contain
+            visited-page history.
           </p>
-
-          <h2>How data is used and shared</h2>
-          <p>
-            Fokasu uses the information described above only to provide,
-            maintain, and secure its focus-session website-blocking feature.
-            We do not sell it, use it for personalized advertising, or share it
-            with advertising platforms, data brokers, or unrelated third
-            parties. Browser-protection data remains on the user's device.
-          </p>
-          <p>
-            Choices and settings needed to provide browser protection may be
-            stored locally. They do not contain visited-page history.
-          </p>
-
-          <h2>Incognito and private browsing</h2>
+          <h3>Incognito and private browsing</h3>
           <p>
             If you enable the extension's incognito or private-window access,
             Fokasu can enforce the same blocking rules in those windows. The
@@ -178,31 +241,117 @@
             privacy protections described above apply in those windows.
           </p>
 
-          <h2>Your choices</h2>
+          <h2>How we use information</h2>
           <p>
-            On first run, you can decline the local browser connection instead
-            of granting consent. You can later remove the extension, disable
-            its incognito access, or stop using the Fokasu desktop application.
-            Removing the extension removes its locally stored extension data.
-            Settings stored by the desktop app can be removed through the app's
-            own settings or local data removal.
+            We use information to provide and maintain Fokasu, manage accounts,
+            synchronize saved work, operate study and social features, support
+            account recovery, respond to requests, and keep the service working
+            securely. Server logs support service operation and troubleshooting.
+          </p>
+          <p>
+            <strong>Fokasu does not display advertisements, sell personal data,
+            or share personal data for marketing.</strong>
           </p>
 
-          <h2>Changes and questions</h2>
+          <h2>Service providers</h2>
           <p>
-            We will update this page when Fokasu's data practices change. For
-            privacy questions or support, use the support channel at
-            <a href="https://fokasu.app">fokasu.app</a>.
+            We use <strong>Microsoft Azure</strong> for backend hosting and
+            database services. These services process the account, content,
+            activity, and operational information needed to run Fokasu.
+            We use <strong>Google Gmail</strong> to send password-recovery
+            emails and handle support and deletion requests. Google processes
+            the email addresses and message contents involved in that service.
+          </p>
+          <p>
+            Providing Fokasu therefore involves these hosting, database, and
+            email services even though we do not share information for marketing.
+            Data may be processed in the locations where those services operate.
+          </p>
+
+          <h2>Storage and account security</h2>
+          <p>
+            Account and activity data is stored on our backend to support your
+            account across sessions and devices. App settings, blocking rules,
+            and sign-in session information may also be stored on your device.
+            The Android app protects saved sign-in session information using
+            device-backed encryption. New account passwords are stored on the
+            backend as password hashes.
+          </p>
+          <p>
+            Keep your device and account credentials secure. No storage or
+            transmission system can guarantee absolute security.
+          </p>
+
+          <h2 id="retention">How long we retain data</h2>
+          <ul>
+            <li><strong>Account and activity data:</strong> retained to provide
+              your account and saved features until you delete the relevant
+              information or request account deletion.</li>
+            <li><strong>Server logs:</strong> retained for 7 days.</li>
+            <li><strong>Support emails:</strong> retained for handling your
+              request; correspondence associated with your account is removed
+              as part of account deletion within 14 days.</li>
+            <li><strong>Backups:</strong> account data in backups is also removed
+              within the same 14-day account-deletion period.</li>
+          </ul>
+
+          <h2 id="account-deletion">Delete your account and data</h2>
+          <p>
+            Email <a href="mailto:fokasu.support@gmail.com">fokasu.support@gmail.com</a>
+            with the subject <strong>Fokasu account deletion request</strong>.
+            Include your username and registered email address. You can start
+            this request from <strong>Settings → Delete account</strong> in the
+            mobile app, or use our
+            <a href="/delete-account/">account-deletion request page</a> without
+            installing or signing in to the app.
+          </p>
+          <p>
+            We may verify account ownership before deleting data. We complete
+            deletion within <strong>1–2 weeks (no later than 14 days)</strong>
+            after receiving your request. If we cannot identify or verify the
+            account, we will contact you to resolve this rather than delete
+            someone else's data.
+          </p>
+          <p>
+            Account deletion removes your account and associated personal data,
+            including tasks, habits, focus and study history, account-linked
+            community and clan content, support correspondence, and your account
+            data in backups. Deletion is permanent. We do not keep account data
+            after this deletion process is complete.
+          </p>
+
+          <h2>Your choices</h2>
+          <p>
+            You can update profile details and your activity-sharing preference
+            in the app, choose whether to use social features, and manage
+            notification and Accessibility permissions in Android Settings.
+            Uninstalling the app does not delete your server account; use the
+            deletion-request process above for that.
+          </p>
+          <p>
+            For the browser extension, you can decline the local connection on
+            first run, disable incognito access, or remove the extension.
+            Removing it removes its locally stored extension data. Local desktop
+            settings can be removed through the app or local data removal.
+          </p>
+
+          <h2>Changes and privacy questions</h2>
+          <p>
+            We will update this policy and its date when our practices change.
+            To ask about your information, request a correction, or raise a
+            privacy concern, email
+            <a href="mailto:fokasu.support@gmail.com">fokasu.support@gmail.com</a>.
           </p>
         </article>
 
         <aside class="privacy-note" aria-label="Privacy summary">
           <p class="privacy-note-label">In brief</p>
-          <h2>Local blocking. No browsing history sent.</h2>
+          <h2>Data for your focus tools.</h2>
           <p>
-            Fokasu reads URLs only to enforce the block rules you chose. The
-            processing stays on your device, and Fokasu does not receive your
-            browsing history through remote services.
+            Accounts and saved activity use our backend. Android app blocking
+            and extension URL checks happen locally. No advertisements or
+            marketing data sharing. Request account and data deletion by email
+            for completion within 14 days.
           </p>
         </aside>
       </div>
@@ -221,6 +370,7 @@
           <a href="/best-study-app/">Best Study App</a>
           <a href="/faq/">FAQ</a>
           <a href="/privacy.html" aria-current="page">Privacy</a>
+          <a href="/delete-account/">Delete account</a>
         </nav>
       </div>
     </footer>
