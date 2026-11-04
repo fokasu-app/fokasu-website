@@ -2,7 +2,7 @@ const mascot = new URL('./focus-guard.svg', import.meta.url).href;
 
 // The third timer control retains the original solid progress-bar icon.
 export function progressModeControl(id) {
- return `<button class="dash-control dash-progress-mode-control" type="button" aria-label="Try progress bar mode" aria-controls="${id}-progress-mode" title="Progress bar mode"><svg class="desktop-icon icon-progress-mode" viewBox="0 0 10 17" aria-hidden="true" fill="currentColor" fill-rule="evenodd"><path d="M0 0H10V17H0Z"/></svg><svg class="dash-mode-arrow" viewBox="-2 -2 50 54" fill="currentColor" stroke="#133b31" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><polygon points="0,25 26,0 26,12 46,12 46,38 26,38 26,50"/></svg></button>`;
+ return `<button class="dash-control dash-progress-mode-control" type="button" aria-label="Try progress bar mode" aria-controls="${id}-progress-mode" title="Progress bar mode"><svg class="desktop-icon icon-progress-mode" viewBox="0 0 10 17" aria-hidden="true" fill="currentColor" fill-rule="evenodd"><path d="M0 0H10V17H0Z"/></svg></button>`;
 }
 
 export function progressModeDemo(id) {

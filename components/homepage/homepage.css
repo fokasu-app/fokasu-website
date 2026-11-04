@@ -62,13 +62,13 @@ body { --home-section-before: clamp(72px, 11vh, 148px); --home-section-after: cl
 @media (max-width: 700px) {
  body { --home-section-before: 106px; --home-section-after: 106px; }
  .home-more-features { width: calc(100% - 32px); grid-template-columns: minmax(0, 1fr); gap: 14px; }
- .home-more-mascot { width: 80px; margin: 0 0 0 12px; }
+ .home-more-mascot { width: 80px; margin: 0 auto; }
  .home-more-message { padding: 20px; border-radius: 12px; }
- .home-more-message::before { left: 44px; top: -9px; border-top: 1px solid #414650; border-bottom: 0; transform: rotate(45deg); }
+ .home-more-message::before { left: calc(50% - 8px); top: -9px; border-top: 1px solid #414650; border-bottom: 0; transform: rotate(45deg); }
  .home-more-message h2 { font-size: 1.15rem; }
  .home-more-descriptions { grid-template-columns: minmax(0, 1fr); gap: 20px; margin-top: 20px; }
  .home-more-actions { grid-column: 1; margin-top: 10px; }
- .home-more-actions .download-picker-menu { left: auto; right: 0; transform: none; min-width: min(260px, 75vw); }
+ .home-more-actions .download-picker-menu { left: auto; right: 0; transform: none; }
 }
 
 /* Neutral feature pills match the header Download button. */

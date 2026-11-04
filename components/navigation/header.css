@@ -8,14 +8,14 @@
 .alternative-header .nav-community > summary:hover,
 .alternative-header .nav-community > summary:focus-visible,
 .alternative-header .nav-community[open] > summary { border-color: transparent; background: #ffffff08; color: #f1f5f3; }
-.alternative-header .site-nav .nav-download-picker > .nav-download { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 40px; padding: 0 16px; border: 1px solid transparent; border-radius: 7px; background: transparent; box-shadow: none; color: #6ef0b9; font-family: inherit; font-size: .8125rem; font-weight: 700; line-height: 1; transform: none; transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; }
+.alternative-header .site-nav .nav-download-picker > .nav-download { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; padding: 0 16px; border: 1px solid transparent; border-radius: 7px; background: transparent; box-shadow: none; color: #6ef0b9; font-family: inherit; font-size: .8125rem; font-weight: 700; line-height: 1; transform: none; transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease; }
 .alternative-header .site-nav .nav-download-picker { --download-label-size: .8125rem; position: relative; margin-left: 6px; }
 .alternative-header .site-nav .nav-download-picker > .nav-download:hover,
 .alternative-header .site-nav .nav-download-picker > .nav-download:focus-visible,
 .alternative-header .site-nav .nav-download-picker[open] > .nav-download { border-color: transparent; background: transparent; color: #6ef0b9; box-shadow: none; transform: none; }
 .alternative-header .nav-download-icon { display: block; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .alternative-header .nav-download-picker .download-picker-chevron { width: 10px; height: 6px; color: #6ef0b9; }
-.alternative-header .nav-download-picker .download-picker-chevron svg { width: 10px; height: 6px; }
+.alternative-header .nav-download-picker .download-picker-chevron svg { width: 10px; height: 6px; stroke-width: 2.5; }
 .alternative-header .download-picker-chevron svg { width: 11px; height: 8px; }
 .alternative-header .nav-more summary { width: 40px; height: 40px; border: 1px solid #ffffff12; border-radius: 8px; background: transparent; }
 .alternative-header .nav-more-menu,
