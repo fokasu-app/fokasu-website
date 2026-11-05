@@ -1,0 +1,32 @@
+.release-page { flex: 1 0 auto; }
+body#top { display: flex; min-height: 100vh; flex-direction: column; }
+.site-footer { width: 100%; margin-top: auto; }
+.release-page {
+  width: min(calc(100% - 40px), 880px);
+  margin: 0 auto;
+  padding: clamp(64px, 10vw, 112px) 0 96px;
+}
+
+.release-hero { max-width: 680px; margin: 0 auto 58px; text-align: center; }
+.release-hero h1 { margin: 0; color: #f2f5f4; font-size: clamp(2.5rem, 8vw, 4.75rem); letter-spacing: -.055em; line-height: 1.05; }
+.release-hero h1 span { color: #78e4ba; }
+.release-intro { max-width: 580px; margin: 22px auto 0; color: #aab3bc; font-size: clamp(1rem, 2vw, 1.15rem); line-height: 1.75; }
+.release-note h2 { margin: 0; color: #f1f4f2; font-size: clamp(1.12rem, 2.5vw, 1.35rem); letter-spacing: -.02em; line-height: 1.4; }
+.release-note a { color: #78e4ba; font-size: .9rem; font-weight: 650; text-decoration: none; }
+.release-note a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.release-note { display: grid; grid-template-columns: clamp(90px, 12vw, 124px) minmax(0, 1fr); align-items: center; gap: 22px; width: 100%; margin-top: 24px; }
+.release-mascot { display: block; width: 100%; height: auto; }
+.release-note-copy { position: relative; display: grid; gap: 14px; padding: clamp(20px, 3vw, 30px); border: 1px solid #414650; border-radius: 16px; background: #101114; }
+.release-note-copy::before { content: ""; position: absolute; top: 50%; left: -9px; width: 16px; height: 16px; border-bottom: 1px solid #414650; border-left: 1px solid #414650; background: #101114; transform: translateY(-50%) rotate(45deg); }
+.release-download-picker { width: fit-content; margin: 28px auto 0; }
+.release-download-picker .download-picker-menu { right: 50%; left: auto; transform: translateX(50%); }
+.release-download { display: flex; align-items: center; justify-content: center; gap: 10px; width: fit-content; min-height: 52px; margin: 0; padding: 0 26px; border: 1px solid #78e4ba; border-radius: 9px; background: #78e4ba; color: #07110d; font-size: .95rem; font-weight: 750; text-decoration: none; transition: background-color 160ms ease, transform 160ms ease; }
+.release-download:hover { background: #95f0cb; transform: translateY(-1px); }
+.release-page a:focus-visible { outline: 2px solid #79e6be; outline-offset: 4px; border-radius: 3px; }
+
+@media (max-width: 560px) {
+  .release-page { width: min(calc(100% - 32px), 880px); padding-top: 60px; }
+  .release-hero { margin-bottom: 38px; }
+  .release-note { grid-template-columns: 62px minmax(0, 1fr); gap: 12px; padding: 12px; }
+  .release-note-copy { padding: 18px; }
+}
