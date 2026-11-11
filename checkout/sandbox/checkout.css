@@ -1,0 +1,17 @@
+.checkout-page { min-height: 100vh; display: flex; flex-direction: column; }
+.checkout-main { flex: 1; width: 100%; padding: 160px 24px 90px; display: grid; place-items: center; }
+.checkout-card { width: min(100%, 520px); border: 1px solid #252b2e; border-radius: 18px; padding: clamp(24px, 5vw, 44px); background: #0c1012; }
+.checkout-label { color: #48d1a4; letter-spacing: .1em; font-size: 11px; font-weight: 650; }
+.checkout-card h1 { margin: 20px 0; font-size: clamp(30px, 5vw, 42px); letter-spacing: -.04em; line-height: 1.15; }
+.checkout-card p { line-height: 1.65; }
+#status:empty { display: none; }
+#status { margin: 24px 0; color: #e2e8e6; }
+.checkout-hint { color: #96a3a4; font-size: 14px; margin: 8px 0; }
+.checkout-return { display: inline-flex; gap: 20px; margin-top: 24px; padding: 12px 18px; border: 1px solid #35443f; border-radius: 8px; color: #e2e8e6; text-decoration: none; font-size: 14px; }
+.checkout-return:hover { background: #15221d; border-color: #48d1a4; }
+.checkout-return:focus-visible { outline: 2px solid #48d1a4; outline-offset: 4px; }
+.checkout-spinner { margin: 24px 0; width: 28px; height: 28px; border: 3px solid #263b34; border-top-color: #48d1a4; border-radius: 50%; animation: checkout-spin .85s linear infinite; }
+.checkout-spinner[hidden] { display: none; }
+@keyframes checkout-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .checkout-spinner { animation-duration: 2.5s; } }
+@media (max-width: 600px) { .checkout-main { padding: 120px 18px 55px; } }
