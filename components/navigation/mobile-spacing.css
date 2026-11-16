@@ -1,0 +1,45 @@
+/* Keep mobile content and previews aligned with a shared 24px page gutter. */
+@media (max-width: 600px) {
+  .features-container,
+  .together-main .features-container,
+  .tracker-main .features-container,
+  .study-container,
+  .study-reason,
+  .study-faq,
+  .ypt-container,
+  .privacy-page,
+  .faq-main,
+  .guide-faq,
+  .release-page,
+  .hero-copy,
+  .locked-copy,
+  .habits-copy,
+  .home-more-features,
+  .home-faq,
+  .pricing-heading,
+  .pricing-grid,
+  .beta-offer,
+  .site-header .site-header-inner,
+  .site-footer .site-footer-inner {
+    width: calc(100% - 48px);
+  }
+
+  .feature-tagged-todos {
+    width: calc(100vw - 48px);
+  }
+
+  .features-preview,
+  .tracker-main .features-preview,
+  .preview-section,
+  .ypt-preview,
+  .ypt-block-preview {
+    padding-inline: 24px;
+  }
+
+  .how-it-works-content,
+  .uninstall-page,
+  .demo-hero,
+  .ypt-hero {
+    padding-inline: 24px;
+  }
+}

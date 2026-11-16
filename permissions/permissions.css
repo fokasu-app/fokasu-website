@@ -52,7 +52,7 @@ dialog > img { display: block; max-width: 100%; max-height: calc(100svh - 100px)
   .screenshot { height: clamp(240px, 36vw, 320px); }
 }
 @media (max-width: 700px) {
-  body { padding: 18px; }
+  body { padding: 18px 24px; }
   .browser-picker button { padding: 7px 9px; font-size: 11px; }
   header { min-height: 40px; }
   .intro { margin: 28px 0 36px; }

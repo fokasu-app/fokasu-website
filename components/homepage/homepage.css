@@ -73,3 +73,17 @@ body { --home-section-before: clamp(72px, 11vh, 148px); --home-section-after: cl
 
 /* Neutral feature pills match the header Download button. */
 .want-marquee .want-group span { border-color: #3d4548; background: #131719; }
+
+/* Align each three-part introduction with its desktop app preview. */
+.blocks-section .locked-copy,
+.habits-section .habits-copy { width: min(892px, calc(100% - 48px)); }
+.home-feature-details { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; width: 100%; margin-top: 24px; text-align: center; }
+.home-feature-details h3 { margin: 0 0 12px; font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
+.home-feature-details p { margin: 0; color: #98a79d; font-size: .9rem; line-height: 1.85; }
+.home-feature-link { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; color: #6ef0b9; font-size: .95rem; font-weight: 650; text-decoration: none; }
+.home-feature-link:hover, .home-feature-link:focus-visible { color: #b5ffdf; text-decoration: none; }
+.home-feature-link:focus-visible { outline: 2px solid #6ef0b9; outline-offset: 4px; border-radius: 4px; }
+@media (max-width: 700px) {
+ .home-feature-details { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 20px; }
+ .stats-section .habits-copy h2 { white-space: normal; }
+}

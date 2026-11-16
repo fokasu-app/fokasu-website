@@ -1,0 +1,18 @@
+fokasu-dday { display: block; position: relative; container-type: inline-size; height: 71.03021cqw; overflow: hidden; color: #edf0f4; font: 1.3cqw/1.4 "Fokasu Noto Sans", sans-serif; }
+fokasu-dday * { box-sizing: border-box; }
+fokasu-dday .block-demo-lock-arrow { display: none; }
+.dday-demo-panel { position: absolute; z-index: 2; top: 6.1cqw; right: 1.2cqw; width: 28cqw; padding: 1.8cqw; border: .12cqw solid #454d59; border-radius: 1.1cqw; background: #181b21; box-shadow: 0 1cqw 3cqw #0006; }
+.dday-demo-panel > header { display: flex; align-items: center; justify-content: space-between; gap: 1cqw; }
+.dday-demo-panel h3 { margin: 0; font: 700 1.8cqw/1.4 "Fokasu Plus Jakarta Sans", sans-serif; }
+.dday-demo-save { padding: .8cqw 1.4cqw; border-radius: .65cqw; background: #20a77f; color: #05271d; font-size: 1.2cqw; }
+.dday-demo-panel > p { margin: .6cqw 0 1.2cqw; color: #9daec1; font-size: 1.1cqw; }
+.dday-demo-calendar-shell { padding: .6cqw; border: .1cqw solid #292e38; border-radius: .8cqw; background: #171a20; }
+.dday-demo-month { display: flex; align-items: center; gap: .8cqw; padding: .5cqw .3cqw 1.1cqw; font-size: 1.25cqw; }
+.dday-demo-month > :nth-child(odd) { color: #a1a6b0; }
+.dday-demo-year { margin-left: auto; }
+.dday-demo-calendar { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 1.2cqw; text-align: center; }
+.dday-demo-calendar caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.dday-demo-calendar th { padding: .4cqw 0; border: .08cqw solid #2c323d; color: #92a0b2; font-size: 1.05cqw; font-weight: 400; }
+.dday-demo-calendar td { height: 3.2cqw; padding: .5cqw 0; }
+.dday-demo-calendar .dday-demo-muted { color: #69778a; }
+.dday-demo-calendar .dday-demo-selected { border-radius: .65cqw; background: #20a77f; color: #05271d; }

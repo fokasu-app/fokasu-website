@@ -7,21 +7,24 @@
 <link rel="canonical" href="https://fokasu.app/ypt-alternative/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="YPT Alternative for Desktop (Yeolpumta) — Fokasu">
-<meta property="og:description" content="Study together. Block distractions on your desktop. Available for Windows and Fedora.">
+<meta property="og:description" content="Study together. Block distractions on your desktop. Available for Windows, Fedora, and Ubuntu.">
 <meta property="og:url" content="https://fokasu.app/ypt-alternative/">
 <meta property="og:image" content="https://fokasu.app/screenshots/app-screenshot.png">
 <meta property="og:image:alt" content="Fokasu desktop study dashboard">
-<meta name="description" content="Looking for a YPT (Yeolpumta) alternative for desktop? Study with friends, track your hours, and block distracting apps and websites on Windows and Fedora.">
+<meta name="description" content="Looking for a YPT (Yeolpumta) alternative for desktop? Study with friends, track your hours, and block distracting apps and websites on Windows, Fedora, and Ubuntu.">
 <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/index.css?v=20261101-mobile-no-overflow-menu-6">
 <link rel="stylesheet" href="/components/dashboard/dashboard.css?v=20261101-reserved-previews-1">
 <link rel="stylesheet" href="/components/dashboard/dashboard-progress.css?v=20261027-3">
 <link rel="stylesheet" href="/components/dashboard/dashboard-social.css?v=20261027-6">
-<link rel="stylesheet" href="/components/ypt-alternative/page.css?v=20261101-closer-hero-actions-5">
+<link rel="stylesheet" href="/components/ypt-alternative/page.css?v=20261116-choice-layout-8">
 <script src="/navigation.js" defer></script>
 <script src="/components/dashboard/dashboard.js?v=20261027-social-14" type="module"></script>
+<script src="/ypt-alternative/page.js?v=20261116-social-preview-1" type="module"></script>
 <link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261101-navigation-size-4">
-<link rel="stylesheet" href="/components/navigation/header.css?v=20261101-shared-approved-1">
+<link rel="stylesheet" href="/components/navigation/header.css?v=20261116-progressive-nav-2">
+<link rel="stylesheet" href="/components/dashboard/preview-frame.css?v=20261116-1">
+<link rel="stylesheet" href="/components/navigation/mobile-spacing.css?v=20261116-1">
 </head>
 <body id="top">
 <a class="ypt-skip" href="#main">Skip to content</a>
@@ -34,6 +37,7 @@
         </a>
 
         <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-features" href="/features/">Features</a>
           <a
             class="nav-how-blocks"
             href="/how-it-works/"
@@ -81,23 +85,6 @@
             </div>
           </details>
 
-          <details class="nav-more">
-            <summary aria-label="Show more navigation options">
-              <svg viewBox="0 0 16 4" aria-hidden="true" focusable="false">
-                <circle cx="2" cy="2" r="2" />
-                <circle cx="8" cy="2" r="2" />
-                <circle cx="14" cy="2" r="2" />
-              </svg>
-            </summary>
-            <div class="nav-more-menu">
-              <a class="nav-mobile-guide" href="/how-it-works/">Focus Block Guide</a>
-              <a
-                href="/extensions/"
-               target="_blank" rel="noopener noreferrer">Extension</a>
-              <a href="https://discord.gg/Z78MeYAkcW" target="_blank" rel="noopener noreferrer">Discord</a>
-              <a href="https://www.reddit.com/r/FokasuApp/" target="_blank" rel="noopener noreferrer">Reddit</a>
-            </div>
-          </details>
           <details class="download-picker nav-download-picker">
             <summary class="nav-download">
               <span>Download</span>
@@ -138,7 +125,7 @@
 <main id="main" class="ypt-main">
  <section class="ypt-hero" aria-labelledby="ypt-title">
   <h1 id="ypt-title"><span class="ypt-title-copy">A YPT (Yeolpumta) alternative for desktop.</span><br><em>Meet Fokasu.</em></h1>
-  <p class="ypt-intro">Plan your tasks, study with friends, and keep distracting apps and websites out of your session.</p>
+  <p class="ypt-intro">Study with friends, organize tasks by subject, block distracting apps and websites, compete on the leaderboards, and share activity with your clanmates.</p>
   <div class="ypt-actions"><details class="download-picker">
                 <summary>
                   <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -193,22 +180,58 @@
 </div>
  </section>
  <section class="ypt-comparison ypt-container" id="comparison" aria-labelledby="comparison-title">
-  <div class="ypt-section-copy"><p class="ypt-kicker">A familiar starting point</p><h2 id="comparison-title">Same study spirit.<br>A different place to focus.</h2><p>Both help you show up and track your study time. Fokasu brings that routine to the computer where your work happens.</p></div>
+  <div class="ypt-section-copy"><h2 id="comparison-title">Fokasu vs YPT: How they compare</h2><p>Compare study timers, group study, subject tracking, and distraction blocking to find what fits your routine.</p></div>
   <div class="ypt-table-wrap" role="region" aria-label="Fokasu and YPT feature comparison">
-   <table class="ypt-table" role="table"><caption class="ypt-sr-only">Study features in Fokasu and YPT</caption><colgroup><col><col class="ypt-fokasu-column"><col></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">What matters to you</th><th scope="col" role="columnheader"><span class="ypt-table-brand"><img src="/logo/fokasu_logo.svg" width="22" height="22" alt=""><span>Fokasu<small>Your desktop study space</small></span></span></th><th scope="col" role="columnheader">YPT <small>Yeolpumta</small></th></tr></thead><tbody role="rowgroup"><tr role="row"><th scope="row" role="rowheader">Study timer</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Focus sessions tied to your tasks</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Study time tracked by subject</td></tr><tr role="row"><th scope="row" role="rowheader">Study together</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Clans, friends &amp; clan chat</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Study groups &amp; member activity</td></tr><tr role="row"><th scope="row" role="rowheader">Progress &amp; rankings</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Weekly/monthly stats &amp; leaderboards</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Study records &amp; real-time rankings</td></tr><tr role="row"><th scope="row" role="rowheader">Plan your day</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Todos, deadlines &amp; habits</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Todos &amp; a daily planner</td></tr><tr role="row"><th scope="row" role="rowheader">Block distractions</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span><span class="ypt-check" aria-hidden="true">✓</span>Desktop apps &amp; websites</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>App blocking during focus sessions</td></tr></tbody></table>
+   <table class="ypt-table" role="table"><caption class="ypt-sr-only">Study features in Fokasu and YPT</caption><colgroup><col><col class="ypt-fokasu-column"><col></colgroup><thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">What matters to you</th><th scope="col" role="columnheader"><span class="ypt-table-brand"><img src="/logo/fokasu_logo.svg" width="22" height="22" alt=""><span>Fokasu<small>Your desktop study space</small></span></span></th><th scope="col" role="columnheader">YPT <small>Yeolpumta</small></th></tr></thead><tbody role="rowgroup">
+<tr role="row"><th scope="row" role="rowheader">Platforms</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span>Windows, Fedora, and Ubuntu desktop downloads</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Android and Apple devices; Apple Silicon Mac compatibility is listed on the App Store</td></tr>
+<tr role="row"><th scope="row" role="rowheader">Study timer</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span>A countdown for ongoing tasks and breaks, with notifications when a task ends or a break starts or ends</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Subject timers and Pomodoro mode</td></tr>
+<tr role="row"><th scope="row" role="rowheader">Friends</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span>Friends share live task progress and weekly activity, where they’ve enabled sharing</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Friends’ status and activity within study groups</td></tr>
+<tr role="row"><th scope="row" role="rowheader">Clans / Groups</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span>Join a clan, see your clanmates’ activity, complete quests together, grind in study rooms, and chat during synchronized breaks</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Live study groups with member status and study activity</td></tr>
+<tr role="row"><th scope="row" role="rowheader">Subject tracking</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span>Organize your tasks with tags and see how your completed task hours are divided across categories and subjects</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Study time recorded by subject</td></tr>
+<tr role="row"><th scope="row" role="rowheader">Progress &amp; rankings</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span>Compete on live leaderboards and aim for the podium. Each week, the top three are celebrated with a special animation shared with every user.</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Day/week/month records and real-time rankings</td></tr>
+<tr role="row"><th scope="row" role="rowheader">Plan your day</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span>Create todos with deadlines and reorder them on your dashboard by priority. Create Habits to automatically generate todos on your schedule.</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>Tasks and a daily study planner</td></tr>
+<tr role="row"><th scope="row" role="rowheader">Block distractions</th><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">Fokasu</span>Block distracting websites and applications. The block cannot be bypassed by force-closing the application or restarting your PC.</td><td role="cell"><span class="ypt-mobile-label" aria-hidden="true">YPT</span>App blocking during focus sessions</td></tr>
+</tbody></table>
   </div>
  </section>
- <section class="ypt-reasons ypt-container" aria-labelledby="reasons-title">
-  <div class="ypt-section-copy"><p class="ypt-kicker">Make room for focused work</p><h2 id="reasons-title">Your laptop is your study space.<br>Make it feel like one.</h2></div>
-  <div class="ypt-feature-grid" tabindex="0" role="region" aria-label="Fokasu features: distraction blocking and studying together. Swipe or use arrow keys to explore.">
-   <article class="ypt-feature-card"><div class="ypt-block-visual" aria-hidden="true"><div class="ypt-mini-label"><span class="ypt-status-dot"></span> Focus Block active <span>🔒</span></div><div class="ypt-block-item"><span>instagram.com</span><span>Blocked</span></div><div class="ypt-block-item"><span>reddit.com</span><span>Blocked</span></div><div class="ypt-block-item"><span>Distracting apps</span><span>Blocked</span></div></div><div class="ypt-feature-copy"><span class="ypt-feature-number">01 / PROTECT YOUR FOCUS</span><h3>Close the door on “just a minute.”</h3><p>Create or schedule a Focus Block. Keep distracting websites and desktop apps away while you work toward your goal.</p><a class="ypt-text-link" href="/how-it-works/">Explore Focus Blocks <span aria-hidden="true">→</span></a></div></article>
-   <article class="ypt-feature-card"><div class="ypt-clan-visual" aria-hidden="true"><div class="ypt-mini-label"><img src="/components/dashboard/clan-assets/default-clan-logo.svg" width="26" height="30" alt=""> FOCUS TOGETHER <span class="ypt-live-label">Clan chat</span></div><div class="ypt-chat-bubble"><span>sleepyhead</span><p>Anyone up for another hour of focus?</p></div><div class="ypt-chat-bubble ypt-chat-reply"><span>joi_boi</span><p>I'm in. Let's get this chapter done.</p></div></div><div class="ypt-feature-copy"><span class="ypt-feature-number">02 / FIND YOUR PEOPLE</span><h3>Different desks. A shared goal.</h3><p>Join a clan, chat between sessions, and work toward quests together. A bit of encouragement makes it easier to come back tomorrow.</p><a class="ypt-text-link" href="/#clan-preview-title">Meet your study space <span aria-hidden="true">→</span></a></div></article>
+ <section class="ypt-social ypt-container" aria-labelledby="social-title">
+  <div class="ypt-section-copy"><p class="ypt-kicker">Study together in Fokasu</p><h2 id="social-title">Friends, clans, and rooms.<br>Each has its place.</h2></div>
+  <div class="ypt-social-grid">
+   <article><h3>Friends</h3><p>Search for and add your friends. Follow their live task progress and weekly activity where they’ve enabled sharing, without revealing the contents of their tasks.</p></article>
+   <article><h3>Clans</h3><p>Create or join a clan. Invite up to 10 friends, follow your clanmates’ activity, and complete quests together. Level up your clan to unlock new perks.</p></article>
+   <article><h3>Study rooms</h3><p>Schedule study rooms and invite your clanmates to join. Choose study and break durations and the number of sessions, grind together with synchronized breaks, and chat between sessions.</p></article>
   </div>
+  <figure class="ypt-block-preview" aria-label="Shared study activity preview">
+   <div class="app-window">
+    <div class="window-bar" aria-hidden="true">
+     <span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+     <div class="window-controls">
+      <span><svg viewBox="0 0 12 12"><path d="M1 6.5h10"/></svg></span>
+      <span><svg viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9"/></svg></span>
+      <span><svg viewBox="0 0 12 12"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span>
+     </div>
+    </div>
+    <fokasu-dashboard data-social-preview></fokasu-dashboard>
+    <noscript><p class="ypt-preview-fallback">Enable JavaScript to explore this shared study activity preview.</p></noscript>
+   </div>
+  </figure>
+  <p class="ypt-section-link"><a class="ypt-text-link" href="/study-with-friends/">Explore studying with friends <span aria-hidden="true">→</span></a></p>
+ </section>
+ <section class="ypt-reasons ypt-container" aria-labelledby="reasons-title">
+  <div class="ypt-section-copy"><h2 id="reasons-title">Keep distractions blocked until your goal is met.</h2><p>Block distracting websites and desktop apps with a Focus Block that stays active through force-closing Fokasu or restarting your PC.</p></div>
+  <div class="ypt-block-details">
+   <article><h3>Your blocklist, with exceptions</h3><p>Create your own blocklist of distracting websites. Use exception lists to keep the parts of those websites you need available. Website blocking requires the Fokasu desktop app and browser extension.</p></article>
+   <article><h3>Automatic breaks</h3><p>Configure automatic breaks when creating todos. Blocking is temporarily lifted during those breaks and automatically enforced again when the break ends, while your Focus Block remains active.</p></article>
+   <article><h3>Emergency Exit</h3><p>Before starting a block, configure an Emergency Exit delay, such as 15 minutes. If you need to end the block early, go to Settings → Emergency Exit. The block is removed after your configured delay.</p></article>
+  </div>
+  <figure class="ypt-block-preview"><img src="/screenshots/new-how-it-works-for-blocks/website-blocked.png" width="1896" height="968" alt="Fokasu blocking reddit.com during an active Focus Block" loading="lazy" decoding="async"></figure>
+  <p class="ypt-section-link"><a class="ypt-text-link" href="/how-it-works/">Read the Focus Block Guide <span aria-hidden="true">→</span></a></p>
  </section>
  <section class="ypt-choice ypt-container" aria-labelledby="choice-title"><p class="ypt-kicker">Find your fit</p><h2 id="choice-title">Choose the space that helps you show up.</h2><div class="ypt-choice-grid"><article><h3>Enjoying your YPT routine?</h3><p>Keep what works for you. YPT brings study tracking, groups, and rankings together, with a routine you may already know.</p></article><article><h3>Doing most of your work on a PC?</h3><p>Try Fokasu for a desktop timer, task planning, study clans, and blocking on the computer you use to study.</p></article></div></section>
  <section class="ypt-faq ypt-container" aria-labelledby="faq-title"><div class="ypt-section-copy"><p class="ypt-kicker">A few things to know</p><h2 id="faq-title">Before you settle in.</h2></div><details><summary>Is Fokasu connected to YPT?</summary><p>Fokasu is an independent app. It isn't affiliated with YPT (Yeolpumta), and the two apps use separate accounts and study groups.</p></details><details><summary>Can I bring my YPT study history or group?</summary><p>There is no direct YPT import. You can start a new clan in Fokasu and invite your study friends to join you.</p></details><details><summary>Which computers can run Fokasu?</summary><p>Desktop downloads are available for Windows, Fedora, and Ubuntu. macOS support is coming soon. Choose your installer from the Download menu.</p></details><details><summary>How does website blocking work?</summary><p>Install the Fokasu desktop app and browser extension, choose the sites to block, then create a Focus Block. <a href="/how-it-works/">The Focus Block Guide walks you through it.</a></p></details>
-  <details id="ypt-alternative"><summary>Is there a YPT alternative for PC?</summary><p>Yes. Fokasu is a study and focus app for Windows and Fedora. It is an option for students who like YPT's study tracking and competitive features but want to study from a PC or laptop, with study clans, leaderboards, and distraction blocking.</p></details>
-  <details id="ypt-desktop"><summary>Does YPT have a desktop version?</summary><p>YPT (Yeolpumta) is primarily a mobile app. Its <a href="https://www.yeolpumta.com/en/">official website</a> currently links to the App Store and Google Play, without listing a separate desktop download. Students looking for a similar study experience on Windows or Fedora can try Fokasu.</p></details>
+  <details id="ypt-alternative"><summary>Is there a YPT alternative for PC?</summary><p>Yes. Fokasu is a study and focus app for Windows, Fedora, and Ubuntu. It is an option for students who like YPT's study tracking and competitive features but want to study from a PC or laptop, with study clans, leaderboards, and distraction blocking.</p></details>
+  <details id="ypt-desktop"><summary>Does YPT have a desktop version?</summary><p>YPT’s <a href="https://apps.apple.com/kr/app/id1441909643">App Store listing</a> includes compatibility with macOS 12 or later on Macs with an Apple M1 chip or later. Its <a href="https://www.yeolpumta.com/en/">official website</a> links to the App Store and Google Play; it does not list a Windows or Linux installer. Fokasu provides downloads for Windows, Fedora, and Ubuntu.</p></details>
+  <details><summary>Can I track study time by subject in Fokasu?</summary><p>Yes. Add subject tags such as Physics or Chemistry to your tasks, then filter Stats by tag. Stats adds the focus duration set for completed tasks on the date they are completed; unfinished tasks are not included. Tasks with multiple tags can appear in more than one subject total. <a href="/study-time-tracker/">See how study time tracking works.</a></p></details>
   <details id="best-ypt-alternative"><summary>What is the best YPT alternative for desktop?</summary><p>The best choice depends on how you study. Fokasu is one option for students looking for a YPT-style study tracker on desktop, particularly if they want website and app blocking alongside study clans, quests, and leaderboards.</p></details>
  </section>
 
@@ -220,6 +243,7 @@
           <span>Fokasu</span>
         </a>
         <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/features/">Features</a>
           <a href="/">Home</a>
           <a href="/how-it-works/">Focus Block Guide</a>
           <a href="/ypt-alternative/" aria-current="page">YPT Alternative</a>

@@ -23,6 +23,9 @@ let clanDemoId = 0;
 class FokasuClan extends HTMLElement {
  connectedCallback() {
   const chatId = `clan-chat-${++clanDemoId}`;
+  const logoName = this.getAttribute('data-logo');
+  const logo = ['owl', 'fox', 'constellation', 'rocket', 'crown'].includes(logoName) ? `clan-logo-${logoName}.svg` : 'clan-logo-crown.svg';
+  const level = Math.max(1, Number.parseInt(this.getAttribute('data-level'), 10) || 17);
   const totalMinutes = members.reduce((total, member) => total + member.minutes, 0);
   const details = [['Total hours', `${totalMinutes / 60}h`], ['Week average', time(Math.round(totalMinutes / 7))], ["Today's hours", '1h 40m'], ['Admission', 'Request to join'], ['Category', 'General study'], ['Location', 'International'], ['Language', 'English']];
   this.innerHTML = `<div class="dash-layout clan-demo-layout">
@@ -31,7 +34,7 @@ class FokasuClan extends HTMLElement {
     <fokasu-demo-header aria-hidden="true"></fokasu-demo-header>
     <div class="clan-demo-viewport" role="region" aria-label="Clan profile and members">
      <section class="clan-demo-profile" aria-label="Focus Together clan profile">
-      <div class="clan-demo-art" aria-hidden="true"><div class="clan-demo-crest"><img src="${asset('default-clan-logo.svg')}" width="112" height="112" alt=""><span class="clan-demo-level">2</span></div><img class="clan-demo-quest" src="${asset('clan-quest-icon.svg')}" width="72" height="72" alt=""></div>
+      <div class="clan-demo-art" aria-hidden="true"><div class="clan-demo-crest"><img src="${asset(logo)}" width="112" height="112" alt=""><span class="clan-demo-level">${level}</span></div><img class="clan-demo-quest" src="${asset('clan-quest-icon.svg')}" width="72" height="72" alt=""></div>
       <h3>FOCUS TOGETHER</h3>
       <div class="clan-demo-toolbar" aria-hidden="true"><span class="clan-demo-code">#FOC8TEAM ${copyIcon}</span>${announcementIcon}${icon('settings')}</div>
       <p class="clan-demo-description">A little focus, a little encouragement. Study with friends, share your progress, and keep each other going.</p>
@@ -47,7 +50,7 @@ class FokasuClan extends HTMLElement {
    <button class="dash-edge-tab clan-chat-toggle" type="button" aria-label="Open clan chat" aria-expanded="false" aria-controls="${chatId}">‹</button>
    <svg class="clan-chat-arrow" viewBox="-2 -2 50 54" fill="currentColor" stroke="#133b31" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><polygon points="46,25 20,0 20,12 0,12 0,38 20,38 20,50"/></svg>
    <section class="clan-chat-panel" id="${chatId}" aria-label="Focus Together clan chat" hidden>
-    <header class="clan-chat-heading"><img src="${asset('default-clan-logo.svg')}" width="32" height="32" alt=""><h3>FOCUS TOGETHER</h3></header>
+    <header class="clan-chat-heading"><img src="${asset(logo)}" width="32" height="32" alt=""><h3>FOCUS TOGETHER</h3></header>
     <div class="clan-chat-messages" role="log" aria-label="Clan messages" aria-live="polite">
      <article class="clan-chat-message"><div><strong>@sleepyhead</strong><span>veteran</span><time>12m ago</time></div><p>Finally finished that chapter. Taking a quick break before the next one!</p></article>
      <article class="clan-chat-message"><div><strong>@priyanshu</strong><span>newbie</span><time>9m ago</time></div><p>Nice! Anyone up for another hour of focus?</p></article>

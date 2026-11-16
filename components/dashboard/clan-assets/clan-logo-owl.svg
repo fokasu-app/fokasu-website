@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fokasu Owl clan crest">
+  <path fill="#e0ae08" stroke="#ffe04a" stroke-linejoin="round" stroke-width="1.25" d="M 32 4 L 59.22951 11 V 31 C 59.22951 45 48.09016 55 32 61 C 15.90984 55 4.77049 45 4.77049 31 V 11 Z"/>
+  <path fill="#5d466e" stroke="#3a2b48" stroke-linejoin="round" stroke-width="1.25" d="M 32 9 L 53.04098 15 V 31 C 53.04098 42 44.37705 50 32 55 C 19.62295 50 10.95902 42 10.95902 31 V 15 Z"/>
+  <path fill="#f8d34b" d="M19 17 L28 22 H36 L45 17 V35 C45 42 39 47 32 49 C25 47 19 42 19 35 Z"/>
+  <path fill="#fff0a0" d="M31 29 A6 6 0 1 1 19 29 A6 6 0 1 1 31 29 Z M45 29 A6 6 0 1 1 33 29 A6 6 0 1 1 45 29 Z"/>
+  <path fill="#3a2b48" d="M27 29 A2 2 0 1 1 23 29 A2 2 0 1 1 27 29 Z M41 29 A2 2 0 1 1 37 29 A2 2 0 1 1 41 29 Z M29 35 H35 L32 40 Z"/>
+</svg>

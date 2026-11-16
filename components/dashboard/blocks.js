@@ -8,6 +8,8 @@ const lockArrow = '<svg class="block-demo-lock-arrow" viewBox="-2 -2 54 50" fill
 
 class FokasuBlocks extends HTMLElement {
  connectedCallback() {
+  const allSites = this.hasAttribute('data-all-sites');
+  const items = allSites ? ['reddit.com', '*'] : blockedItems;
   this.innerHTML = `<div class="dash-layout block-demo-layout">
    <fokasu-demo-sidebar selected="Block" aria-hidden="true"></fokasu-demo-sidebar>
    <div class="dash-main block-demo-main">
@@ -17,7 +19,7 @@ class FokasuBlocks extends HTMLElement {
      <div class="block-demo-workspace">
       <div class="block-demo-toolbar"><div class="block-demo-tabs" aria-label="Blocked websites view"><span class="is-selected">Blocked</span><span>Exceptions</span><span>YouTube</span><span>Applications</span></div><span class="block-demo-tour">Take A Tour</span></div>
       <div class="block-demo-input-row" aria-hidden="true"><span class="block-demo-input">Enter a URL like instagram.com to block</span><span class="block-demo-add"><svg viewBox="0 0 20 20"><path d="M10 4V16M4 10H16"/></svg></span></div>
-      <section class="block-demo-list-section" aria-label="Sample blocked websites"><h4>Blocked items</h4><ul class="block-demo-items">${blockedItems.map(url => `<li><span>${url}</span><span class="block-demo-trash">${trash}</span></li>`).join('')}</ul></section>
+      <section class="block-demo-list-section" aria-label="Sample blocked websites"><h4>Blocked items</h4><ul class="block-demo-items">${items.map(url => `<li><span>${url}</span><span class="block-demo-trash">${trash}</span></li>`).join('')}</ul>${allSites ? '<p class="block-demo-wildcard-note">Adding * to the blocklist blocks every website except those in the exception list.</p>' : ''}</section>
      </div>
     </div>
    </div>

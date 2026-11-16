@@ -24,19 +24,37 @@
 .alternative-header .nav-community .community-menu { right: 0; left: auto; transform: none; }
 .alternative-header .site-nav a:focus-visible,
 .alternative-header .site-nav summary:focus-visible { outline: 2px solid #79e6be; outline-offset: 3px; }
-@media (max-width: 700px) {
+/* Collapse destinations in order, without an overflow menu. */
+.alternative-header .site-nav .nav-more { display: none; }
+.alternative-header .site-nav > .nav-features,
+.alternative-header .site-nav > .nav-secondary,
+.alternative-header .site-nav > .nav-how-blocks { display: inline-flex; }
+.alternative-header .nav-community { display: block; }
+.alternative-header .nav-label-full { display: inline; }
+.alternative-header .nav-label-short { display: none; }
+@media (max-width: 900px) {
+ .alternative-header .site-nav > .nav-features { display: none; }
+}
+@media (max-width: 850px) {
  .alternative-header .site-header-inner { width: calc(100% - 32px); min-height: 60px; }
  .alternative-header .site-nav { gap: 8px; }
- .alternative-header .site-nav .nav-more { display: none; }
- .alternative-header .site-nav > .nav-secondary,
- .alternative-header .site-nav > .nav-how-blocks,
- .alternative-header .nav-community { display: none; }
  .alternative-header .site-nav .nav-download-picker { --download-label-size: .8125rem; margin-left: 0; }
  .alternative-header .site-nav .nav-download-picker > .nav-download { min-height: 36px; padding: 0 11px; font-size: .8125rem; }
  .alternative-header .nav-more summary { width: 36px; height: 36px; }
  .alternative-header .nav-download-icon { width: 14px; height: 14px; }
- .alternative-header .site-nav .nav-mobile-guide { display: block; }
 }
+@media (max-width: 760px) {
+ .alternative-header .nav-community { display: none; }
+}
+@media (max-width: 640px) {
+ .alternative-header .site-nav > .nav-secondary { display: none; }
+}
+@media (max-width: 480px) {
+ .alternative-header .site-nav > .nav-how-blocks { display: none; }
+}
+/* Keep the brand and Download on the same row even on narrow phones. */
+.alternative-header .site-header-inner { flex-wrap: nowrap; }
+.alternative-header .site-nav { width: auto; flex: 0 0 auto; }
 @media (prefers-reduced-motion: reduce) {
  .alternative-header .site-nav > a,
  .alternative-header .nav-community > summary,

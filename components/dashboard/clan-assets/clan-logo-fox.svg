@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fokasu Fox clan crest">
+  <path fill="#e0ae08" stroke="#ffe04a" stroke-linejoin="round" stroke-width="1.25" d="M 32 4 L 59.22951 11 V 31 C 59.22951 45 48.09016 55 32 61 C 15.90984 55 4.77049 45 4.77049 31 V 11 Z"/>
+  <path fill="#293d50" stroke="#172735" stroke-linejoin="round" stroke-width="1.25" d="M 32 9 L 53.04098 15 V 31 C 53.04098 42 44.37705 50 32 55 C 19.62295 50 10.95902 42 10.95902 31 V 15 Z"/>
+  <path fill="#f8d34b" d="M18 16 L29 24 H35 L46 16 L44 37 L32 47 L20 37 Z"/>
+  <path fill="#fff0a0" d="M20 30 L29 35 L32 42 L35 35 L44 30 L41 39 L32 47 L23 39 Z"/>
+  <path fill="#293d50" d="M22 25 L27 28 L23 30 Z M42 25 L37 28 L41 30 Z M29 40 H35 L32 44 Z"/>
+</svg>

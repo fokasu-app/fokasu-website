@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fokasu Constellation clan crest">
+  <path fill="#e0ae08" stroke="#ffe04a" stroke-linejoin="round" stroke-width="1.25" d="M 32 4 L 59.22951 11 V 31 C 59.22951 45 48.09016 55 32 61 C 15.90984 55 4.77049 45 4.77049 31 V 11 Z"/>
+  <path fill="#255b66" stroke="#163b43" stroke-linejoin="round" stroke-width="1.25" d="M 32 9 L 53.04098 15 V 31 C 53.04098 42 44.37705 50 32 55 C 19.62295 50 10.95902 42 10.95902 31 V 15 Z"/>
+  <path fill="#fff0a0" d="M21 23 L34 18 L44 30 L33 44 L23 36 Z M24 25 L26 34 L32 39 L40 30 L33 22 Z"/>
+  <path fill="#f8d34b" d="M21 18 L26 23 L21 28 L16 23 Z M34 14 L38 18 L34 22 L30 18 Z M44 25 L49 30 L44 35 L39 30 Z M33 39 L38 44 L33 49 L28 44 Z M23 32 L27 36 L23 40 L19 36 Z"/>
+</svg>

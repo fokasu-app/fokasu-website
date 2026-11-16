@@ -1,0 +1,28 @@
+fokasu-study-room { display: block; position: relative; container-type: inline-size; height: 71.03021cqw; color: #edf0f4; font: 1.08443cqw/1.4 "Fokasu Noto Sans", sans-serif; }
+fokasu-study-room * { box-sizing: border-box; }
+.study-room-main { display: grid; grid-template-rows: 3.56313cqw minmax(0,1fr); }
+.study-room-canvas { min-height: 0; padding-top: 1.7cqw; overflow: hidden; }
+.study-room-stage { position: relative; height: 34.8cqw; overflow: hidden; background: #233936; }
+.dash-layout .study-room-scene { display: block; width: 100%; height: 100%; object-fit: cover; }
+.study-room-shade { position: absolute; inset: 0; background: linear-gradient(180deg,#0001 0%,transparent 55%,#0009 100%); pointer-events: none; }
+.study-room-controls { display: flex; gap: 1.1cqw; position: absolute; left: 2.5cqw; top: 1.8cqw; }
+.study-room-controls button { display: grid; place-items: center; width: 4.5cqw; height: 4.5cqw; padding: 0; border: 0; border-radius: 50%; background: #28383bd9; color: #6cddbb; font: 2.5cqw/1 "Fokasu Noto Sans",sans-serif; cursor: pointer; }
+.study-room-controls .study-room-pause { background: #24aa8cde; color: #07392d; }
+.study-room-controls svg { width: 1.6cqw; height: 1.8cqw; }
+.study-room-controls button:disabled { opacity: .4; cursor: default; }
+.study-room-participants { position: absolute; right: 1.6cqw; top: 2cqw; display: flex; flex-direction: column; align-items: flex-end; gap: .5cqw; }
+.study-room-member { display: flex; align-items: center; gap: .7cqw; padding: .65cqw 1cqw; background: #0a1718ba; border-radius: .6cqw; font-size: 1.2cqw; }
+.study-room-member[hidden] { display: none; }
+.study-room-member i { width: .5cqw; height: .5cqw; border-radius: 50%; background: #53dfa6; }
+.study-room-session { position: absolute; bottom: 2.8cqw; left: 2.5cqw; display: flex; align-items: baseline; gap: 1cqw; font-size: 2.3cqw; }
+.study-room-phase { color: #5de5c0; font-weight: 700; }
+.study-room-session strong { font-weight: 600; }
+.study-room-remaining { position: absolute; bottom: 2.7cqw; right: 2.5cqw; text-align: right; }
+.study-room-remaining span { display: block; margin-bottom: .4cqw; font-size: 1cqw; }
+.study-room-remaining strong { font-size: 4cqw; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+fokasu-study-room .dash-social-view { height: auto; padding-top: 3cqw; }
+fokasu-study-room .dash-study-road { height: 7.9cqw; margin: 1.3cqw 0; }
+fokasu-study-room .dash-social-card { height: 7.5cqw; }
+.study-room-membership { display: flex; flex-direction: column; align-items: center; gap: .5cqw; border: 0; background: transparent; color: #a6b0be; font: 1.1cqw/1.3 "Fokasu Noto Sans",sans-serif; cursor: pointer; padding: .3cqw; margin-left: .7cqw; }
+.study-room-membership span { font-size: 1.7cqw; }
+fokasu-study-room button:focus-visible { outline: .18cqw solid #8aebc6; outline-offset: .3cqw; }

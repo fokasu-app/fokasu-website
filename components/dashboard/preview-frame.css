@@ -1,0 +1,11 @@
+/* Shared outer frame for screenshots and rendered app previews. */
+:root { --preview-border-color: #454d59; }
+body .app-window,
+body :is(.features-preview, .ypt-preview, .ypt-block-preview, .study-preview, .preview-section) .app-window,
+body .ypt-block-preview > img,
+body .study-blocked-preview > img,
+.alternative-guide #top .step-media,
+.alternative-guide #top .block-overview,
+.alternative-guide #top .consent-permission-image .consent-shot {
+  border: 1.5px solid var(--preview-border-color);
+}

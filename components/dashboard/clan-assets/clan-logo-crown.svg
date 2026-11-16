@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Fokasu Crown clan crest">
+  <!-- Same widened shield and gold rim as default-clan-logo.svg. -->
+  <path fill="#e0ae08" stroke="#ffe04a" stroke-linejoin="round" stroke-width="1.25" d="M 32 4 L 59.22951 11 V 31 C 59.22951 45 48.09016 55 32 61 C 15.90984 55 4.77049 45 4.77049 31 V 11 Z"/>
+  <path fill="#9b3d62" stroke="#65263f" stroke-linejoin="round" stroke-width="1.25" d="M 32 9 L 53.04098 15 V 31 C 53.04098 42 44.37705 50 32 55 C 19.62295 50 10.95902 42 10.95902 31 V 15 Z"/>
+  <path fill="#f8d34b" d="M18 23 L26 29 L32 18 L38 29 L46 23 L42 39 H22 Z"/>
+  <path fill="#fff0a0" d="M23 41 H41 V45 H23 Z"/>
+  <path fill="#9b3d62" d="M32 29 L35 33 L32 37 L29 33 Z"/>
+</svg>

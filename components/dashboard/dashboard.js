@@ -1,6 +1,6 @@
 import { icon } from './desktop-icons.js';
 import { progressModeControl, progressModeDemo } from './dashboard-progress.js?v=20261027-4';
-import { dashboardSocial } from './dashboard-social.js?v=20261027-10';
+import { dashboardSocial } from './dashboard-social.js?v=20261116-goal-label-11';
 
 let dashboardCount = 0;
 

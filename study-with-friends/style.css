@@ -1,0 +1,33 @@
+.together-main .features-container { width: min(892px, calc(100% - 48px)); }
+.together-section { padding: 52px 0 72px; border-top: 1px solid #ffffff14; }
+.together-heading { width: 100%; margin: 0; text-align: center; }
+.together-number { margin-right: 12px; color: #79e6be; font-size: .85rem; }
+.together-heading .features-eyebrow { margin: 10px 0 16px; }
+.together-heading h2, .together-start h2 { margin: 0; font-size: clamp(1.65rem, 3.5vw, 2.55rem); line-height: 1.2; letter-spacing: -.035em; }
+.together-description { color: #b0bac3; font-size: 1rem; line-height: 1.8; margin: 18px 0 0; }
+.together-main .clan-chat-arrow { display: none; }
+.together-friend-details { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 28px; text-align: center; }
+.together-friend-details h3 { margin: 0 0 12px; font-size: 1.1rem; font-weight: 600; line-height: 1.4; }
+.together-friend-details p { margin: 0; color: #98a79d; font-size: .9rem; line-height: 1.85; }
+@media (max-width: 700px) {
+ .together-friend-details { grid-template-columns: 1fr; gap: 24px; }
+}
+.together-note { width: 100%; margin: 20px 0 0; padding-left: 18px; border-left: 2px solid #3c8e75; color: #929fa9; font-size: .85rem; line-height: 1.8; }
+.admission-options { width: 100%; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.admission-options > div { padding: 18px; background: #101214; border: 1px solid #ffffff14; border-radius: 12px; }
+.admission-options h3 { margin: 0 0 8px; font-size: .95rem; font-weight: 600; color: #79e6be; }
+.admission-options p { margin: 0; color: #aab3bc; font-size: .85rem; line-height: 1.6; }
+.together-start { padding: 48px 0 56px; border-top: 1px solid #ffffff14; }
+.together-start > .features-eyebrow, .together-start > h2 { text-align: center; }
+.together-start ol { list-style: none; counter-reset: steps; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin: 36px 0 0; }
+.together-start li { counter-increment: steps; border-top: 1px solid #33423d; padding-top: 22px; }
+.together-start li::before { content: "0" counter(steps); color: #79e6be; font-size: .85rem; }
+.together-start h3 { font-size: 1rem; margin: 16px 0 10px; }
+.together-start li p { color: #aab3bc; font-size: .9rem; line-height: 1.8; }
+@media (max-width: 600px) {
+ .together-main .features-container { width: calc(100% - 24px); }
+ .together-section { padding: 32px 0 44px; }
+ .together-description { font-size: .9rem; }
+ .admission-options, .together-start ol { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+ .together-start { padding: 32px 0; }
+}

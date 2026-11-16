@@ -23,4 +23,5 @@ fokasu-blocks * { box-sizing: border-box; }
 .block-demo-items { display: grid; gap: .77459cqw; margin: 0; padding: 0; list-style: none; }
 .block-demo-items li { display: flex; align-items: center; justify-content: space-between; height: 5.26723cqw; padding: 0 1.39427cqw; border: .07746cqw solid #292e38; border-radius: .77459cqw; background: #17191d; font-size: 1.39427cqw; }
 .block-demo-trash { display: flex; align-items: center; justify-content: center; width: 2.63362cqw; color: #9da2ad; }
+.block-demo-wildcard-note { margin: .9cqw 0 0; padding: 1.2cqw; border: .08cqw solid #1e2429; border-radius: .8cqw; background: #0e1012; color: #8d9aaa; text-align: center; font: 1.08cqw/1.6 ui-monospace, monospace; }
 .dash-layout .block-demo-trash svg { width: 1.47173cqw; height: 1.47173cqw; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }

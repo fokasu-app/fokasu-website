@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080a0b">
+<title>Study Time Tracker — Subject Tags &amp; Study Statistics | Fokasu</title>
+<meta name="description" content="Track your study time by subject with Fokasu. Tag study tasks, review completed task hours, and explore weekly and monthly statistics on desktop.">
+<link rel="canonical" href="https://fokasu.app/study-time-tracker/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Study time by subject, with Fokasu">
+<meta property="og:description" content="See where your study time goes with subject tags, completed task hours, and weekly or monthly statistics.">
+<meta property="og:url" content="https://fokasu.app/study-time-tracker/">
+<link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/index.css?v=20261101-mobile-no-overflow-menu-6">
+<link rel="stylesheet" href="/components/dashboard/dashboard.css?v=20261101-reserved-previews-1">
+<link rel="stylesheet" href="/components/dashboard/stats.css?v=20261027-8">
+<link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261101-navigation-size-4">
+<link rel="stylesheet" href="/components/navigation/header.css?v=20261116-progressive-nav-2">
+<link rel="stylesheet" href="/features/style.css?v=20261116-heatmap-12">
+<link rel="stylesheet" href="/components/dashboard/dashboard-social.css?v=20261027-6">
+<link rel="stylesheet" href="/study-time-tracker/style.css?v=20261116-mobile-gutters-5">
+<link rel="stylesheet" href="/components/dashboard/create-todo.css?v=20261116-dialog-border-6">
+<link rel="stylesheet" href="/components/dashboard/user-summary.css?v=20261116-1">
+<script src="/components/dashboard/create-todo.js?v=20261116-no-strict-icon-4" type="module"></script>
+<script src="/navigation.js" defer>
+</script>
+<script src="/study-time-tracker/page.js?v=20261116-heatmap-3" type="module">
+</script>
+<link rel="stylesheet" href="/components/dashboard/preview-frame.css?v=20261116-1">
+<link rel="stylesheet" href="/components/navigation/mobile-spacing.css?v=20261116-1">
+</head>
+<body id="top">
+<a class="features-skip" href="#main">Skip to content</a>
+<header class="site-header alternative-header">
+      <div class="site-header-inner">
+        <a class="brand" href="/" aria-label="Fokasu home">
+          <img src="/logo/fokasu_logo.svg" alt="" aria-hidden="true" />
+          <span>Fokasu</span>
+          <span class="brand-beta">
+<span>BETA</span>
+</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-features" href="/features/">Features</a>
+          <a
+            class="nav-how-blocks"
+            href="/how-it-works/"
+            aria-label="Focus Block Guide"
+          >
+            <span class="nav-label-full">Focus Block Guide</span>
+            <span class="nav-label-short" aria-hidden="true">Block</span>
+          </a>
+
+          <a
+            class="nav-secondary"
+            href="/extensions/"
+           target="_blank" rel="noopener noreferrer">Extension</a>
+          <details class="nav-community">
+            <summary>
+              <span>Contact</span>
+            </summary>
+            <div class="nav-more-menu community-menu">
+              <a href="https://discord.gg/Z78MeYAkcW" target="_blank" rel="noopener noreferrer" aria-label="Discord (opens in a new tab)">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.211.375-.445.864-.608 1.249a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.249.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .078-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .079.01c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.076.076 0 0 0-.04.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.334-.955 2.419-2.157 2.419Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.334-.946 2.419-2.157 2.419Z" />
+            </svg>
+                <span>Discord</span>
+                <span class="community-external" aria-hidden="true">↗</span>
+              </a>
+              <a href="https://www.reddit.com/r/FokasuApp/" target="_blank" rel="noopener noreferrer" aria-label="Reddit (opens in a new tab)">
+                <svg class="reddit-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="12" fill="currentColor" />
+                  <g stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 10 1-5 4 1" fill="none" />
+                    <circle cx="18" cy="6" r="1.5" fill="#fff" />
+                    <circle cx="5" cy="12" r="2" fill="#fff" />
+                    <circle cx="19" cy="12" r="2" fill="#fff" />
+                    <ellipse cx="12" cy="14" rx="7" ry="4.5" fill="#fff" />
+                  </g>
+                  <g fill="#ff4500">
+                    <circle cx="9" cy="13.5" r="1" />
+                    <circle cx="15" cy="13.5" r="1" />
+                  </g>
+                  <path d="M9 16q3 2 6 0" fill="none" stroke="#ff4500" stroke-linecap="round" />
+                </svg>
+                <span>Reddit</span>
+                <span class="community-external" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </details>
+
+          <details class="download-picker nav-download-picker">
+            <summary class="nav-download">
+              <span>Download</span>
+              <span class="download-picker-chevron" aria-hidden="true">
+                <svg viewBox="0 0 12 8" focusable="false">
+                  <path d="m1 1.5 5 5 5-5" />
+                </svg>
+              </span>
+            </summary>
+
+            <div class="download-picker-menu" aria-label="Desktop downloads">
+                <p>Choose Your Operating System</p>
+                <a href="https://download.fokasu.app/releases/1.0.3/windows-x64/fokasu-1.0.3.msi">
+                  <span class="platform-mark" aria-hidden="true">⊞</span>
+                  <span>Windows</span>
+                  <small>MSI · v1.0.3</small>
+                </a>
+                <a href="https://download.fokasu.app/releases/1.0.3/linux-fedora-x64/fokasu-1.0.3-1.x86_64.rpm">
+                  <span class="platform-mark" aria-hidden="true">f</span>
+                  <span>Fedora</span>
+                  <small>RPM · v1.0.3</small>
+                </a>
+                <a href="https://download.fokasu.app/releases/1.0.3/linux-ubuntu24-x64/fokasu_1.0.3_amd64.deb">
+                  <span class="platform-mark" aria-hidden="true">u</span>
+                  <span>Ubuntu 24</span>
+                  <small>DEB · v1.0.3</small>
+                </a>
+                <a href="https://download.fokasu.app/releases/1.0.3/linux-ubuntu22-x64/fokasu_1.0.3_amd64.deb">
+                  <span class="platform-mark" aria-hidden="true">u</span>
+                  <span>Ubuntu 22</span>
+                  <small>DEB · v1.0.3</small>
+                </a>
+              </div>
+          </details>
+        </nav>
+      </div>
+    </header>
+<main id="main" class="features-main tracker-main">
+<div class="features-container">
+<section class="features-hero">
+<p class="features-eyebrow">MAKE YOUR STUDY TIME VISIBLE</p>
+<h1>Track your study hours.<br>See your progress.</h1>
+<p>Fokasu automatically records your completed task hours and summarizes where your study time goes with graphs and charts.</p>
+</section>
+<section class="tracker-section" id="subjects" aria-labelledby="subjects-title">
+<div class="tracker-heading">
+<p class="features-eyebrow">01 · STUDY TIME BY SUBJECT</p>
+<h2 id="subjects-title">Give every session a subject.</h2>
+</div>
+<div class="tracker-tag-details">
+<article><h3>Tag your todos</h3><p>Assign a tag when creating each todo. Previously created tags are automatically suggested, so you can reuse them across your tasks.</p></article>
+<article><h3>See your daily breakdown</h3><p>Open Stats to see how your completed task hours for the day are divided across tags.</p></article>
+<article><h3>Review your week by tag</h3><p>Select a tag in Stats to review your weekly completed task hours for that subject or category.</p></article>
+</div>
+<figure class="features-preview" role="img" aria-label="Create Todo form preview showing description, deadline, estimated time, and tags, with a green arrow pointing to Tags">
+<div class="app-window">
+    <div class="window-bar" aria-hidden="true">
+      <span class="window-title">
+<img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+      <div class="window-controls">
+        <span>
+<svg viewBox="0 0 12 12">
+<path d="M1 6.5h10"/>
+</svg>
+</span>
+        <span>
+<svg viewBox="0 0 12 12">
+<rect x="1.5" y="1.5" width="9" height="9"/>
+</svg>
+</span>
+        <span>
+<svg viewBox="0 0 12 12">
+<path d="m1.5 1.5 9 9m0-9-9 9"/>
+</svg>
+</span>
+      </div>
+    </div>
+    <fokasu-create-todo inert></fokasu-create-todo>
+<noscript><p class="no-script">Enable JavaScript to view the Create Todo preview.</p></noscript>
+</div>
+</figure>
+</section>
+<section class="tracker-section" id="statistics" aria-labelledby="statistics-title">
+<div class="tracker-heading">
+<p class="features-eyebrow">02 · YOUR DAY, IN VIEW</p>
+<h2 id="statistics-title">See where your time went today.</h2>
+</div>
+<div class="tracker-tag-details">
+<article><h3>See your subject breakdown</h3><p>Review your completed study hours by subject in a doughnut chart and see how your time is divided across tags.</p></article>
+<article><h3>Keep your todos organized</h3><p>See your completed todos in one place. Missed a tag? Click Add Tag to assign one directly from Stats.</p></article>
+<article><h3>Look beyond today</h3><p>Pick another day or a time span, such as a week or month, to explore your study hours and subject breakdowns.</p></article>
+</div>
+<figure class="features-preview">
+<div class="app-window">
+    <div class="window-bar" aria-hidden="true">
+      <span class="window-title">
+<img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+      <div class="window-controls">
+        <span>
+<svg viewBox="0 0 12 12">
+<path d="M1 6.5h10"/>
+</svg>
+</span>
+        <span>
+<svg viewBox="0 0 12 12">
+<rect x="1.5" y="1.5" width="9" height="9"/>
+</svg>
+</span>
+        <span>
+<svg viewBox="0 0 12 12">
+<path d="m1.5 1.5 9 9m0-9-9 9"/>
+</svg>
+</span>
+      </div>
+    </div>
+    <fokasu-stats>
+</fokasu-stats>
+    <noscript>
+<p class="no-script">Enable JavaScript to view the stats preview.</p>
+</noscript>
+  </div>
+</figure>
+</section>
+<section class="tracker-section" id="trends" aria-labelledby="trends-title">
+<div class="tracker-heading">
+<p class="features-eyebrow">03 · YOUR PROGRESS OVER TIME</p>
+<h2 id="trends-title">Follow your study trend.</h2>
+</div>
+<div class="tracker-tag-details">
+<article><h3>Track your study trend</h3><p>See how your completed study hours change through the week or month, with a graph that brings your daily progress into view.</p></article>
+<article><h3>See your summary</h3><p>Review total hours, completed todos, your daily average, best day, and active days for the selected period.</p></article>
+<article><h3>Explore another time span</h3><p>Pick another week or month to see its study hours, trends, and summary. Look back at how your routine has changed over time.</p></article>
+</div>
+<figure class="features-preview">
+<div class="app-window">
+    <div class="window-bar" aria-hidden="true">
+      <span class="window-title">
+<img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+      <div class="window-controls">
+        <span>
+<svg viewBox="0 0 12 12">
+<path d="M1 6.5h10"/>
+</svg>
+</span>
+        <span>
+<svg viewBox="0 0 12 12">
+<rect x="1.5" y="1.5" width="9" height="9"/>
+</svg>
+</span>
+        <span>
+<svg viewBox="0 0 12 12">
+<path d="m1.5 1.5 9 9m0-9-9 9"/>
+</svg>
+</span>
+      </div>
+    </div>
+    <fokasu-stats data-weekly-preview>
+</fokasu-stats>
+    <noscript>
+<p class="no-script">Enable JavaScript to view the stats preview.</p>
+</noscript>
+  </div>
+</figure>
+</section>
+<section class="tracker-section" id="yearly-activity" aria-labelledby="yearly-activity-title">
+<div class="tracker-heading">
+<p class="features-eyebrow">04 · YOUR YEAR IN ACTIVITY</p>
+<h2 id="yearly-activity-title">See your consistency. Build your momentum.</h2>
+</div>
+<div class="tracker-tag-details">
+<article><h3>Your year at a glance</h3><p>See an entire year of study activity in your heatmap. Each square represents a day, with brighter colors showing more study time.</p></article>
+<article><h3>Revisit what you accomplished</h3><p>Click a day’s square in the app to see the todos you completed and the work you put in.</p></article>
+<article><h3>Keep your momentum going</h3><p>Watch your activity build over time, celebrate consistent effort, and give yourself another reason to show up tomorrow.</p></article>
+</div>
+<div class="feature-heatmap" data-activity-heatmap>
+<div class="feature-heatmap-legend" aria-hidden="true"><span>Less</span><i data-level="0"></i><i data-level="1"></i><i data-level="2"></i><i data-level="3"></i><i data-level="4"></i><span>More</span></div>
+<noscript><p class="no-script">Enable JavaScript to view the sample yearly activity heatmap.</p></noscript>
+</div>
+</section>
+<section class="tracker-section" id="user-summaries" aria-labelledby="user-summaries-title">
+<div class="tracker-heading">
+<p class="features-eyebrow">05 · GET TO KNOW YOUR STUDY COMMUNITY</p>
+<h2 id="user-summaries-title">Every username has a study story.</h2>
+</div>
+<div class="tracker-tag-details">
+<article><h3>Click a username</h3><p>Click someone’s username in the app to open their profile and see their study summary.</p></article>
+<article><h3>See their recent progress</h3><p>Review their last three weeks of activity, total study hours, best week, best day, and most recent completed todo.</p></article>
+<article><h3>Build a consistent streak</h3><p>Your streak reflects your consistency. It resets if you go a day without completing a todo, or have more than three expired todos in the last 15 days.</p></article>
+</div>
+<figure class="features-preview">
+<div class="app-window">
+<div class="window-bar" aria-hidden="true">
+<span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
+<div class="window-controls">
+<span><svg viewBox="0 0 12 12"><path d="M1 6.5h10"/></svg></span>
+<span><svg viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9"/></svg></span>
+<span><svg viewBox="0 0 12 12"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span>
+</div>
+</div>
+<fokasu-user-summary></fokasu-user-summary>
+<noscript><p class="no-script">Enable JavaScript to view the sample user summary.</p></noscript>
+</div>
+</figure>
+</section>
+<section class="features-end" aria-labelledby="tracker-end-title">
+<img src="/components/homepage/focus-guard.svg" width="100" height="116" alt="" loading="lazy">
+<div>
+<h2 id="tracker-end-title">Make your next study session count.</h2>
+<p>Available for Windows, Fedora, and Ubuntu.</p>
+<div class="features-end-actions">
+<a href="/#downloads">Download Fokasu <span aria-hidden="true">→</span>
+</a>
+<a href="/features/">Explore all features</a>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="site-footer alternative-footer">
+      <div class="site-footer-inner">
+        <a class="brand" href="/" aria-label="Fokasu home">
+          <img src="/logo/fokasu_logo.svg" width="30" height="30" alt="" aria-hidden="true">
+          <span>Fokasu</span>
+        </a>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/features/">Features</a>
+          <a href="/">Home</a>
+          <a href="/how-it-works/">Focus Block Guide</a>
+          <a href="/ypt-alternative/">YPT Alternative</a>
+          <a href="/best-study-app/">Best Study App</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/delete-account/">Delete account</a>
+        </nav>
+      </div>
+    </footer>
+</body>
+</html>

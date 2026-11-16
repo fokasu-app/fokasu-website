@@ -1,0 +1,30 @@
+fokasu-friends { display: block; container-type: inline-size; height: 71.03021cqw; font-size: 1.08443cqw; font-family: "Fokasu Noto Sans", sans-serif; color: #f0f1f4; line-height: 1.4; }
+fokasu-friends * { box-sizing: border-box; }
+.friends-demo-main { overflow: hidden; }
+.friends-demo-content { padding-top: 1.5cqw; }
+.friends-demo-heading { display: flex; align-items: center; justify-content: space-between; gap: 1cqw; margin-bottom: 2.2cqw; }
+.friends-demo-heading strong { font-family: "Fokasu Plus Jakarta Sans", sans-serif; font-size: 2.4cqw; line-height: 1.3; }
+.friends-demo-heading p { margin: .65cqw 0 0; color: #a1a6b0; font-size: 1.15cqw; }
+.friends-demo-heading > span { color: #57e7bb; font-size: .9cqw; white-space: nowrap; }
+.friends-demo-list { display: grid; gap: 1.2cqw; }
+.friends-demo-card { background: #17191d; border: .07746cqw solid #252932; border-radius: .65cqw; padding: 1.1cqw 1.2cqw; }
+.friends-demo-card summary { display: flex; align-items: center; gap: 1.15cqw; cursor: pointer; list-style: none; min-height: 4.6cqw; }
+.friends-demo-card summary::-webkit-details-marker { display: none; }
+.friends-demo-card summary:focus-visible { outline: .16cqw solid #79e6be; outline-offset: .4cqw; border-radius: .3cqw; }
+.friends-demo-avatar { display: grid; place-items: center; flex: 0 0 3.2cqw; width: 3.2cqw; height: 3.2cqw; border-radius: 50%; background: #23433c; color: #83e7c1; font-family: "Fokasu Plus Jakarta Sans", sans-serif; font-size: 1.2cqw; font-weight: 700; }
+.friends-demo-info { min-width: 0; flex: 1; }
+.friends-demo-name { display: block; font-size: 1.4cqw; }
+.friends-demo-meta { display: flex; align-items: center; gap: 1.5cqw; margin-top: .5cqw; color: #9ca5b3; font-size: 1.15cqw; }
+.friends-demo-streak, .friends-demo-today { display: inline-flex; align-items: center; gap: .4cqw; white-space: nowrap; }
+.friends-demo-streak svg { color: #ff7b24; fill: #ff7b24; width: 1.2cqw; height: 1.45cqw; }
+.friends-demo-today svg { width: 1.2cqw; height: 1.2cqw; }
+.friends-demo-ongoing { display: flex; align-items: center; gap: .8cqw; color: #9ca5b3; font-size: 1cqw; white-space: nowrap; }
+.friends-demo-track { display: block; width: 5.4cqw; height: .5cqw; background: #292d36; border-radius: .4cqw; overflow: hidden; }
+.friends-demo-track > span { display: block; height: 100%; background: #5bdabb; }
+.friends-demo-menu { color: #9399a4; font-size: 2.1cqw; line-height: 1; }
+.friends-demo-week { margin: 1cqw 0 0 4.4cqw; border: .07746cqw solid #272c34; border-radius: .7cqw; background: #14161a; padding: .5cqw; }
+.friends-demo-week > .friends-demo-chart { display: block; width: 100%; height: 18cqw; }
+.friends-demo-chart text { fill: #959dab; font-family: "Fokasu Noto Sans", sans-serif; font-size: 11px; }
+.friends-demo-chart rect { fill: #20a77f; }
+.friends-demo-chart rect:hover { fill: #2fc397; }
+.friends-demo-gridline { fill: none; stroke: #70757f; stroke-opacity: .18; stroke-dasharray: 3 5; }

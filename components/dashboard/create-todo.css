@@ -1,0 +1,36 @@
+/* A code-rendered version of the guide's Create Todo form, scaled like the other desktop previews. */
+fokasu-create-todo { display: block; position: relative; container-type: inline-size; height: 71.03021cqw; overflow: hidden; background: #090a0b; color: #e6e9ee; font-size: 1.4cqw; font-family: "Fokasu Noto Sans", sans-serif; line-height: 1.5; }
+fokasu-create-todo * { box-sizing: border-box; }
+.todo-demo-backdrop { position: absolute; inset: 0; opacity: .36; filter: blur(.22cqw); }
+.todo-demo-form { position: absolute; inset: 4.5cqw 20.5cqw 1.6cqw; padding: 2.7cqw 3cqw 2cqw; display: flex; flex-direction: column; background: #101115; border: .15cqw solid #59616e; border-radius: 1.25cqw; }
+.todo-demo-form h3 { margin: 0 0 .55cqw; font-size: 2.8cqw; font-weight: 600; letter-spacing: -.04em; }
+.todo-demo-intro { margin: 0 0 2.4cqw; color: #b9c4d2; font-size: 1.45cqw; line-height: 1.65; }
+.todo-demo-form label, .todo-demo-form legend { display: block; color: #8e9baa; font-size: 1.2cqw; }
+.todo-demo-form input, .todo-demo-form textarea, .todo-demo-form select, .todo-demo-form button { font-family: inherit; font-size: 1.4cqw; }
+.todo-demo-form textarea, .todo-demo-form select, .todo-demo-form input:not([type="checkbox"]) { width: 100%; min-width: 0; color: #c2cedb; background: #191d23; border: .12cqw solid #292e38; border-radius: .7cqw; padding: 1cqw 1.2cqw; }
+.todo-demo-form textarea { display: block; height: 7.5cqw; margin-top: .8cqw; resize: none; }
+.todo-demo-form input::placeholder, .todo-demo-form textarea::placeholder { color: #aebaca; opacity: 1; }
+.todo-demo-form input:focus-visible, .todo-demo-form textarea:focus-visible, .todo-demo-form select:focus-visible, .todo-demo-form button:focus-visible { outline: .18cqw solid #70e4b9; outline-offset: .25cqw; }
+.todo-demo-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2.5cqw; margin-top: 2.4cqw; }
+.todo-demo-fields > label > input, .todo-demo-fields select, .todo-demo-tag-input, .todo-demo-time { margin-top: .9cqw; height: 4.5cqw; }
+.todo-demo-fields fieldset { min-width: 0; padding: 0; margin: 0; border: 0; }
+.todo-demo-fields legend { padding: 0; }
+.todo-demo-time { display: flex; align-items: center; gap: .5cqw; padding: 0 .8cqw; border: .12cqw solid #292e38; border-radius: .7cqw; background: #191d23; color: #98a7b8; font-size: 1.3cqw; }
+.todo-demo-time input:not([type="checkbox"]) { border: 0; padding: .5cqw; background: transparent; }
+.todo-demo-time input[type="number"] { appearance: textfield; -moz-appearance: textfield; }
+.todo-demo-time input::-webkit-inner-spin-button, .todo-demo-time input::-webkit-outer-spin-button { appearance: none; margin: 0; }
+.todo-demo-spinner { display: flex; flex: 0 0 1.1cqw; flex-direction: column; align-items: center; color: #aebaca; font-size: 1.1cqw; line-height: 1; }
+.todo-demo-form input[type="date"] { color-scheme: dark; }
+.todo-demo-tag-field { position: relative; min-width: 0; grid-column: 1 / -1; }
+.todo-demo-tag-input input { display: block; height: 100%; }
+.todo-demo-tag-input input::placeholder { font-size: 1.3cqw; }
+.todo-demo-arrow { position: absolute; width: 4.1cqw; height: 4.4cqw; left: 50%; top: calc(100% - .85cqw); transform: translateX(-50%) rotate(90deg); fill: #64e2bc; stroke: #133b31; stroke-width: 2; stroke-linejoin: round; pointer-events: none; }
+.todo-demo-tags { display: flex; flex-wrap: wrap; gap: .5cqw; margin-top: .7cqw; }
+.todo-demo-tags button { max-width: 100%; overflow-wrap: anywhere; padding: .25cqw .7cqw; border: .08cqw solid #326d58; border-radius: .5cqw; background: #19372c; color: #8ee0bc; font-size: 1cqw; cursor: pointer; }
+.todo-demo-status { color: #83d6b5; font-size: 1.1cqw; margin: auto 0 1cqw; }
+.todo-demo-actions { display: flex; align-items: center; gap: 1.1cqw; }
+.todo-demo-actions label { display: flex; align-items: center; gap: .55cqw; color: #c3cfde; white-space: nowrap; font-size: 1.35cqw; }
+.todo-demo-actions input[type="checkbox"] { appearance: auto; width: 1.8cqw; height: 1.8cqw; margin: 0; accent-color: #32b68e; }
+.todo-demo-actions button { padding: 1cqw 1.3cqw; border: .1cqw solid transparent; border-radius: .65cqw; background: #191d23; color: #aab8c9; cursor: pointer; }
+.todo-demo-actions button[type="reset"] { margin-left: auto; }
+.todo-demo-actions button[type="submit"] { background: #20a782; color: #08261d; }

@@ -3,28 +3,30 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080a0b">
-<title>Best Study App for Desktop Focus & Study Tracking | Fokasu</title>
+<title>Find Your Study App for Windows &amp; Linux | Fokasu</title>
 <link rel="canonical" href="https://fokasu.app/best-study-app/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Best Study App for Desktop Focus &amp; Study Tracking | Fokasu">
-<meta property="og:description" content="Study with friends, protect your focus with automatic break-aware blocking, and keep your progress in view with Fokasu.">
+<meta property="og:title" content="Find Your Study App for Windows &amp; Linux | Fokasu">
+<meta property="og:description" content="Explore task planning, shared study rooms, subject statistics, and distraction blocking in Fokasu for Windows, Fedora, and Ubuntu.">
 <meta property="og:url" content="https://fokasu.app/best-study-app/">
 <meta property="og:image" content="https://fokasu.app/screenshots/app-screenshot.png">
 <meta property="og:image:alt" content="Fokasu desktop study dashboard">
-<meta name="description" content="Study with your clan, protect Pomodoro sessions with automatic break-aware blocking, and keep your progress pinned above your apps. Three reasons to study with Fokasu.">
+<meta name="description" content="Find a study app that fits your desktop routine. Explore Fokasu’s planning, friends, subject tracking, and blocking on Windows, Fedora, and Ubuntu.">
 <link rel="icon" href="/logo/fokasu_logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/index.css?v=20261101-mobile-no-overflow-menu-6">
 <link rel="stylesheet" href="/components/dashboard/dashboard.css?v=20261101-reserved-previews-1">
 <link rel="stylesheet" href="/components/dashboard/dashboard-progress.css?v=20261027-3">
 <link rel="stylesheet" href="/components/dashboard/dashboard-social.css?v=20261027-6">
 <link rel="stylesheet" href="/components/dashboard/clan.css?v=20261027-4">
-<link rel="stylesheet" href="/components/best-study-app/page.css?v=20261101-faq-spacing-3">
+<link rel="stylesheet" href="/components/best-study-app/page.css?v=20261116-study-overview-1">
 <link rel="stylesheet" href="/components/faq/accordion.css?v=20261101-scoped-rows-3">
 <script src="/navigation.js" defer></script>
 <script src="/components/dashboard/clan.js?v=20261027-12" type="module"></script>
 <script src="/components/best-study-app/page.js?v=20261101-migration-1" type="module"></script>
 <link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261101-navigation-size-4">
-<link rel="stylesheet" href="/components/navigation/header.css?v=20261101-shared-approved-1">
+<link rel="stylesheet" href="/components/navigation/header.css?v=20261116-progressive-nav-2">
+<link rel="stylesheet" href="/components/dashboard/preview-frame.css?v=20261116-1">
+<link rel="stylesheet" href="/components/navigation/mobile-spacing.css?v=20261116-1">
 </head>
 <body id="top">
 <a class="study-skip" href="#main">Skip to content</a>
@@ -37,6 +39,7 @@
         </a>
 
         <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-features" href="/features/">Features</a>
           <a
             class="nav-how-blocks"
             href="/how-it-works/"
@@ -84,23 +87,6 @@
             </div>
           </details>
 
-          <details class="nav-more">
-            <summary aria-label="Show more navigation options">
-              <svg viewBox="0 0 16 4" aria-hidden="true" focusable="false">
-                <circle cx="2" cy="2" r="2" />
-                <circle cx="8" cy="2" r="2" />
-                <circle cx="14" cy="2" r="2" />
-              </svg>
-            </summary>
-            <div class="nav-more-menu">
-              <a class="nav-mobile-guide" href="/how-it-works/">Focus Block Guide</a>
-              <a
-                href="/extensions/"
-               target="_blank" rel="noopener noreferrer">Extension</a>
-              <a href="https://discord.gg/Z78MeYAkcW" target="_blank" rel="noopener noreferrer">Discord</a>
-              <a href="https://www.reddit.com/r/FokasuApp/" target="_blank" rel="noopener noreferrer">Reddit</a>
-            </div>
-          </details>
           <details class="download-picker nav-download-picker">
             <summary class="nav-download">
               <span>Download</span>
@@ -141,11 +127,11 @@
 <main id="main" class="study-main">
  <section class="study-hero study-container" aria-labelledby="study-title">
 
-  <h1 id="study-title">Three reasons why Fokasu<br>is the best study tool.</h1>
-  <p class="study-intro">Fokasu is a desktop study app that brings your tasks, study friends, and distraction blocking together.</p>
+  <h1 id="study-title">A study app that fits<br>your desktop routine.</h1>
+  <p class="study-intro">Studying on Windows or Linux? Fokasu brings task planning, shared study sessions, subject tracking, and distraction blocking to the computer where you work.</p>
  </section>
  <section class="study-reason study-container" id="study-together" aria-labelledby="together-title">
-  <div class="study-reason-heading"><img class="study-guide-mascot" src="/components/focus-guide/focus-guard.svg" width="124" height="144" alt="" aria-hidden="true" loading="lazy"><div class="study-message"><div class="study-message-title"><span class="study-number" aria-hidden="true">01</span><h2 id="together-title">Study together</h2></div><p class="study-description">Study together in clan rooms with synced break times, see what your clanmates are working on, and compare focused time on the leaderboards. Complete quests and level up your clan together.</p></div></div>
+  <div class="study-reason-heading"><h2 id="together-title">Study Together</h2><p class="study-description">Follow friends’ live task progress and weekly activity where they’ve enabled sharing. Join a clan for chat and quests, or use a study room to follow the same study and break schedule.</p><a class="study-detail-link" href="/study-with-friends/">Explore Friends, Clans, and Study Rooms <span aria-hidden="true">→</span></a></div>
   <div class="study-preview"><div class="app-window">
 <div class="window-bar" aria-hidden="true">
   <span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
@@ -158,11 +144,11 @@
 <fokasu-clan></fokasu-clan><noscript><p class="study-fallback">Enable JavaScript to explore this desktop preview.</p></noscript></div></div>
  </section>
  <section class="study-reason study-container" id="pomodoro" aria-labelledby="pomodoro-title">
-  <div class="study-reason-heading"><img class="study-guide-mascot" src="/components/focus-guide/focus-guard.svg" width="124" height="144" alt="" aria-hidden="true" loading="lazy"><div class="study-message"><div class="study-message-title"><span class="study-number" aria-hidden="true">02</span><h2 id="pomodoro-title">Keep breaks from taking over</h2></div><p class="study-description">A five-minute break can turn into half an hour of scrolling. Plan your breaks in a todo and start a Focus Block. Fokasu lifts blocking during your break, then automatically blocks distracting websites and apps again when break time is over.</p></div></div>
+  <div class="study-reason-heading"><h2 id="pomodoro-title">Keep breaks from taking over</h2><p class="study-description">Plan automatic breaks in a todo and start a Focus Block. Blocking lifts during approved breaks and resumes when the break ends, while the Focus Block remains active. Website blocking requires the desktop app and browser extension.</p><a class="study-detail-link" href="/how-it-works/">Read the Focus Block Guide <span aria-hidden="true">→</span></a></div>
   <figure class="study-preview study-blocked-preview"><img src="/screenshots/new-how-it-works-for-blocks/website-blocked.png" width="1896" height="968" alt="Fokasu blocking reddit.com during focus time after a scheduled break ends" loading="lazy" decoding="async"></figure>
  </section>
  <section class="study-reason study-container" id="progress-mode" aria-labelledby="progress-title">
-  <div class="study-reason-heading"><img class="study-guide-mascot" src="/components/focus-guide/focus-guard.svg" width="124" height="144" alt="" aria-hidden="true" loading="lazy"><div class="study-message"><div class="study-message-title"><span class="study-number" aria-hidden="true">03</span><h2 id="progress-title">Keep progress in view</h2></div><p class="study-description">Switch to progress bar mode and pin your progress above the apps you're using. Keep your notes, browser, or textbook in view while the bar grows at the edge of your screen.</p></div></div>
+  <div class="study-reason-heading"><h2 id="progress-title">Keep progress in view</h2><p class="study-description">Switch to progress bar mode and pin your progress above the apps you're using. Keep your notes, browser, or textbook in view while the bar grows at the edge of your screen.</p></div>
   <div class="study-preview" id="progress-preview"><div class="app-window">
 <div class="window-bar" aria-hidden="true">
   <span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span>
@@ -173,6 +159,18 @@
   </div>
 </div>
 <fokasu-dashboard></fokasu-dashboard><noscript><p class="study-fallback">Enable JavaScript to explore this desktop preview.</p></noscript></div></div>
+ </section>
+ <section class="study-reason study-container" aria-labelledby="planning-title">
+  <div class="study-reason-heading"><h2 id="planning-title">Plan your work. Review your subjects.</h2><p class="study-description">Create todos with estimated focus time, deadlines, and subject tags such as Physics or Chemistry. Use habits for recurring routines, then review your completed tasks in weekly or monthly statistics.</p></div>
+  <div class="study-overview-grid">
+   <article><h3>Give each session a purpose</h3><p>Choose the task, set its focus duration, and configure breaks before you start.</p><a class="study-detail-link" href="/features/#plan">Explore planning features <span aria-hidden="true">→</span></a></article>
+   <article><h3>Know what your totals mean</h3><p>Stats adds the focus duration set for completed tasks on their completion date. Unfinished tasks are excluded; totals for overlapping subject tags can overlap too.</p><a class="study-detail-link" href="/study-time-tracker/">Explore Study Time Tracker <span aria-hidden="true">→</span></a></article>
+  </div>
+ </section>
+ <section class="study-fit study-container" aria-labelledby="fit-title">
+  <h2 id="fit-title">Is Fokasu a fit for you?</h2>
+  <p>Fokasu suits students who want to plan tasks, study alongside others, and block distractions on their computer. Downloads are available for Windows, Fedora, and Ubuntu; macOS support is coming soon.</p>
+  <p>If you need a phone-first workflow or a record of every elapsed minute, consider those needs before choosing. Fokasu’s completed-task statistics reflect the durations you set for tasks.</p>
  </section>
 </main>
 <section class="study-download-section study-container" aria-labelledby="study-download-title">
@@ -243,7 +241,7 @@
   </details>
   <details>
     <summary>Can I track how much time I spend on each subject?</summary>
-    <p>Add subject tags to your todos, then use Stats to review time spent on each tag, completed todo hours, and weekly or monthly trends.</p>
+    <p>Add subject tags to your todos, then filter Stats by tag. Totals use the focus duration set for completed tasks, grouped by completion date, rather than every elapsed timer minute. <a href="/study-time-tracker/">See how study time tracking works.</a></p>
   </details>
   <p class="study-faq-more"><a href="/faq/">See all frequently asked questions <span aria-hidden="true">→</span></a></p>
 </section>
@@ -254,6 +252,7 @@
           <span>Fokasu</span>
         </a>
         <nav class="footer-links" aria-label="Footer navigation">
+          <a href="/features/">Features</a>
           <a href="/">Home</a>
           <a href="/how-it-works/">Focus Block Guide</a>
           <a href="/ypt-alternative/">YPT Alternative</a>

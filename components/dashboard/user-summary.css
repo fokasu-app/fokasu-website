@@ -1,0 +1,35 @@
+fokasu-user-summary { display: block; position: relative; container-type: inline-size; height: 71.03021cqw; overflow: hidden; background: #090a0b; color: #eef2f4; font: 1.4cqw/1.4 "Fokasu Noto Sans", sans-serif; }
+fokasu-user-summary * { box-sizing: border-box; }
+.user-summary-backdrop { position: absolute; inset: 0; opacity: .3; filter: blur(.22cqw); }
+.user-summary-dialog { position: absolute; left: 11cqw; top: 15cqw; width: 78cqw; padding: 2.2cqw; border: .15cqw solid #59616e; border-radius: 1.2cqw; background: #101115; box-shadow: 0 1cqw 4cqw #0006; }
+.user-summary-heading { display: flex; align-items: center; gap: 1.1cqw; margin-bottom: 2cqw; }
+.user-summary-avatar { display: grid; place-items: center; width: 3.8cqw; height: 3.8cqw; border-radius: 50%; background: #23433c; color: #83e7c1; font-size: 1.7cqw; }
+.user-summary-heading > strong { font: 700 2.2cqw/1.4 "Fokasu Plus Jakarta Sans", sans-serif; }
+.user-summary-streak { display: flex; align-items: center; gap: .5cqw; margin-left: auto; font-size: 1.8cqw; }
+.user-summary-streak svg { width: 1.8cqw; height: 2cqw; color: #ff7b24; }
+.user-summary-close { display: grid; place-items: center; width: 3.6cqw; height: 3.6cqw; margin-left: 1.2cqw; border-radius: 50%; background: #1b2128; color: #91a1ac; font-size: 2.3cqw; }
+.user-summary-grid { display: grid; grid-template-columns: minmax(0, 2.36fr) minmax(0, 1fr); gap: 1.5cqw; }
+.user-summary-left { display: flex; flex-direction: column; gap: 1.5cqw; min-width: 0; }
+.user-summary-clan { display: flex; align-items: center; gap: 1.4cqw; height: 11cqw; padding: 1.6cqw; border-radius: 1.2cqw; background: #1b2128; }
+.user-summary-crest { position: relative; flex: 0 0 6.6cqw; width: 6.6cqw; height: 7cqw; }
+.user-summary-crest img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.user-summary-crest > span { position: absolute; top: -.5cqw; left: 50%; transform: translateX(-50%); display: grid; place-items: center; width: 3cqw; height: 3.4cqw; background: #e5b91f; clip-path: polygon(50% 0,100% 22%,100% 70%,50% 100%,0 70%,0 22%); font-size: 1.35cqw; isolation: isolate; }
+.user-summary-crest > span::before { content: ""; position: absolute; z-index: -1; inset: .22cqw; background: #111315; clip-path: inherit; }
+.user-summary-clan h3 { margin: 0 0 .3cqw; font: 700 1.8cqw/1.4 "Fokasu Plus Jakarta Sans", sans-serif; }
+.user-summary-clan p { margin: 0; color: #91a1ac; font-size: 1.2cqw; }
+.user-summary-clan p strong { color: #80ccac; }
+.user-summary-chart-shell { flex: 1; min-height: 15.8cqw; padding: 1cqw; border: .12cqw solid #2b333b; border-radius: 1.2cqw; background: #1b2128; }
+.user-summary-chart { display: block; width: 100%; height: 100%; }
+.user-summary-axis { fill: none; stroke: #36414b; }
+.user-summary-line { fill: none; stroke: #a5bed8; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.user-summary-points { fill: #c4d6e8; stroke: #1b2128; }
+.user-summary-chart text { font-family: "Fokasu Noto Sans", sans-serif; text-anchor: middle; }
+.user-summary-values { fill: #e0ecf6; font-size: 10px; }
+.user-summary-labels { fill: #91a1ac; font-size: 11px; }
+.user-summary-records { display: grid; grid-template-rows: repeat(4, 1fr); gap: 1cqw; }
+.user-summary-records > div { display: flex; align-items: center; gap: 1.1cqw; min-height: 6.3cqw; padding: .9cqw 1.4cqw; border-radius: 1cqw; background: #1b2128; }
+.user-summary-record-icon { color: #8aab9e; font-size: 1.8cqw; }
+.user-summary-records dl { margin: 0; }
+.user-summary-records dt { margin-bottom: .4cqw; color: #91a1ac; font-size: 1.2cqw; }
+.user-summary-records dd { margin: 0; white-space: nowrap; font: 700 1.8cqw/1.4 "Fokasu Plus Jakarta Sans", sans-serif; }
+.user-summary-records .user-summary-date { font-size: 1.6cqw; }

@@ -50,7 +50,7 @@ function studyTrail() {
   <polyline class="study-road-track" points="${trailPoints(0, 1)}"/>
   ${segments}
   <circle class="study-road-marker" cx="${position.x}" cy="${position.y}" r="5.5" style="stroke:${color}"/><circle class="study-road-dot" cx="${position.x}" cy="${position.y}" r="1.8" style="fill:${color}"/>
-  <text x="162" y="17">1.3h</text><text x="322" y="77">2.5h</text><text x="482" y="59">3.8h</text><text x="642" y="78">5h</text>
+  <text x="642" y="78">5h</text>
   <path class="study-road-pole" d="M642 52V22"/><path class="study-road-flag" d="m643 22 15 6-15 6z"/>
  </svg>
  <div class="dash-study-legend">${contributors.map(person => `<span><i style="background:${person.color}"></i><span>${person.name}</span><span class="dash-contribution-time">${person.minutes}m</span></span>`).join('')}</div>`;

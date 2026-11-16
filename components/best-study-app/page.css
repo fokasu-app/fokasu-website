@@ -42,28 +42,23 @@ body { background: #080a0b; color: #eef1f3; }
 
 .study-blocked-preview img { display: block; width: 100%; height: auto; border: 1px solid #343a40; border-radius: 8px; }
 
-/* The focus guard introduces each point in the alternative guide's message style. */
-.study-reason-heading { display: grid; grid-template-columns: 124px minmax(0, 1fr); align-items: center; gap: 24px; margin-bottom: 36px; }
-.study-guide-mascot { display: block; width: 100%; height: auto; }
-.study-message { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 14px; position: relative; min-width: 0; padding: 24px; border: 1px solid #414650; border-radius: 16px; background: #101114; box-shadow: 0 12px 36px #0006; }
-.study-message::before { content: ""; position: absolute; left: -9px; top: 50%; width: 16px; height: 16px; border-left: 1px solid #414650; border-bottom: 1px solid #414650; background: #101114; transform: translateY(-50%) rotate(45deg); }
-.study-message-title { display: contents; }
-.study-number { flex-shrink: 0; color: #65dcb0; font-size: 1.25rem; font-weight: 600; line-height: 1.25; font-variant-numeric: tabular-nums; }
-.study-message h2 { margin: 0; color: #5ee0bd; font-size: 1.25rem; font-weight: 700; line-height: 1.25; letter-spacing: -.02em; }
-.study-message .study-description { grid-column: 2; margin: 0; max-width: none; color: #aeb8c3; font-size: .9rem; line-height: 1.7; }
-@media (max-width: 700px) {
- .study-reason-heading { grid-template-columns: 80px minmax(0, 1fr); align-items: start; gap: 16px; margin-bottom: 28px; }
- .study-guide-mascot { margin-top: 28px; }
- .study-message { padding: 18px; border-radius: 12px; }
- .study-message::before { top: 60px; }
- .study-message { column-gap: 10px; }
- .study-number, .study-message h2 { font-size: 1.1rem; }
- .study-message .study-description { font-size: .85rem; }
-}
-@media (max-width: 420px) {
- .study-reason-heading { grid-template-columns: 52px minmax(0, 1fr); gap: 12px; }
- .study-message { padding: 16px; }
- .study-guide-mascot { margin-top: 36px; }
+/* Center the copy and match the homepage's visible preview width. */
+.study-reason { width: min(892px, calc(100% - 48px)); }
+.study-reason-heading { margin-bottom: 36px; text-align: center; }
+.study-reason-heading h2, .study-fit h2 { margin: 0 0 18px; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.3; letter-spacing: -.025em; }
+.study-description { margin: 0; color: #aeb8c3; font-size: 1rem; line-height: 1.8; }
+.study-detail-link { display: inline-block; margin-top: 20px; color: #7adfb4; text-decoration: none; line-height: 1.7; }
+.study-detail-link:hover { color: #a6f2d3; text-decoration: none; }
+.study-overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; text-align: center; }
+.study-overview-grid h3 { margin: 0 0 14px; font-size: 1.1rem; }
+.study-overview-grid p, .study-fit p { margin: 0; color: #aeb8c3; font-size: .95rem; line-height: 1.8; }
+.study-fit { max-width: 800px; margin-bottom: 110px; text-align: center; }
+.study-fit p + p { margin-top: 18px; }
+.study-faq a { text-decoration: none; }
+@media (max-width: 600px) {
+ .study-reason { width: calc(100% - 24px); }
+ .study-overview-grid { grid-template-columns: 1fr; gap: 32px; }
+ .study-description { font-size: .92rem; }
 }
 
 /* On this page the clan preview owns the quests/activity navigation. */

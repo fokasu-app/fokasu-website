@@ -1,0 +1,21 @@
+fokasu-focus-lock { display: block; position: relative; container-type: inline-size; height: 71.03021cqw; overflow: hidden; background: #090a0b; color: #e6e9ee; font: 1.4cqw/1.5 "Fokasu Noto Sans", sans-serif; }
+fokasu-focus-lock * { box-sizing: border-box; }
+.focus-lock-backdrop { position: absolute; inset: 0; opacity: .3; filter: blur(.22cqw); }
+.focus-lock-backdrop .block-demo-lock-arrow { display: none; }
+.focus-lock-dialog { position: absolute; top: 19cqw; left: 20.5cqw; width: 59cqw; padding: 2.7cqw; border: .15cqw solid #59616e; border-radius: 1.25cqw; background: #101115; box-shadow: 0 1cqw 4cqw #0006; }
+.focus-lock-dialog > header { display: flex; align-items: center; justify-content: space-between; gap: 1cqw; }
+.focus-lock-dialog h3 { margin: 0; font: 700 2.8cqw/1.3 "Fokasu Plus Jakarta Sans", sans-serif; letter-spacing: -.04em; }
+.focus-lock-close { display: grid; place-items: center; width: 3.4cqw; height: 3.4cqw; border-radius: 50%; background: #1b2128; color: #91a1ac; font-size: 2.2cqw; }
+.focus-lock-intro { margin: .6cqw 0 2cqw; color: #9daec1; font-size: 1.4cqw; line-height: 1.65; }
+.focus-lock-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5cqw; }
+.focus-lock-label { display: block; margin-bottom: .8cqw; color: #8e9baa; font-size: 1.2cqw; }
+.focus-lock-time, .focus-lock-reward, .focus-lock-schedule { display: flex; align-items: center; min-width: 0; height: 4.5cqw; padding: .8cqw 1.2cqw; border: .12cqw solid #292e38; border-radius: .7cqw; background: #191d23; }
+.focus-lock-time { justify-content: space-between; gap: .6cqw; }
+.focus-lock-unit { color: #98a7b8; font-size: 1.3cqw; }
+.focus-lock-spinner { display: flex; flex-direction: column; align-items: center; color: #aebaca; font-size: 1.1cqw; line-height: 1; }
+.focus-lock-reward { justify-content: space-between; gap: .8cqw; white-space: nowrap; font-size: 1.3cqw; }
+.focus-lock-reward > :last-child { color: #9da2ad; }
+.focus-lock-schedule { gap: .8cqw; margin-top: 1.6cqw; }
+.focus-lock-actions { display: flex; justify-content: flex-end; gap: 1.2cqw; margin-top: 2.7cqw; }
+.focus-lock-actions > span { padding: 1cqw 1.6cqw; border-radius: .65cqw; background: #191d23; color: #98a7b8; font-size: 1.3cqw; }
+.focus-lock-actions > :last-child { background: #20a77f; color: #05271d; }
