@@ -76,3 +76,8 @@ body { background: #080a0b; color: #eef1f3; }
  .features-end-actions { justify-content: center; gap: 4px 20px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .feature-timer-preview .dash-progress-mode-control::after { animation: none; } }
+/* Reserve the same canvas before and after a preview is mounted. */
+.feature-preview-slot { height: 71.03021cqw; }
+.feature-heatmap-grid { aspect-ratio: 100 / 12.903774; }
+.feature-preview-error { margin: 0; padding: 20px; color: #aab3bc; font-size: .9rem; line-height: 1.7; }
+.feature-preview-error button { font: inherit; color: #79e6be; background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }

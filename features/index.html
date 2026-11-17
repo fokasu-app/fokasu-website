@@ -21,8 +21,8 @@
 <link rel="stylesheet" href="/components/dashboard/clan.css?v=20261027-4">
 <link rel="stylesheet" href="/components/alternative-footer/footer.css?v=20261101-navigation-size-4">
 <link rel="stylesheet" href="/components/navigation/header.css?v=20261116-progressive-nav-2">
-<link rel="stylesheet" href="/features/style.css?v=20261116-heatmap-12">
-<script src="/features/page.js?v=20261116-heatmap-10" type="module"></script>
+<link rel="stylesheet" href="/features/style.css?v=20261117-lazy-previews-1">
+<script src="/features/page.js?v=20261117-lazy-previews-1" type="module"></script>
 <link rel="stylesheet" href="/study-time-tracker/style.css?v=20261116-hide-scroll-4">
 <link rel="stylesheet" href="/components/dashboard/create-todo.css?v=20261117-shared-border-7">
 <link rel="stylesheet" href="/components/dashboard/habits.css?v=20261116-1">
@@ -33,13 +33,7 @@
 <link rel="stylesheet" href="/components/dashboard/user-summary.css?v=20261117-shared-border-2">
 <link rel="stylesheet" href="/components/dashboard/friends.css?v=20261116-1">
 <link rel="stylesheet" href="/components/dashboard/study-room.css?v=20261116-session-text-3">
-<script src="/components/dashboard/habits.js?v=20261116-1" type="module"></script>
-<script src="/components/dashboard/create-todo.js?v=20261116-no-strict-icon-4" type="module"></script>
 <script src="/navigation.js" defer>
-</script>
-<script src="/components/dashboard/stats.js?v=20261027-18" type="module">
-</script>
-<script src="/components/dashboard/clan.js?v=20261027-12" type="module">
 </script>
 <link rel="stylesheet" href="/components/dashboard/preview-frame.css?v=20261116-1">
 <link rel="stylesheet" href="/components/navigation/mobile-spacing.css?v=20261116-1">
@@ -184,7 +178,7 @@
 </span>
       </div>
     </div>
-    <fokasu-create-todo inert></fokasu-create-todo>
+    <div class="feature-preview-slot" data-preview="create-todo"><template><fokasu-create-todo inert></fokasu-create-todo></template></div>
 <noscript><p class="no-script">Enable JavaScript to view the Create Todo preview.</p></noscript>
 </div>
 </figure>
@@ -222,7 +216,7 @@
 </span>
       </div>
     </div>
-    <fokasu-dashboard></fokasu-dashboard>
+    <div class="feature-preview-slot" data-preview="dashboard"><template><fokasu-dashboard></fokasu-dashboard></template></div>
 <noscript><p class="no-script">Enable JavaScript to explore the timer preview.</p></noscript>
 </div>
 </figure>
@@ -260,7 +254,7 @@
 </span>
       </div>
     </div>
-    <fokasu-habits></fokasu-habits>
+    <div class="feature-preview-slot" data-preview="habits"><template><fokasu-habits></fokasu-habits></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to explore the habits preview.</p>
 </noscript>
@@ -300,7 +294,7 @@
 </span>
       </div>
     </div>
-    <fokasu-clan data-logo="crown" data-level="17"></fokasu-clan>
+    <div class="feature-preview-slot" data-preview="clan"><template><fokasu-clan data-logo="crown" data-level="17"></fokasu-clan></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to explore the clan preview.</p>
 </noscript>
@@ -340,7 +334,7 @@
 </span>
       </div>
     </div>
-    <fokasu-dashboard data-social-preview></fokasu-dashboard>
+    <div class="feature-preview-slot" data-preview="dashboard"><template><fokasu-dashboard data-social-preview></fokasu-dashboard></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to explore shared clan activity.</p>
 </noscript>
@@ -380,7 +374,7 @@
 </span>
       </div>
     </div>
-    <fokasu-study-room></fokasu-study-room>
+    <div class="feature-preview-slot" data-preview="study-room"><template><fokasu-study-room></fokasu-study-room></template></div>
 <noscript><p class="no-script">Enable JavaScript to explore the study room preview.</p></noscript>
 </div>
 </figure>
@@ -418,7 +412,7 @@
 </span>
       </div>
     </div>
-    <fokasu-friends></fokasu-friends>
+    <div class="feature-preview-slot" data-preview="friends"><template><fokasu-friends></fokasu-friends></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to explore this sample app view.</p>
 </noscript>
@@ -458,8 +452,8 @@
 </span>
       </div>
     </div>
-    <fokasu-stats>
-</fokasu-stats>
+    <div class="feature-preview-slot" data-preview="stats"><template><fokasu-stats>
+</fokasu-stats></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to view the stats preview.</p>
 </noscript>
@@ -499,8 +493,8 @@
 </span>
       </div>
     </div>
-    <fokasu-stats data-weekly-preview>
-</fokasu-stats>
+    <div class="feature-preview-slot" data-preview="stats"><template><fokasu-stats data-weekly-preview>
+</fokasu-stats></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to view the stats preview.</p>
 </noscript>
@@ -540,7 +534,7 @@
 </span>
       </div>
     </div>
-    <fokasu-leaderboard></fokasu-leaderboard>
+    <div class="feature-preview-slot" data-preview="leaderboard"><template><fokasu-leaderboard></fokasu-leaderboard></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to explore this sample app view.</p>
 </noscript>
@@ -580,7 +574,7 @@
 </span>
       </div>
     </div>
-    <fokasu-community></fokasu-community>
+    <div class="feature-preview-slot" data-preview="community"><template><fokasu-community></fokasu-community></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to view the sample community feed.</p>
 </noscript>
@@ -607,7 +601,7 @@
 <span><svg viewBox="0 0 12 12"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span>
 </div>
 </div>
-<fokasu-user-summary></fokasu-user-summary>
+<div class="feature-preview-slot" data-preview="user-summary"><template><fokasu-user-summary></fokasu-user-summary></template></div>
 <noscript><p class="no-script">Enable JavaScript to view the sample user summary.</p></noscript>
 </div>
 </figure>
@@ -645,7 +639,7 @@
 </span>
       </div>
     </div>
-    <fokasu-focus-lock></fokasu-focus-lock>
+    <div class="feature-preview-slot" data-preview="focus-lock"><template><fokasu-focus-lock></fokasu-focus-lock></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to view the Focus Lock preview.</p>
 </noscript>
@@ -685,7 +679,7 @@
 </span>
       </div>
     </div>
-    <fokasu-blocks data-all-sites></fokasu-blocks>
+    <div class="feature-preview-slot" data-preview="blocks"><template><fokasu-blocks data-all-sites></fokasu-blocks></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to view the blocklist preview.</p>
 </noscript>
@@ -725,7 +719,7 @@
 </span>
       </div>
     </div>
-    <fokasu-dday></fokasu-dday>
+    <div class="feature-preview-slot" data-preview="dday"><template><fokasu-dday></fokasu-dday></template></div>
     <noscript>
 <p class="no-script">Enable JavaScript to view the D-Day calendar preview.</p>
 </noscript>
@@ -743,6 +737,7 @@
 <article><h3>Keep your momentum going</h3><p>Watch your activity build over time, celebrate consistent effort, and give yourself another reason to show up tomorrow.</p></article>
 </div>
 <div class="feature-heatmap" data-activity-heatmap>
+<div class="feature-heatmap-grid" data-preview="heatmap"></div>
 <div class="feature-heatmap-legend" aria-hidden="true"><span>Less</span><i data-level="0"></i><i data-level="1"></i><i data-level="2"></i><i data-level="3"></i><i data-level="4"></i><span>More</span></div>
 <noscript><p class="no-script">Enable JavaScript to view the sample yearly activity heatmap.</p></noscript>
 </div>
