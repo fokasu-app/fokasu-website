@@ -108,7 +108,7 @@ offline.querySelector('.dash-nav-item:last-child').insertAdjacentHTML('afterend'
 offline.querySelector('fokasu-demo-header').outerHTML = `<div class="glass-offline-header"><h3>Dashboard</h3><span class="glass-offline-badge">Offline</span><div class="glass-offline-tools" aria-hidden="true">${musicNote}<span>↻</span><span>+</span></div></div>`;
 offline.querySelector('.dash-time').textContent = '59:55';
 offline.querySelector('.dash-session').textContent = 'Study Session';
-offline.querySelector('.primary-control').innerHTML = 'Ⅱ';
+offline.querySelector('.primary-control').innerHTML = icon('play');
 offline.querySelector('.dash-controls .dash-control:last-child').remove();
 offline.querySelector('.glass-next-heading').remove();
 offline.querySelector('.glass-activity-view').remove();

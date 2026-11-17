@@ -23,7 +23,7 @@ body.pro-features-page { --preview-border-color: #526d83; isolation: isolate; ba
 .pro-features-page .tracker-section { border-top: 0; }
 .pro-features-page .features-end { background: linear-gradient(135deg,#cceaff17,#cceaff08); border-color: #c3e7ff35; box-shadow: inset 0 1px #ffffff0d, 0 12px 40px #06162620; backdrop-filter: blur(16px); }
 .pro-features-page :is(.features-end a,.features-more a) { color: #a9dfff; }
-.pro-features-page .alternative-footer { background: #10283dba; border-top: 0; backdrop-filter: blur(16px); }
+.pro-features-page .alternative-footer { background: transparent; border-top: 0; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
 .pro-features-page .footer-links a { color: #bdcfdf; }
 .pro-features-page .footer-links a:hover,
 .pro-features-page .footer-links a[aria-current="page"] { color: #a9dfff; }
