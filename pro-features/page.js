@@ -4,7 +4,7 @@ import '/components/dashboard/blocks.js?v=20261117-pro-blocks-1';
 import { icon } from '/components/dashboard/desktop-icons.js';
 import { dashboardSocial } from '/components/dashboard/dashboard-social.js?v=20261116-goal-label-11';
 
-const task = `<div class="dash-task"><span class="task-play">${icon('play')}</span><div class="task-description"><h3>Demo Todo</h3><p><span class="task-status">Paused</span><span class="task-meta">Expires in 1 hour <i>|</i> 1 hour</span></p></div><div class="task-progress"><span></span></div><span class="task-menu">${icon('more')}</span></div>`;
+const task = `<div class="dash-task"><span class="task-play">${icon('play')}</span><div class="task-description"><h3>Study Session</h3><p><span class="task-status">Paused</span><span class="task-meta">Expires in 1 hour <i>|</i> 1 hour</span></p></div><div class="task-progress"><span></span></div><span class="task-menu">${icon('more')}</span></div>`;
 
 class FokasuGlassDashboard extends HTMLElement {
   connectedCallback() {
@@ -14,8 +14,8 @@ class FokasuGlassDashboard extends HTMLElement {
         <fokasu-demo-header></fokasu-demo-header>
         <div class="glass-timer-view">
           <div class="dash-timer-area">
-            <div class="dash-dial"><svg class="dash-ring" viewBox="0 0 240 240" aria-hidden="true"><circle class="ring-track" cx="120" cy="120" r="113"/><circle class="ring-progress" cx="120" cy="120" r="113" pathLength="100" stroke-dasharray=".2 100"/></svg><div class="dash-time-content"><span class="dash-time">59:58</span><span class="dash-session">Demo Todo</span></div></div>
-            <div class="dash-controls" aria-hidden="true"><span class="dash-control">${icon('minus')}</span><span class="dash-control primary-control">${icon('play')}</span><span class="dash-control">▮</span><span class="dash-control">${icon('bolt')}</span></div>
+            <div class="dash-dial"><svg class="dash-ring" viewBox="0 0 240 240" aria-hidden="true"><circle class="ring-track" cx="120" cy="120" r="113"/><circle class="ring-progress" cx="120" cy="120" r="113" pathLength="100" stroke-dasharray=".2 100"/></svg><div class="dash-time-content"><span class="dash-time">59:58</span><span class="dash-session">Study Session</span></div></div>
+            <div class="dash-controls" aria-hidden="true"><span class="dash-control">${icon('minus')}</span><span class="dash-control primary-control">${icon('play')}</span><span class="dash-control" title="Progress bar mode"><svg class="desktop-icon icon-progress-mode" viewBox="0 0 10 17" fill="currentColor" fill-rule="evenodd"><path d="M0 0H10V17H0Z"/></svg></span><span class="dash-control">${icon('bolt')}</span></div>
           </div>
           <section class="dash-tasks"><h2>Today's Tasks</h2>${task}<div class="dash-end">that's everything for today</div></section>
           <div class="glass-next-heading">Study Together • Deeper Commitment</div>
@@ -29,7 +29,6 @@ class FokasuGlassDashboard extends HTMLElement {
     const social = this.querySelector('.dash-social-view');
     social.querySelector('h2').textContent = 'Study Together • Deeper Commitment';
     social.querySelector('.dash-study-legend')?.remove();
-    social.querySelector('.dash-social-cards').innerHTML = task;
     social.querySelector('.dash-activity-grid').setAttribute('aria-label', 'Sample yearly study activity. Brighter blue indicates more study time.');
     this.querySelector('.dash-account > svg').outerHTML = '<span class="glass-avatar">J</span>';
   }
@@ -52,7 +51,7 @@ const leaderboard = document.querySelector('.glass-leaderboard');
 leaderboard.querySelector('.dash-layout').classList.add('glass-demo');
 leaderboard.querySelector('.dash-brand small').textContent = '207.8 hrs';
 leaderboard.querySelector('.dash-days').innerHTML = `${icon('hour')}14 Days`;
-const names = ['joi_boi', 'midnightRaga', 'semicolonSid', 'pixel.pundit19', 'chaiAurCode', 'kakashi', 'AJ_inFlow'];
+const names = ['Iamparca', 'Girish', 'FIGHTMODE', 'chaiBiscuit', 'sarah.k', 'Rishav', 'notagain'];
 leaderboard.querySelectorAll('.leaderboard-podium-name').forEach((el, index) => {
   const crown = el.querySelector('.leaderboard-crown')?.outerHTML || '';
   el.innerHTML = `${profileAvatar(index)}<span>${crown}${names[index]}</span>`;
@@ -108,20 +107,73 @@ offline.querySelector('.dash-nav-item.selected').classList.remove('selected');
 offline.querySelector('.dash-nav-item:last-child').insertAdjacentHTML('afterend', '<div class="dash-nav-item">Settings</div>');
 offline.querySelector('fokasu-demo-header').outerHTML = `<div class="glass-offline-header"><h3>Dashboard</h3><span class="glass-offline-badge">Offline</span><div class="glass-offline-tools" aria-hidden="true">${musicNote}<span>↻</span><span>+</span></div></div>`;
 offline.querySelector('.dash-time').textContent = '59:55';
-offline.querySelector('.dash-session').textContent = 'Practice algebra';
+offline.querySelector('.dash-session').textContent = 'Study Session';
 offline.querySelector('.primary-control').innerHTML = 'Ⅱ';
 offline.querySelector('.dash-controls .dash-control:last-child').remove();
 offline.querySelector('.glass-next-heading').remove();
 offline.querySelector('.glass-activity-view').remove();
 offline.querySelector('.dash-tasks').innerHTML = `<h2>Your Todos</h2>
- <div class="dash-task active"><span class="task-play">Ⅱ</span><div class="task-description"><h3>Practice algebra</h3><p><span class="task-status">In progress</span><span class="task-meta">Due Nov 17 <i>|</i> 60 min</span></p></div><div class="task-progress"><span></span></div><span class="task-menu">${icon('more')}</span></div>
- <div class="dash-task glass-offline-completed"><span class="task-play">${icon('check')}</span><div class="task-description"><h3>Review biology notes</h3><p><span class="task-status">Completed</span><span class="task-meta">30 min <i>|</i> Not synced</span></p></div><span class="task-menu">${icon('more')}</span></div>`;
+ <div class="dash-task active"><span class="task-play">Ⅱ</span><div class="task-description"><h3>Study Session</h3><p><span class="task-status">In progress</span><span class="task-meta">Due Nov 17 <i>|</i> 60 min</span></p></div><div class="task-progress"><span></span></div><span class="task-menu">${icon('more')}</span></div>
+ <div class="dash-task glass-offline-completed"><span class="task-play">${icon('check')}</span><div class="task-description"><h3>Revision Session</h3><p><span class="task-status">Completed</span><span class="task-meta">30 min <i>|</i> Not synced</span></p></div><span class="task-menu">${icon('more')}</span></div>`;
 
-for (const button of document.querySelectorAll('[data-glass-view]')) {
-  button.addEventListener('click', () => {
-    document.querySelector('fokasu-glass-dashboard').showView(button.dataset.glassView);
-    for (const option of document.querySelectorAll('[data-glass-view]')) {
-      option.setAttribute('aria-pressed', String(option === button));
+const glassPreview = document.querySelector('#glass-preview');
+const scrollViewport = document.createElement('div');
+scrollViewport.className = 'glass-scroll-viewport';
+scrollViewport.id = 'glass-scroll-content';
+const timerView = glassPreview.querySelector('.glass-timer-view');
+const activityView = glassPreview.querySelector('.glass-activity-view');
+timerView.before(scrollViewport);
+scrollViewport.append(timerView, activityView);
+activityView.hidden = false;
+activityView.inert = true;
+activityView.setAttribute('aria-hidden', 'true');
+glassPreview.insertAdjacentHTML('beforeend', '<button class="demo-scroll-toggle glass-scroll-toggle" type="button" aria-controls="glass-scroll-content" aria-label="Scroll Down to study together and activity">Scroll Down <span aria-hidden="true">↓</span></button>');
+glassPreview.querySelector('.glass-scroll-toggle').addEventListener('click', event => {
+  const lower = glassPreview.classList.toggle('glass-show-activity');
+  event.currentTarget.innerHTML = `Scroll ${lower ? 'Up' : 'Down'} <span aria-hidden="true">${lower ? '↑' : '↓'}</span>`;
+  event.currentTarget.setAttribute('aria-label', lower ? 'Scroll Up to timer and tasks' : 'Scroll Down to study together and activity');
+  timerView.inert = lower;
+  activityView.inert = !lower;
+  timerView.setAttribute('aria-hidden', String(lower));
+  activityView.setAttribute('aria-hidden', String(!lower));
+  trackGlassTransition();
+});
+
+// Mirror the desktop GlassBackdrop's wallpaper alignment instead of sampling
+// live browser backdrops, which can produce seams during repainting.
+const glassWallpaper = new Image();
+const glassPanels = [...document.querySelectorAll('.glass-demo')].map(root => ({
+  root,
+  panels: [...root.querySelectorAll('.dash-welcome,.dash-days,.dash-task,.dash-end,.dash-account,.dash-edge-tab,.dash-social-card,.block-demo-tabs > span,.block-demo-input,.block-demo-items li,.block-demo-wildcard-note,.glass-profile-current,.leaderboard-kind,.leaderboard-period,.leaderboard-table tbody tr')],
+}));
+function alignGlassWallpaper() {
+  if (!glassWallpaper.naturalWidth) return;
+  for (const {root, panels} of glassPanels) {
+    const canvas = root.getBoundingClientRect();
+    const scale = Math.max(canvas.width / glassWallpaper.naturalWidth, canvas.height / glassWallpaper.naturalHeight);
+    const width = glassWallpaper.naturalWidth * scale;
+    const height = glassWallpaper.naturalHeight * scale;
+    for (const panel of panels) {
+      const bounds = panel.getBoundingClientRect();
+      panel.style.setProperty('--glass-wallpaper-size', `${width}px ${height}px`);
+      panel.style.setProperty('--glass-wallpaper-position', `${canvas.left + (canvas.width - width) / 2 - bounds.left}px ${canvas.top + (canvas.height - height) / 2 - bounds.top}px`);
+      panel.classList.add('glass-wallpaper-panel');
     }
-  });
+  }
 }
+let glassTransitionFrame;
+function trackGlassTransition() {
+  cancelAnimationFrame(glassTransitionFrame);
+  const until = performance.now() + 650;
+  const update = () => {
+    alignGlassWallpaper();
+    if (performance.now() < until) glassTransitionFrame = requestAnimationFrame(update);
+  };
+  update();
+}
+glassWallpaper.onload = () => {
+  alignGlassWallpaper();
+  const observer = new ResizeObserver(alignGlassWallpaper);
+  glassPanels.forEach(({root}) => observer.observe(root));
+};
+glassWallpaper.src = '/pro-features/tree-background-blurred.jpg';

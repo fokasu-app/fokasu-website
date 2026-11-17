@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#080a0b">
+<meta name="theme-color" content="#18334b">
 <title>Fokasu Pro Features — Liquid Glass &amp; Custom Backgrounds</title>
 <meta name="description" content="Make Fokasu your own with Pro. Explore the Liquid Glass theme, choose custom background images, adjust their opacity, and start each session with a random background.">
 <link rel="canonical" href="https://fokasu.app/pro-features/">
@@ -21,12 +21,14 @@
 <link rel="stylesheet" href="/study-time-tracker/style.css?v=20261116-mobile-gutters-5">
 <link rel="stylesheet" href="/components/dashboard/leaderboard.css?v=20261116-normal-names-5">
 <link rel="stylesheet" href="/components/dashboard/blocks.css?v=20261117-pro-blocks-1">
-<link rel="stylesheet" href="/pro-features/style.css?v=20261117-offline-7">
+<link rel="preload" as="image" href="/pro-features/tree-background.jpg">
+<link rel="preload" as="image" href="/pro-features/tree-background-blurred.jpg">
+<link rel="stylesheet" href="/pro-features/style.css?v=20261117-wallpaper-glass-16">
 <link rel="stylesheet" href="/components/dashboard/preview-frame.css?v=20261116-1">
 <link rel="stylesheet" href="/components/navigation/mobile-spacing.css?v=20261116-1">
 <link rel="stylesheet" href="/components/navigation/section-spacing.css?v=20261117-1">
 <script src="/navigation.js" defer></script>
-<script src="/pro-features/page.js?v=20261117-offline-7" type="module"></script>
+<script src="/pro-features/page.js?v=20261117-wallpaper-glass-16" type="module"></script>
 </head>
 <body id="top" class="pro-features-page">
 <a class="features-skip" href="#main">Skip to content</a>
@@ -143,10 +145,6 @@
 <article><h3>A little more glass. A whole new feel.</h3><p>Give Fokasu a fresh look with the Liquid Glass theme. Translucent panels, softly lit buttons, and subtle glass details bring your study space to life.</p></article>
 <article><h3>Your background, your way</h3><p>Choose your own background images and adjust their opacity. Keep your favorite scene in view, or soften it so your tasks stay in focus.</p></article>
 <article><h3>A fresh view at startup</h3><p>Turn on random backgrounds to let Fokasu choose an image from your collection whenever the app starts. Give each study session a change of scenery.</p></article>
-</div>
-<div class="glass-view-controls" role="group" aria-label="Liquid Glass preview view">
-<button type="button" data-glass-view="timer" aria-pressed="true" aria-controls="glass-preview">Timer &amp; tasks</button>
-<button type="button" data-glass-view="activity" aria-pressed="false" aria-controls="glass-preview">Clan activity</button>
 </div>
 <figure class="features-preview glass-frame">
 <div class="app-window">
@@ -308,7 +306,7 @@
 <figure class="features-preview">
 <div class="app-window">
 <div class="window-bar" aria-hidden="true"><span class="window-title"><img src="/logo/fokasu_logo.svg" width="16" height="16" alt="">Fokasu</span><div class="window-controls"><span><svg viewBox="0 0 12 12"><path d="M1 6.5h10"/></svg></span><span><svg viewBox="0 0 12 12"><rect x="1.5" y="1.5" width="9" height="9"/></svg></span><span><svg viewBox="0 0 12 12"><path d="m1.5 1.5 9 9m0-9-9 9"/></svg></span></div></div>
-<fokasu-glass-dashboard class="glass-offline-dashboard" role="group" aria-label="Offline Liquid Glass dashboard with an active algebra todo and a completed biology todo awaiting sync"></fokasu-glass-dashboard>
+<fokasu-glass-dashboard class="glass-offline-dashboard" role="group" aria-label="Offline Liquid Glass dashboard with an active Study Session and a completed Revision Session awaiting sync"></fokasu-glass-dashboard>
 <noscript><p class="glass-fallback">Create and complete todos offline, then choose which ones to sync when you reconnect. Enable JavaScript to view the dashboard preview.</p></noscript>
 </div>
 </figure>
