@@ -2,7 +2,7 @@
 fokasu-create-todo { display: block; position: relative; container-type: inline-size; height: 71.03021cqw; overflow: hidden; background: #090a0b; color: #e6e9ee; font-size: 1.4cqw; font-family: "Fokasu Noto Sans", sans-serif; line-height: 1.5; }
 fokasu-create-todo * { box-sizing: border-box; }
 .todo-demo-backdrop { position: absolute; inset: 0; opacity: .36; filter: blur(.22cqw); }
-.todo-demo-form { position: absolute; inset: 4.5cqw 20.5cqw 1.6cqw; padding: 2.7cqw 3cqw 2cqw; display: flex; flex-direction: column; background: #101115; border: .15cqw solid #59616e; border-radius: 1.25cqw; }
+.todo-demo-form { position: absolute; inset: 4.5cqw 20.5cqw 1.6cqw; padding: 2.7cqw 3cqw 2cqw; display: flex; flex-direction: column; background: #101115; border: 1.5px solid var(--preview-border-color, #454d59); border-radius: 1.25cqw; }
 .todo-demo-form h3 { margin: 0 0 .55cqw; font-size: 2.8cqw; font-weight: 600; letter-spacing: -.04em; }
 .todo-demo-intro { margin: 0 0 2.4cqw; color: #b9c4d2; font-size: 1.45cqw; line-height: 1.65; }
 .todo-demo-form label, .todo-demo-form legend { display: block; color: #8e9baa; font-size: 1.2cqw; }

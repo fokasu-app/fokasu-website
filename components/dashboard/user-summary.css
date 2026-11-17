@@ -1,7 +1,7 @@
 fokasu-user-summary { display: block; position: relative; container-type: inline-size; height: 71.03021cqw; overflow: hidden; background: #090a0b; color: #eef2f4; font: 1.4cqw/1.4 "Fokasu Noto Sans", sans-serif; }
 fokasu-user-summary * { box-sizing: border-box; }
 .user-summary-backdrop { position: absolute; inset: 0; opacity: .3; filter: blur(.22cqw); }
-.user-summary-dialog { position: absolute; left: 11cqw; top: 15cqw; width: 78cqw; padding: 2.2cqw; border: .15cqw solid #59616e; border-radius: 1.2cqw; background: #101115; box-shadow: 0 1cqw 4cqw #0006; }
+.user-summary-dialog { position: absolute; left: 11cqw; top: 15cqw; width: 78cqw; padding: 2.2cqw; border: 1.5px solid var(--preview-border-color, #454d59); border-radius: 1.2cqw; background: #101115; box-shadow: 0 1cqw 4cqw #0006; }
 .user-summary-heading { display: flex; align-items: center; gap: 1.1cqw; margin-bottom: 2cqw; }
 .user-summary-avatar { display: grid; place-items: center; width: 3.8cqw; height: 3.8cqw; border-radius: 50%; background: #23433c; color: #83e7c1; font-size: 1.7cqw; }
 .user-summary-heading > strong { font: 700 2.2cqw/1.4 "Fokasu Plus Jakarta Sans", sans-serif; }

@@ -1,0 +1,20 @@
+/* Shared spacing between feature points, matching the homepage. */
+:root {
+  --site-section-before: clamp(72px, 11vh, 148px);
+  --site-section-after: clamp(76px, 12vh, 160px);
+}
+
+.features-main .tracker-section,
+.features-main .feature-section,
+.tracker-main .tracker-section,
+.together-main .together-section,
+.together-main .together-start {
+  padding-block: var(--site-section-before) var(--site-section-after);
+}
+
+@media (max-width: 700px) {
+  :root {
+    --site-section-before: 106px;
+    --site-section-after: 106px;
+  }
+}
