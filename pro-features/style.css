@@ -1,14 +1,17 @@
 /* Page chrome follows the blue Liquid Glass previews, scoped to Pro Features. */
 body.pro-features-page { --preview-border-color: #526d83; isolation: isolate; background: #142c42; color: #eef6ff; }
 .pro-features-page::before { content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(120deg,#102940f5,#18394ef2), url('./tree-background.jpg') center / cover; }
-.pro-features-page .site-header { background: #18334bd6; border-bottom-color: #c3e7ff26; box-shadow: 0 8px 30px #06162624, inset 0 1px #e0f4ff0d; backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); }
+.pro-features-page .site-header { background: transparent; border-bottom-color: transparent; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; transition: transform 220ms ease; }
+.pro-features-page .site-header.is-collapsed { transform: translateY(-100%); }
+.pro-features-page .site-header:focus-within { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .pro-features-page .site-header { transition: none; } }
 .pro-features-page .brand-beta { background: #b5e7ff12; border-color: #b5e7ff40; color: #b5e7ff; }
 .pro-features-page .site-nav > a,
 .pro-features-page .nav-community > summary { color: #c4d6e6; }
 .pro-features-page .site-nav > a:hover,
 .pro-features-page .nav-community > summary:hover,
 .pro-features-page .nav-community[open] > summary { color: #f0f8ff; background: #dceeff16; }
-.pro-features-page .alternative-header .site-nav .nav-download-picker > .nav-download { color: #b5e7ff; border-color: #dcefff40; background: linear-gradient(140deg,#dceeff22,#b9dcf20a); box-shadow: inset 0 1px #ffffff12; }
+.pro-features-page .alternative-header .site-nav .nav-download-picker > .nav-download { color: #b5e7ff; border-color: transparent; background: transparent; box-shadow: none; }
 .pro-features-page .alternative-header .download-picker-chevron { color: #b5e7ff; }
 .pro-features-page .alternative-header :is(.nav-more-menu,.download-picker-menu) { background: #1b354bf5; border-color: #dcefff35; backdrop-filter: blur(20px); box-shadow: 0 16px 40px #06162666; }
 .pro-features-page :is(.nav-more-menu,.download-picker-menu) a { color: #d6e8f5; }
@@ -17,10 +20,10 @@ body.pro-features-page { --preview-border-color: #526d83; isolation: isolate; ba
 .pro-features-page .features-hero > p:not(.features-eyebrow),
 .pro-features-page .tracker-tag-details p,
 .pro-features-page .features-end p { color: #bdcfdf; }
-.pro-features-page .tracker-section { border-top-color: #c3e7ff26; }
+.pro-features-page .tracker-section { border-top: 0; }
 .pro-features-page .features-end { background: linear-gradient(135deg,#cceaff17,#cceaff08); border-color: #c3e7ff35; box-shadow: inset 0 1px #ffffff0d, 0 12px 40px #06162620; backdrop-filter: blur(16px); }
 .pro-features-page :is(.features-end a,.features-more a) { color: #a9dfff; }
-.pro-features-page .alternative-footer { background: #10283dba; border-top: 1px solid #c3e7ff26; backdrop-filter: blur(16px); }
+.pro-features-page .alternative-footer { background: #10283dba; border-top: 0; backdrop-filter: blur(16px); }
 .pro-features-page .footer-links a { color: #bdcfdf; }
 .pro-features-page .footer-links a:hover,
 .pro-features-page .footer-links a[aria-current="page"] { color: #a9dfff; }

@@ -177,3 +177,25 @@ glassWallpaper.onload = () => {
   glassPanels.forEach(({root}) => observer.observe(root));
 };
 glassWallpaper.src = '/pro-features/tree-background-blurred.jpg';
+
+// Hide the page header on downward scroll; keep menus and keyboard focus usable.
+const pageHeader = document.querySelector('.pro-features-page > .site-header');
+let headerScrollAnchor = Math.max(0, window.scrollY);
+let headerScrollPending = false;
+window.addEventListener('scroll', () => {
+  if (headerScrollPending) return;
+  headerScrollPending = true;
+  requestAnimationFrame(() => {
+    headerScrollPending = false;
+    const position = Math.max(0, window.scrollY);
+    const distance = position - headerScrollAnchor;
+    if (position < pageHeader.offsetHeight || pageHeader.querySelector('details[open]')) {
+      pageHeader.classList.remove('is-collapsed');
+      headerScrollAnchor = position;
+    } else if (Math.abs(distance) >= 8) {
+      pageHeader.classList.toggle('is-collapsed', distance > 0);
+      headerScrollAnchor = position;
+    }
+  });
+}, {passive: true});
+pageHeader.addEventListener('focusin', () => pageHeader.classList.remove('is-collapsed'));
